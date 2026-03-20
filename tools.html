@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diablo 4 Tools & Utilities — D4 Resource Hub</title>
+  <meta name="description" content="Every tool D4 players use to plan builds, navigate the world, and track progress. Build planners, interactive maps, loot databases, and calculators.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔥</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ======= STICKY NAVBAR ======= -->
+  <nav class="navbar" id="main-nav">
+    <div class="navbar-inner">
+      <!-- Logo -->
+      <a href="index.html" class="navbar-logo">⚔️ D4 Resource Hub</a>
+
+      <!-- Center Nav Links -->
+      <ul class="navbar-links">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link">Home</a>
+        </li>
+
+        <!-- Builds Dropdown -->
+        <li class="nav-item">
+          <a href="#builds" class="nav-link">Builds <span class="nav-arrow">▾</span></a>
+          <div class="nav-dropdown">
+            <a href="#builds" class="dropdown-item">All Build Sites</a>
+            <a href="https://www.icy-veins.com/d4/guides/endgame-tier-list" class="dropdown-item dropdown-external" target="_blank" rel="noopener">Endgame Builds</a>
+            <a href="https://d4builds.gg/leveling-guide" class="dropdown-item dropdown-external" target="_blank" rel="noopener">Leveling Builds</a>
+            <a href="https://www.icy-veins.com/d4/guides/speed-farming-tier-list" class="dropdown-item dropdown-external" target="_blank" rel="noopener">Speed Farming</a>
+            <a href="https://www.icy-veins.com/d4/guides/boss-killer-tier-list" class="dropdown-item dropdown-external" target="_blank" rel="noopener">Boss Killing</a>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <a href="#tierlists" class="nav-link">Tier Lists</a>
+        </li>
+
+        <!-- Classes Dropdown -->
+        <li class="nav-item">
+          <a href="#classes" class="nav-link">Classes <span class="nav-arrow">▾</span></a>
+          <div class="nav-dropdown">
+            <a href="classes.html" class="dropdown-item">Class Comparison</a>
+            <div class="dropdown-divider"></div>
+            <a href="https://www.icy-veins.com/d4/barbarian/builds/" class="dropdown-item dropdown-external" target="_blank" rel="noopener">Barbarian</a>
+            <a href="https://www.icy-veins.com/d4/druid/builds/" class="dropdown-item dropdown-external" target="_blank" rel="noopener">Druid</a>
+            <a href="https://www.icy-veins.com/d4/necromancer/builds/" class="dropdown-item dropdown-external" target="_blank" rel="noopener">Necromancer</a>
+            <a href="https://www.icy-veins.com/d4/paladin/builds/" class="dropdown-item dropdown-external" target="_blank" rel="noopener">Paladin</a>
+            <a href="https://www.icy-veins.com/d4/rogue/builds/" class="dropdown-item dropdown-external" target="_blank" rel="noopener">Rogue</a>
+            <a href="https://www.icy-veins.com/d4/sorcerer/builds/" class="dropdown-item dropdown-external" target="_blank" rel="noopener">Sorcerer</a>
+            <a href="https://www.icy-veins.com/d4/spiritborn/builds/" class="dropdown-item dropdown-external" target="_blank" rel="noopener">Spiritborn</a>
+            <div class="dropdown-divider"></div>
+            <a href="classes.html" class="dropdown-item" style="color: var(--gold-light); font-weight: 700;">⚔️ Class Comparison</a>
+            <div class="dropdown-divider"></div>
+            <span class="dropdown-item disabled">Warlock — Coming in Lord of Hatred</span>
+          </div>
+        </li>
+
+        <!-- Guides Dropdown -->
+        <li class="nav-item">
+          <a href="#guides" class="nav-link">Guides <span class="nav-arrow">▾</span></a>
+          <div class="nav-dropdown">
+            <a href="dungeons.html" class="dropdown-item">Dungeons &amp; Activities</a>
+            <a href="timeline.html" class="dropdown-item">Season Timeline</a>
+            <a href="crafting.html" class="dropdown-item">Crafting &amp; Gear Guide</a>
+            <a href="creators.html" class="dropdown-item">Creator Directory</a>
+            <div class="dropdown-divider"></div>
+            <a href="https://www.icy-veins.com/d4/guides/capstone-dungeons-guide/" class="dropdown-item dropdown-external" target="_blank" rel="noopener">Capstone Dungeons</a>
+            <a href="https://www.icy-veins.com/d4/guides/the-butchers-lair/" class="dropdown-item dropdown-external" target="_blank" rel="noopener">Butcher's Lair</a>
+            <a href="https://www.icy-veins.com/d4/guides/vessel-of-hatred-overview/" class="dropdown-item dropdown-external" target="_blank" rel="noopener">Vessel of Hatred</a>
+            <a href="https://news.blizzard.com/en-us/article/24140808/diablo-iv-patch-notes" class="dropdown-item dropdown-external" target="_blank" rel="noopener">Official Patch Notes</a>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <a href="tools.html" class="nav-link active">Tools</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="#season" class="nav-link">Season Info</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="#news" class="nav-link">News</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="#creators" class="nav-link">Creators</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="#communities" class="nav-link">Community</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="resources.html" class="nav-link">All Resources</a>
+        </li>
+      </ul>
+
+      <!-- Right: Season Badge -->
+      <div class="navbar-right">
+        <div class="season-badge">
+          <span class="season-dot"></span>
+          Season 12 LIVE
+        </div>
+        <!-- Hamburger (mobile only) -->
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ======= MOBILE OVERLAY MENU ======= -->
+  <div class="mobile-menu" id="mobile-menu" role="dialog" aria-label="Navigation menu">
+    <div class="mobile-menu-header">
+      <a href="index.html" class="mobile-menu-logo">⚔️ D4 Resource Hub</a>
+      <button class="mobile-close" id="mobile-close" aria-label="Close menu">✕</button>
+    </div>
+
+    <ul class="mobile-nav-links">
+      <li>
+        <a href="index.html" class="mobile-nav-link no-arrow" onclick="closeMobileMenu()">Home</a>
+      </li>
+      <li>
+        <a href="#builds" class="mobile-nav-link no-arrow" onclick="closeMobileMenu()">Builds</a>
+      </li>
+      <li>
+        <a href="#tierlists" class="mobile-nav-link no-arrow" onclick="closeMobileMenu()">Tier Lists</a>
+      </li>
+      <li>
+        <a href="#classes" class="mobile-nav-link no-arrow" onclick="closeMobileMenu()">Classes</a>
+      </li>
+      <li>
+        <a href="#guides" class="mobile-nav-link no-arrow" onclick="closeMobileMenu()">Guides</a>
+      </li>
+      <li>
+        <a href="tools.html" class="mobile-nav-link no-arrow" onclick="closeMobileMenu()">Tools</a>
+      </li>
+      <li>
+        <a href="#season" class="mobile-nav-link no-arrow" onclick="closeMobileMenu()">Season Info</a>
+      </li>
+      <li>
+        <a href="#news" class="mobile-nav-link no-arrow" onclick="closeMobileMenu()">News</a>
+      </li>
+      <li>
+        <a href="#creators" class="mobile-nav-link no-arrow" onclick="closeMobileMenu()">Creators</a>
+      </li>
+      <li>
+        <a href="#communities" class="mobile-nav-link no-arrow" onclick="closeMobileMenu()">Community</a>
+      </li>
+      <li>
+        <a href="resources.html" class="mobile-nav-link no-arrow" onclick="closeMobileMenu()">All Resources</a>
+      </li>
+    </ul>
+
+    <div class="mobile-season-badge">
+      <span class="season-dot"></span>
+      Season 12: Season of Slaughter — LIVE
+    </div>
+  </div>
+
+  <!-- ======= HERO ======= -->
+  <section class="hero" id="top">
+    <div class="hero-badge">
+      <span>🛠️</span> Tools & Utilities
+    </div>
+
+    <h1 class="hero-title">Diablo 4 Tools &amp; Utilities</h1>
+    <p class="hero-subtitle">Every tool D4 players use to plan builds, navigate the world, and track progress.</p>
+
+    <div class="hero-season-facts">
+      <div class="hero-fact">
+        <span class="icon">📋</span> Build Planners
+      </div>
+      <div class="hero-fact">
+        <span class="icon">🗺️</span> Interactive Maps
+      </div>
+      <div class="hero-fact">
+        <span class="icon">📊</span> Calculators
+      </div>
+    </div>
+
+    <a href="#build-planners" class="hero-cta">
+      Browse Tools <span>↓</span>
+    </a>
+
+    <div class="hero-scroll-hint">
+      ↓ Scroll to explore
+    </div>
+  </section>
+
+  <!-- ======= SECTION 1: BUILD PLANNERS ======= -->
+  <section id="build-planners">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">Plan Your Build</p>
+        <h2>Build Planners</h2>
+        <p class="section-desc">Interactive tools to plan, optimize, and share your D4 builds across all 8 classes.</p>
+      </div>
+
+      <div class="card-grid card-grid-2">
+
+        <a href="https://d4builds.gg/build-planner/" target="_blank" rel="noopener" class="card" style="text-decoration:none;">
+          <span class="card-tag">Top Pick</span>
+          <div class="card-icon">🛠️</div>
+          <div class="card-title">D4Builds Build Planner</div>
+          <div class="card-desc">Full skill tree + paragon board + gear planner. Build shareable links for any class. All 8 classes covered — Warlock already added. The most comprehensive in-browser build planner for D4.</div>
+          <span class="card-link">d4builds.gg/build-planner/</span>
+        </a>
+
+        <a href="https://d4builds.gg/desktop-app/" target="_blank" rel="noopener" class="card" style="text-decoration:none;">
+          <div class="card-icon">💻</div>
+          <div class="card-title">D4Builds Desktop App</div>
+          <div class="card-desc">Windows companion app with in-game overlay. World Boss Timer, XP Per Hour Tracker, and Time to Level Calculator. Keeps your build info visible while you play.</div>
+          <span class="card-link">d4builds.gg/desktop-app/</span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- ======= SECTION 2: INTERACTIVE MAPS ======= -->
+  <section id="interactive-maps">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">Navigate Sanctuary</p>
+        <h2>Interactive Maps</h2>
+        <p class="section-desc">Explore the full D4 world with filters for every type of location and activity.</p>
+      </div>
+
+      <div class="card-grid card-grid-1">
+        <a href="https://d4builds.gg/map/" target="_blank" rel="noopener" class="card" style="text-decoration:none;">
+          <span class="card-tag">Season 12 Updated</span>
+          <div class="card-icon">🗺️</div>
+          <div class="card-title">D4Builds Interactive Map</div>
+          <div class="card-desc">Full world map with powerful filters: Altars of Lilith, Waypoints, Strongholds, Dungeons, and World Events. Season 12 map updates included. Essential for completionists and explorers alike.</div>
+          <span class="card-link">d4builds.gg/map/</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- ======= SECTION 3: ITEM & LOOT DATABASES ======= -->
+  <section id="loot-databases">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">Know Your Loot</p>
+        <h2>Item &amp; Loot Databases</h2>
+        <p class="section-desc">Find exactly where every unique item drops and browse the complete D4 item registry.</p>
+      </div>
+
+      <div class="card-grid card-grid-2">
+
+        <a href="https://d4builds.gg/database/unique-loot-tables/" target="_blank" rel="noopener" class="card" style="text-decoration:none;">
+          <div class="card-icon">📦</div>
+          <div class="card-title">D4Builds Unique Loot Tables</div>
+          <div class="card-desc">Complete unique item database organized by boss and source. Filter by class to find exactly what your build needs. Updated each season with new drops.</div>
+          <span class="card-link">d4builds.gg/database/unique-loot-tables/</span>
+        </a>
+
+        <a href="https://diablo.blizzard.com/en-us/game/" target="_blank" rel="noopener" class="card" style="text-decoration:none;">
+          <div class="card-icon">📘</div>
+          <div class="card-title">In-Game Codex (Battle.net)</div>
+          <div class="card-desc">The official in-game item database. Aspect registry, seasonal mechanics, and full item reference built directly into the Battle.net client. Always accurate and up to date.</div>
+          <span class="card-link">diablo.blizzard.com — Battle.net Client</span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- ======= SECTION 4: CALCULATORS ======= -->
+  <section id="calculators">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">Crunch the Numbers</p>
+        <h2>Calculators</h2>
+        <p class="section-desc">Plan your resource investment with gem upgrade costs and tempering material requirements.</p>
+      </div>
+
+      <div class="card-grid card-grid-2">
+
+        <a href="https://www.icy-veins.com/d4" target="_blank" rel="noopener" class="card" style="text-decoration:none;">
+          <div class="card-icon">💎</div>
+          <div class="card-title">Icy Veins Gem Calculator</div>
+          <div class="card-desc">Calculate gem upgrade costs and material requirements for all京东 (gems). Know exactly how many reagents you need to max out your gem loadout at any gear score level.</div>
+          <span class="card-link">icy-veins.com/d4</span>
+        </a>
+
+        <a href="https://www.icy-veins.com/d4" target="_blank" rel="noopener" class="card" style="text-decoration:none;">
+          <div class="card-icon">🔨</div>
+          <div class="card-title">Icy Veins Tempering Guide</div>
+          <div class="card-desc">Season 12 Obducite crafting costs and tempering recipe breakdowns. Plan your endgame crafting by knowing exactly what materials are required for each tempering attempt.</div>
+          <span class="card-link">icy-veins.com/d4</span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- ======= SECTION 5: SEASON 12 TOOLS ======= -->
+  <section id="season-12-tools">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">Season 12</p>
+        <h2>Season 12 Tools</h2>
+        <p class="section-desc">Everything you need to optimize your Season of Slaughter run from day one.</p>
+      </div>
+
+      <div class="season-status" style="margin-bottom: 2rem;">
+        <div class="season-status-header">
+          <h3 class="season-status-title">⚔️ Season of Slaughter Quick Start</h3>
+          <span class="season-status-badge">Live Now</span>
+        </div>
+        <div class="season-status-body">
+          <div class="season-status-item">
+            <span class="label">Season Theme</span>
+            <span class="value">Killstreak System + Bloodied Items</span>
+          </div>
+          <div class="season-status-item">
+            <span class="label">Special Mechanic</span>
+            <span class="value">Stack kills for bonus rewards &amp; power</span>
+          </div>
+          <div class="season-status-item">
+            <span class="label">Featured Unlock</span>
+            <span class="value">Play as The Butcher as a companion</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-grid card-grid-2">
+
+        <a href="https://d4builds.gg/cheat-sheet/" target="_blank" rel="noopener" class="card" style="text-decoration:none;">
+          <span class="card-tag">By Rob2628</span>
+          <div class="card-icon">📋</div>
+          <div class="card-title">D4Builds Cheat Sheet (S12)</div>
+          <div class="card-desc">Rob2628's Season 12 quick reference — meta builds, best items, seasonal tips, and priority checklists. The go-to guide for competitive seasonal players.</div>
+          <span class="card-link">d4builds.gg/cheat-sheet/</span>
+        </a>
+
+        <a href="https://www.icy-veins.com/d4/guides/diablo-4-latest-season/" target="_blank" rel="noopener" class="card" style="text-decoration:none;">
+          <div class="card-icon">📖</div>
+          <div class="card-title">Season 12 Start Guide</div>
+          <div class="card-desc">Full season mechanics breakdown, activity priorities, new items, and recommended first steps. Everything a new or returning player needs to hit the ground running.</div>
+          <span class="card-link">icy-veins.com/d4/guides/diablo-4-latest-season/</span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- ======= SECTION 6: ALL-IN-ONE RESOURCES ======= -->
+  <section id="all-in-one">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">Everything in One Place</p>
+        <h2>All-in-One Resource Hubs</h2>
+        <p class="section-desc">Major D4 platforms that bundle tools, calculators, tier lists, and seasonal guides in one spot.</p>
+      </div>
+
+      <div class="card-grid card-grid-2">
+
+        <a href="https://maxroll.gg/d4" target="_blank" rel="noopener" class="card" style="text-decoration:none;">
+          <div class="card-icon">🌐</div>
+          <div class="card-title">Maxroll D4 Tools</div>
+          <div class="card-desc">Full suite of D4 tools — DPS calculators, tier lists, seasonal guides, build planners, and item databases. One of the most complete D4 resource platforms available.</div>
+          <span class="card-link">maxroll.gg/d4</span>
+        </a>
+
+        <a href="https://mobalytics.gg/diablo-4/" target="_blank" rel="noopener" class="card" style="text-decoration:none;">
+          <div class="card-icon">📊</div>
+          <div class="card-title">Mobalytics</div>
+          <div class="card-desc">Build scores, performance tracking, creator-verified builds, and detailed class tier lists. Great for comparing your build's output against community benchmarks.</div>
+          <span class="card-link">mobalytics.gg/diablo-4/</span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- ======= QUICK LINKS FOOTER ======= -->
+  <section id="quick-links">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">Jump To</p>
+        <h2>More Resources</h2>
+      </div>
+
+      <div class="communities-grid">
+        <a href="resources.html" class="community-card" style="text-decoration:none;">
+          <div class="community-icon">📚</div>
+          <div class="community-info">
+            <div class="community-name">All Resources</div>
+            <div class="community-type">Full link directory</div>
+          </div>
+        </a>
+
+        <a href="classes.html" class="community-card" style="text-decoration:none;">
+          <div class="community-icon">⚔️</div>
+          <div class="community-info">
+            <div class="community-name">Class Comparison</div>
+            <div class="community-type">All 8 classes overview</div>
+          </div>
+        </a>
+
+        <a href="dungeons.html" class="community-card" style="text-decoration:none;">
+          <div class="community-icon">🏰</div>
+          <div class="community-info">
+            <div class="community-name">Dungeons &amp; Activities</div>
+            <div class="community-type">All dungeon guides</div>
+          </div>
+        </a>
+
+        <a href="timeline.html" class="community-card" style="text-decoration:none;">
+          <div class="community-icon">📅</div>
+          <div class="community-info">
+            <div class="community-name">Season Timeline</div>
+            <div class="community-type">Seasonal milestones</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- ======= FOOTER ======= -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <span class="footer-logo-icon">🔥</span>
+          Diablo 4 Resource Hub
+        </div>
+
+        <div class="footer-links">
+          <a href="https://maxroll.gg/d4" target="_blank" rel="noopener">Maxroll</a>
+          <a href="https://www.icy-veins.com/d4/" target="_blank" rel="noopener">Icy Veins</a>
+          <a href="https://d4builds.gg/" target="_blank" rel="noopener">D4Builds</a>
+          <a href="https://mobalytics.gg/diablo-4/builds" target="_blank" rel="noopener">Mobalytics</a>
+          <a href="resources.html">Full Resources</a>
+          <a href="crafting.html">Crafting &amp; Gear Guide</a>
+        </div>
+
+        <p class="footer-disclaimer">
+          Not affiliated with Blizzard Entertainment. Diablo 4 and all related content are trademarks of Blizzard Entertainment, Inc. This site is a fan-made resource hub for educational purposes.
+        </p>
+
+        <p class="footer-updated">Last updated: March 20, 2026</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const mobileClose = document.getElementById('mobile-close');
+
+    // Desktop dropdowns — click to open/close
+    document.querySelectorAll('.nav-item').forEach(function(item) {
+      item.addEventListener('click', function(e) {
+        const dropdown = item.querySelector('.nav-dropdown');
+        if (!dropdown) return;
+        // Don't navigate if clicking a link directly
+        if (e.target.tagName === 'A') return;
+        // Toggle this dropdown
+        const isOpen = dropdown.classList.contains('open');
+        // Close all desktop dropdowns first
+        document.querySelectorAll('.nav-item .nav-dropdown').forEach(function(d) {
+          d.classList.remove('open');
+        });
+        if (!isOpen) {
+          dropdown.classList.add('open');
+        }
+      });
+    });
+
+    // Close desktop dropdowns when clicking outside
+    document.addEventListener('click', function(e) {
+      if (!e.target.closest('.nav-item')) {
+        document.querySelectorAll('.nav-item .nav-dropdown').forEach(function(d) {
+          d.classList.remove('open');
+        });
+      }
+    });
+
+    function openMobileMenu() {
+      mobileMenu.classList.add('open');
+      hamburger.classList.add('active');
+      hamburger.setAttribute('aria-expanded', 'true');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeMobileMenu() {
+      mobileMenu.classList.remove('open');
+      hamburger.classList.remove('active');
+      hamburger.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    }
+
+    hamburger.addEventListener('click', function() {
+      if (mobileMenu.classList.contains('open')) {
+        closeMobileMenu();
+      } else {
+        openMobileMenu();
+      }
+    });
+
+    mobileClose.addEventListener('click', closeMobileMenu);
+
+    // Mobile accordion dropdowns
+    function toggleMobileDropdown(trigger) {
+      const targetId = trigger.getAttribute('data-target');
+      const target = document.getElementById(targetId);
+      if (!target) return;
+      const isOpen = target.classList.contains('open');
+      // Close all
+      document.querySelectorAll('.mobile-dropdown').forEach(function(d) { d.classList.remove('open'); });
+      if (!isOpen) {
+        target.classList.add('open');
+      }
+    }
+
+    // Scroll spy — highlight active nav link
+    function updateActiveLink() {
+      const sections = document.querySelectorAll('section[id], header[id]');
+      const navLinks = document.querySelectorAll('.nav-link[href^="#"]');
+      let current = '';
+      sections.forEach(function(section) {
+        const rect = section.getBoundingClientRect();
+        if (rect.top <= 100 && rect.bottom > 100) {
+          current = section.getAttribute('id');
+        }
+      });
+      navLinks.forEach(function(link) {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === '#' + current) {
+          link.classList.add('active');
+        }
+      });
+    }
+
+    window.addEventListener('scroll', updateActiveLink);
+    window.addEventListener('load', updateActiveLink);
+  </script>
+
+</body>
+</html>
