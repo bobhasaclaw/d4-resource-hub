@@ -562,4 +562,111 @@
           <div class="tip-icon">⚙️</div>
           <div class="tip-content">
             <h4>MacroBioBoi for Understanding the "Why"</h4>
-            <p>Most creators tell you what to build. MacroBioBoi explains why it works — itemization breakpoints, stat scaling math, speedrun optimizations. Watch his videos when you want to genuinely understand D4
+            <p>Most creators tell you what to build. MacroBioBoi explains why it works — itemization breakpoints, stat scaling math, speedrun optimizations. Watch his videos when you want to genuinely understand D4 mechanics rather than just copying a build blindly.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- ======= FOOTER ======= -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <span class="footer-logo-icon">🔥</span>
+          Diablo 4 Resource Hub
+        </div>
+
+        <div class="footer-links">
+          <a href="https://maxroll.gg/d4" target="_blank" rel="noopener">Maxroll</a>
+          <a href="https://www.icy-veins.com/d4/" target="_blank" rel="noopener">Icy Veins</a>
+          <a href="https://d4builds.gg/" target="_blank" rel="noopener">D4Builds</a>
+          <a href="https://mobalytics.gg/diablo-4/builds" target="_blank" rel="noopener">Mobalytics</a>
+          <a href="resources.html">Full Resources</a>
+            <a href="crafting.html">Crafting &amp; Gear Guide</a>
+        </div>
+
+        <p class="footer-disclaimer">
+          Not affiliated with Blizzard Entertainment. Diablo 4 and all related content are trademarks of Blizzard Entertainment, Inc. This site is a fan-made resource hub for educational purposes.
+        </p>
+
+        <p class="footer-updated">Last updated: March 20, 2026</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const mobileClose = document.getElementById('mobile-close');
+
+    function openMobileMenu() {
+      mobileMenu.classList.add('open');
+      hamburger.classList.add('active');
+      hamburger.setAttribute('aria-expanded', 'true');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeMobileMenu() {
+      mobileMenu.classList.remove('open');
+      hamburger.classList.remove('active');
+      hamburger.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    }
+
+    hamburger.addEventListener('click', function() {
+      if (mobileMenu.classList.contains('open')) {
+        closeMobileMenu();
+      } else {
+        openMobileMenu();
+      }
+    });
+
+    mobileClose.addEventListener('click', closeMobileMenu);
+
+    // Mobile accordion dropdowns
+    function toggleMobileDropdown(trigger) {
+      const targetId = trigger.getAttribute('data-target');
+      const target = document.getElementById(targetId);
+      if (!target) return;
+      const isOpen = target.classList.contains('open');
+      // Close all
+      document.querySelectorAll('.mobile-dropdown').forEach(function(d) { d.classList.remove('open'); });
+      document.querySelectorAll('.mobile-nav-link[data-target]').forEach(function(l) {
+        l.querySelector('.nav-arrow') && (l.querySelector('.nav-arrow').style.transform = '');
+      });
+      if (!isOpen) {
+        target.classList.add('open');
+        trigger.querySelector('.nav-arrow') && (trigger.querySelector('.nav-arrow').style.transform = 'rotate(180deg)');
+      }
+    }
+
+    // Scroll spy — highlight active nav link
+    function updateActiveLink() {
+      const sections = document.querySelectorAll('section[id], header[id]');
+      const navLinks = document.querySelectorAll('.nav-link[href^="#"]');
+      let current = '';
+      sections.forEach(function(section) {
+        const rect = section.getBoundingClientRect();
+        if (rect.top <= 100 && rect.bottom > 100) {
+          current = section.getAttribute('id');
+        }
+      });
+      navLinks.forEach(function(link) {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === '#' + current) {
+          link.classList.add('active');
+        }
+      });
+    }
+
+    window.addEventListener('scroll', updateActiveLink);
+    window.addEventListener('load', updateActiveLink);
+  </script>
+
+</body>
+</html>
