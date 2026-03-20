@@ -14,212 +14,13 @@
 <body>
 
   <!-- ======= STICKY NAVBAR ======= -->
-  <nav class="navbar" id="main-nav">
-    <div class="navbar-inner">
-      <!-- Logo -->
-      <a href="index.html" class="navbar-logo">⚔️ D4 Resource Hub</a>
-
-      <!-- Center Nav Links -->
-      <ul class="navbar-links">
-        <li class="nav-item">
-          <a href="index.html" class="nav-link">Home</a>
-        </li>
-
-        <!-- Builds Dropdown -->
-        <li class="nav-item">
-          <a href="resources.html" class="nav-link">Builds <span class="nav-arrow">▾</span></a>
-          <div class="nav-dropdown">
-            <a href="resources.html" class="dropdown-item">All Build Resources</a>
-            <div class="dropdown-divider"></div>
-            <a href="endgame-builds.html" class="dropdown-item">⚔️ Endgame Builds</a>
-            <a href="leveling-builds.html" class="dropdown-item">⭐ Leveling Builds</a>
-            <a href="speed-farming.html" class="dropdown-item">⚡ Speed Farming Builds</a>
-            <a href="boss-builds.html" class="dropdown-item">💀 Boss Killing Builds</a>
-            <div class="dropdown-divider"></div>
-            <a href="https://www.icy-veins.com/d4/guides/tier-lists/" class="dropdown-item dropdown-external" target="_blank" rel="noopener">Icy Veins Tier Lists →</a>
-            <a href="https://d4builds.gg/" class="dropdown-item dropdown-external" target="_blank" rel="noopener">D4Builds →</a>
-            <a href="https://mobalytics.gg/diablo-4/builds" class="dropdown-item dropdown-external" target="_blank" rel="noopener">Mobalytics Builds →</a>
-            <a href="https://maxroll.gg/d4" class="dropdown-item dropdown-external" target="_blank" rel="noopener">Maxroll →</a>
-          </div>
-        </li>
-
-        <li class="nav-item">
-          <a href="tierlists.html" class="nav-link">Tier Lists</a>
-        </li>
-
-        <!-- Classes Dropdown -->
-        <li class="nav-item">
-          <a href="#classes" class="nav-link">Classes <span class="nav-arrow">▾</span></a>
-          <div class="nav-dropdown">
-            <a href="classes.html" class="dropdown-item">Class Comparison</a>
-            <div class="dropdown-divider"></div>
-            <a href="https://www.icy-veins.com/d4/barbarian/builds/" class="dropdown-item dropdown-external" target="_blank" rel="noopener">Barbarian</a>
-            <a href="https://www.icy-veins.com/d4/druid/builds/" class="dropdown-item dropdown-external" target="_blank" rel="noopener">Druid</a>
-            <a href="https://www.icy-veins.com/d4/necromancer/builds/" class="dropdown-item dropdown-external" target="_blank" rel="noopener">Necromancer</a>
-            <a href="https://www.icy-veins.com/d4/paladin/builds/" class="dropdown-item dropdown-external" target="_blank" rel="noopener">Paladin</a>
-            <a href="https://www.icy-veins.com/d4/rogue/builds/" class="dropdown-item dropdown-external" target="_blank" rel="noopener">Rogue</a>
-            <a href="https://www.icy-veins.com/d4/sorcerer/builds/" class="dropdown-item dropdown-external" target="_blank" rel="noopener">Sorcerer</a>
-            <a href="https://www.icy-veins.com/d4/spiritborn/builds/" class="dropdown-item dropdown-external" target="_blank" rel="noopener">Spiritborn</a>
-            <div class="dropdown-divider"></div>
-            <a href="classes.html" class="dropdown-item" style="color: var(--gold-light); font-weight: 700;">⚔️ Class Comparison</a>
-            <div class="dropdown-divider"></div>
-            <span class="dropdown-item disabled">Warlock — Coming in Lord of Hatred</span>
-          </div>
-        </li>
-
-        <!-- Guides Dropdown -->
-        <li class="nav-item">
-          <a href="#guides" class="nav-link">Guides <span class="nav-arrow">▾</span></a>
-          <div class="nav-dropdown">
-              <a href="dungeons.html" class="dropdown-item">Dungeons &amp; Activities</a>
-            <a href="timeline.html" class="dropdown-item">Season Timeline</a>
-            <a href="crafting.html" class="dropdown-item">Crafting & Gear Guide</a>
-            <a href="creators.html" class="dropdown-item">Creator Directory</a>
-            <div class="dropdown-divider"></div>
-            <a href="https://www.icy-veins.com/d4/guides/capstone-dungeons-guide/" class="dropdown-item dropdown-external" target="_blank" rel="noopener">Capstone Dungeons</a>
-            <a href="https://www.icy-veins.com/d4/guides/the-butchers-lair/" class="dropdown-item dropdown-external" target="_blank" rel="noopener">Butcher's Lair</a>
-            <a href="https://www.icy-veins.com/d4/guides/vessel-of-hatred-overview/" class="dropdown-item dropdown-external" target="_blank" rel="noopener">Vessel of Hatred</a>
-            <a href="https://news.blizzard.com/en-us/article/24140808/diablo-iv-patch-notes" class="dropdown-item dropdown-external" target="_blank" rel="noopener">Official Patch Notes</a>
-          </div>
-        </li>
-
-        <li class="nav-item">
-          <a href="tools.html" class="nav-link">Tools</a>
-        </li>
-
-        <li class="nav-item">
-          <a href="season.html" class="nav-link">Season Info</a>
-        </li>
-
-        <li class="nav-item">
-          <a href="news.html" class="nav-link">News</a>
-        </li>
-
-        <li class="nav-item">
-          <a href="creators.html" class="nav-link">Creators</a>
-        </li>
-
-        <li class="nav-item">
-          <a href="communities.html" class="nav-link">Community</a>
-        </li>
-
-        <li class="nav-item">
-          <a href="resources.html" class="nav-link">All Resources</a>
-        </li>
-      </ul>
-
-      <!-- Right: Season Badge -->
-      <div class="navbar-right">
-        <div class="season-badge">
-          <span class="season-dot"></span>
-          Season 12 LIVE
-        </div>
-        <!-- Hamburger (mobile only) -->
-        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
-          <span class="hamburger-line"></span>
-          <span class="hamburger-line"></span>
-          <span class="hamburger-line"></span>
-        </button>
-      </div>
-    </div>
+    <nav class="navbar" id="main-nav">
+    <div class="navbar-inner"></div>
   </nav>
 
-  <!-- ======= MOBILE OVERLAY MENU ======= -->
-  <div class="mobile-menu" id="mobile-menu" role="dialog" aria-label="Navigation menu">
-    <div class="mobile-menu-header">
-      <a href="index.html" class="mobile-menu-logo">⚔️ D4 Resource Hub</a>
-      <button class="mobile-close" id="mobile-close" aria-label="Close menu">✕</button>
-    </div>
+  <div class="mobile-menu" id="mobile-menu"></div>
 
-    <ul class="mobile-nav-links">
-      <li>
-        <a href="index.html" class="mobile-nav-link no-arrow" onclick="closeMobileMenu()">Home</a>
-      </li>
-
-      <!-- Builds Accordion -->
-      <li>
-        <div class="mobile-nav-link" onclick="toggleMobileDropdown(this)" data-target="mobile-builds">
-          Builds <span class="nav-arrow">▾</span>
-        </div>
-        <div class="mobile-dropdown" id="mobile-builds">
-          <a href="resources.html" class="mobile-dropdown-item" onclick="closeMobileMenu()">All Build Resources</a>
-          <a href="endgame-builds.html" class="mobile-dropdown-item" onclick="closeMobileMenu()">Endgame Builds</a>
-          <a href="leveling-builds.html" class="mobile-dropdown-item" onclick="closeMobileMenu()">Leveling Builds</a>
-          <a href="speed-farming.html" class="mobile-dropdown-item" onclick="closeMobileMenu()">Speed Farming Builds</a>
-          <a href="boss-builds.html" class="mobile-dropdown-item" onclick="closeMobileMenu()">Boss Killing Builds</a>
-          <a href="https://www.icy-veins.com/d4/guides/tier-lists/" class="mobile-dropdown-item" target="_blank" rel="noopener">Icy Veins Tier Lists</a>
-          <a href="https://d4builds.gg/" class="mobile-dropdown-item" target="_blank" rel="noopener">D4Builds</a>
-          <a href="https://mobalytics.gg/diablo-4/builds" class="mobile-dropdown-item" target="_blank" rel="noopener">Mobalytics Builds</a>
-          <a href="https://maxroll.gg/d4" class="mobile-dropdown-item" target="_blank" rel="noopener">Maxroll</a>
-        </div>
-      </li>
-
-      <li>
-        <a href="tierlists.html" class="mobile-nav-link no-arrow" onclick="closeMobileMenu()">Tier Lists</a>
-      </li>
-
-      <!-- Classes Accordion -->
-      <li>
-        <div class="mobile-nav-link" onclick="toggleMobileDropdown(this)" data-target="mobile-classes">
-          Classes <span class="nav-arrow">▾</span>
-        </div>
-        <div class="mobile-dropdown" id="mobile-classes">
-          <a href="https://www.icy-veins.com/d4/barbarian/builds/" class="mobile-dropdown-item" target="_blank" rel="noopener">Barbarian</a>
-          <a href="https://www.icy-veins.com/d4/druid/builds/" class="mobile-dropdown-item" target="_blank" rel="noopener">Druid</a>
-          <a href="https://www.icy-veins.com/d4/necromancer/builds/" class="mobile-dropdown-item" target="_blank" rel="noopener">Necromancer</a>
-          <a href="https://www.icy-veins.com/d4/paladin/builds/" class="mobile-dropdown-item" target="_blank" rel="noopener">Paladin</a>
-          <a href="https://www.icy-veins.com/d4/rogue/builds/" class="mobile-dropdown-item" target="_blank" rel="noopener">Rogue</a>
-          <a href="https://www.icy-veins.com/d4/sorcerer/builds/" class="mobile-dropdown-item" target="_blank" rel="noopener">Sorcerer</a>
-          <a href="https://www.icy-veins.com/d4/spiritborn/builds/" class="mobile-dropdown-item" target="_blank" rel="noopener">Spiritborn</a>
-          <a href="classes.html" class="mobile-dropdown-item" style="color: var(--gold-light); font-weight: 700;" onclick="closeMobileMenu()">⚔️ Class Comparison</a>
-          <span class="mobile-dropdown-item disabled">Warlock — Coming in Lord of Hatred</span>
-        </div>
-      </li>
-
-      <!-- Guides Accordion -->
-      <li>
-        <div class="mobile-nav-link" onclick="toggleMobileDropdown(this)" data-target="mobile-guides">
-          Guides <span class="nav-arrow">▾</span>
-        </div>
-        <div class="mobile-dropdown" id="mobile-guides">
-          <a href="dungeons.html" class="mobile-dropdown-item" onclick="closeMobileMenu()">Dungeons &amp; Activities</a>
-          <a href="timeline.html" class="mobile-dropdown-item" onclick="closeMobileMenu()">Season Timeline</a>
-            <a href="crafting.html" class="mobile-dropdown-item" onclick="closeMobileMenu()">Crafting & Gear Guide</a>
-          <a href="creators.html" class="mobile-dropdown-item" onclick="closeMobileMenu()">Creator Directory</a>
-          <a href="https://www.icy-veins.com/d4/guides/capstone-dungeons-guide/" class="mobile-dropdown-item" target="_blank" rel="noopener">Capstone Dungeons</a>
-          <a href="https://www.icy-veins.com/d4/guides/the-butchers-lair/" class="mobile-dropdown-item" target="_blank" rel="noopener">Butcher's Lair</a>
-          <a href="https://www.icy-veins.com/d4/guides/vessel-of-hatred-overview/" class="mobile-dropdown-item" target="_blank" rel="noopener">Vessel of Hatred</a>
-          <a href="https://news.blizzard.com/en-us/article/24140808/diablo-iv-patch-notes" class="mobile-dropdown-item" target="_blank" rel="noopener">Official Patch Notes</a>
-        </div>
-      </li>
-
-      <li>
-        <a href="tools.html" class="mobile-nav-link no-arrow" onclick="closeMobileMenu()">Tools</a>
-      </li>
-      <li>
-        <a href="season.html" class="mobile-nav-link no-arrow" onclick="closeMobileMenu()">Season Info</a>
-      </li>
-      <li>
-        <a href="news.html" class="mobile-nav-link no-arrow" onclick="closeMobileMenu()">News</a>
-      </li>
-      <li>
-        <a href="creators.html" class="mobile-nav-link no-arrow" onclick="closeMobileMenu()">Creators</a>
-      </li>
-      <li>
-        <a href="communities.html" class="mobile-nav-link no-arrow" onclick="closeMobileMenu()">Community</a>
-      </li>
-      <li>
-        <a href="resources.html" class="mobile-nav-link no-arrow" onclick="closeMobileMenu()">All Resources</a>
-      </li>
-    </ul>
-
-    <div class="mobile-season-badge">
-      <span class="season-dot"></span>
-      Season 12: Season of Slaughter — LIVE
-    </div>
-  </div>
-
-  <section class="new-player-hero">
+<section class="new-player-hero">
     <div class="container">
       <div class="new-player-hero-content">
         <div class="new-player-hero-badge"><span>🆕</span> Season 12 Beginner Guide</div>
@@ -244,6 +45,45 @@
         <div class="intro-banner-text">
           <h2>Welcome to Sanctuary</h2>
           <p>Diablo 4 is a dark fantasy Action RPG. Play through the campaign, reach endgame, farm loot, and chase the meta. Whether you go solo or with friends, this guide will get you from level 1 all the way to Torment IV.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="page-overview">
+    <div class="container">
+      <div class="page-overview-grid">
+        <div class="page-overview-card featured">
+          <div class="page-overview-kicker">First Decision</div>
+          <h3>Pick a class that matches your comfort level</h3>
+          <p>Spiritborn is the safest recommendation for new players, while Paladin and Necromancer offer strong, flexible options once you know your way around Sanctuary.</p>
+          <div class="page-overview-actions">
+            <span class="overview-pill">Easy Start</span>
+            <span class="overview-pill">Solo Friendly</span>
+          </div>
+        </div>
+        <div class="page-overview-card">
+          <div class="page-overview-kicker">Progress Path</div>
+          <h3>Follow a clean leveling route</h3>
+          <ul class="page-overview-list">
+            <li>Finish the campaign first</li>
+            <li>Unlock World Tier III through the Capstone</li>
+            <li>Move into Nightmare Dungeons and then Torment</li>
+          </ul>
+        </div>
+        <div class="page-overview-card">
+          <div class="page-overview-kicker">Season 12</div>
+          <h3>Learn the new mechanic early</h3>
+          <p>The killstreak system rewards aggressive play, so the guide now puts the current seasonal rules right next to the beginner path.</p>
+        </div>
+        <div class="page-overview-card">
+          <div class="page-overview-kicker">Avoid Mistakes</div>
+          <h3>Don’t over-optimize too early</h3>
+          <ul class="page-overview-list">
+            <li>Finish the campaign before chasing perfect gear</li>
+            <li>Save rare upgrade materials for endgame items</li>
+            <li>Use the guide to understand the game loop, then refine later</li>
+          </ul>
         </div>
       </div>
     </div>
@@ -553,7 +393,7 @@
           <div class="tip-icon">📺</div>
           <div class="tip-content">
             <h4>Follow Top Creators</h4>
-            <p><a href="https://www.youtube.com/@Rob2628" target="_blank" rel="noopener">Rob2628</a> and <a href="https://www.youtube.com/@Rhykker" target="_blank" rel="noopener">Rhykker</a> on YouTube are the go-to sources for meta builds, tier lists, and season updates.</p>
+            <p><a href="https://www.youtube.com/@Rob2628" target="_blank" rel="noopener">Rob2628</a> and <a href="https://www.youtube.com/@Rhykker" target="_blank" rel="noopener">Rhykker</a> on YouTube are top sources for meta builds, tier lists, and season updates.</p>
           </div>
         </div>
         <div class="tip-card">
@@ -616,77 +456,33 @@
     </div>
   </section>
 
-  <footer class="footer">
+    <footer class="footer">
     <div class="container">
       <div class="footer-content">
         <div class="footer-logo">
           <span class="footer-logo-icon">🔥</span>
           Diablo 4 Resource Hub
         </div>
+
         <div class="footer-links">
-          <a href="index.html">← Back to Home</a>
-            <a href="crafting.html">Crafting &amp; Gear Guide</a>
+          <a href="index.html">Home</a>
+          <a href="resources.html">Resources</a>
+          <a href="crafting.html">Crafting &amp; Gear Guide</a>
           <a href="https://maxroll.gg/d4" target="_blank" rel="noopener">Maxroll</a>
           <a href="https://www.icy-veins.com/d4/" target="_blank" rel="noopener">Icy Veins</a>
           <a href="https://d4builds.gg/" target="_blank" rel="noopener">D4Builds</a>
           <a href="https://mobalytics.gg/diablo-4/builds" target="_blank" rel="noopener">Mobalytics</a>
         </div>
+
         <p class="footer-disclaimer">
           Not affiliated with Blizzard Entertainment. Diablo 4 and all related content are trademarks of Blizzard Entertainment, Inc. This site is a fan-made resource hub for educational purposes.
         </p>
+
         <p class="footer-updated">Last updated: March 20, 2026</p>
       </div>
     </div>
   </footer>
 
-  <script>
-    var hamburger = document.getElementById('hamburger');
-    var mobileMenu = document.getElementById('mobile-menu');
-    var mobileClose = document.getElementById('mobile-close');
-
-    function openMobileMenu() {
-      mobileMenu.classList.add('open');
-      hamburger.classList.add('active');
-      hamburger.setAttribute('aria-expanded', 'true');
-      document.body.style.overflow = 'hidden';
-    }
-
-    function closeMobileMenu() {
-      mobileMenu.classList.remove('open');
-      hamburger.classList.remove('active');
-      hamburger.setAttribute('aria-expanded', 'false');
-      document.body.style.overflow = '';
-    }
-
-    hamburger.addEventListener('click', function() {
-      if (mobileMenu.classList.contains('open')) {
-        closeMobileMenu();
-      } else {
-        openMobileMenu();
-      }
-    });
-
-    mobileClose.addEventListener('click', closeMobileMenu);
-
-    function toggleMobileDropdown(trigger) {
-      var targetId = trigger.getAttribute('data-target');
-      var target = document.getElementById(targetId);
-      if (!target) return;
-      var isOpen = target.classList.contains('open');
-      var allDropdowns = document.querySelectorAll('.mobile-dropdown');
-      var allLinks = document.querySelectorAll('.mobile-nav-link[data-target]');
-      for (var i = 0; i < allDropdowns.length; i++) { allDropdowns[i].classList.remove('open'); }
-      for (var j = 0; j < allLinks.length; j++) {
-        var arrow = allLinks[j].querySelector('.nav-arrow');
-        if (arrow) arrow.style.transform = '';
-      }
-      if (!isOpen) {
-        target.classList.add('open');
-        var arr = trigger.querySelector('.nav-arrow');
-        if (arr) arr.style.transform = 'rotate(180deg)';
-      }
-    }
-  </script>
-
+  <script src="nav.js"></script>
 </body>
 </html>

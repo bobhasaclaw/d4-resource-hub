@@ -12,90 +12,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
-  <nav class="navbar" id="main-nav">
-    <div class="navbar-inner">
-      <a href="index.html" class="navbar-logo">⚔️ D4 Resource Hub</a>
-      <ul class="navbar-links">
-        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-        <li class="nav-item">
-          <a href="#builds" class="nav-link">Builds <span class="nav-arrow">▾</span></a>
-          <div class="nav-dropdown">
-            <a href="#builds" class="dropdown-item">All Build Sites</a>
-            <a href="https://www.icy-veins.com/d4/guides/endgame-tier-list" class="dropdown-item dropdown-external" target="_blank" rel="noopener">Endgame Builds</a>
-            <a href="https://d4builds.gg/leveling-guide" class="dropdown-item dropdown-external" target="_blank" rel="noopener">Leveling Builds</a>
-            <a href="speed-farming.html" class="dropdown-item">Speed Farming Builds</a>
-            <a href="https://www.icy-veins.com/d4/guides/boss-killer-tier-list" class="dropdown-item dropdown-external" target="_blank" rel="noopener">Boss Killing</a>
-          </div>
-        </li>
-        <li class="nav-item"><a href="tierlists.html" class="nav-link">Tier Lists</a></li>
-        <li class="nav-item">
-          <a href="index.html#classes" class="nav-link">Classes <span class="nav-arrow">▾</span></a>
-          <div class="nav-dropdown">
-            <a href="classes.html" class="dropdown-item">Class Comparison</a>
-            <div class="dropdown-divider"></div>
-            <a href="https://www.icy-veins.com/d4/barbarian/builds/" class="dropdown-item dropdown-external" target="_blank" rel="noopener">Barbarian</a>
-            <a href="https://www.icy-veins.com/d4/druid/builds/" class="dropdown-item dropdown-external" target="_blank" rel="noopener">Druid</a>
-            <a href="https://www.icy-veins.com/d4/necromancer/builds/" class="dropdown-item dropdown-external" target="_blank" rel="noopener">Necromancer</a>
-            <a href="https://www.icy-veins.com/d4/paladin/builds/" class="dropdown-item dropdown-external" target="_blank" rel="noopener">Paladin</a>
-            <a href="https://www.icy-veins.com/d4/rogue/builds/" class="dropdown-item dropdown-external" target="_blank" rel="noopener">Rogue</a>
-            <a href="https://www.icy-veins.com/d4/sorcerer/builds/" class="dropdown-item dropdown-external" target="_blank" rel="noopener">Sorcerer</a>
-            <a href="https://www.icy-veins.com/d4/spiritborn/builds/" class="dropdown-item dropdown-external" target="_blank" rel="noopener">Spiritborn</a>
-            <div class="dropdown-divider"></div>
-            <span class="dropdown-item disabled">Warlock — Coming in Lord of Hatred</span>
-          </div>
-        </li>
-        <li class="nav-item">
-          <a href="index.html#guides" class="nav-link">Guides <span class="nav-arrow">▾</span></a>
-          <div class="nav-dropdown">
-            <a href="dungeons.html" class="dropdown-item">Dungeons &amp; Activities</a>
-            <a href="timeline.html" class="dropdown-item">Season Timeline</a>
-            <a href="crafting.html" class="dropdown-item">Crafting & Gear Guide</a>
-            <a href="creators.html" class="dropdown-item">Creator Directory</a>
-            <div class="dropdown-divider"></div>
-            <a href="https://www.icy-veins.com/d4/guides/capstone-dungeons-guide/" class="dropdown-item dropdown-external" target="_blank" rel="noopener">Capstone Dungeons</a>
-            <a href="https://www.icy-veins.com/d4/guides/the-butchers-lair/" class="dropdown-item dropdown-external" target="_blank" rel="noopener">Butcher's Lair</a>
-            <a href="https://www.icy-veins.com/d4/guides/vessel-of-hatred-overview/" class="dropdown-item dropdown-external" target="_blank" rel="noopener">Vessel of Hatred</a>
-            <a href="https://news.blizzard.com/en-us/article/24140808/diablo-iv-patch-notes" class="dropdown-item dropdown-external" target="_blank" rel="noopener">Official Patch Notes</a>
-          </div>
-        </li>
-        <li class="nav-item"><a href="tools.html" class="nav-link">Tools</a></li>
-        <li class="nav-item"><a href="season.html" class="nav-link">Season Info</a></li>
-        <li class="nav-item"><a href="news.html" class="nav-link">News</a></li>
-        <li class="nav-item"><a href="creators.html" class="nav-link">Creators</a></li>
-        <li class="nav-item"><a href="communities.html" class="nav-link">Community</a></li>
-        <li class="nav-item"><a href="resources.html" class="nav-link">All Resources</a></li>
-      </ul>
-      <div class="navbar-right">
-        <div class="season-badge"><span class="season-dot"></span>Season 12 LIVE</div>
-        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
-          <span class="hamburger-line"></span><span class="hamburger-line"></span><span class="hamburger-line"></span>
-        </button>
-      </div>
-    </div>
+    <nav class="navbar" id="main-nav">
+    <div class="navbar-inner"></div>
   </nav>
 
-  <!-- Mobile Menu -->
-  <div class="mobile-menu" id="mobile-menu">
-    <div class="mobile-menu-header">
-      <a href="index.html" class="mobile-menu-logo">⚔️ D4 Resource Hub</a>
-      <button class="mobile-close" id="mobile-close" aria-label="Close menu">✕</button>
-    </div>
-    <ul class="mobile-nav-links">
-      <li><a href="index.html" class="mobile-nav-link" onclick="closeMobileMenu()">Home</a></li>
-      <li><a href="tierlists.html" class="mobile-nav-link" onclick="closeMobileMenu()">Tier Lists</a></li>
-      <li><a href="dungeons.html" class="mobile-nav-link" onclick="closeMobileMenu()">Dungeons</a></li>
-      <li><a href="crafting.html" class="mobile-nav-link" onclick="closeMobileMenu()">Crafting</a></li>
-      <li><a href="tools.html" class="mobile-nav-link" onclick="closeMobileMenu()">Tools</a></li>
-      <li><a href="season.html" class="mobile-nav-link" onclick="closeMobileMenu()">Season</a></li>
-      <li><a href="news.html" class="mobile-nav-link" onclick="closeMobileMenu()">News</a></li>
-      <li><a href="creators.html" class="mobile-nav-link" onclick="closeMobileMenu()">Creators</a></li>
-      <li><a href="communities.html" class="mobile-nav-link" onclick="closeMobileMenu()">Community</a></li>
-      <li><a href="resources.html" class="mobile-nav-link" onclick="closeMobileMenu()">Resources</a></li>
-    </ul>
-  </div>
+  <div class="mobile-menu" id="mobile-menu"></div>
 
-  <!-- Hero Section -->
-  <section class="hero hero-page" id="top">
+<section class="hero hero-page" id="top">
     <div class="hero-badge"><span>⚡</span> Season 12: Season of Slaughter</div>
     <h1 class="hero-title hero-title-lg">Diablo 4 Speed Farming Builds</h1>
     <p class="hero-subtitle">Fastest ways to clear content and rack up XP, gold, and loot per hour. Every class ranked, every top build linked.</p>
@@ -105,6 +28,18 @@
       <div class="hero-fact"><span class="icon">👹</span> Speed Farm Tier List</div>
     </div>
     <a href="#tier-list" class="hero-cta">View Tier List ↓</a>
+  </section>
+
+  <section class="page-actions-section">
+    <div class="container">
+      <div class="page-actions-bar">
+        <button type="button" class="page-action-button" data-copy-page-link>Copy Speed Farming Link</button>
+        <button type="button" class="page-action-button" data-share-page data-share-text="Diablo 4 speed farming builds for Season 12. Maximize XP, gold, and loot per hour.">Share Page</button>
+        <button type="button" class="page-action-button" data-copy-summary data-copy-summary="Diablo 4 speed farming builds for Season 12. Maximize XP, gold, and loot per hour.">Copy Summary</button>
+        <span class="page-action-note">Reviewed March 20, 2026</span>
+        <span class="page-action-feedback" aria-live="polite"></span>
+      </div>
+    </div>
   </section>
 
   <!-- What Is Speed Farming -->
@@ -220,13 +155,13 @@
             <div class="build-links">
               <a href="https://d4builds.gg/build-planner/" target="_blank" rel="noopener" class="build-link">D4Builds →</a>
               <a href="https://mobalytics.gg/diablo-4/builds" target="_blank" rel="noopener" class="build-link">Mobalytics →</a>
-            </div>
+            <a href="https://maxroll.gg/d4" target="_blank" rel="noopener" class="build-link">Maxroll →</a></div>
           </div>
           <div class="build-card">
             <div class="build-card-header"><div class="build-name">Quill Volley</div><span class="build-tag a-tag">Solid</span></div>
             <div class="build-desc">Ranged spirit-based build. Good alternative for relaxed playstyle. Solid AoE with decent clear speed. Less mobile than Infinite Evade but still strong.</div>
             <div class="build-meta"><span>⚡ Speed: <strong>Fast</strong></span><span>🛡️ Safety: <strong>Good</strong></span><span>🎯 Difficulty: <strong>Easy</strong></span></div>
-            <div class="build-links"><a href="https://www.icy-veins.com/d4/spiritborn/builds/" target="_blank" rel="noopener" class="build-link">Icy Veins →</a></div>
+            <div class="build-links"><a href="https://www.icy-veins.com/d4/spiritborn/builds/" target="_blank" rel="noopener" class="build-link">Icy Veins →</a><a href="https://maxroll.gg/d4" target="_blank" rel="noopener" class="build-link">Maxroll →</a></div>
           </div>
         </div>
       </div>
@@ -246,13 +181,13 @@
             <div class="build-links">
               <a href="https://mobalytics.gg/diablo-4/builds" target="_blank" rel="noopener" class="build-link">Mobalytics (M1PY) →</a>
               <a href="https://www.icy-veins.com/d4/rogue/builds/" target="_blank" rel="noopener" class="build-link">Icy Veins →</a>
-            </div>
+            <a href="https://maxroll.gg/d4" target="_blank" rel="noopener" class="build-link">Maxroll →</a></div>
           </div>
           <div class="build-card">
             <div class="build-card-header"><div class="build-name">Rapid Fire</div><span class="build-tag a-tag">Ranged</span></div>
             <div class="build-desc">Ranged safety + strong speed. Consistent single-target and AoE while staying at range. Great for players avoiding mob packs. Still very fast on Nightmare Dungeons.</div>
             <div class="build-meta"><span>⚡ Speed: <strong>Fast</strong></span><span>🛡️ Safety: <strong>Good</strong></span><span>🎯 Difficulty: <strong>Medium</strong></span></div>
-            <div class="build-links"><a href="https://www.icy-veins.com/d4/rogue/builds/" target="_blank" rel="noopener" class="build-link">Icy Veins →</a></div>
+            <div class="build-links"><a href="https://www.icy-veins.com/d4/rogue/builds/" target="_blank" rel="noopener" class="build-link">Icy Veins →</a><a href="https://maxroll.gg/d4" target="_blank" rel="noopener" class="build-link">Maxroll →</a></div>
           </div>
         </div>
       </div>
@@ -272,13 +207,13 @@
             <div class="build-links">
               <a href="https://www.icy-veins.com/d4/paladin/builds/" target="_blank" rel="noopener" class="build-link">Icy Veins →</a>
               <a href="https://d4builds.gg/build-planner/" target="_blank" rel="noopener" class="build-link">D4Builds →</a>
-            </div>
+            <a href="https://maxroll.gg/d4" target="_blank" rel="noopener" class="build-link">Maxroll →</a></div>
           </div>
           <div class="build-card">
             <div class="build-card-header"><div class="build-name">Zealspin</div><span class="build-tag a-tag">Fast Spin</span></div>
             <div class="build-desc">Spin-to-win Paladin — very fast melee AoE. AoElena's Mobalytics guide is the reference. Fast clears with high mobility. Tankier than Rogue.</div>
             <div class="build-meta"><span>⚡ Speed: <strong>Fast</strong></span><span>🛡️ Safety: <strong>Very Good</strong></span><span>🎯 Difficulty: <strong>Medium</strong></span></div>
-            <div class="build-links"><a href="https://mobalytics.gg/diablo-4/builds" target="_blank" rel="noopener" class="build-link">Mobalytics (AoElena) →</a></div>
+            <div class="build-links"><a href="https://mobalytics.gg/diablo-4/builds" target="_blank" rel="noopener" class="build-link">Mobalytics (AoElena) →</a><a href="https://maxroll.gg/d4" target="_blank" rel="noopener" class="build-link">Maxroll →</a></div>
           </div>
         </div>
       </div>
@@ -298,13 +233,13 @@
             <div class="build-links">
               <a href="https://mobalytics.gg/diablo-4/builds" target="_blank" rel="noopener" class="build-link">Mobalytics (Kay) →</a>
               <a href="https://www.icy-veins.com/d4/necromancer/builds/" target="_blank" rel="noopener" class="build-link">Icy Veins →</a>
-            </div>
+            <a href="https://maxroll.gg/d4" target="_blank" rel="noopener" class="build-link">Maxroll →</a></div>
           </div>
           <div class="build-card">
             <div class="build-card-header"><div class="build-name">Corpse Explosion</div><span class="build-tag a-tag">Classic</span></div>
             <div class="build-desc">Classic necro speed farm — safe and fast. Corpse Explosion triggers chain reactions in dense areas. Excellent for Helltide and Nightmare Dungeons. Low skill floor.</div>
             <div class="build-meta"><span>⚡ Speed: <strong>Fast</strong></span><span>🛡️ Safety: <strong>Good</strong></span><span>🎯 Difficulty: <strong>Easy–Medium</strong></span></div>
-            <div class="build-links"><a href="https://www.icy-veins.com/d4/necromancer/builds/" target="_blank" rel="noopener" class="build-link">Icy Veins →</a></div>
+            <div class="build-links"><a href="https://www.icy-veins.com/d4/necromancer/builds/" target="_blank" rel="noopener" class="build-link">Icy Veins →</a><a href="https://maxroll.gg/d4" target="_blank" rel="noopener" class="build-link">Maxroll →</a></div>
           </div>
         </div>
       </div>
@@ -324,13 +259,13 @@
             <div class="build-links">
               <a href="https://d4builds.gg/build-planner/" target="_blank" rel="noopener" class="build-link">D4Builds →</a>
               <a href="https://www.icy-veins.com/d4/barbarian/builds/" target="_blank" rel="noopener" class="build-link">Icy Veins →</a>
-            </div>
+            <a href="https://maxroll.gg/d4" target="_blank" rel="noopener" class="build-link">Maxroll →</a></div>
           </div>
           <div class="build-card">
             <div class="build-card-header"><div class="build-name">Upheaval</div><span class="build-tag a-tag">Mobile</span></div>
             <div class="build-desc">Fast and mobile. Upheaval deals strong AoE on the move, chaining dungeon rooms without stopping. Good clear speed. Mobalytics has the reference.</div>
             <div class="build-meta"><span>⚡ Speed: <strong>Fast</strong></span><span>🛡️ Safety: <strong>Good</strong></span><span>🎯 Difficulty: <strong>Medium</strong></span></div>
-            <div class="build-links"><a href="https://mobalytics.gg/diablo-4/builds" target="_blank" rel="noopener" class="build-link">Mobalytics →</a></div>
+            <div class="build-links"><a href="https://mobalytics.gg/diablo-4/builds" target="_blank" rel="noopener" class="build-link">Mobalytics →</a><a href="https://maxroll.gg/d4" target="_blank" rel="noopener" class="build-link">Maxroll →</a></div>
           </div>
         </div>
       </div>
@@ -347,13 +282,13 @@
             <div class="build-card-header"><div class="build-name">Chain Lightning</div><span class="build-tag s-tag">Top Pick</span></div>
             <div class="build-desc">Very fast, safe ranged build. Chain Lightning bounces through packs with excellent clear speed. Great for players wanting distance from danger. Icy Veins has the guide.</div>
             <div class="build-meta"><span>⚡ Speed: <strong>Fast</strong></span><span>🛡️ Safety: <strong>Good</strong></span><span>🎯 Difficulty: <strong>Easy–Medium</strong></span></div>
-            <div class="build-links"><a href="https://www.icy-veins.com/d4/sorcerer/builds/" target="_blank" rel="noopener" class="build-link">Icy Veins →</a></div>
+            <div class="build-links"><a href="https://www.icy-veins.com/d4/sorcerer/builds/" target="_blank" rel="noopener" class="build-link">Icy Veins →</a><a href="https://maxroll.gg/d4" target="_blank" rel="noopener" class="build-link">Maxroll →</a></div>
           </div>
           <div class="build-card">
             <div class="build-card-header"><div class="build-name">Fireball</div><span class="build-tag a-tag">AoE</span></div>
             <div class="build-desc">Good AoE, solid speed. Fireball provides consistent area damage with good cast speed. Safe ranged option that still clears quickly. Icy Veins reference available.</div>
             <div class="build-meta"><span>⚡ Speed: <strong>Fast</strong></span><span>🛡️ Safety: <strong>Good</strong></span><span>🎯 Difficulty: <strong>Easy</strong></span></div>
-            <div class="build-links"><a href="https://www.icy-veins.com/d4/sorcerer/builds/" target="_blank" rel="noopener" class="build-link">Icy Veins →</a></div>
+            <div class="build-links"><a href="https://www.icy-veins.com/d4/sorcerer/builds/" target="_blank" rel="noopener" class="build-link">Icy Veins →</a><a href="https://maxroll.gg/d4" target="_blank" rel="noopener" class="build-link">Maxroll →</a></div>
           </div>
         </div>
       </div>
@@ -370,13 +305,13 @@
             <div class="build-card-header"><div class="build-name">Wolf Companion</div><span class="build-tag a-tag">Top Pick</span></div>
             <div class="build-desc">Decent speed, mobile. Wolf Companion provides summons that help clear while you move. Good for players who like pet builds. Icy Veins has the guide.</div>
             <div class="build-meta"><span>⚡ Speed: <strong>Moderate</strong></span><span>🛡️ Safety: <strong>Good</strong></span><span>🎯 Difficulty: <strong>Medium</strong></span></div>
-            <div class="build-links"><a href="https://www.icy-veins.com/d4/druid/builds/" target="_blank" rel="noopener" class="build-link">Icy Veins →</a></div>
+            <div class="build-links"><a href="https://www.icy-veins.com/d4/druid/builds/" target="_blank" rel="noopener" class="build-link">Icy Veins →</a><a href="https://maxroll.gg/d4" target="_blank" rel="noopener" class="build-link">Maxroll →</a></div>
           </div>
           <div class="build-card">
             <div class="build-card-header"><div class="build-name">Pulverize</div><span class="build-tag a-tag">Tanky</span></div>
             <div class="build-desc">Tanky but slower. Pulverize deals strong AoE earth damage. Requires more gear investment than top tiers but still clears content effectively. D4Builds has the planner.</div>
             <div class="build-meta"><span>⚡ Speed: <strong>Moderate</strong></span><span>🛡️ Safety: <strong>Very Good</strong></span><span>🎯 Difficulty: <strong>Medium–Hard</strong></span></div>
-            <div class="build-links"><a href="https://d4builds.gg/build-planner/" target="_blank" rel="noopener" class="build-link">D4Builds →</a></div>
+            <div class="build-links"><a href="https://d4builds.gg/build-planner/" target="_blank" rel="noopener" class="build-link">D4Builds →</a><a href="https://maxroll.gg/d4" target="_blank" rel="noopener" class="build-link">Maxroll →</a></div>
           </div>
         </div>
       </div>
@@ -467,6 +402,12 @@
           <div class="card-desc">Comprehensive tier list for speed farming across all classes and builds.</div>
           <span class="card-link">icy-veins.com →</span>
         </a>
+        <a href="https://maxroll.gg/d4" target="_blank" rel="noopener" class="card" style="text-decoration:none;">
+          <div class="card-icon">🏔️</div>
+          <div class="card-title">Maxroll D4</div>
+          <div class="card-desc">Structured build guides and meta overviews with a polished all-in-one reference feel.</div>
+          <span class="card-link">maxroll.gg/d4 →</span>
+        </a>
         <a href="https://mobalytics.gg/diablo-4/builds" target="_blank" rel="noopener" class="card" style="text-decoration:none;">
           <div class="card-icon">⚔️</div>
           <div class="card-title">Mobalytics Speed Builds</div>
@@ -506,89 +447,34 @@
   </section>
 
   <!-- Footer -->
-  <footer class="footer">
+    <footer class="footer">
     <div class="container">
       <div class="footer-content">
         <div class="footer-logo">
           <span class="footer-logo-icon">🔥</span>
           Diablo 4 Resource Hub
         </div>
+
         <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="resources.html">Resources</a>
+          <a href="crafting.html">Crafting &amp; Gear Guide</a>
           <a href="https://maxroll.gg/d4" target="_blank" rel="noopener">Maxroll</a>
           <a href="https://www.icy-veins.com/d4/" target="_blank" rel="noopener">Icy Veins</a>
           <a href="https://d4builds.gg/" target="_blank" rel="noopener">D4Builds</a>
           <a href="https://mobalytics.gg/diablo-4/builds" target="_blank" rel="noopener">Mobalytics</a>
-          <a href="resources.html">Full Resources</a>
-          <a href="crafting.html">Crafting &amp; Gear Guide</a>
         </div>
+
         <p class="footer-disclaimer">
-          Not affiliated with Blizzard Entertainment. Diablo 4 and all related content are trademarks of Blizzard Entertainment, Inc. This site is a fan-made resource hub.
+          Not affiliated with Blizzard Entertainment. Diablo 4 and all related content are trademarks of Blizzard Entertainment, Inc. This site is a fan-made resource hub for educational purposes.
         </p>
+
         <p class="footer-updated">Last updated: March 20, 2026</p>
       </div>
     </div>
   </footer>
 
-  <script>
-    // Mobile menu
-    const hamburger = document.getElementById('hamburger');
-    const mobileMenu = document.getElementById('mobile-menu');
-    const mobileClose = document.getElementById('mobile-close');
-
-    // Desktop dropdowns
-    document.querySelectorAll('.nav-item').forEach(function(item) {
-      item.addEventListener('click', function(e) {
-        const dropdown = item.querySelector('.nav-dropdown');
-        if (!dropdown) return;
-        if (e.target.tagName === 'A') return;
-        const isOpen = dropdown.classList.contains('open');
-        document.querySelectorAll('.nav-item .nav-dropdown').forEach(function(d) { d.classList.remove('open'); });
-        if (!isOpen) { dropdown.classList.add('open'); }
-      });
-    });
-
-    document.addEventListener('click', function(e) {
-      if (!e.target.closest('.nav-item')) {
-        document.querySelectorAll('.nav-item .nav-dropdown').forEach(function(d) { d.classList.remove('open'); });
-      }
-    });
-
-    function openMobileMenu() {
-      mobileMenu.classList.add('open');
-      hamburger.classList.add('active');
-      hamburger.setAttribute('aria-expanded', 'true');
-      document.body.style.overflow = 'hidden';
-    }
-
-    function closeMobileMenu() {
-      mobileMenu.classList.remove('open');
-      hamburger.classList.remove('active');
-      hamburger.setAttribute('aria-expanded', 'false');
-      document.body.style.overflow = '';
-    }
-
-    hamburger.addEventListener('click', function() {
-      if (mobileMenu.classList.contains('open')) { closeMobileMenu(); } else { openMobileMenu(); }
-    });
-
-    mobileClose.addEventListener('click', closeMobileMenu);
-
-    // Mobile accordion
-    function toggleMobileDropdown(trigger) {
-      const targetId = trigger.getAttribute('data-target');
-      const target = document.getElementById(targetId);
-      if (!target) return;
-      const isOpen = target.classList.contains('open');
-      document.querySelectorAll('.mobile-dropdown').forEach(function(d) { d.classList.remove('open'); });
-      document.querySelectorAll('.mobile-nav-link[data-target]').forEach(function(l) {
-        l.querySelector('.nav-arrow') && (l.querySelector('.nav-arrow').style.transform = '');
-      });
-      if (!isOpen) {
-        target.classList.add('open');
-        trigger.querySelector('.nav-arrow') && (trigger.querySelector('.nav-arrow').style.transform = 'rotate(180deg)');
-      }
-    }
-  </script>
-
+  <script src="nav.js"></script>
+  <script src="site-tools.js"></script>
 </body>
 </html>

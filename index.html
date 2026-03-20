@@ -14,212 +14,12 @@
 <body>
 
   <!-- ======= STICKY NAVBAR ======= -->
-  <nav class="navbar" id="main-nav">
-    <div class="navbar-inner">
-      <!-- Logo -->
-      <a href="index.html" class="navbar-logo">⚔️ D4 Resource Hub</a>
-
-      <!-- Center Nav Links -->
-      <ul class="navbar-links">
-        <li class="nav-item">
-          <a href="index.html" class="nav-link">Home</a>
-        </li>
-
-        <!-- Builds Dropdown -->
-        <li class="nav-item">
-          <a href="resources.html" class="nav-link">Builds <span class="nav-arrow">▾</span></a>
-          <div class="nav-dropdown">
-            <a href="resources.html" class="dropdown-item">All Build Resources</a>
-            <div class="dropdown-divider"></div>
-            <a href="endgame-builds.html" class="dropdown-item">⚔️ Endgame Builds</a>
-            <a href="leveling-builds.html" class="dropdown-item">⭐ Leveling Builds</a>
-            <a href="speed-farming.html" class="dropdown-item">⚡ Speed Farming Builds</a>
-            <a href="boss-builds.html" class="dropdown-item">💀 Boss Killing Builds</a>
-            <div class="dropdown-divider"></div>
-            <a href="https://www.icy-veins.com/d4/guides/tier-lists/" class="dropdown-item dropdown-external" target="_blank" rel="noopener">Icy Veins Tier Lists →</a>
-            <a href="https://d4builds.gg/" class="dropdown-item dropdown-external" target="_blank" rel="noopener">D4Builds →</a>
-            <a href="https://mobalytics.gg/diablo-4/builds" class="dropdown-item dropdown-external" target="_blank" rel="noopener">Mobalytics Builds →</a>
-            <a href="https://maxroll.gg/d4" class="dropdown-item dropdown-external" target="_blank" rel="noopener">Maxroll →</a>
-          </div>
-        </li>
-
-        <li class="nav-item">
-          <a href="tierlists.html" class="nav-link">Tier Lists</a>
-        </li>
-
-        <!-- Classes Dropdown -->
-        <li class="nav-item">
-          <a href="#classes" class="nav-link">Classes <span class="nav-arrow">▾</span></a>
-          <div class="nav-dropdown">
-            <a href="classes.html" class="dropdown-item">Class Comparison</a>
-            <div class="dropdown-divider"></div>
-            <a href="https://www.icy-veins.com/d4/barbarian/builds/" class="dropdown-item dropdown-external" target="_blank" rel="noopener">Barbarian</a>
-            <a href="https://www.icy-veins.com/d4/druid/builds/" class="dropdown-item dropdown-external" target="_blank" rel="noopener">Druid</a>
-            <a href="https://www.icy-veins.com/d4/necromancer/builds/" class="dropdown-item dropdown-external" target="_blank" rel="noopener">Necromancer</a>
-            <a href="https://www.icy-veins.com/d4/paladin/builds/" class="dropdown-item dropdown-external" target="_blank" rel="noopener">Paladin</a>
-            <a href="https://www.icy-veins.com/d4/rogue/builds/" class="dropdown-item dropdown-external" target="_blank" rel="noopener">Rogue</a>
-            <a href="https://www.icy-veins.com/d4/sorcerer/builds/" class="dropdown-item dropdown-external" target="_blank" rel="noopener">Sorcerer</a>
-            <a href="https://www.icy-veins.com/d4/spiritborn/builds/" class="dropdown-item dropdown-external" target="_blank" rel="noopener">Spiritborn</a>
-            <div class="dropdown-divider"></div>
-            <a href="classes.html" class="dropdown-item" style="color: var(--gold-light); font-weight: 700;">⚔️ Class Comparison</a>
-            <div class="dropdown-divider"></div>
-            <span class="dropdown-item disabled">Warlock — Coming in Lord of Hatred</span>
-          </div>
-        </li>
-
-        <!-- Guides Dropdown -->
-        <li class="nav-item">
-          <a href="#guides" class="nav-link">Guides <span class="nav-arrow">▾</span></a>
-          <div class="nav-dropdown">
-              <a href="dungeons.html" class="dropdown-item">Dungeons &amp; Activities</a>
-            <a href="timeline.html" class="dropdown-item">Season Timeline</a>
-            <a href="crafting.html" class="dropdown-item">Crafting & Gear Guide</a>
-            <a href="creators.html" class="dropdown-item">Creator Directory</a>
-            <div class="dropdown-divider"></div>
-            <a href="https://www.icy-veins.com/d4/guides/capstone-dungeons-guide/" class="dropdown-item dropdown-external" target="_blank" rel="noopener">Capstone Dungeons</a>
-            <a href="https://www.icy-veins.com/d4/guides/the-butchers-lair/" class="dropdown-item dropdown-external" target="_blank" rel="noopener">Butcher's Lair</a>
-            <a href="https://www.icy-veins.com/d4/guides/vessel-of-hatred-overview/" class="dropdown-item dropdown-external" target="_blank" rel="noopener">Vessel of Hatred</a>
-            <a href="https://news.blizzard.com/en-us/article/24140808/diablo-iv-patch-notes" class="dropdown-item dropdown-external" target="_blank" rel="noopener">Official Patch Notes</a>
-          </div>
-        </li>
-
-        <li class="nav-item">
-          <a href="tools.html" class="nav-link">Tools</a>
-        </li>
-
-        <li class="nav-item">
-          <a href="season.html" class="nav-link">Season Info</a>
-        </li>
-
-        <li class="nav-item">
-          <a href="news.html" class="nav-link">News</a>
-        </li>
-
-        <li class="nav-item">
-          <a href="creators.html" class="nav-link">Creators</a>
-        </li>
-
-        <li class="nav-item">
-          <a href="communities.html" class="nav-link">Community</a>
-        </li>
-
-        <li class="nav-item">
-          <a href="resources.html" class="nav-link">All Resources</a>
-        </li>
-      </ul>
-
-      <!-- Right: Season Badge -->
-      <div class="navbar-right">
-        <div class="season-badge">
-          <span class="season-dot"></span>
-          Season 12 LIVE
-        </div>
-        <!-- Hamburger (mobile only) -->
-        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
-          <span class="hamburger-line"></span>
-          <span class="hamburger-line"></span>
-          <span class="hamburger-line"></span>
-        </button>
-      </div>
-    </div>
+    <nav class="navbar" id="main-nav">
+    <div class="navbar-inner"></div>
   </nav>
 
-  <!-- ======= MOBILE OVERLAY MENU ======= -->
-  <div class="mobile-menu" id="mobile-menu" role="dialog" aria-label="Navigation menu">
-    <div class="mobile-menu-header">
-      <a href="index.html" class="mobile-menu-logo">⚔️ D4 Resource Hub</a>
-      <button class="mobile-close" id="mobile-close" aria-label="Close menu">✕</button>
-    </div>
+  <div class="mobile-menu" id="mobile-menu"></div>
 
-    <ul class="mobile-nav-links">
-      <li>
-        <a href="index.html" class="mobile-nav-link no-arrow" onclick="closeMobileMenu()">Home</a>
-      </li>
-
-      <!-- Builds Accordion -->
-      <li>
-        <div class="mobile-nav-link" onclick="toggleMobileDropdown(this)" data-target="mobile-builds">
-          Builds <span class="nav-arrow">▾</span>
-        </div>
-        <div class="mobile-dropdown" id="mobile-builds">
-          <a href="resources.html" class="mobile-dropdown-item" onclick="closeMobileMenu()">All Build Resources</a>
-          <a href="endgame-builds.html" class="mobile-dropdown-item" onclick="closeMobileMenu()">Endgame Builds</a>
-          <a href="leveling-builds.html" class="mobile-dropdown-item" onclick="closeMobileMenu()">Leveling Builds</a>
-          <a href="speed-farming.html" class="mobile-dropdown-item" onclick="closeMobileMenu()">Speed Farming Builds</a>
-          <a href="boss-builds.html" class="mobile-dropdown-item" onclick="closeMobileMenu()">Boss Killing Builds</a>
-          <a href="https://www.icy-veins.com/d4/guides/tier-lists/" class="mobile-dropdown-item" target="_blank" rel="noopener">Icy Veins Tier Lists</a>
-          <a href="https://d4builds.gg/" class="mobile-dropdown-item" target="_blank" rel="noopener">D4Builds</a>
-          <a href="https://mobalytics.gg/diablo-4/builds" class="mobile-dropdown-item" target="_blank" rel="noopener">Mobalytics Builds</a>
-          <a href="https://maxroll.gg/d4" class="mobile-dropdown-item" target="_blank" rel="noopener">Maxroll</a>
-        </div>
-      </li>
-
-      <li>
-        <a href="tierlists.html" class="mobile-nav-link no-arrow" onclick="closeMobileMenu()">Tier Lists</a>
-      </li>
-
-      <!-- Classes Accordion -->
-      <li>
-        <div class="mobile-nav-link" onclick="toggleMobileDropdown(this)" data-target="mobile-classes">
-          Classes <span class="nav-arrow">▾</span>
-        </div>
-        <div class="mobile-dropdown" id="mobile-classes">
-          <a href="https://www.icy-veins.com/d4/barbarian/builds/" class="mobile-dropdown-item" target="_blank" rel="noopener">Barbarian</a>
-          <a href="https://www.icy-veins.com/d4/druid/builds/" class="mobile-dropdown-item" target="_blank" rel="noopener">Druid</a>
-          <a href="https://www.icy-veins.com/d4/necromancer/builds/" class="mobile-dropdown-item" target="_blank" rel="noopener">Necromancer</a>
-          <a href="https://www.icy-veins.com/d4/paladin/builds/" class="mobile-dropdown-item" target="_blank" rel="noopener">Paladin</a>
-          <a href="https://www.icy-veins.com/d4/rogue/builds/" class="mobile-dropdown-item" target="_blank" rel="noopener">Rogue</a>
-          <a href="https://www.icy-veins.com/d4/sorcerer/builds/" class="mobile-dropdown-item" target="_blank" rel="noopener">Sorcerer</a>
-          <a href="https://www.icy-veins.com/d4/spiritborn/builds/" class="mobile-dropdown-item" target="_blank" rel="noopener">Spiritborn</a>
-          <a href="classes.html" class="mobile-dropdown-item" style="color: var(--gold-light); font-weight: 700;" onclick="closeMobileMenu()">⚔️ Class Comparison</a>
-          <span class="mobile-dropdown-item disabled">Warlock — Coming in Lord of Hatred</span>
-        </div>
-      </li>
-
-      <!-- Guides Accordion -->
-      <li>
-        <div class="mobile-nav-link" onclick="toggleMobileDropdown(this)" data-target="mobile-guides">
-          Guides <span class="nav-arrow">▾</span>
-        </div>
-        <div class="mobile-dropdown" id="mobile-guides">
-          <a href="dungeons.html" class="mobile-dropdown-item" onclick="closeMobileMenu()">Dungeons &amp; Activities</a>
-          <a href="timeline.html" class="mobile-dropdown-item" onclick="closeMobileMenu()">Season Timeline</a>
-            <a href="crafting.html" class="mobile-dropdown-item" onclick="closeMobileMenu()">Crafting & Gear Guide</a>
-          <a href="creators.html" class="mobile-dropdown-item" onclick="closeMobileMenu()">Creator Directory</a>
-          <a href="https://www.icy-veins.com/d4/guides/capstone-dungeons-guide/" class="mobile-dropdown-item" target="_blank" rel="noopener">Capstone Dungeons</a>
-          <a href="https://www.icy-veins.com/d4/guides/the-butchers-lair/" class="mobile-dropdown-item" target="_blank" rel="noopener">Butcher's Lair</a>
-          <a href="https://www.icy-veins.com/d4/guides/vessel-of-hatred-overview/" class="mobile-dropdown-item" target="_blank" rel="noopener">Vessel of Hatred</a>
-          <a href="https://news.blizzard.com/en-us/article/24140808/diablo-iv-patch-notes" class="mobile-dropdown-item" target="_blank" rel="noopener">Official Patch Notes</a>
-        </div>
-      </li>
-
-      <li>
-        <a href="tools.html" class="mobile-nav-link no-arrow" onclick="closeMobileMenu()">Tools</a>
-      </li>
-      <li>
-        <a href="season.html" class="mobile-nav-link no-arrow" onclick="closeMobileMenu()">Season Info</a>
-      </li>
-      <li>
-        <a href="news.html" class="mobile-nav-link no-arrow" onclick="closeMobileMenu()">News</a>
-      </li>
-      <li>
-        <a href="creators.html" class="mobile-nav-link no-arrow" onclick="closeMobileMenu()">Creators</a>
-      </li>
-      <li>
-        <a href="communities.html" class="mobile-nav-link no-arrow" onclick="closeMobileMenu()">Community</a>
-      </li>
-      <li>
-        <a href="resources.html" class="mobile-nav-link no-arrow" onclick="closeMobileMenu()">All Resources</a>
-      </li>
-    </ul>
-
-    <div class="mobile-season-badge">
-      <span class="season-dot"></span>
-      Season 12: Season of Slaughter — LIVE
-    </div>
-  </div>
-
-  <!-- ======= HERO ======= -->
   <section class="hero" id="top">
     <div class="hero-badge">
       <span>⚔️</span> Season 12: Season of Slaughter is LIVE
@@ -240,12 +40,64 @@
       </div>
     </div>
 
-    <a href="#quicklinks" class="hero-cta">
-      Explore All Pages <span>↓</span>
+    <a href="#start-here" class="hero-cta">
+      Start Here <span>↓</span>
     </a>
 
     <div class="hero-scroll-hint">
       ↓ Scroll to explore
+    </div>
+  </section>
+
+  <section class="page-actions-section">
+    <div class="container">
+      <div class="page-actions-bar">
+        <a href="classes.html#class-finder" class="page-action-button">Compare Classes</a>
+        <a href="resources.html" class="page-action-button">Browse Resources</a>
+        <button type="button" class="page-action-button" data-copy-page-link>Copy Hub Link</button>
+        <button type="button" class="page-action-button" data-share-page data-share-text="Diablo 4 Resource Hub: build guides, tier lists, tools, creators, communities, and seasonal updates in one place.">Share Page</button>
+        <button type="button" class="page-action-button" data-copy-summary data-copy-summary="Diablo 4 Resource Hub: build guides, tier lists, tools, creators, communities, and seasonal updates in one place.">Copy Summary</button>
+        <span class="page-action-note">Reviewed March 20, 2026</span>
+        <span class="page-action-feedback" aria-live="polite"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= START HERE ======= -->
+  <section class="home-launchpad" id="start-here">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">Start Here</p>
+        <h2>Pick Your Next Move</h2>
+        <p class="section-desc">A cleaner entry point for new and returning players. Jump straight to the path that matches what you need right now.</p>
+      </div>
+
+      <div class="launchpad-grid">
+        <a href="new-player.html" class="launchpad-card">
+          <div class="card-eyebrow">New Players</div>
+          <h3>Learn the Basics</h3>
+          <p>Follow a structured path from class choice to gearing so you can get comfortable fast.</p>
+          <span class="card-link">Open the Beginner Guide →</span>
+        </a>
+        <a href="endgame-builds.html" class="launchpad-card">
+          <div class="card-eyebrow">Best Builds</div>
+          <h3>Find a Strong Build</h3>
+          <p>Browse the current endgame, leveling, speed farming, and bossing routes in one place.</p>
+          <span class="card-link">Compare Builds →</span>
+        </a>
+        <a href="resources.html" class="launchpad-card">
+          <div class="card-eyebrow">Resources</div>
+          <h3>Open the Directory</h3>
+          <p>Search build sites, tier lists, tools, creators, and guides from one curated hub.</p>
+          <span class="card-link">Browse Resources →</span>
+        </a>
+        <a href="tools.html" class="launchpad-card">
+          <div class="card-eyebrow">Utility Tools</div>
+          <h3>Plan Your Setup</h3>
+          <p>Use planners, maps, calculators, and support tools to tighten up your build path.</p>
+          <span class="card-link">Open Tools →</span>
+        </a>
+      </div>
     </div>
   </section>
 
@@ -346,40 +198,80 @@
       <!-- All Creators -->
       <div class="creator-grid">
         <a href="https://www.youtube.com/@Rob2628" target="_blank" rel="noopener" class="creator-card" style="text-decoration:none;">
-          <div class="creator-name">Rob2628</div>
-          <div class="creator-platform">
-            <span>YouTube</span>
-            <span>Twitch</span>
+          <div class="creator-card-media creator-media-rob">
+            <img class="creator-card-shot" src="https://i.ytimg.com/vi/8tQdmMXAkco/hqdefault.jpg" alt="Rob2628 YouTube thumbnail: NEW Season 12 Tier List with the BEST Builds for Diablo 4" loading="lazy" decoding="async">
+            <span class="creator-media-badge">YouTube</span>
           </div>
-          <div class="creator-desc">Paladin &amp; Spiritborn meta specialist. The go-to for S12 tier lists, Cpt. America Paladin, and seasonal build optimization. 247K YouTube subs.</div>
-          <div style="margin-top: auto; padding-top: 8px; color: #c9a227; font-size: 0.8rem; font-weight: 600;">→ YouTube Channel</div>
+          <div class="creator-card-body">
+            <div class="creator-name">Rob2628</div>
+            <div class="creator-platform">
+              <span>YouTube</span>
+              <span>Twitch</span>
+            </div>
+            <div class="creator-desc">Paladin &amp; Spiritborn meta specialist. A strong source for S12 tier lists, Cpt. America Paladin, and seasonal build optimization. 247K YouTube subs.</div>
+            <div class="creator-card-cta">→ YouTube Channel</div>
+          </div>
         </a>
 
         <a href="https://www.youtube.com/@Rhykker" target="_blank" rel="noopener" class="creator-card" style="text-decoration:none;">
-          <div class="creator-name">Rhykker</div>
-          <div class="creator-platform">
-            <span>YouTube — 706K</span>
+          <div class="creator-card-media creator-media-rhykker">
+            <img class="creator-card-shot" src="https://i.ytimg.com/vi/WsmK5nl0wdE/hqdefault.jpg" alt="Rhykker YouTube thumbnail: Top 10 Best Builds for Diablo 4 Season 12 (All Classes)" loading="lazy" decoding="async">
+            <span class="creator-media-badge">YouTube</span>
           </div>
-          <div class="creator-desc">Full D4 coverage — builds, tier lists, news, and deep dives. Most subscribed D4 creator. Consistent, thorough, and beginner-friendly.</div>
-          <div style="margin-top: auto; padding-top: 8px; color: #c9a227; font-size: 0.8rem; font-weight: 600;">→ YouTube Channel</div>
+          <div class="creator-card-body">
+            <div class="creator-name">Rhykker</div>
+            <div class="creator-platform">
+              <span>YouTube — 706K</span>
+            </div>
+            <div class="creator-desc">Full D4 coverage — builds, tier lists, news, and deep dives. Most subscribed D4 creator. Consistent, thorough, and beginner-friendly.</div>
+            <div class="creator-card-cta">→ YouTube Channel</div>
+          </div>
         </a>
 
         <a href="https://www.youtube.com/@MacroBioBoi" target="_blank" rel="noopener" class="creator-card" style="text-decoration:none;">
-          <div class="creator-name">MacroBioBoi</div>
-          <div class="creator-platform">
-            <span>YouTube — 75.9K</span>
+          <div class="creator-card-media creator-media-macro">
+            <img class="creator-card-shot" src="https://i.ytimg.com/vi/w1Q4nT-sLHE/hqdefault.jpg" alt="MacroBioBoi YouTube thumbnail: How I Make Builds in Diablo 4" loading="lazy" decoding="async">
+            <span class="creator-media-badge">YouTube</span>
           </div>
-          <div class="creator-desc">Deep mechanics theorycrafting. D2 &amp; D4 comparisons, itemization analysis, and long-form build breakdowns. Best for understanding WHY builds work.</div>
-          <div style="margin-top: auto; padding-top: 8px; color: #c9a227; font-size: 0.8rem; font-weight: 600;">→ YouTube Channel</div>
+          <div class="creator-card-body">
+            <div class="creator-name">MacroBioBoi</div>
+            <div class="creator-platform">
+              <span>YouTube — 75.9K</span>
+            </div>
+            <div class="creator-desc">Deep mechanics theorycrafting. D2 &amp; D4 comparisons, itemization analysis, and long-form build breakdowns. Best for understanding WHY builds work.</div>
+            <div class="creator-card-cta">→ YouTube Channel</div>
+          </div>
         </a>
 
         <a href="https://www.youtube.com/results?search_query=Patriarch+diablo+4" target="_blank" rel="noopener" class="creator-card" style="text-decoration:none;">
-          <div class="creator-name">Patriarch</div>
-          <div class="creator-platform">
-            <span>YouTube</span>
+          <div class="creator-card-media creator-media-patriarch">
+            <img class="creator-card-shot" src="https://i.ytimg.com/vi/eB2wKmhQx2o/hqdefault.jpg" alt="Patriarch YouTube thumbnail: Diablo 4 pure crit rogue, most fun build" loading="lazy" decoding="async">
+            <span class="creator-media-badge">YouTube</span>
           </div>
-          <div class="creator-desc">D4 builds and tier lists with clear, concise content. Great for quick build overviews and meta updates. Solid all-around D4 coverage.</div>
-          <div style="margin-top: auto; padding-top: 8px; color: #c9a227; font-size: 0.8rem; font-weight: 600;">→ Find on YouTube</div>
+          <div class="creator-card-body">
+            <div class="creator-name">Patriarch</div>
+            <div class="creator-platform">
+              <span>YouTube</span>
+            </div>
+            <div class="creator-desc">D4 builds and tier lists with clear, concise content. Great for quick build overviews and meta updates. Solid all-around D4 coverage.</div>
+            <div class="creator-card-cta">→ Find on YouTube</div>
+          </div>
+        </a>
+
+        <a href="https://www.youtube.com/channel/UCLHAhGkEEv24hFuWuKX_XFg" target="_blank" rel="noopener" class="creator-card" style="text-decoration:none;">
+          <div class="creator-card-media creator-media-sliver">
+            <img class="creator-card-shot" src="https://i.ytimg.com/vi/q7eaxqFMedQ/hqdefault.jpg" alt="Sliver of Time YouTube thumbnail: Crazy Infinite Mob Spawn &amp; Experience Bug" loading="lazy" decoding="async">
+            <span class="creator-media-badge">YouTube</span>
+          </div>
+          <div class="creator-card-body">
+            <div class="creator-name">Sliver of Time</div>
+            <div class="creator-platform">
+              <span>YouTube</span>
+              <span>Hidden Gem</span>
+            </div>
+            <div class="creator-desc">An underrated creator for finding loopholes, useful discoveries, and small tricks that make the game easier and more fun to play.</div>
+            <div class="creator-card-cta">→ Hidden Gem Channel</div>
+          </div>
         </a>
       </div>
 
@@ -388,24 +280,100 @@
         <p class="section-label" style="margin-bottom: 1rem;">💜 Also Worth Watching — Twitch</p>
         <div class="creator-grid" style="grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));">
           <a href="https://www.twitch.tv/rob2628" target="_blank" rel="noopener" class="creator-card" style="text-decoration:none;">
-            <div class="creator-name">Rob2628</div>
-            <div class="creator-platform"><span>Twitch — ~835 live viewers</span></div>
-            <div class="creator-desc">D4 Partner. Drops-enabled. WW Barb, Holy Paladin, and endgame bossing.</div>
+            <div class="creator-card-media creator-media-rob">
+              <img class="creator-card-shot" src="https://static-cdn.jtvnw.net/jtv_user_pictures/d5f96899-40fe-4ec1-b566-e7cefea872c1-profile_image-300x300.png" alt="Rob2628 Twitch profile image" loading="lazy" decoding="async">
+              <span class="creator-media-badge">Twitch</span>
+            </div>
+            <div class="creator-card-body">
+              <div class="creator-name">Rob2628</div>
+              <div class="creator-platform"><span>Twitch — ~835 live viewers</span></div>
+              <div class="creator-desc">D4 Partner. Drops-enabled. WW Barb, Holy Paladin, and endgame bossing.</div>
+              <div class="creator-card-cta">→ Twitch Channel</div>
+            </div>
           </a>
           <a href="https://www.twitch.tv/snuggie" target="_blank" rel="noopener" class="creator-card" style="text-decoration:none;">
-            <div class="creator-name">Snuggie</div>
-            <div class="creator-platform"><span>Twitch</span></div>
-            <div class="creator-desc">D4 Partner. Chat carry runs. Use <code style="font-size:0.75rem;background:rgba(201,162,39,0.1);padding:1px 4px;border-radius:3px;">!advgg</code> for build advice.</div>
+            <div class="creator-card-media creator-media-snuggie">
+              <img class="creator-card-shot" src="https://static-cdn.jtvnw.net/jtv_user_pictures/1749d085-d992-4a3d-b43a-3cc46a3ed15c-profile_image-300x300.png" alt="Snuggie Twitch profile image" loading="lazy" decoding="async">
+              <span class="creator-media-badge">Twitch</span>
+            </div>
+            <div class="creator-card-body">
+              <div class="creator-name">Snuggie</div>
+              <div class="creator-platform"><span>Twitch</span></div>
+              <div class="creator-desc">D4 Partner. Chat carry runs. Use <code style="font-size:0.75rem;background:rgba(201,162,39,0.1);padding:1px 4px;border-radius:3px;">!advgg</code> for build advice.</div>
+              <div class="creator-card-cta">→ Twitch Channel</div>
+            </div>
           </a>
           <a href="https://www.twitch.tv/bludfarts666_" target="_blank" rel="noopener" class="creator-card" style="text-decoration:none;">
-            <div class="creator-name">bludfarts666_</div>
-            <div class="creator-platform"><span>Twitch</span></div>
-            <div class="creator-desc">Necromancer specialist. Triple Golem, corpse-based builds. "NecroNation" community.</div>
+            <div class="creator-card-media creator-media-blud">
+              <img class="creator-card-shot" src="https://static-cdn.jtvnw.net/jtv_user_pictures/7ee85034-2120-45d8-80af-2d6084da5fba-profile_image-300x300.jpeg" alt="bludfarts666_ Twitch profile image" loading="lazy" decoding="async">
+              <span class="creator-media-badge">Twitch</span>
+            </div>
+            <div class="creator-card-body">
+              <div class="creator-name">bludfarts666_</div>
+              <div class="creator-platform"><span>Twitch</span></div>
+              <div class="creator-desc">Necromancer specialist. Triple Golem, corpse-based builds. "NecroNation" community.</div>
+              <div class="creator-card-cta">→ Twitch Channel</div>
+            </div>
           </a>
           <a href="https://www.twitch.tv/macrobioboi" target="_blank" rel="noopener" class="creator-card" style="text-decoration:none;">
-            <div class="creator-name">MacroBioBoi</div>
-            <div class="creator-platform"><span>Twitch</span></div>
-            <div class="creator-desc">Mechanical theorycrafting live. Deep D4 &amp; D2R discussion with the community.</div>
+            <div class="creator-card-media creator-media-macro">
+              <img class="creator-card-shot" src="https://static-cdn.jtvnw.net/jtv_user_pictures/0296df4a-5a8c-406e-bafe-b8f81efe1205-profile_image-300x300.png" alt="MacroBioBoi Twitch profile image" loading="lazy" decoding="async">
+              <span class="creator-media-badge">Twitch</span>
+            </div>
+            <div class="creator-card-body">
+              <div class="creator-name">MacroBioBoi</div>
+              <div class="creator-platform"><span>Twitch</span></div>
+              <div class="creator-desc">Mechanical theorycrafting live. Deep D4 &amp; D2R discussion with the community.</div>
+              <div class="creator-card-cta">→ Twitch Channel</div>
+            </div>
+          </a>
+          <a href="https://www.twitch.tv/raxxanterax" target="_blank" rel="noopener" class="creator-card" style="text-decoration:none;">
+            <div class="creator-card-media creator-media-blizz">
+              <img class="creator-card-shot" src="https://static-cdn.jtvnw.net/jtv_user_pictures/4e2e8391-8ba0-48cf-b1a8-310425507d55-profile_image-300x300.png" alt="Raxxanterax Twitch profile image" loading="lazy" decoding="async">
+              <span class="creator-media-badge">Twitch</span>
+            </div>
+            <div class="creator-card-body">
+              <div class="creator-name">Raxxanterax</div>
+              <div class="creator-platform"><span>Twitch</span></div>
+              <div class="creator-desc">Season prep, meta talk, build discussions, and patch reactions.</div>
+              <div class="creator-card-cta">→ Twitch Channel</div>
+            </div>
+          </a>
+          <a href="https://www.twitch.tv/wudijo" target="_blank" rel="noopener" class="creator-card" style="text-decoration:none;">
+            <div class="creator-card-media creator-media-rhykker">
+              <img class="creator-card-shot" src="https://static-cdn.jtvnw.net/jtv_user_pictures/12dff549-033e-4571-92c3-043af0ccf4c3-profile_image-300x300.png" alt="wudijo Twitch profile image" loading="lazy" decoding="async">
+              <span class="creator-media-badge">Twitch</span>
+            </div>
+            <div class="creator-card-body">
+              <div class="creator-name">wudijo</div>
+              <div class="creator-platform"><span>Twitch</span></div>
+              <div class="creator-desc">High-end Hardcore play, class optimization, and endgame testing.</div>
+              <div class="creator-card-cta">→ Twitch Channel</div>
+            </div>
+          </a>
+          <a href="https://www.twitch.tv/datmodz" target="_blank" rel="noopener" class="creator-card" style="text-decoration:none;">
+            <div class="creator-card-media creator-media-blizz">
+              <img class="creator-card-shot" src="https://static-cdn.jtvnw.net/jtv_user_pictures/4eba575d-40ce-44bb-aaad-a7706d2cba78-profile_image-300x300.png" alt="DatModz Twitch profile image" loading="lazy" decoding="async">
+              <span class="creator-media-badge">Twitch</span>
+            </div>
+            <div class="creator-card-body">
+              <div class="creator-name">DatModz</div>
+              <div class="creator-platform"><span>Twitch</span></div>
+              <div class="creator-desc">Season prep, patch breakdowns, and community Q&amp;A.</div>
+              <div class="creator-card-cta">→ Twitch Channel</div>
+            </div>
+          </a>
+          <a href="https://www.twitch.tv/p4wnyhof" target="_blank" rel="noopener" class="creator-card" style="text-decoration:none;">
+            <div class="creator-card-media creator-media-patriarch">
+              <img class="creator-card-shot" src="https://static-cdn.jtvnw.net/jtv_user_pictures/81fccfbe-fd95-4576-bdd0-e4ad4fb467db-profile_image-300x300.png" alt="P4wnyhof Twitch profile image" loading="lazy" decoding="async">
+              <span class="creator-media-badge">Twitch</span>
+            </div>
+            <div class="creator-card-body">
+              <div class="creator-name">P4wnyhof</div>
+              <div class="creator-platform"><span>Twitch</span></div>
+              <div class="creator-desc">Paladin-focused live play and class discussion.</div>
+              <div class="creator-card-cta">→ Twitch Channel</div>
+            </div>
           </a>
         </div>
       </div>
@@ -428,7 +396,7 @@
         <a href="tierlists.html" class="card" style="text-decoration:none;">
           <div class="card-icon">📊</div>
           <div class="card-title">Tier Lists</div>
-          <div class="card-desc">All S12 tier lists — endgame, speed farm, boss kill, leveling. Sources: Icy Veins, D4Builds, Mobalytics.</div>
+          <div class="card-desc">All S12 tier lists — endgame, speed farm, boss kill, leveling. Sources: Maxroll, Icy Veins, D4Builds, Mobalytics.</div>
           <span class="card-link">View Tier Lists →</span>
         </a>
         <a href="classes.html" class="card" style="text-decoration:none;">
@@ -448,6 +416,12 @@
           <div class="card-title">New Player Guide</div>
           <div class="card-desc">From level 1 to endgame. Class picks, campaign path, first 10 hours, gear basics.</div>
           <span class="card-link">New Player Guide →</span>
+        </a>
+        <a href="videos.html" class="card" style="text-decoration:none;">
+          <div class="card-icon">🎥</div>
+          <div class="card-title">Video Hub</div>
+          <div class="card-desc">Curated D4 embeds for build guides, season updates, deep dives, and hidden gem videos.</div>
+          <span class="card-link">Watch Videos →</span>
         </a>
         <a href="tools.html" class="card" style="text-decoration:none;">
           <div class="card-icon">🛠️</div>
@@ -514,7 +488,7 @@
   <hr class="section-divider">
 
   <!-- ======= FOOTER ======= -->
-  <footer class="footer">
+    <footer class="footer">
     <div class="container">
       <div class="footer-content">
         <div class="footer-logo">
@@ -523,12 +497,13 @@
         </div>
 
         <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="resources.html">Resources</a>
+          <a href="crafting.html">Crafting &amp; Gear Guide</a>
           <a href="https://maxroll.gg/d4" target="_blank" rel="noopener">Maxroll</a>
           <a href="https://www.icy-veins.com/d4/" target="_blank" rel="noopener">Icy Veins</a>
           <a href="https://d4builds.gg/" target="_blank" rel="noopener">D4Builds</a>
           <a href="https://mobalytics.gg/diablo-4/builds" target="_blank" rel="noopener">Mobalytics</a>
-          <a href="resources.html">Full Resources</a>
-            <a href="crafting.html">Crafting &amp; Gear Guide</a>
         </div>
 
         <p class="footer-disclaimer">
@@ -540,103 +515,7 @@
     </div>
   </footer>
 
-  <script>
-    // Mobile menu
-    const hamburger = document.getElementById('hamburger');
-    const mobileMenu = document.getElementById('mobile-menu');
-    const mobileClose = document.getElementById('mobile-close');
-
-    // Desktop dropdowns — click to open/close
-    document.querySelectorAll('.nav-item').forEach(function(item) {
-      item.addEventListener('click', function(e) {
-        const dropdown = item.querySelector('.nav-dropdown');
-        if (!dropdown) return;
-        // Don't navigate if clicking a link directly
-        if (e.target.tagName === 'A') return;
-        // Toggle this dropdown
-        const isOpen = dropdown.classList.contains('open');
-        // Close all desktop dropdowns first
-        document.querySelectorAll('.nav-item .nav-dropdown').forEach(function(d) {
-          d.classList.remove('open');
-        });
-        if (!isOpen) {
-          dropdown.classList.add('open');
-        }
-      });
-    });
-
-    // Close desktop dropdowns when clicking outside
-    document.addEventListener('click', function(e) {
-      if (!e.target.closest('.nav-item')) {
-        document.querySelectorAll('.nav-item .nav-dropdown').forEach(function(d) {
-          d.classList.remove('open');
-        });
-      }
-    });
-
-    function openMobileMenu() {
-      mobileMenu.classList.add('open');
-      hamburger.classList.add('active');
-      hamburger.setAttribute('aria-expanded', 'true');
-      document.body.style.overflow = 'hidden';
-    }
-
-    function closeMobileMenu() {
-      mobileMenu.classList.remove('open');
-      hamburger.classList.remove('active');
-      hamburger.setAttribute('aria-expanded', 'false');
-      document.body.style.overflow = '';
-    }
-
-    hamburger.addEventListener('click', function() {
-      if (mobileMenu.classList.contains('open')) {
-        closeMobileMenu();
-      } else {
-        openMobileMenu();
-      }
-    });
-
-    mobileClose.addEventListener('click', closeMobileMenu);
-
-    // Mobile accordion dropdowns
-    function toggleMobileDropdown(trigger) {
-      const targetId = trigger.getAttribute('data-target');
-      const target = document.getElementById(targetId);
-      if (!target) return;
-      const isOpen = target.classList.contains('open');
-      // Close all
-      document.querySelectorAll('.mobile-dropdown').forEach(function(d) { d.classList.remove('open'); });
-      document.querySelectorAll('.mobile-nav-link[data-target]').forEach(function(l) {
-        l.querySelector('.nav-arrow') && (l.querySelector('.nav-arrow').style.transform = '');
-      });
-      if (!isOpen) {
-        target.classList.add('open');
-        trigger.querySelector('.nav-arrow') && (trigger.querySelector('.nav-arrow').style.transform = 'rotate(180deg)');
-      }
-    }
-
-    // Scroll spy — highlight active nav link
-    function updateActiveLink() {
-      const sections = document.querySelectorAll('section[id], header[id]');
-      const navLinks = document.querySelectorAll('.nav-link[href^="#"]');
-      let current = '';
-      sections.forEach(function(section) {
-        const rect = section.getBoundingClientRect();
-        if (rect.top <= 100 && rect.bottom > 100) {
-          current = section.getAttribute('id');
-        }
-      });
-      navLinks.forEach(function(link) {
-        link.classList.remove('active');
-        if (link.getAttribute('href') === '#' + current) {
-          link.classList.add('active');
-        }
-      });
-    }
-
-    window.addEventListener('scroll', updateActiveLink);
-    window.addEventListener('load', updateActiveLink);
-  </script>
-
+  <script src="nav.js"></script>
+  <script src="site-tools.js"></script>
 </body>
 </html>

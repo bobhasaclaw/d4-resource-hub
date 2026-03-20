@@ -13,210 +13,11 @@
 </head>
 <body>
   <!-- ======= STICKY NAVBAR ======= -->
-  <nav class="navbar" id="main-nav">
-    <div class="navbar-inner">
-      <!-- Logo -->
-      <a href="index.html" class="navbar-logo">⚔️ D4 Resource Hub</a>
-
-      <!-- Center Nav Links -->
-      <ul class="navbar-links">
-        <li class="nav-item">
-          <a href="index.html" class="nav-link">Home</a>
-        </li>
-
-        <!-- Builds Dropdown -->
-        <li class="nav-item">
-          <a href="resources.html" class="nav-link">Builds <span class="nav-arrow">▾</span></a>
-          <div class="nav-dropdown">
-            <a href="resources.html" class="dropdown-item">All Build Resources</a>
-            <div class="dropdown-divider"></div>
-            <a href="endgame-builds.html" class="dropdown-item">⚔️ Endgame Builds</a>
-            <a href="leveling-builds.html" class="dropdown-item">⭐ Leveling Builds</a>
-            <a href="speed-farming.html" class="dropdown-item">⚡ Speed Farming Builds</a>
-            <a href="boss-builds.html" class="dropdown-item">💀 Boss Killing Builds</a>
-            <div class="dropdown-divider"></div>
-            <a href="https://www.icy-veins.com/d4/guides/tier-lists/" class="dropdown-item dropdown-external" target="_blank" rel="noopener">Icy Veins Tier Lists →</a>
-            <a href="https://d4builds.gg/" class="dropdown-item dropdown-external" target="_blank" rel="noopener">D4Builds →</a>
-            <a href="https://mobalytics.gg/diablo-4/builds" class="dropdown-item dropdown-external" target="_blank" rel="noopener">Mobalytics Builds →</a>
-            <a href="https://maxroll.gg/d4" class="dropdown-item dropdown-external" target="_blank" rel="noopener">Maxroll →</a>
-          </div>
-        </li>
-
-        <li class="nav-item">
-          <a href="tierlists.html" class="nav-link">Tier Lists</a>
-        </li>
-
-        <!-- Classes Dropdown -->
-        <li class="nav-item">
-          <a href="#classes" class="nav-link">Classes <span class="nav-arrow">▾</span></a>
-          <div class="nav-dropdown">
-            <a href="classes.html" class="dropdown-item">Class Comparison</a>
-            <div class="dropdown-divider"></div>
-            <a href="https://www.icy-veins.com/d4/barbarian/builds/" class="dropdown-item dropdown-external" target="_blank" rel="noopener">Barbarian</a>
-            <a href="https://www.icy-veins.com/d4/druid/builds/" class="dropdown-item dropdown-external" target="_blank" rel="noopener">Druid</a>
-            <a href="https://www.icy-veins.com/d4/necromancer/builds/" class="dropdown-item dropdown-external" target="_blank" rel="noopener">Necromancer</a>
-            <a href="https://www.icy-veins.com/d4/paladin/builds/" class="dropdown-item dropdown-external" target="_blank" rel="noopener">Paladin</a>
-            <a href="https://www.icy-veins.com/d4/rogue/builds/" class="dropdown-item dropdown-external" target="_blank" rel="noopener">Rogue</a>
-            <a href="https://www.icy-veins.com/d4/sorcerer/builds/" class="dropdown-item dropdown-external" target="_blank" rel="noopener">Sorcerer</a>
-            <a href="https://www.icy-veins.com/d4/spiritborn/builds/" class="dropdown-item dropdown-external" target="_blank" rel="noopener">Spiritborn</a>
-            <div class="dropdown-divider"></div>
-            <a href="classes.html" class="dropdown-item" style="color: var(--gold-light); font-weight: 700;">⚔️ Class Comparison</a>
-            <div class="dropdown-divider"></div>
-            <span class="dropdown-item disabled">Warlock — Coming in Lord of Hatred</span>
-          </div>
-        </li>
-
-        <!-- Guides Dropdown -->
-        <li class="nav-item">
-          <a href="#guides" class="nav-link">Guides <span class="nav-arrow">▾</span></a>
-          <div class="nav-dropdown">
-              <a href="dungeons.html" class="dropdown-item">Dungeons &amp; Activities</a>
-            <a href="timeline.html" class="dropdown-item">Season Timeline</a>
-            <a href="crafting.html" class="dropdown-item">Crafting & Gear Guide</a>
-            <a href="creators.html" class="dropdown-item">Creator Directory</a>
-            <div class="dropdown-divider"></div>
-            <a href="https://www.icy-veins.com/d4/guides/capstone-dungeons-guide/" class="dropdown-item dropdown-external" target="_blank" rel="noopener">Capstone Dungeons</a>
-            <a href="https://www.icy-veins.com/d4/guides/the-butchers-lair/" class="dropdown-item dropdown-external" target="_blank" rel="noopener">Butcher's Lair</a>
-            <a href="https://www.icy-veins.com/d4/guides/vessel-of-hatred-overview/" class="dropdown-item dropdown-external" target="_blank" rel="noopener">Vessel of Hatred</a>
-            <a href="https://news.blizzard.com/en-us/article/24140808/diablo-iv-patch-notes" class="dropdown-item dropdown-external" target="_blank" rel="noopener">Official Patch Notes</a>
-          </div>
-        </li>
-
-        <li class="nav-item">
-          <a href="tools.html" class="nav-link">Tools</a>
-        </li>
-
-        <li class="nav-item">
-          <a href="season.html" class="nav-link">Season Info</a>
-        </li>
-
-        <li class="nav-item">
-          <a href="news.html" class="nav-link">News</a>
-        </li>
-
-        <li class="nav-item">
-          <a href="creators.html" class="nav-link">Creators</a>
-        </li>
-
-        <li class="nav-item">
-          <a href="communities.html" class="nav-link">Community</a>
-        </li>
-
-        <li class="nav-item">
-          <a href="resources.html" class="nav-link">All Resources</a>
-        </li>
-      </ul>
-
-      <!-- Right: Season Badge -->
-      <div class="navbar-right">
-        <div class="season-badge">
-          <span class="season-dot"></span>
-          Season 12 LIVE
-        </div>
-        <!-- Hamburger (mobile only) -->
-        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
-          <span class="hamburger-line"></span>
-          <span class="hamburger-line"></span>
-          <span class="hamburger-line"></span>
-        </button>
-      </div>
-    </div>
+    <nav class="navbar" id="main-nav">
+    <div class="navbar-inner"></div>
   </nav>
 
-  <!-- ======= MOBILE OVERLAY MENU ======= -->
-  <div class="mobile-menu" id="mobile-menu" role="dialog" aria-label="Navigation menu">
-    <div class="mobile-menu-header">
-      <a href="index.html" class="mobile-menu-logo">⚔️ D4 Resource Hub</a>
-      <button class="mobile-close" id="mobile-close" aria-label="Close menu">✕</button>
-    </div>
-
-    <ul class="mobile-nav-links">
-      <li>
-        <a href="index.html" class="mobile-nav-link no-arrow" onclick="closeMobileMenu()">Home</a>
-      </li>
-
-      <!-- Builds Accordion -->
-      <li>
-        <div class="mobile-nav-link" onclick="toggleMobileDropdown(this)" data-target="mobile-builds">
-          Builds <span class="nav-arrow">▾</span>
-        </div>
-        <div class="mobile-dropdown" id="mobile-builds">
-          <a href="resources.html" class="mobile-dropdown-item" onclick="closeMobileMenu()">All Build Resources</a>
-          <a href="endgame-builds.html" class="mobile-dropdown-item" onclick="closeMobileMenu()">Endgame Builds</a>
-          <a href="leveling-builds.html" class="mobile-dropdown-item" onclick="closeMobileMenu()">Leveling Builds</a>
-          <a href="speed-farming.html" class="mobile-dropdown-item" onclick="closeMobileMenu()">Speed Farming Builds</a>
-          <a href="boss-builds.html" class="mobile-dropdown-item" onclick="closeMobileMenu()">Boss Killing Builds</a>
-          <a href="https://www.icy-veins.com/d4/guides/tier-lists/" class="mobile-dropdown-item" target="_blank" rel="noopener">Icy Veins Tier Lists</a>
-          <a href="https://d4builds.gg/" class="mobile-dropdown-item" target="_blank" rel="noopener">D4Builds</a>
-          <a href="https://mobalytics.gg/diablo-4/builds" class="mobile-dropdown-item" target="_blank" rel="noopener">Mobalytics Builds</a>
-          <a href="https://maxroll.gg/d4" class="mobile-dropdown-item" target="_blank" rel="noopener">Maxroll</a>
-        </div>
-      </li>
-
-      <li>
-        <a href="tierlists.html" class="mobile-nav-link no-arrow" onclick="closeMobileMenu()">Tier Lists</a>
-      </li>
-
-      <!-- Classes Accordion -->
-      <li>
-        <div class="mobile-nav-link" onclick="toggleMobileDropdown(this)" data-target="mobile-classes">
-          Classes <span class="nav-arrow">▾</span>
-        </div>
-        <div class="mobile-dropdown" id="mobile-classes">
-          <a href="https://www.icy-veins.com/d4/barbarian/builds/" class="mobile-dropdown-item" target="_blank" rel="noopener">Barbarian</a>
-          <a href="https://www.icy-veins.com/d4/druid/builds/" class="mobile-dropdown-item" target="_blank" rel="noopener">Druid</a>
-          <a href="https://www.icy-veins.com/d4/necromancer/builds/" class="mobile-dropdown-item" target="_blank" rel="noopener">Necromancer</a>
-          <a href="https://www.icy-veins.com/d4/paladin/builds/" class="mobile-dropdown-item" target="_blank" rel="noopener">Paladin</a>
-          <a href="https://www.icy-veins.com/d4/rogue/builds/" class="mobile-dropdown-item" target="_blank" rel="noopener">Rogue</a>
-          <a href="https://www.icy-veins.com/d4/sorcerer/builds/" class="mobile-dropdown-item" target="_blank" rel="noopener">Sorcerer</a>
-          <a href="https://www.icy-veins.com/d4/spiritborn/builds/" class="mobile-dropdown-item" target="_blank" rel="noopener">Spiritborn</a>
-          <a href="classes.html" class="mobile-dropdown-item" style="color: var(--gold-light); font-weight: 700;" onclick="closeMobileMenu()">⚔️ Class Comparison</a>
-          <span class="mobile-dropdown-item disabled">Warlock — Coming in Lord of Hatred</span>
-        </div>
-      </li>
-
-      <!-- Guides Accordion -->
-      <li>
-        <div class="mobile-nav-link" onclick="toggleMobileDropdown(this)" data-target="mobile-guides">
-          Guides <span class="nav-arrow">▾</span>
-        </div>
-        <div class="mobile-dropdown" id="mobile-guides">
-          <a href="dungeons.html" class="mobile-dropdown-item" onclick="closeMobileMenu()">Dungeons &amp; Activities</a>
-          <a href="timeline.html" class="mobile-dropdown-item" onclick="closeMobileMenu()">Season Timeline</a>
-            <a href="crafting.html" class="mobile-dropdown-item" onclick="closeMobileMenu()">Crafting & Gear Guide</a>
-          <a href="creators.html" class="mobile-dropdown-item" onclick="closeMobileMenu()">Creator Directory</a>
-          <a href="https://www.icy-veins.com/d4/guides/capstone-dungeons-guide/" class="mobile-dropdown-item" target="_blank" rel="noopener">Capstone Dungeons</a>
-          <a href="https://www.icy-veins.com/d4/guides/the-butchers-lair/" class="mobile-dropdown-item" target="_blank" rel="noopener">Butcher's Lair</a>
-          <a href="https://www.icy-veins.com/d4/guides/vessel-of-hatred-overview/" class="mobile-dropdown-item" target="_blank" rel="noopener">Vessel of Hatred</a>
-          <a href="https://news.blizzard.com/en-us/article/24140808/diablo-iv-patch-notes" class="mobile-dropdown-item" target="_blank" rel="noopener">Official Patch Notes</a>
-        </div>
-      </li>
-
-      <li>
-        <a href="tools.html" class="mobile-nav-link no-arrow" onclick="closeMobileMenu()">Tools</a>
-      </li>
-      <li>
-        <a href="season.html" class="mobile-nav-link no-arrow" onclick="closeMobileMenu()">Season Info</a>
-      </li>
-      <li>
-        <a href="news.html" class="mobile-nav-link no-arrow" onclick="closeMobileMenu()">News</a>
-      </li>
-      <li>
-        <a href="creators.html" class="mobile-nav-link no-arrow" onclick="closeMobileMenu()">Creators</a>
-      </li>
-      <li>
-        <a href="communities.html" class="mobile-nav-link no-arrow" onclick="closeMobileMenu()">Community</a>
-      </li>
-      <li>
-        <a href="resources.html" class="mobile-nav-link no-arrow" onclick="closeMobileMenu()">All Resources</a>
-      </li>
-    </ul>
-
-    <div class="mobile-season-badge">
-      <span class="season-dot"></span>
-      Season 12: Season of Slaughter — LIVE
-    </div>
-  </div>
+  <div class="mobile-menu" id="mobile-menu"></div>
 
   <section class="hero">
     <div class="hero-badge"><span>👹</span> Season 12: Season of Slaughter</div>
@@ -228,6 +29,53 @@
       <div class="hero-fact"><span class="icon">👹</span> Play as The Butcher</div>
     </div>
     <a href="#mechanics" class="hero-cta">Season Mechanics <span>↓</span></a>
+  </section>
+
+  <section class="page-overview">
+    <div class="container">
+      <div class="page-overview-grid">
+        <div class="page-overview-card featured">
+          <div class="page-overview-kicker">Current Season</div>
+          <h3>Season of Slaughter is the live season</h3>
+          <p>Season 12 centers on a killstreak loop, Bloodied Items, and Butcher-themed content. Start here if you want the season in one glance.</p>
+          <div class="page-overview-actions">
+            <span class="overview-pill">Live Now</span>
+            <span class="overview-pill">Fresh Meat</span>
+          </div>
+        </div>
+        <div class="page-overview-card">
+          <div class="page-overview-kicker">What Matters</div>
+          <h3>Three systems define the season</h3>
+          <ul class="page-overview-list">
+            <li>Killstreaks reward aggressive play</li>
+            <li>Bloodied Items are the seasonal gear chase</li>
+            <li>The Butcher is the seasonal identity</li>
+          </ul>
+        </div>
+        <div class="page-overview-card">
+          <div class="page-overview-kicker">Use This Page For</div>
+          <h3>Quick planning and roadmap checks</h3>
+          <p>Use the overview to understand the current state, then drop into mechanics, new content, and the roadmap to plan your next session.</p>
+        </div>
+        <div class="page-overview-card">
+          <div class="page-overview-kicker">Next Milestone</div>
+          <h3>Lord of Hatred arrives April 28, 2026</h3>
+          <p>The roadmap below separates the confirmed expansion date from the season timing that Blizzard has not officially pinned down yet.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="page-actions-section">
+    <div class="container">
+      <div class="page-actions-bar">
+        <button type="button" class="page-action-button" data-copy-page-link>Copy Season Link</button>
+        <button type="button" class="page-action-button" data-share-page data-share-text="Season 12: Season of Slaughter roadmap, mechanics, and official timing for Diablo 4.">Share Season</button>
+        <button type="button" class="page-action-button" data-copy-summary data-copy-summary="Season 12: Season of Slaughter roadmap, mechanics, and official timing for Diablo 4.">Copy Summary</button>
+        <span class="page-action-note">Reviewed March 20, 2026</span>
+        <span class="page-action-feedback" aria-live="polite"></span>
+      </div>
+    </div>
   </section>
   <section id="overview">
     <div class="container">
@@ -338,11 +186,11 @@
       <div class="roadmap-timeline">
         <div class="roadmap-item"><div class="roadmap-date">March 11, 2026</div><div class="roadmap-event"><div class="roadmap-dot"></div><div class="roadmap-content"><h4>S12 — Season of Slaughter Starts</h4><p>Season 12 goes live with Killstreak mechanics, Bloodied Items, and The Butcher companion.</p></div></div></div>
         <div class="roadmap-item"><div class="roadmap-date">~April 2026</div><div class="roadmap-event"><div class="roadmap-dot"></div><div class="roadmap-content"><h4>Season Mid-Point</h4><p>First major balance patch. Meta builds solidify.</p></div></div></div>
-        <div class="roadmap-item roadmap-item-highlight"><div class="roadmap-date">April 28, 2026</div><div class="roadmap-event"><div class="roadmap-dot roadmap-dot-gold"></div><div class="roadmap-content"><h4>Lord of Hatred Expansion</h4><p>Warlock class, new Skovos region, Mephisto as endgame boss. S13 likely starts same day.</p></div></div></div>
-        <div class="roadmap-item"><div class="roadmap-date">~June 2026</div><div class="roadmap-event"><div class="roadmap-dot"></div><div class="roadmap-content"><h4>S12 Ends (~12-13 weeks)</h4><p>Season wraps up. Characters convert to Eternal.</p></div></div></div>
-        <div class="roadmap-item"><div class="roadmap-date">~June 2026</div><div class="roadmap-event"><div class="roadmap-dot"></div><div class="roadmap-content"><h4>S13 Begins</h4><p>New seasonal mechanics with Lord of Hatred content.</p></div></div></div>
+        <div class="roadmap-item roadmap-item-highlight"><div class="roadmap-date">April 28, 2026</div><div class="roadmap-event"><div class="roadmap-dot roadmap-dot-gold"></div><div class="roadmap-content"><h4>Lord of Hatred Expansion</h4><p>Official release date for the expansion. Blizzard has confirmed the Warlock class arrives at launch.</p></div></div></div>
+        <div class="roadmap-item"><div class="roadmap-date">Estimated</div><div class="roadmap-event"><div class="roadmap-dot"></div><div class="roadmap-content"><h4>Season 12 End Window</h4><p>Blizzard has not announced the exact end date for Season of Slaughter yet, so this should be treated as an estimate only.</p></div></div></div>
+        <div class="roadmap-item"><div class="roadmap-date">Estimated</div><div class="roadmap-event"><div class="roadmap-dot"></div><div class="roadmap-content"><h4>Season 13 Timing</h4><p>The next season is not officially scheduled yet. If Blizzard follows the usual cadence, it should land after the expansion window.</p></div></div></div>
       </div>
-      <div class="roadmap-note"><p><strong>Season Pattern:</strong> Every ~3-4 months. Expansions annually.</p></div>
+      <div class="roadmap-note"><p><strong>Season Pattern:</strong> Blizzard usually rotates seasons every few months, but exact dates are announced separately. Expansion timing is official; season-end timing here is an estimate.</p></div>
     </div>
   </section>
   <hr class="section-divider">
@@ -357,25 +205,32 @@
       </div>
     </div>
   </section>
-  <footer class="footer">
+    <footer class="footer">
     <div class="container">
       <div class="footer-content">
-        <div class="footer-logo"><span class="footer-logo-icon">🔥</span> Diablo 4 Resource Hub</div>
-        <div class="footer-links"><a href="https://maxroll.gg/d4" target="_blank" rel="noopener">Maxroll</a><a href="https://www.icy-veins.com/d4/" target="_blank" rel="noopener">Icy Veins</a><a href="https://d4builds.gg/" target="_blank" rel="noopener">D4Builds</a><a href="https://mobalytics.gg/diablo-4/builds" target="_blank" rel="noopener">Mobalytics</a><a href="resources.html">Resources</a><a href="crafting.html">Crafting</a></div>
-        <p class="footer-disclaimer">Not affiliated with Blizzard Entertainment. Fan-made resource hub.</p>
+        <div class="footer-logo">
+          <span class="footer-logo-icon">🔥</span>
+          Diablo 4 Resource Hub
+        </div>
+
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="resources.html">Resources</a>
+          <a href="crafting.html">Crafting &amp; Gear Guide</a>
+          <a href="https://maxroll.gg/d4" target="_blank" rel="noopener">Maxroll</a>
+          <a href="https://www.icy-veins.com/d4/" target="_blank" rel="noopener">Icy Veins</a>
+          <a href="https://d4builds.gg/" target="_blank" rel="noopener">D4Builds</a>
+          <a href="https://mobalytics.gg/diablo-4/builds" target="_blank" rel="noopener">Mobalytics</a>
+        </div>
+
+        <p class="footer-disclaimer">
+          Not affiliated with Blizzard Entertainment. Diablo 4 and all related content are trademarks of Blizzard Entertainment, Inc. This site is a fan-made resource hub for educational purposes.
+        </p>
+
         <p class="footer-updated">Last updated: March 20, 2026</p>
       </div>
     </div>
   </footer>
-  <script>
-    const hamburger=document.getElementById('hamburger'),mobileMenu=document.getElementById('mobile-menu'),mobileClose=document.getElementById('mobile-close');
-    function openMobileMenu(){mobileMenu.classList.add('open');hamburger.classList.add('active');hamburger.setAttribute('aria-expanded','true');document.body.style.overflow='hidden';}
-    function closeMobileMenu(){mobileMenu.classList.remove('open');hamburger.classList.remove('active');hamburger.setAttribute('aria-expanded','false');document.body.style.overflow='';}
-    hamburger.addEventListener('click',()=>{if(mobileMenu.classList.contains('open')){closeMobileMenu();}else{openMobileMenu();}});
-    mobileClose.addEventListener('click',closeMobileMenu);
-    document.querySelectorAll('.nav-item').forEach(item=>{item.addEventListener('click',e=>{const dropdown=item.querySelector('.nav-dropdown');if(!dropdown||e.target.tagName==='A')return;const isOpen=dropdown.classList.contains('open');document.querySelectorAll('.nav-dropdown').forEach(d=>d.classList.remove('open'));if(!isOpen)dropdown.classList.add('open');});});
-    document.addEventListener('click',e=>{if(!e.target.closest('.nav-item')){document.querySelectorAll('.nav-dropdown').forEach(d=>d.classList.remove('open'));}});
-  </script>
   <style>
     .season-overview-card{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden;max-width:860px;margin:0 auto}
     .season-overview-header{background:linear-gradient(135deg,var(--bg-card) 0%,rgba(230,57,70,0.12) 100%);border-bottom:1px solid var(--border);padding:1.5rem 2rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem}
@@ -431,5 +286,7 @@
     .link-card-arrow{font-size:1.25rem;color:var(--gold);transition:transform var(--transition)}
     .link-card:hover .link-card-arrow{transform:translateX(4px)}
   </style>
+  <script src="nav.js"></script>
+  <script src="site-tools.js"></script>
 </body>
 </html>
