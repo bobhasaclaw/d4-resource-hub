@@ -856,6 +856,34 @@
     const mobileMenu = document.getElementById('mobile-menu');
     const mobileClose = document.getElementById('mobile-close');
 
+    // Desktop dropdowns — click to open/close
+    document.querySelectorAll('.nav-item').forEach(function(item) {
+      item.addEventListener('click', function(e) {
+        const dropdown = item.querySelector('.nav-dropdown');
+        if (!dropdown) return;
+        // Don't navigate if clicking a link directly
+        if (e.target.tagName === 'A') return;
+        // Toggle this dropdown
+        const isOpen = dropdown.classList.contains('open');
+        // Close all desktop dropdowns first
+        document.querySelectorAll('.nav-item .nav-dropdown').forEach(function(d) {
+          d.classList.remove('open');
+        });
+        if (!isOpen) {
+          dropdown.classList.add('open');
+        }
+      });
+    });
+
+    // Close desktop dropdowns when clicking outside
+    document.addEventListener('click', function(e) {
+      if (!e.target.closest('.nav-item')) {
+        document.querySelectorAll('.nav-item .nav-dropdown').forEach(function(d) {
+          d.classList.remove('open');
+        });
+      }
+    });
+
     function openMobileMenu() {
       mobileMenu.classList.add('open');
       hamburger.classList.add('active');

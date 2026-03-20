@@ -112,7 +112,8 @@
   z-index: 1001;
 }
 
-.nav-item:hover .nav-dropdown {
+.nav-item:hover .nav-dropdown,
+.nav-item .nav-dropdown.open {
   opacity: 1;
   visibility: visible;
   pointer-events: all;
