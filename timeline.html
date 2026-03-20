@@ -480,4 +480,72 @@
         <div class="card" style="border: 2px solid #c9a227;">
           <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
             <h3 style="color: #c9a227;">🩸 Vessel of Hatred</h3>
-            <span class="season-badge" style="background
+            <span class="season-badge">Oct 7, 2024 — Current</span>          </div>
+          <p style="color: #b0b0c0; margin-bottom: 10px;">The first major expansion for Diablo 4.</p>
+          <ul style="color: #b0b0c0; margin-left: 20px; font-size: 0.9rem;">
+            <li>New region: <strong>Nahantu</strong> (Torajan Jungles)</li>
+            <li>New class: <strong>Spiritborn</strong></li>
+            <li>Mercenaries system</li>
+            <li>Runewords crafting</li>
+            <li>Dark Citadel (4-player co-op dungeon)</li>
+            <li>Level cap raised to 60</li>
+          </ul>
+        </div>
+        <div class="card" style="border: 2px solid #e63946;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+            <h3 style="color: #e63946;">💀 Lord of Hatred</h3>
+            <span class="season-badge" style="background: #e63946; color: #fff;">April 28, 2026</span>
+          </div>
+          <p style="color: #b0b0c0; margin-bottom: 10px;">The second major expansion. Confront Mephisto, Lord of Hatred.</p>
+          <ul style="color: #b0b0c0; margin-left: 20px; font-size: 0.9rem;">
+            <li>New region: <strong>Skovos</strong> (Ancient Islands)</li>
+            <li>New classes: <strong>Warlock + 1 more TBA</strong></li>
+            <li>Face Mephisto, Lord of Hatred</li>
+            <li>New Horadric Cube crafting</li>
+            <li>New campaign chapter</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= FOOTER ======= -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo"><span class="footer-logo-icon">🔥</span>D4 Resource Hub</div>
+        <div class="footer-links">
+          <a href="index.html">← Back to Home</a>
+          <a href="new-player.html">New Player Guide</a>
+          <a href="dungeons.html">Dungeons & Activities</a>
+          <a href="classes.html">Class Comparison</a>
+          <a href="https://maxroll.gg/d4" target="_blank" rel="noopener">Maxroll</a>
+          <a href="https://www.icy-veins.com/d4/" target="_blank" rel="noopener">Icy Veins</a>
+          <a href="https://d4builds.gg/" target="_blank" rel="noopener">D4Builds</a>
+        </div>
+        <p class="footer-disclaimer">Not affiliated with Blizzard Entertainment. Diablo 4 and all related content are trademarks of Blizzard Entertainment, Inc. This site is a fan-made resource hub for educational purposes.</p>
+        <p class="footer-updated">Last updated: March 20, 2026</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    var hamburger = document.getElementById('hamburger');
+    var mobileMenu = document.getElementById('mobile-menu');
+    var mobileClose = document.getElementById('mobile-close');
+    function openMobileMenu() { mobileMenu.classList.add('open'); hamburger.classList.add('active'); hamburger.setAttribute('aria-expanded', 'true'); document.body.style.overflow = 'hidden'; }
+    function closeMobileMenu() { mobileMenu.classList.remove('open'); hamburger.classList.remove('active'); hamburger.setAttribute('aria-expanded', 'false'); document.body.style.overflow = ''; }
+    hamburger.addEventListener('click', function() { if (mobileMenu.classList.contains('open')) { closeMobileMenu(); } else { openMobileMenu(); } });
+    mobileClose.addEventListener('click', closeMobileMenu);
+    function toggleMobileDropdown(trigger) {
+      var targetId = trigger.getAttribute('data-target');
+      var target = document.getElementById(targetId);
+      if (!target) return;
+      var isOpen = target.classList.contains('open');
+      document.querySelectorAll('.mobile-dropdown').forEach(function(d) { d.classList.remove('open'); });
+      document.querySelectorAll('.mobile-nav-link[data-target]').forEach(function(l) { if (l.querySelector('.nav-arrow')) l.querySelector('.nav-arrow').style.transform = ''; });
+      if (!isOpen) { target.classList.add('open'); if (trigger.querySelector('.nav-arrow')) trigger.querySelector('.nav-arrow').style.transform = 'rotate(180deg)'; }
+    }
+  </script>
+</body>
+</html>
