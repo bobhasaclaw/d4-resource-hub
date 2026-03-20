@@ -422,6 +422,509 @@ body {
 }
 
 /* ============================================
+   DUNGEONS & TIMELINE PAGE STYLES
+   ============================================ */
+
+/* HERO VARIANTS */
+.dungeon-hero {
+  background:
+    radial-gradient(ellipse at 50% 0%, rgba(230, 57, 70, 0.1) 0%, transparent 60%),
+    radial-gradient(ellipse at 50% 100%, rgba(201, 162, 39, 0.06) 0%, transparent 50%),
+    var(--bg-primary);
+}
+
+.timeline-hero {
+  background:
+    radial-gradient(ellipse at 50% 0%, rgba(201, 162, 39, 0.08) 0%, transparent 60%),
+    radial-gradient(ellipse at 50% 100%, rgba(230, 57, 70, 0.05) 0%, transparent 50%),
+    var(--bg-primary);
+}
+
+/* ACTIVITY CARDS */
+.activity-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  transition: all var(--transition);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.activity-card:hover {
+  border-color: var(--border-gold);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow), var(--shadow-gold);
+}
+
+.activity-card-s12 {
+  border-color: rgba(230, 57, 70, 0.3);
+  background: linear-gradient(135deg, var(--bg-card) 0%, rgba(230, 57, 70, 0.08) 100%);
+}
+
+.activity-card-s12:hover {
+  border-color: var(--red);
+  box-shadow: var(--shadow), 0 0 20px rgba(230, 57, 70, 0.2);
+}
+
+.activity-card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.activity-emoji {
+  font-size: 1.75rem;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.activity-card-header h3 {
+  font-size: 1.05rem;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.activity-card-desc {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  flex-grow: 1;
+}
+
+.activity-card-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: auto;
+}
+
+.activity-badge {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  background: rgba(201, 162, 39, 0.1);
+  color: var(--gold);
+  padding: 0.25rem 0.6rem;
+  border-radius: 4px;
+  border: 1px solid rgba(201, 162, 39, 0.2);
+  font-weight: 600;
+}
+
+.activity-badge-red {
+  background: rgba(230, 57, 70, 0.1);
+  color: var(--red);
+  border-color: rgba(230, 57, 70, 0.2);
+}
+
+.s12-tag {
+  display: inline-block;
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  background: var(--red);
+  color: #fff;
+  padding: 0.15rem 0.4rem;
+  border-radius: 3px;
+  vertical-align: middle;
+  margin-left: 0.4rem;
+  font-weight: 700;
+}
+
+/* INFO CARDS */
+.info-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  transition: all var(--transition);
+}
+
+.info-card:hover {
+  border-color: rgba(201, 162, 39, 0.2);
+}
+
+.info-card h3 {
+  font-size: 1.1rem;
+  color: var(--gold);
+  margin-bottom: 0.75rem;
+  font-family: 'Cinzel', serif;
+}
+
+.info-card h4 {
+  font-size: 0.95rem;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.info-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.info-list li {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  padding-left: 1.2rem;
+  position: relative;
+  line-height: 1.5;
+}
+
+.info-list li::before {
+  content: '•';
+  position: absolute;
+  left: 0.25rem;
+  color: var(--gold);
+  font-weight: 700;
+}
+
+.info-list.numbered {
+  counter-reset: step;
+}
+
+.info-list.numbered li {
+  counter-increment: step;
+  padding-left: 2rem;
+}
+
+.info-list.numbered li::before {
+  content: counter(step);
+  left: 0;
+  background: rgba(201, 162, 39, 0.15);
+  color: var(--gold);
+  font-size: 0.7rem;
+  font-weight: 700;
+  width: 1.3rem;
+  height: 1.3rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0.1rem;
+}
+
+/* TABLE SCROLL WRAPPER */
+.table-scroll {
+  overflow-x: auto;
+  border-radius: var(--radius);
+}
+
+/* DUNGEON TABLE */
+.dung-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--bg-card);
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid var(--border);
+  min-width: 500px;
+}
+
+.dung-table th {
+  background: var(--bg-secondary);
+  color: var(--gold);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+  white-space: nowrap;
+}
+
+.dung-table td {
+  padding: 0.7rem 1rem;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  vertical-align: middle;
+}
+
+.dung-table tr:last-child td {
+  border-bottom: none;
+}
+
+.dung-table tr:hover td {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.table-gold {
+  color: var(--gold);
+  font-weight: 600;
+}
+
+/* GUIDE LAYOUT */
+.guide-layout {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.guide-main {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.guide-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  position: sticky;
+  top: 80px;
+}
+
+/* SIDEBAR CARDS */
+.sidebar-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1rem;
+}
+
+.sidebar-card h4 {
+  font-size: 0.85rem;
+  color: var(--gold);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.75rem;
+  font-family: 'Cinzel', serif;
+}
+
+.affix-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.affix-list li {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.affix-pos {
+  color: #4ade80;
+  font-weight: 700;
+  min-width: 14px;
+}
+
+.affix-neg {
+  color: var(--red);
+  font-weight: 700;
+  min-width: 14px;
+}
+
+/* CARD GRID VARIANTS */
+.card-grid-2 {
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+}
+
+.card-grid-3 {
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+}
+
+/* SEASON CARDS (Timeline) */
+.timeline-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1.25rem;
+}
+
+.season-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 1.25rem;
+  transition: all var(--transition);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.season-card:hover {
+  border-color: var(--border-gold);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow);
+}
+
+.season-card-voh {
+  border-color: rgba(201, 162, 39, 0.3);
+  background: linear-gradient(135deg, var(--bg-card) 0%, rgba(201, 162, 39, 0.05) 100%);
+}
+
+.season-card-current {
+  border-color: rgba(230, 57, 70, 0.4);
+  background: linear-gradient(135deg, var(--bg-card) 0%, rgba(230, 57, 70, 0.1) 100%);
+  box-shadow: 0 0 20px rgba(230, 57, 70, 0.1);
+}
+
+.season-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.25rem;
+}
+
+.season-num {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  background: rgba(201, 162, 39, 0.15);
+  color: var(--gold);
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  font-weight: 700;
+}
+
+.season-era {
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+}
+
+.season-card h3 {
+  font-size: 1rem;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.season-card-dates {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+.season-card-mechanic {
+  font-size: 0.825rem;
+  color: var(--text-secondary);
+  line-height: 1.4;
+  margin: 0;
+}
+
+.season-card-note {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 4px;
+  padding: 0.4rem 0.6rem;
+  border-left: 2px solid var(--gold);
+  margin-top: 0.25rem;
+  line-height: 1.4;
+}
+
+/* ASCII TIMELINE */
+.timeline-ascii {
+  background: var(--bg-primary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem 1.5rem;
+  font-family: 'Courier New', monospace;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  overflow-x: auto;
+  white-space: pre;
+  margin: 0;
+}
+
+/* LORD RELEASE INFO */
+.lord-release-info {
+  margin-top: 1.5rem;
+  padding: 1rem 1.25rem;
+  background: rgba(201, 162, 39, 0.08);
+  border: 1px solid rgba(201, 162, 39, 0.2);
+  border-radius: var(--radius);
+}
+
+.lord-release-info p {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+/* QUICK REFERENCE */
+.quickref-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  transition: all var(--transition);
+}
+
+.quickref-card:hover {
+  border-color: var(--border-gold);
+  transform: translateY(-2px);
+}
+
+.quickref-card h3 {
+  font-size: 1rem;
+  color: var(--gold);
+  margin-bottom: 0.75rem;
+  font-family: 'Cinzel', serif;
+}
+
+.quickref-card p {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  margin: 0 0 0.35rem 0;
+}
+
+/* COMPARISON GRID */
+.comparison-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.comparison-title {
+  font-size: 0.85rem;
+  color: var(--gold);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.75rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .guide-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .guide-sidebar {
+    position: static;
+  }
+
+  .comparison-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .timeline-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card-grid-2,
+  .card-grid-3 {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ============================================
    DIABLO 4 RESOURCE HUB — STYLES
    Dark, immersive D4 aesthetic
    ============================================ */
