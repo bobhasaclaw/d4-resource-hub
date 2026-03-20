@@ -1,4 +1,427 @@
 /* ============================================
+   NAVBAR — STICKY TOP NAV
+   ============================================ */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1000;
+  background: rgba(13, 13, 20, 0.95);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid #2a2a3e;
+  height: 64px;
+  transition: background 0.3s ease;
+}
+
+.navbar-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+/* LOGO */
+.navbar-logo {
+  font-family: 'Cinzel', serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--gold);
+  text-decoration: none;
+  white-space: nowrap;
+  flex-shrink: 0;
+  transition: color 0.25s ease, text-shadow 0.25s ease;
+  letter-spacing: 0.02em;
+}
+
+.navbar-logo:hover {
+  color: var(--gold-light);
+  text-shadow: 0 0 16px rgba(201, 162, 39, 0.5);
+}
+
+/* NAV LINKS */
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  position: relative;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  color: #c9a227;
+  font-size: 0.88rem;
+  font-weight: 600;
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: color 0.2s ease, background 0.2s ease;
+  white-space: nowrap;
+  letter-spacing: 0.01em;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #e0bc4a;
+  background: rgba(201, 162, 39, 0.1);
+  text-shadow: 0 0 12px rgba(201, 162, 39, 0.35);
+}
+
+.nav-arrow {
+  font-size: 0.65rem;
+  opacity: 0.7;
+  transition: transform 0.2s ease;
+}
+
+.nav-item:hover .nav-arrow {
+  transform: rotate(180deg);
+}
+
+/* DROPDOWN */
+.nav-dropdown {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 210px;
+  background: #16162a;
+  border: 1px solid #2a2a3e;
+  border-radius: 10px;
+  padding: 0.5rem;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.2s ease, visibility 0.2s ease, transform 0.2s ease;
+  transform: translateX(-50%) translateY(-6px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.7);
+  z-index: 1001;
+}
+
+.nav-item:hover .nav-dropdown {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+  transform: translateX(-50%) translateY(0);
+}
+
+.dropdown-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #a09080;
+  font-size: 0.85rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.15s ease, color 0.15s ease;
+  white-space: nowrap;
+}
+
+.dropdown-item:hover {
+  background: rgba(201, 162, 39, 0.12);
+  color: #e0bc4a;
+}
+
+.dropdown-item.disabled {
+  color: #4a4a5a;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.dropdown-item.disabled::before {
+  content: '🔒 ';
+  opacity: 0.5;
+}
+
+.dropdown-divider {
+  height: 1px;
+  background: #2a2a3e;
+  margin: 0.4rem 0;
+}
+
+.dropdown-external {
+  opacity: 0.6;
+  font-size: 0.75rem;
+}
+
+.dropdown-external::after {
+  content: ' ↗';
+  opacity: 0.5;
+}
+
+/* RIGHT SIDE */
+.navbar-right {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.season-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: rgba(230, 57, 70, 0.15);
+  border: 1px solid rgba(230, 57, 70, 0.4);
+  color: #ff6b7a;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  padding: 0.3rem 0.7rem;
+  border-radius: 50px;
+  white-space: nowrap;
+}
+
+.season-dot {
+  width: 7px;
+  height: 7px;
+  background: #e63946;
+  border-radius: 50%;
+  animation: season-pulse 1.4s ease-in-out infinite;
+  flex-shrink: 0;
+}
+
+@keyframes season-pulse {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(230, 57, 70, 0.6);
+    opacity: 1;
+  }
+  50% {
+    box-shadow: 0 0 0 6px rgba(230, 57, 70, 0);
+    opacity: 0.8;
+  }
+}
+
+/* HAMBURGER */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: 1px solid #2a2a3e;
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 8px;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.hamburger:hover {
+  background: rgba(201, 162, 39, 0.1);
+  border-color: var(--gold);
+}
+
+.hamburger-line {
+  width: 20px;
+  height: 2px;
+  background: var(--gold);
+  border-radius: 2px;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.hamburger.active .hamburger-line:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.hamburger.active .hamburger-line:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .hamburger-line:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* MOBILE OVERLAY */
+.mobile-menu {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(10, 10, 15, 0.98);
+  z-index: 999;
+  flex-direction: column;
+  padding: 0;
+  overflow-y: auto;
+}
+
+.mobile-menu.open {
+  display: flex;
+}
+
+.mobile-menu-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid #2a2a3e;
+  height: 64px;
+  flex-shrink: 0;
+}
+
+.mobile-menu-logo {
+  font-family: 'Cinzel', serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--gold);
+  text-decoration: none;
+}
+
+.mobile-close {
+  background: transparent;
+  border: 1px solid #2a2a3e;
+  border-radius: 8px;
+  color: var(--gold);
+  font-size: 1.2rem;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.mobile-close:hover {
+  background: rgba(201, 162, 39, 0.1);
+}
+
+.mobile-nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 1rem 0;
+  flex: 1;
+}
+
+.mobile-nav-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #c9a227;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.9rem 1.5rem;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(42, 42, 62, 0.5);
+  transition: background 0.15s ease, color 0.15s ease;
+  cursor: pointer;
+}
+
+.mobile-nav-link:hover {
+  background: rgba(201, 162, 39, 0.08);
+  color: #e0bc4a;
+}
+
+.mobile-nav-link.no-arrow {
+  justify-content: flex-start;
+  gap: 0.5rem;
+}
+
+.mobile-nav-link.no-arrow:hover {
+  background: rgba(201, 162, 39, 0.08);
+}
+
+.mobile-dropdown {
+  display: none;
+  background: rgba(22, 22, 42, 0.8);
+  border-bottom: 1px solid rgba(42, 42, 62, 0.5);
+}
+
+.mobile-dropdown.open {
+  display: block;
+}
+
+.mobile-dropdown-item {
+  display: block;
+  color: #a09080;
+  font-size: 0.9rem;
+  padding: 0.7rem 1.5rem 0.7rem 2.5rem;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(42, 42, 62, 0.3);
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.mobile-dropdown-item:hover {
+  background: rgba(201, 162, 39, 0.08);
+  color: #e0bc4a;
+}
+
+.mobile-dropdown-item.disabled {
+  color: #4a4a5a;
+  pointer-events: none;
+}
+
+.mobile-dropdown-item.disabled::before {
+  content: '🔒 ';
+}
+
+.mobile-section-label {
+  display: block;
+  color: #6a6055;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  padding: 1.5rem 1.5rem 0.5rem;
+}
+
+.mobile-season-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #ff6b7a;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 1rem 1.5rem;
+  border-top: 1px solid #2a2a3e;
+  margin-top: auto;
+}
+
+/* BODY PADDING FOR STICKY NAV */
+body {
+  padding-top: 64px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .navbar-links {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-logo {
+    font-size: 0.95rem;
+  }
+
+  .season-badge {
+    font-size: 0.65rem;
+    padding: 0.25rem 0.5rem;
+  }
+}
+
+/* ============================================
    DIABLO 4 RESOURCE HUB — STYLES
    Dark, immersive D4 aesthetic
    ============================================ */
