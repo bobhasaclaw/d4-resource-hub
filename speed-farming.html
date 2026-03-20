@@ -73,3 +73,522 @@
       </div>
     </div>
   </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <div class="mobile-menu-header">
+      <a href="index.html" class="mobile-menu-logo">⚔️ D4 Resource Hub</a>
+      <button class="mobile-close" id="mobile-close" aria-label="Close menu">✕</button>
+    </div>
+    <ul class="mobile-nav-links">
+      <li><a href="index.html" class="mobile-nav-link" onclick="closeMobileMenu()">Home</a></li>
+      <li><a href="tierlists.html" class="mobile-nav-link" onclick="closeMobileMenu()">Tier Lists</a></li>
+      <li><a href="dungeons.html" class="mobile-nav-link" onclick="closeMobileMenu()">Dungeons</a></li>
+      <li><a href="crafting.html" class="mobile-nav-link" onclick="closeMobileMenu()">Crafting</a></li>
+      <li><a href="tools.html" class="mobile-nav-link" onclick="closeMobileMenu()">Tools</a></li>
+      <li><a href="season.html" class="mobile-nav-link" onclick="closeMobileMenu()">Season</a></li>
+      <li><a href="news.html" class="mobile-nav-link" onclick="closeMobileMenu()">News</a></li>
+      <li><a href="creators.html" class="mobile-nav-link" onclick="closeMobileMenu()">Creators</a></li>
+      <li><a href="communities.html" class="mobile-nav-link" onclick="closeMobileMenu()">Community</a></li>
+      <li><a href="resources.html" class="mobile-nav-link" onclick="closeMobileMenu()">Resources</a></li>
+    </ul>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero hero-page" id="top">
+    <div class="hero-badge"><span>⚡</span> Season 12: Season of Slaughter</div>
+    <h1 class="hero-title hero-title-lg">Diablo 4 Speed Farming Builds</h1>
+    <p class="hero-subtitle">Fastest ways to clear content and rack up XP, gold, and loot per hour. Every class ranked, every top build linked.</p>
+    <div class="hero-season-facts">
+      <div class="hero-fact"><span class="icon">⚡</span> S12 Killstreak System</div>
+      <div class="hero-fact"><span class="icon">🩸</span> Bloodied Items</div>
+      <div class="hero-fact"><span class="icon">👹</span> Speed Farm Tier List</div>
+    </div>
+    <a href="#tier-list" class="hero-cta">View Tier List ↓</a>
+  </section>
+
+  <!-- What Is Speed Farming -->
+  <section id="what-is">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">The Basics</p>
+        <h2>What Is Speed Farming?</h2>
+      </div>
+      <div class="info-block">
+        <p>Speed farming is about clearing content <strong>FAST</strong> — maximizing your <strong>XP/hour</strong>, <strong>gold/hour</strong>, and <strong>dungeon runs/hour</strong>. It differs from boss killing (single-target) or endgame push runs (high difficulty).</p>
+        <p>Speed farmers run <strong>lower-tier content very quickly</strong>, trading raw difficulty for volume. A Spiritborn clearing T40 in 90 seconds out-XP's a class taking 5 minutes on T60. The game is <strong>throughput and mobility</strong>.</p>
+        <p>In Season 12, the <strong>Killstreak system</strong> amplifies speed farming. Chain kills across rapid clears to build tiers (Killstreak → Carnage → Devastation → Bloodbath → Massacre), each awarding massive XP and reputation.</p>
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- Tier List Section -->
+  <section id="tier-list">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">Class Rankings</p>
+        <h2>Speed Farming Tier List — Season 12</h2>
+        <p class="section-desc">Every class rated for speed farming performance. Based on clear speed, mobility, and XP/gold per hour.</p>
+      </div>
+      <div class="tier-table-wrapper">
+        <table class="tier-table">
+          <thead>
+            <tr><th>Tier</th><th>Class</th><th>Speed Rating</th><th>Best Build</th><th>Key Strength</th></tr>
+          </thead>
+          <tbody>
+            <tr class="tier-s">
+              <td class="tier-badge s-badge">S</td>
+              <td><span class="class-pill spiritborn">Spiritborn</span></td>
+              <td class="speed-cell"><span class="speed-bar"><span style="width:98%"></span></span><span class="speed-value">98/100</span></td>
+              <td>Infinite Evade Eagle</td>
+              <td>Fastest overall — evade + AoE</td>
+            </tr>
+            <tr class="tier-s">
+              <td class="tier-badge s-badge">S</td>
+              <td><span class="class-pill rogue">Rogue</span></td>
+              <td class="speed-cell"><span class="speed-bar"><span style="width:93%"></span></span><span class="speed-value">93/100</span></td>
+              <td>Death Trap / Dance of Knives</td>
+              <td>Fastest clear, excellent mobility</td>
+            </tr>
+            <tr class="tier-s">
+              <td class="tier-badge s-badge">S</td>
+              <td><span class="class-pill paladin">Paladin</span></td>
+              <td class="speed-cell"><span class="speed-bar"><span style="width:88%"></span></span><span class="speed-value">88/100</span></td>
+              <td>Blessed Hammer / Auradin</td>
+              <td>Fast + safe — aura buffs</td>
+            </tr>
+            <tr class="tier-a">
+              <td class="tier-badge a-badge">A</td>
+              <td><span class="class-pill necromancer">Necromancer</span></td>
+              <td class="speed-cell"><span class="speed-bar"><span style="width:82%"></span></span><span class="speed-value">82/100</span></td>
+              <td>Bone Spirit / Corpse Explosion</td>
+              <td>Popular, safe, consistent</td>
+            </tr>
+            <tr class="tier-a">
+              <td class="tier-badge a-badge">A</td>
+              <td><span class="class-pill barbarian">Barbarian</span></td>
+              <td class="speed-cell"><span class="speed-bar"><span style="width:78%"></span></span><span class="speed-value">78/100</span></td>
+              <td>HotA / Upheaval</td>
+              <td>Strong when one-shotting mobs</td>
+            </tr>
+            <tr class="tier-a">
+              <td class="tier-badge a-badge">A</td>
+              <td><span class="class-pill sorcerer">Sorcerer</span></td>
+              <td class="speed-cell"><span class="speed-bar"><span style="width:76%"></span></span><span class="speed-value">76/100</span></td>
+              <td>Chain Lightning / Fireball</td>
+              <td>Mobile, safe ranged, good AoE</td>
+            </tr>
+            <tr class="tier-b">
+              <td class="tier-badge b-badge">B</td>
+              <td><span class="class-pill druid">Druid</span></td>
+              <td class="speed-cell"><span class="speed-bar"><span style="width:65%"></span></span><span class="speed-value">65/100</span></td>
+              <td>Wolf Companion / Pulverize</td>
+              <td>Decent but slower — playable</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="table-note"><strong>Note:</strong> Rankings reflect pure speed farming efficiency. All classes can complete content; S-Tier does it faster with less gear.</p>
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- Top Builds Section -->
+  <section id="top-builds">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">The Best Builds</p>
+        <h2>Top Speed Farming Builds — Season 12</h2>
+        <p class="section-desc">Every class with a viable speed farming build. Click links for full guides.</p>
+      </div>
+
+      <!-- Spiritborn -->
+      <div class="build-class-section">
+        <div class="build-class-header">
+          <span class="class-pill spiritborn">Spiritborn</span>
+          <span class="tier-badge s-badge">S-Tier</span>
+          <span class="build-class-note">Fastest overall class</span>
+        </div>
+        <div class="build-cards">
+          <div class="build-card">
+            <div class="build-card-header"><div class="build-name">Infinite Evade Eagle</div><span class="build-tag s-tag">Top Pick</span></div>
+            <div class="build-desc">Fastest clear in D4 S12. Quarterstaff + Glaive with near-permanent Evade immunity. Extremely safe and brainless — Eagle Spirit makes you untouchable while mowing through packs.</div>
+            <div class="build-meta"><span>⚡ Speed: <strong>Very Fast</strong></span><span>🛡️ Safety: <strong>Excellent</strong></span><span>🎯 Difficulty: <strong>Easy–Medium</strong></span></div>
+            <div class="build-links">
+              <a href="https://d4builds.gg/build-planner/" target="_blank" rel="noopener" class="build-link">D4Builds →</a>
+              <a href="https://mobalytics.gg/diablo-4/builds" target="_blank" rel="noopener" class="build-link">Mobalytics →</a>
+            </div>
+          </div>
+          <div class="build-card">
+            <div class="build-card-header"><div class="build-name">Quill Volley</div><span class="build-tag a-tag">Solid</span></div>
+            <div class="build-desc">Ranged spirit-based build. Good alternative for relaxed playstyle. Solid AoE with decent clear speed. Less mobile than Infinite Evade but still strong.</div>
+            <div class="build-meta"><span>⚡ Speed: <strong>Fast</strong></span><span>🛡️ Safety: <strong>Good</strong></span><span>🎯 Difficulty: <strong>Easy</strong></span></div>
+            <div class="build-links"><a href="https://www.icy-veins.com/d4/spiritborn/builds/" target="_blank" rel="noopener" class="build-link">Icy Veins →</a></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Rogue -->
+      <div class="build-class-section">
+        <div class="build-class-header">
+          <span class="class-pill rogue">Rogue</span>
+          <span class="tier-badge s-badge">S-Tier</span>
+          <span class="build-class-note">Fastest raw clear speed</span>
+        </div>
+        <div class="build-cards">
+          <div class="build-card">
+            <div class="build-card-header"><div class="build-name">Dance of Knives</div><span class="build-tag s-tag">Top Pick</span></div>
+            <div class="build-desc">Classic speed farm build — very fast, great AoE, high mobility. Dance of Knives fires rapidly while moving. M1PY's Mobalytics version is the reference.</div>
+            <div class="build-meta"><span>⚡ Speed: <strong>Very Fast</strong></span><span>🛡️ Safety: <strong>Moderate</strong></span><span>🎯 Difficulty: <strong>Medium</strong></span></div>
+            <div class="build-links">
+              <a href="https://mobalytics.gg/diablo-4/builds" target="_blank" rel="noopener" class="build-link">Mobalytics (M1PY) →</a>
+              <a href="https://www.icy-veins.com/d4/rogue/builds/" target="_blank" rel="noopener" class="build-link">Icy Veins →</a>
+            </div>
+          </div>
+          <div class="build-card">
+            <div class="build-card-header"><div class="build-name">Rapid Fire</div><span class="build-tag a-tag">Ranged</span></div>
+            <div class="build-desc">Ranged safety + strong speed. Consistent single-target and AoE while staying at range. Great for players avoiding mob packs. Still very fast on Nightmare Dungeons.</div>
+            <div class="build-meta"><span>⚡ Speed: <strong>Fast</strong></span><span>🛡️ Safety: <strong>Good</strong></span><span>🎯 Difficulty: <strong>Medium</strong></span></div>
+            <div class="build-links"><a href="https://www.icy-veins.com/d4/rogue/builds/" target="_blank" rel="noopener" class="build-link">Icy Veins →</a></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Paladin -->
+      <div class="build-class-section">
+        <div class="build-class-header">
+          <span class="class-pill paladin">Paladin</span>
+          <span class="tier-badge s-badge">S-Tier</span>
+          <span class="build-class-note">Fast + safe</span>
+        </div>
+        <div class="build-cards">
+          <div class="build-card">
+            <div class="build-card-header"><div class="build-name">Blessed Hammer</div><span class="build-tag s-tag">Top Pick</span></div>
+            <div class="build-desc">Fast-clear holy aura Paladin. Blessed Hammer spams AoE while aura buffs provide passive clear and defense. Auradin variant equally potent. Tanky + fast.</div>
+            <div class="build-meta"><span>⚡ Speed: <strong>Fast</strong></span><span>🛡️ Safety: <strong>Excellent</strong></span><span>🎯 Difficulty: <strong>Medium</strong></span></div>
+            <div class="build-links">
+              <a href="https://www.icy-veins.com/d4/paladin/builds/" target="_blank" rel="noopener" class="build-link">Icy Veins →</a>
+              <a href="https://d4builds.gg/build-planner/" target="_blank" rel="noopener" class="build-link">D4Builds →</a>
+            </div>
+          </div>
+          <div class="build-card">
+            <div class="build-card-header"><div class="build-name">Zealspin</div><span class="build-tag a-tag">Fast Spin</span></div>
+            <div class="build-desc">Spin-to-win Paladin — very fast melee AoE. AoElena's Mobalytics guide is the reference. Fast clears with high mobility. Tankier than Rogue.</div>
+            <div class="build-meta"><span>⚡ Speed: <strong>Fast</strong></span><span>🛡️ Safety: <strong>Very Good</strong></span><span>🎯 Difficulty: <strong>Medium</strong></span></div>
+            <div class="build-links"><a href="https://mobalytics.gg/diablo-4/builds" target="_blank" rel="noopener" class="build-link">Mobalytics (AoElena) →</a></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Necromancer -->
+      <div class="build-class-section">
+        <div class="build-class-header">
+          <span class="class-pill necromancer">Necromancer</span>
+          <span class="tier-badge a-badge">A-Tier</span>
+          <span class="build-class-note">Safe and consistent</span>
+        </div>
+        <div class="build-cards">
+          <div class="build-card">
+            <div class="build-card-header"><div class="build-name">Bone Spirit</div><span class="build-tag s-tag">Top Pick</span></div>
+            <div class="build-desc">Fast single-target to boss speed farm. Bone Spirit fires homing missiles deleting packs and bosses. Very popular for Pit and Nightmare Dungeons. Kay's Mobalytics version is reference.</div>
+            <div class="build-meta"><span>⚡ Speed: <strong>Fast</strong></span><span>🛡️ Safety: <strong>Good</strong></span><span>🎯 Difficulty: <strong>Medium</strong></span></div>
+            <div class="build-links">
+              <a href="https://mobalytics.gg/diablo-4/builds" target="_blank" rel="noopener" class="build-link">Mobalytics (Kay) →</a>
+              <a href="https://www.icy-veins.com/d4/necromancer/builds/" target="_blank" rel="noopener" class="build-link">Icy Veins →</a>
+            </div>
+          </div>
+          <div class="build-card">
+            <div class="build-card-header"><div class="build-name">Corpse Explosion</div><span class="build-tag a-tag">Classic</span></div>
+            <div class="build-desc">Classic necro speed farm — safe and fast. Corpse Explosion triggers chain reactions in dense areas. Excellent for Helltide and Nightmare Dungeons. Low skill floor.</div>
+            <div class="build-meta"><span>⚡ Speed: <strong>Fast</strong></span><span>🛡️ Safety: <strong>Good</strong></span><span>🎯 Difficulty: <strong>Easy–Medium</strong></span></div>
+            <div class="build-links"><a href="https://www.icy-veins.com/d4/necromancer/builds/" target="_blank" rel="noopener" class="build-link">Icy Veins →</a></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Barbarian -->
+      <div class="build-class-section">
+        <div class="build-class-header">
+          <span class="class-pill barbarian">Barbarian</span>
+          <span class="tier-badge a-badge">A-Tier</span>
+          <span class="build-class-note">Powerful when geared</span>
+        </div>
+        <div class="build-cards">
+          <div class="build-card">
+            <div class="build-card-header"><div class="build-name">Hammer of the Ancients</div><span class="build-tag s-tag">Top Pick</span></div>
+            <div class="build-desc">Massive single-target and AoE. Once you one-shot mobs, HotA deletes dungeons at extreme speed. Ground Stomp groups packs. D4Builds has the reference planner.</div>
+            <div class="build-meta"><span>⚡ Speed: <strong>Fast (gear-dependent)</strong></span><span>🛡️ Safety: <strong>Very Good</strong></span><span>🎯 Difficulty: <strong>Medium</strong></span></div>
+            <div class="build-links">
+              <a href="https://d4builds.gg/build-planner/" target="_blank" rel="noopener" class="build-link">D4Builds →</a>
+              <a href="https://www.icy-veins.com/d4/barbarian/builds/" target="_blank" rel="noopener" class="build-link">Icy Veins →</a>
+            </div>
+          </div>
+          <div class="build-card">
+            <div class="build-card-header"><div class="build-name">Upheaval</div><span class="build-tag a-tag">Mobile</span></div>
+            <div class="build-desc">Fast and mobile. Upheaval deals strong AoE on the move, chaining dungeon rooms without stopping. Good clear speed. Mobalytics has the reference.</div>
+            <div class="build-meta"><span>⚡ Speed: <strong>Fast</strong></span><span>🛡️ Safety: <strong>Good</strong></span><span>🎯 Difficulty: <strong>Medium</strong></span></div>
+            <div class="build-links"><a href="https://mobalytics.gg/diablo-4/builds" target="_blank" rel="noopener" class="build-link">Mobalytics →</a></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sorcerer -->
+      <div class="build-class-section">
+        <div class="build-class-header">
+          <span class="class-pill sorcerer">Sorcerer</span>
+          <span class="tier-badge a-badge">A-Tier</span>
+          <span class="build-class-note">Mobile ranged caster</span>
+        </div>
+        <div class="build-cards">
+          <div class="build-card">
+            <div class="build-card-header"><div class="build-name">Chain Lightning</div><span class="build-tag s-tag">Top Pick</span></div>
+            <div class="build-desc">Very fast, safe ranged build. Chain Lightning bounces through packs with excellent clear speed. Great for players wanting distance from danger. Icy Veins has the guide.</div>
+            <div class="build-meta"><span>⚡ Speed: <strong>Fast</strong></span><span>🛡️ Safety: <strong>Good</strong></span><span>🎯 Difficulty: <strong>Easy–Medium</strong></span></div>
+            <div class="build-links"><a href="https://www.icy-veins.com/d4/sorcerer/builds/" target="_blank" rel="noopener" class="build-link">Icy Veins →</a></div>
+          </div>
+          <div class="build-card">
+            <div class="build-card-header"><div class="build-name">Fireball</div><span class="build-tag a-tag">AoE</span></div>
+            <div class="build-desc">Good AoE, solid speed. Fireball provides consistent area damage with good cast speed. Safe ranged option that still clears quickly. Icy Veins reference available.</div>
+            <div class="build-meta"><span>⚡ Speed: <strong>Fast</strong></span><span>🛡️ Safety: <strong>Good</strong></span><span>🎯 Difficulty: <strong>Easy</strong></span></div>
+            <div class="build-links"><a href="https://www.icy-veins.com/d4/sorcerer/builds/" target="_blank" rel="noopener" class="build-link">Icy Veins →</a></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Druid -->
+      <div class="build-class-section">
+        <div class="build-class-header">
+          <span class="class-pill druid">Druid</span>
+          <span class="tier-badge b-badge">B-Tier</span>
+          <span class="build-class-note">Slower but viable</span>
+        </div>
+        <div class="build-cards">
+          <div class="build-card">
+            <div class="build-card-header"><div class="build-name">Wolf Companion</div><span class="build-tag a-tag">Top Pick</span></div>
+            <div class="build-desc">Decent speed, mobile. Wolf Companion provides summons that help clear while you move. Good for players who like pet builds. Icy Veins has the guide.</div>
+            <div class="build-meta"><span>⚡ Speed: <strong>Moderate</strong></span><span>🛡️ Safety: <strong>Good</strong></span><span>🎯 Difficulty: <strong>Medium</strong></span></div>
+            <div class="build-links"><a href="https://www.icy-veins.com/d4/druid/builds/" target="_blank" rel="noopener" class="build-link">Icy Veins →</a></div>
+          </div>
+          <div class="build-card">
+            <div class="build-card-header"><div class="build-name">Pulverize</div><span class="build-tag a-tag">Tanky</span></div>
+            <div class="build-desc">Tanky but slower. Pulverize deals strong AoE earth damage. Requires more gear investment than top tiers but still clears content effectively. D4Builds has the planner.</div>
+            <div class="build-meta"><span>⚡ Speed: <strong>Moderate</strong></span><span>🛡️ Safety: <strong>Very Good</strong></span><span>🎯 Difficulty: <strong>Medium–Hard</strong></span></div>
+            <div class="build-links"><a href="https://d4builds.gg/build-planner/" target="_blank" rel="noopener" class="build-link">D4Builds →</a></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- Section 4: Speed Farming Activities -->
+  <section id="activities">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">What To Farm</p>
+        <h2>Speed Farming Activities</h2>
+        <p class="section-desc">What to farm for maximum efficiency in Season 12.</p>
+      </div>
+      <div class="tier-table-wrapper">
+        <table class="tier-table">
+          <thead>
+            <tr><th>Activity</th><th>Best For</th><th>Recommended Classes</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Nightmare Dungeons (T30-50)</strong></td>
+              <td>XP + Loot</td>
+              <td>Spiritborn, Rogue, Paladin</td>
+            </tr>
+            <tr>
+              <td><strong>The Pit (T30-50)</strong></td>
+              <td>Paragon XP</td>
+              <td>Necromancer, Rogue</td>
+            </tr>
+            <tr>
+              <td><strong>Tree of Whispers</strong></td>
+              <td>Gold + XP</td>
+              <td>Any fast build</td>
+            </tr>
+            <tr>
+              <td><strong>Helltide</strong></td>
+              <td>Legendary drops</td>
+              <td>Any fast build</td>
+            </tr>
+            <tr>
+              <td><strong>World Boss events</strong></td>
+              <td>Free loot</td>
+              <td>Any build</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- Section 5: Best Zones -->
+  <section id="zones">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">Where To Farm</p>
+        <h2>Best Zones for Speed Farming</h2>
+      </div>
+      <div class="info-block">
+        <ul class="zone-list">
+          <li><strong>World Tier III-IV:</strong> Fastest runs for experienced players</li>
+          <li><strong>Nightmare Dungeons (T20-40):</strong> Lower tiers for pure speed farming</li>
+          <li><strong>Helltide zones (Cenner Witchwater, Kehjalin):</strong> Dense mob areas for maximum efficiency</li>
+          <li><strong>Kurast Undercity:</strong> Fast runs from Vessel of Hatred expansion</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- Section 6: Resources -->
+  <section id="resources">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">External Guides</p>
+        <h2>Speed Farming Resources</h2>
+      </div>
+      <div class="card-grid card-grid-3">
+        <a href="https://www.icy-veins.com/d4/guides/speed-farming-tier-list" target="_blank" rel="noopener" class="card" style="text-decoration:none;">
+          <div class="card-icon">📊</div>
+          <div class="card-title">Icy Veins Speed Farming Tier List</div>
+          <div class="card-desc">Comprehensive tier list for speed farming across all classes and builds.</div>
+          <span class="card-link">icy-veins.com →</span>
+        </a>
+        <a href="https://mobalytics.gg/diablo-4/builds" target="_blank" rel="noopener" class="card" style="text-decoration:none;">
+          <div class="card-icon">⚔️</div>
+          <div class="card-title">Mobalytics Speed Builds</div>
+          <div class="card-desc">Filter by speed farming to find the best builds for rapid clears.</div>
+          <span class="card-link">mobalytics.gg →</span>
+        </a>
+        <a href="https://d4builds.gg/build-planner/" target="_blank" rel="noopener" class="card" style="text-decoration:none;">
+          <div class="card-icon">🛠️</div>
+          <div class="card-title">D4Builds Build Planner</div>
+          <div class="card-desc">Plan and optimize your speed farming builds with detailed stats.</div>
+          <span class="card-link">d4builds.gg →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- Section 7: S12 Tips -->
+  <section id="tips">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">Pro Tips</p>
+        <h2>S12 Speed Farming Tips</h2>
+      </div>
+      <div class="info-block">
+        <ul class="tip-list">
+          <li><strong>Killstreak System:</strong> Chain kills for bonus XP while speed farming — build your streak before the timer expires</li>
+          <li><strong>Bloodied Sigils:</strong> Run faster than regular Nightmare Dungeons with guaranteed Bloodied Item drops</li>
+          <li><strong>Slaughterhouses:</strong> Bonus XP for Butcher kills — play as The Butcher for Fresh Meat currency</li>
+          <li><strong>Party Bonus:</strong> Join a party for +25% XP bonus when speed farming with others</li>
+          <li><strong>Tree of Whispers:</strong> Use caches for gold — efficient 10-15 minute activity</li>
+          <li><strong>Purveyor of Curiosities:</strong> Gamble for cheap item rolls to find upgrades</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <span class="footer-logo-icon">🔥</span>
+          Diablo 4 Resource Hub
+        </div>
+        <div class="footer-links">
+          <a href="https://maxroll.gg/d4" target="_blank" rel="noopener">Maxroll</a>
+          <a href="https://www.icy-veins.com/d4/" target="_blank" rel="noopener">Icy Veins</a>
+          <a href="https://d4builds.gg/" target="_blank" rel="noopener">D4Builds</a>
+          <a href="https://mobalytics.gg/diablo-4/builds" target="_blank" rel="noopener">Mobalytics</a>
+          <a href="resources.html">Full Resources</a>
+          <a href="crafting.html">Crafting &amp; Gear Guide</a>
+        </div>
+        <p class="footer-disclaimer">
+          Not affiliated with Blizzard Entertainment. Diablo 4 and all related content are trademarks of Blizzard Entertainment, Inc. This site is a fan-made resource hub.
+        </p>
+        <p class="footer-updated">Last updated: March 20, 2026</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const mobileClose = document.getElementById('mobile-close');
+
+    // Desktop dropdowns
+    document.querySelectorAll('.nav-item').forEach(function(item) {
+      item.addEventListener('click', function(e) {
+        const dropdown = item.querySelector('.nav-dropdown');
+        if (!dropdown) return;
+        if (e.target.tagName === 'A') return;
+        const isOpen = dropdown.classList.contains('open');
+        document.querySelectorAll('.nav-item .nav-dropdown').forEach(function(d) { d.classList.remove('open'); });
+        if (!isOpen) { dropdown.classList.add('open'); }
+      });
+    });
+
+    document.addEventListener('click', function(e) {
+      if (!e.target.closest('.nav-item')) {
+        document.querySelectorAll('.nav-item .nav-dropdown').forEach(function(d) { d.classList.remove('open'); });
+      }
+    });
+
+    function openMobileMenu() {
+      mobileMenu.classList.add('open');
+      hamburger.classList.add('active');
+      hamburger.setAttribute('aria-expanded', 'true');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeMobileMenu() {
+      mobileMenu.classList.remove('open');
+      hamburger.classList.remove('active');
+      hamburger.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    }
+
+    hamburger.addEventListener('click', function() {
+      if (mobileMenu.classList.contains('open')) { closeMobileMenu(); } else { openMobileMenu(); }
+    });
+
+    mobileClose.addEventListener('click', closeMobileMenu);
+
+    // Mobile accordion
+    function toggleMobileDropdown(trigger) {
+      const targetId = trigger.getAttribute('data-target');
+      const target = document.getElementById(targetId);
+      if (!target) return;
+      const isOpen = target.classList.contains('open');
+      document.querySelectorAll('.mobile-dropdown').forEach(function(d) { d.classList.remove('open'); });
+      document.querySelectorAll('.mobile-nav-link[data-target]').forEach(function(l) {
+        l.querySelector('.nav-arrow') && (l.querySelector('.nav-arrow').style.transform = '');
+      });
+      if (!isOpen) {
+        target.classList.add('open');
+        trigger.querySelector('.nav-arrow') && (trigger.querySelector('.nav-arrow').style.transform = 'rotate(180deg)');
+      }
+    }
+  </script>
+
+</body>
+</html>

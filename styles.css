@@ -3413,3 +3413,227 @@ section {
   color: var(--text-muted);
   margin-top: 0.1rem;
 }
+
+/* ============================================
+   SPEED FARMING PAGE — Custom Components
+   ============================================ */
+
+/* Hero page variant */
+.hero-page {
+  padding-top: 6rem;
+  padding-bottom: 4rem;
+}
+
+.hero-title-lg {
+  font-size: clamp(2rem, 5vw, 3.5rem) !important;
+}
+
+/* Info blocks (text sections) */
+.info-block {
+  background: rgba(20, 20, 35, 0.8);
+  border: 1px solid #2a2a3e;
+  border-radius: 12px;
+  padding: 1.5rem 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.info-block p {
+  color: #d4d4e0;
+  line-height: 1.75;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+.info-block p:last-child { margin-bottom: 0; }
+
+/* Table note */
+.table-note {
+  text-align: center;
+  color: #8888a0;
+  font-size: 0.82rem;
+  margin-top: 1rem;
+  font-style: italic;
+}
+
+/* Class pills */
+.class-pill {
+  display: inline-block;
+  padding: 0.2rem 0.7rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: #fff;
+}
+
+.class-pill.spiritborn { background: #6d28d9; }
+.class-pill.rogue      { background: #b45309; }
+.class-pill.paladin    { background: #1d4ed8; }
+.class-pill.necromancer { background: #065f46; }
+.class-pill.barbarian { background: #9f1239; }
+.class-pill.sorcerer  { background: #0e7490; }
+.class-pill.druid     { background: #3f6212; }
+
+/* Tier badges */
+.tier-badge {
+  display: inline-block;
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+}
+
+.s-badge { background: #fbbf24; color: #1a1a2e; }
+.a-badge { background: #60a5fa; color: #1a1a2e; }
+.b-badge { background: #34d399; color: #1a1a2e; }
+
+/* Build tag */
+.build-tag {
+  display: inline-block;
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+.s-tag { background: rgba(251, 191, 36, 0.2); color: #fbbf24; border: 1px solid rgba(251,191,36,0.3); }
+.a-tag { background: rgba(96, 165, 250, 0.15); color: #60a5fa; border: 1px solid rgba(96,165,250,0.3); }
+.b-tag { background: rgba(52, 211, 153, 0.15); color: #34d399; border: 1px solid rgba(52,211,153,0.3); }
+
+/* Speed bar in tier table */
+.speed-cell { white-space: nowrap; }
+.speed-bar {
+  display: inline-block;
+  width: 80px;
+  height: 6px;
+  background: #2a2a3e;
+  border-radius: 3px;
+  vertical-align: middle;
+  margin-right: 6px;
+}
+.speed-bar span {
+  display: block;
+  height: 100%;
+  border-radius: 3px;
+  background: linear-gradient(90deg, #c9a227, #fbbf24);
+}
+.speed-value {
+  font-size: 0.75rem;
+  color: #c9a227;
+  font-weight: 600;
+}
+
+/* Tier table row colors */
+tr.tier-s td { background: rgba(251, 191, 36, 0.04); }
+tr.tier-a td { background: rgba(96, 165, 250, 0.04); }
+tr.tier-b td { background: rgba(52, 211, 153, 0.04); }
+
+/* Build section */
+.build-class-section {
+  margin-bottom: 2.5rem;
+  padding: 1.5rem;
+  background: rgba(15, 15, 25, 0.6);
+  border: 1px solid #2a2a3e;
+  border-radius: 14px;
+}
+
+.build-class-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.build-class-note {
+  font-size: 0.82rem;
+  color: #8888a0;
+  font-style: italic;
+}
+
+.build-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1rem;
+}
+
+.build-card {
+  background: rgba(20, 20, 35, 0.9);
+  border: 1px solid #333350;
+  border-radius: 10px;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  transition: border-color 0.2s;
+}
+
+.build-card:hover { border-color: #c9a227; }
+
+.build-card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.build-name {
+  font-family: 'Cinzel', serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #e0c060;
+}
+
+.build-desc {
+  font-size: 0.85rem;
+  color: #c0c0d0;
+  line-height: 1.6;
+}
+
+.build-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  font-size: 0.78rem;
+  color: #a0a0b8;
+  margin-top: 0.25rem;
+}
+
+.build-links {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-top: auto;
+  padding-top: 0.5rem;
+}
+
+.build-link {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #c9a227;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.build-link:hover { color: #fbbf24; text-decoration: underline; }
+
+/* Zone and tip lists */
+.zone-list, .tip-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.zone-list li, .tip-list li {
+  padding: 0.6rem 1rem;
+  background: rgba(20, 20, 35, 0.7);
+  border-left: 3px solid #c9a227;
+  color: #d4d4e0;
+  font-size: 0.9rem;
+  border-radius: 0 6px 6px 0;
+}
