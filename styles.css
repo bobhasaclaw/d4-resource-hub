@@ -1655,3 +1655,605 @@ section {
     gap: 0.75rem;
   }
 }
+
+/* ======= CLASSES PAGE — NEW STYLES ======= */
+
+.hero-classes {
+  min-height: 70vh;
+  background:
+    radial-gradient(ellipse at 50% 0%, rgba(201, 162, 39, 0.12) 0%, transparent 55%),
+    radial-gradient(ellipse at 80% 50%, rgba(230, 57, 70, 0.06) 0%, transparent 40%),
+    var(--bg-primary);
+}
+
+.hero-classes-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+/* Tier List Container */
+.tier-list-container {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+}
+
+.tier-row {
+  display: flex;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid var(--border);
+  gap: 1.5rem;
+}
+
+.tier-row:last-child {
+  border-bottom: none;
+}
+
+.tier-row.tier-s { background: linear-gradient(90deg, rgba(201, 162, 39, 0.12) 0%, transparent 60%); }
+.tier-row.tier-a { background: rgba(26, 26, 46, 0.6); }
+.tier-row.tier-tbd { background: rgba(22, 22, 42, 0.4); }
+
+.tier-label {
+  font-family: 'Cinzel', serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  min-width: 70px;
+  flex-shrink: 0;
+}
+
+.tier-s .tier-label { color: var(--gold); }
+.tier-a .tier-label { color: #a0c4a0; }
+.tier-tbd .tier-label { color: var(--text-muted); }
+
+.tier-classes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.tier-class-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.35rem 0.75rem;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.s-tier {
+  background: rgba(201, 162, 39, 0.15);
+  color: var(--gold);
+  border: 1px solid rgba(201, 162, 39, 0.4);
+}
+
+.a-tier {
+  background: rgba(100, 160, 100, 0.12);
+  color: #8fbc8f;
+  border: 1px solid rgba(100, 160, 100, 0.3);
+}
+
+.tbd-tier {
+  background: rgba(106, 96, 85, 0.15);
+  color: var(--text-muted);
+  border: 1px solid rgba(106, 96, 85, 0.3);
+}
+
+.tier-note {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+.tier-explanation {
+  display: flex;
+  gap: 1rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border-gold);
+  border-radius: var(--radius-lg);
+  padding: 1.25rem;
+  align-items: flex-start;
+}
+
+.tier-explanation-icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+  margin-top: 0.1rem;
+}
+
+.tier-explanation strong {
+  color: var(--gold);
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.tier-explanation p {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* Class Overview Cards Grid */
+.class-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.25rem;
+}
+
+.class-overview-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  transition: all var(--transition);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.class-overview-card:hover {
+  border-color: var(--border-gold);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow), var(--shadow-gold);
+}
+
+.tier-s-card { border-left: 3px solid var(--gold); }
+.tier-a-card { border-left: 3px solid #7aab7a; }
+.tier-tbd-card { border-left: 3px solid var(--text-muted); opacity: 0.8; }
+
+.class-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.class-card-title-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.class-card-title-row h3 {
+  font-size: 1.1rem;
+  color: var(--text-primary);
+}
+
+.class-card-emoji {
+  font-size: 1.8rem;
+  line-height: 1;
+}
+
+.tier-badge {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 0.2rem 0.55rem;
+  border-radius: 50px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.badge-s { background: rgba(201, 162, 39, 0.15); color: var(--gold); border: 1px solid rgba(201, 162, 39, 0.4); }
+.badge-a { background: rgba(100, 160, 100, 0.12); color: #8fbc8f; border: 1px solid rgba(100, 160, 100, 0.3); }
+.badge-tbd { background: rgba(106, 96, 85, 0.12); color: var(--text-muted); border: 1px solid rgba(106, 96, 85, 0.3); }
+
+.class-card-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.difficulty {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+}
+
+.difficulty-easy { background: rgba(60, 160, 60, 0.15); color: #6fcf6f; border: 1px solid rgba(60, 160, 60, 0.3); }
+.difficulty-medium { background: rgba(201, 162, 39, 0.12); color: var(--gold); border: 1px solid rgba(201, 162, 39, 0.3); }
+.difficulty-hard { background: rgba(230, 120, 60, 0.15); color: #e8944a; border: 1px solid rgba(230, 120, 60, 0.3); }
+.difficulty-unknown { background: rgba(106, 96, 85, 0.12); color: var(--text-muted); border: 1px solid rgba(106, 96, 85, 0.3); }
+
+.playstyle-tag {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+.class-card-desc {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  flex-grow: 1;
+}
+
+.class-roles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.role {
+  font-size: 0.72rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  background: var(--bg-secondary);
+  color: var(--text-secondary);
+  border: 1px solid var(--border);
+}
+
+.role.solo { }
+.role.group { }
+.role.speed { }
+.role.boss { }
+
+.class-card-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  border-top: 1px solid var(--border);
+  padding-top: 0.75rem;
+}
+
+.detail-row {
+  display: flex;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+}
+
+.detail-label {
+  color: var(--text-muted);
+  min-width: 80px;
+  flex-shrink: 0;
+}
+
+.detail-value {
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+.class-card-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--gold);
+  text-decoration: none;
+  transition: color var(--transition);
+  margin-top: auto;
+}
+
+.class-card-link:hover {
+  color: var(--gold-light);
+}
+
+.class-card-link-internal {
+  color: var(--text-muted);
+}
+
+.class-card-link-internal:hover {
+  color: var(--gold);
+}
+
+/* Best For Table */
+.best-for-table-wrap {
+  overflow-x: auto;
+}
+
+.best-for-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--bg-card);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+
+.best-for-table th {
+  background: var(--bg-secondary);
+  color: var(--gold);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 0.85rem 1.25rem;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+}
+
+.best-for-table td {
+  padding: 0.85rem 1.25rem;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.best-for-table tr:last-child td {
+  border-bottom: none;
+}
+
+.best-for-table tr:hover td {
+  background: var(--bg-card-hover);
+}
+
+.best-class {
+  font-weight: 700;
+}
+
+.s-tier-text { color: var(--gold); }
+
+.runner-up {
+  color: var(--text-muted);
+}
+
+/* Difficulty Grid */
+.difficulty-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+.difficulty-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  transition: all var(--transition);
+}
+
+.difficulty-card:hover {
+  border-color: var(--border-gold);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow);
+}
+
+.diff-bar-wrap {
+  height: 6px;
+  background: var(--bg-secondary);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.diff-bar {
+  height: 100%;
+  border-radius: 3px;
+  transition: width 0.5s ease;
+}
+
+.diff-bar-easy { background: linear-gradient(90deg, #4caf50, #8bc34a); }
+.diff-bar-medium { background: linear-gradient(90deg, var(--gold), var(--gold-light)); }
+.diff-bar-hard { background: linear-gradient(90deg, #e8944a, #ff7043); }
+.diff-bar-unknown { background: var(--text-muted); }
+
+.diff-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.diff-name {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.diff-level {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.diff-stars {
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  color: var(--gold);
+}
+
+/* Weapons Table */
+.weapons-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--bg-card);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+
+.weapons-table th {
+  background: var(--bg-secondary);
+  color: var(--gold);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 0.85rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+}
+
+.weapons-table td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+
+.weapons-table tr:last-child td {
+  border-bottom: none;
+}
+
+.weapons-table tr:hover td {
+  background: var(--bg-card-hover);
+}
+
+/* Lore Grid */
+.lore-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.25rem;
+}
+
+.lore-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  transition: all var(--transition);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.lore-card:hover {
+  border-color: var(--border-gold);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow);
+}
+
+.lore-emoji {
+  font-size: 2rem;
+}
+
+.lore-card h3 {
+  font-size: 1rem;
+  color: var(--gold);
+}
+
+.lore-card p {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* Warlock Preview */
+.warlock-preview-card {
+  background: linear-gradient(135deg, var(--bg-card) 0%, var(--bg-secondary) 100%);
+  border: 1px solid rgba(230, 57, 70, 0.3);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 30px rgba(230, 57, 70, 0.08);
+}
+
+.warlock-preview-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 50% 0%, rgba(230, 57, 70, 0.06) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+.warlock-preview-badge {
+  display: inline-block;
+  background: rgba(230, 57, 70, 0.15);
+  color: #ff6b7a;
+  border: 1px solid rgba(230, 57, 70, 0.3);
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  padding: 0.25rem 0.7rem;
+  border-radius: 50px;
+  margin-bottom: 0.75rem;
+}
+
+.warlock-preview-card h3 {
+  color: var(--text-primary);
+  margin-bottom: 0.75rem;
+}
+
+.warlock-preview-card > p {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 1.25rem;
+}
+
+.warlock-highlights {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  background: var(--bg-primary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.warlock-highlight {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.warlock-note {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  font-style: italic;
+  margin-bottom: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .tier-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+
+  .tier-label {
+    min-width: auto;
+  }
+
+  .class-cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .difficulty-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .lore-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .best-for-table th,
+  .best-for-table td {
+    padding: 0.6rem 0.75rem;
+    font-size: 0.82rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .difficulty-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tier-class-badge {
+    font-size: 0.78rem;
+    padding: 0.3rem 0.6rem;
+  }
+
+  .hero-classes-meta {
+    font-size: 0.8rem;
+  }
+}
