@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diablo 4 News — D4 Resource Hub</title>
+  <meta name="description" content="Stay up to date with the latest Diablo 4 news, patch notes, season announcements, and community updates for Season 12: Season of Slaughter.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔥</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ======= STICKY NAVBAR ======= -->
+  <nav class="navbar" id="main-nav">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-logo">⚔️ D4 Resource Hub</a>
+
+      <ul class="navbar-links">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="resources.html" class="nav-link">Resources</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="new-player.html" class="nav-link">New Player</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="dungeons.html" class="nav-link">Dungeons</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="timeline.html" class="nav-link">Timeline</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="classes.html" class="nav-link">Classes</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="creators.html" class="nav-link">Creators</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="crafting.html" class="nav-link">Crafting</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="tierlists.html" class="nav-link">Tier Lists</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="tools.html" class="nav-link">Tools</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="season.html" class="nav-link">Season Info</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="news.html" class="nav-link active">News</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="communities.html" class="nav-link">Community</a>
+        </li>
+      </ul>
+
+      <div class="navbar-right">
+        <div class="season-badge">
+          <span class="season-dot"></span>
+          Season 12 LIVE
+        </div>
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ======= MOBILE OVERLAY MENU ======= -->
+  <div class="mobile-menu" id="mobile-menu" role="dialog" aria-label="Navigation menu">
+    <div class="mobile-menu-header">
+      <a href="index.html" class="mobile-menu-logo">⚔️ D4 Resource Hub</a>
+      <button class="mobile-close" id="mobile-close" aria-label="Close menu">✕</button>
+    </div>
+
+    <ul class="mobile-nav-links">
+      <li><a href="index.html" class="mobile-nav-link no-arrow" onclick="closeMobileMenu()">Home</a></li>
+      <li><a href="resources.html" class="mobile-nav-link no-arrow" onclick="closeMobileMenu()">Resources</a></li>
+      <li><a href="new-player.html" class="mobile-nav-link no-arrow" onclick="closeMobileMenu()">New Player</a></li>
+      <li><a href="dungeons.html" class="mobile-nav-link no-arrow" onclick="closeMobileMenu()">Dungeons</a></li>
+      <li><a href="timeline.html" class="mobile-nav-link no-arrow" onclick="closeMobileMenu()">Timeline</a></li>
+      <li><a href="classes.html" class="mobile-nav-link no-arrow" onclick="closeMobileMenu()">Classes</a></li>
+      <li><a href="creators.html" class="mobile-nav-link no-arrow" onclick="closeMobileMenu()">Creators</a></li>
+      <li><a href="crafting.html" class="mobile-nav-link no-arrow" onclick="closeMobileMenu()">Crafting</a></li>
+      <li><a href="tierlists.html" class="mobile-nav-link no-arrow" onclick="closeMobileMenu()">Tier Lists</a></li>
+      <li><a href="tools.html" class="mobile-nav-link no-arrow" onclick="closeMobileMenu()">Tools</a></li>
+      <li><a href="season.html" class="mobile-nav-link no-arrow" onclick="closeMobileMenu()">Season Info</a></li>
+      <li><a href="news.html" class="mobile-nav-link no-arrow" onclick="closeMobileMenu()">News</a></li>
+      <li><a href="communities.html" class="mobile-nav-link no-arrow" onclick="closeMobileMenu()">Community</a></li>
+    </ul>
+
+    <div class="mobile-season-badge">
+      <span class="season-dot"></span>
+      Season 12: Season of Slaughter — LIVE
+    </div>
+  </div>
+
+  <!-- ======= HERO ======= -->
+  <section class="hero">
+    <div class="hero-badge">
+      <span>📰</span> Stay Informed
+    </div>
+
+    <h1 class="hero-title">Diablo 4 News</h1>
+    <p class="hero-subtitle">Stay up to date with the latest D4 news, patch notes, and season announcements.</p>
+
+    <div class="hero-season-facts">
+      <div class="hero-fact">
+        <span class="icon">📋</span> Patch Notes
+      </div>
+      <div class="hero-fact">
+        <span class="icon">🔥</span> Season 12
+      </div>
+      <div class="hero-fact">
+        <span class="icon">🌐</span> Official Sources
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= SECTION 1: OFFICIAL NEWS SOURCES ======= -->
+  <section id="official-sources">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">Start Here</p>
+        <h2>Official News Sources</h2>
+        <p class="section-desc">The most reliable places to get D4 news directly from Blizzard or trusted community outlets.</p>
+      </div>
+
+      <div class="card-grid card-grid-3">
+        <a href="https://diablo.blizzard.com/en-us/" target="_blank" rel="noopener" class="card" style="text-decoration:none;">
+          <div class="card-icon">🏰</div>
+          <div class="card-title">Blizzard Official</div>
+          <div class="card-desc">The official Diablo 4 home — game news, expansion announcements, developer updates, and media directly from Blizzard Entertainment.</div>
+          <span class="card-link">diablo.blizzard.com/en-us</span>
+        </a>
+
+        <a href="https://news.blizzard.com/en-us/article/24140808/diablo-iv-patch-notes" target="_blank" rel="noopener" class="card" style="text-decoration:none;">
+          <div class="card-icon">📜</div>
+          <div class="card-title">Blizzard Patch Notes</div>
+          <div class="card-desc">Full patch notes for every D4 update — balance changes, bug fixes, new content, and season details straight from Blizzard.</div>
+          <span class="card-link">news.blizzard.com — Patch Notes</span>
+        </a>
+
+        <a href="https://www.icy-veins.com/d4/news/" target="_blank" rel="noopener" class="card" style="text-decoration:none;">
+          <div class="card-icon">❄️</div>
+          <div class="card-title">Icy Veins D4 News</div>
+          <div class="card-desc">Daily D4 news coverage — season announcements, community updates, expansion reveals, and everything happening in Sanctuary.</div>
+          <span class="card-link">icy-veins.com/d4/news</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- ======= SECTION 2: SEASON 12 NEWS HIGHLIGHTS ======= -->
+  <section id="s12-highlights">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">Season 12 Focus</p>
+        <h2>Season 12 News Highlights</h2>
+        <p class="section-desc">The biggest stories and coverage from the Season of Slaughter so far.</p>
+      </div>
+
+      <div class="info-card-grid">
+        <div class="info-card">
+          <div class="info-card-emoji">🌑</div>
+          <h3>Warlock Class Preview</h3>
+          <p>Coverage of the upcoming Warlock class — Diablo's iconic class returning in Lord of Hatred. Community speculation, datamines, and developer previews.</p>
+          <a href="https://www.icy-veins.com/d4/guides/vessel-of-hatred-overview/" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Icy Veins Coverage ↗</a>
+        </div>
+
+        <div class="info-card">
+          <div class="info-card-emoji">💀</div>
+          <h3>Killstreak System Details</h3>
+          <p>Everything about the new Killstreak mechanic — how to stack kills, the reward tier system (Killstreak → Carnage → Devastation → Bloodbath → Massacre), and bonus XP scaling.</p>
+          <a href="https://www.icy-veins.com/d4/guides/diablo-4-latest-season/" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Full Breakdown ↗</a>
+        </div>
+
+        <div class="info-card">
+          <div class="info-card-emoji">👹</div>
+          <h3>Butcher's Lair &amp; New Butcher Mechanics</h3>
+          <p>Butcher's Lair is now a permanent addition to the game. New Butcher Shrines in Helltides, new boss mechanics, and the ability to play AS The Butcher as a companion.</p>
+          <a href="https://www.icy-veins.com/d4/guides/the-butchers-lair/" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Butcher's Lair Guide ↗</a>
+        </div>
+
+        <div class="info-card">
+          <div class="info-card-emoji">🩸</div>
+          <h3>Bloodied Items Drop Mechanics</h3>
+          <p>How Bloodied Items work — world drop-only gear with Killstreak-powered affixes. Types: Rampage (armor), Feast (weapons), Hunger (jewelry). NOT craftable.</p>
+          <a href="https://www.icy-veins.com/d4/guides/diablo-4-latest-season/" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Mechanic Guide ↗</a>
+        </div>
+
+        <div class="info-card">
+          <div class="info-card-emoji">💎</div>
+          <h3>New Unique Items Added</h3>
+          <p>5 new unique items for Season 12 — The Butcher's Seals, Butcher's Chains, and The Butcher's Cleaver. Full drop locations, stats, and build implications.</p>
+          <a href="https://d4builds.gg/database/unique-loot-tables/" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Loot Tables ↗</a>
+        </div>
+
+        <div class="info-card">
+          <div class="info-card-emoji">☠️</div>
+          <h3>DOOM: The Dark Ages Collaboration</h3>
+          <p>Diablo 4 x DOOM: The Dark Ages crossover event. New cosmetics, themed content, and a limited-time Butcher PvP event in Fields of Hatred.</p>
+          <a href="https://www.icy-veins.com/d4/news/" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Full Coverage ↗</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- ======= SECTION 3: WHAT TO WATCH ======= -->
+  <section id="what-to-watch">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">Keep an Eye On</p>
+        <h2>What to Watch</h2>
+        <p class="section-desc">Key channels and resources to follow for the most current D4 news and updates.</p>
+      </div>
+
+      <div class="quickref-grid">
+        <div class="quickref-card">
+          <div class="quickref-card-emoji">🏰</div>
+          <h3>Blizzard's Official Channels</h3>
+          <p>Follow Blizzard's official Diablo channels for expansion announcements, major patch reveals, and the first look at new content. Check diablo.blizzard.com and the official @Diablo account.</p>
+        </div>
+
+        <div class="quickref-card">
+          <div class="quickref-card-emoji">❄️</div>
+          <h3>Icy Veins — Daily News</h3>
+          <p>The go-to community source for daily D4 coverage. Patch notes analysis, season previews, new item discoveries, and community meta shifts. Updated consistently throughout each season.</p>
+        </div>
+
+        <div class="quickref-card">
+          <div class="quickref-card-emoji">🗡️</div>
+          <h3>D4Builds — Seasonal Cheat Sheets</h3>
+          <p>D4Builds' cheat sheets are community-curated quick-reference guides for the current season. Updated regularly with the latest meta shifts and new mechanics.</p>
+        </div>
+
+        <div class="quickref-card">
+          <div class="quickref-card-emoji">🎙️</div>
+          <h3>Rob2628 — Community Updates</h3>
+          <p>Rob2628's YouTube and Twitch are the community's pulse on seasonal meta, build tier lists, and real-time testing of new mechanics. His S12 cheat sheet is the community benchmark.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= FOOTER ======= -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <span class="footer-logo-icon">🔥</span>
+          Diablo 4 Resource Hub
+        </div>
+
+        <div class="footer-links">
+          <a href="https://maxroll.gg/d4" target="_blank" rel="noopener">Maxroll</a>
+          <a href="https://www.icy-veins.com/d4/" target="_blank" rel="noopener">Icy Veins</a>
+          <a href="https://d4builds.gg/" target="_blank" rel="noopener">D4Builds</a>
+          <a href="https://mobalytics.gg/diablo-4/builds" target="_blank" rel="noopener">Mobalytics</a>
+          <a href="resources.html">Full Resources</a>
+          <a href="crafting.html">Crafting &amp; Gear Guide</a>
+        </div>
+
+        <p class="footer-disclaimer">
+          Not affiliated with Blizzard Entertainment. Diablo 4 and all related content are trademarks of Blizzard Entertainment, Inc. This site is a fan-made resource hub for educational purposes.
+        </p>
+
+        <p class="footer-updated">Last updated: March 20, 2026</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const mobileClose = document.getElementById('mobile-close');
+
+    document.querySelectorAll('.nav-item').forEach(function(item) {
+      item.addEventListener('click', function(e) {
+        const dropdown = item.querySelector('.nav-dropdown');
+        if (!dropdown) return;
+        if (e.target.tagName === 'A') return;
+        const isOpen = dropdown.classList.contains('open');
+        document.querySelectorAll('.nav-item .nav-dropdown').forEach(function(d) {
+          d.classList.remove('open');
+        });
+        if (!isOpen) {
+          dropdown.classList.add('open');
+        }
+      });
+    });
+
+    document.addEventListener('click', function(e) {
+      if (!e.target.closest('.nav-item')) {
+        document.querySelectorAll('.nav-item .nav-dropdown').forEach(function(d) {
+          d.classList.remove('open');
+        });
+      }
+    });
+
+    function openMobileMenu() {
+      mobileMenu.classList.add('open');
+      hamburger.classList.add('active');
+      hamburger.setAttribute('aria-expanded', 'true');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeMobileMenu() {
+      mobileMenu.classList.remove('open');
+      hamburger.classList.remove('active');
+      hamburger.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    }
+
+    hamburger.addEventListener('click', function() {
+      if (mobileMenu.classList.contains('open')) {
+        closeMobileMenu();
+      } else {
+        openMobileMenu();
+      }
+    });
+
+    mobileClose.addEventListener('click', closeMobileMenu);
+
+    function toggleMobileDropdown(trigger) {
+      const targetId = trigger.getAttribute('data-target');
+      const target = document.getElementById(targetId);
+      if (!target) return;
+      const isOpen = target.classList.contains('open');
+      document.querySelectorAll('.mobile-dropdown').forEach(function(d) { d.classList.remove('open'); });
+      document.querySelectorAll('.mobile-nav-link[data-target]').forEach(function(l) {
+        l.querySelector('.nav-arrow') && (l.querySelector('.nav-arrow').style.transform = '');
+      });
+      if (!isOpen) {
+        target.classList.add('open');
+        trigger.querySelector('.nav-arrow') && (trigger.querySelector('.nav-arrow').style.transform = 'rotate(180deg)');
+      }
+    }
+
+    function updateActiveLink() {
+      const sections = document.querySelectorAll('section[id], header[id]');
+      const navLinks = document.querySelectorAll('.nav-link[href^="#"]');
+      let current = '';
+      sections.forEach(function(section) {
+        const rect = section.getBoundingClientRect();
+        if (rect.top <= 100 && rect.bottom > 100) {
+          current = section.getAttribute('id');
+        }
+      });
+      navLinks.forEach(function(link) {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === '#' + current) {
+          link.classList.add('active');
+        }
+      });
+    }
+
+    window.addEventListener('scroll', updateActiveLink);
+    window.addEventListener('load', updateActiveLink);
+  </script>
+
+  <style>
+    /* Info card grid */
+    .info-card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.25rem;
+    }
+
+    .info-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      transition: all var(--transition);
+    }
+
+    .info-card:hover {
+      border-color: var(--border-gold);
+      transform: translateY(-3px);
+      box-shadow: var(--shadow), var(--shadow-gold);
+    }
+
+    .info-card-emoji {
+      font-size: 1.75rem;
+      line-height: 1;
+    }
+
+    .info-card h3 {
+      font-size: 1rem;
+      color: var(--text-primary);
+      margin: 0;
+      font-family: 'Cinzel', serif;
+    }
+
+    .info-card p {
+      font-size: 0.875rem;
+      color: var(--text-secondary);
+      line-height: 1.55;
+      flex-grow: 1;
+      margin: 0;
+    }
+
+    /* Quickref grid */
+    .quickref-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 1.25rem;
+    }
+
+    .quickref-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 1.5rem;
+      transition: all var(--transition);
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+    }
+
+    .quickref-card:hover {
+      border-color: var(--border-gold);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow), var(--shadow-gold);
+    }
+
+    .quickref-card-emoji {
+      font-size: 1.5rem;
+      line-height: 1;
+    }
+
+    .quickref-card h3 {
+      font-size: 0.95rem;
+      color: var(--text-primary);
+      margin: 0;
+      font-family: 'Cinzel', serif;
+    }
+
+    .quickref-card p {
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      line-height: 1.5;
+      margin: 0;
+    }
+  </style>
+
+</body>
+</html>

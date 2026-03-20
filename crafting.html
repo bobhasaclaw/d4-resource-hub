@@ -16,11 +16,16 @@
   <!-- ======= STICKY NAVBAR ======= -->
   <nav class="navbar" id="main-nav">
     <div class="navbar-inner">
+      <!-- Logo -->
       <a href="index.html" class="navbar-logo">⚔️ D4 Resource Hub</a>
+
+      <!-- Center Nav Links -->
       <ul class="navbar-links">
         <li class="nav-item">
           <a href="index.html" class="nav-link">Home</a>
         </li>
+
+        <!-- Builds Dropdown -->
         <li class="nav-item">
           <a href="#builds" class="nav-link">Builds <span class="nav-arrow">▾</span></a>
           <div class="nav-dropdown">
@@ -31,9 +36,12 @@
             <a href="https://www.icy-veins.com/d4/guides/boss-killer-tier-list" class="dropdown-item dropdown-external" target="_blank" rel="noopener">Boss Killing</a>
           </div>
         </li>
+
         <li class="nav-item">
-          <a href="#tierlists" class="nav-link">Tier Lists</a>
+          <a href="tierlists.html" class="nav-link">Tier Lists</a>
         </li>
+
+        <!-- Classes Dropdown -->
         <li class="nav-item">
           <a href="#classes" class="nav-link">Classes <span class="nav-arrow">▾</span></a>
           <div class="nav-dropdown">
@@ -52,13 +60,15 @@
             <span class="dropdown-item disabled">Warlock — Coming in Lord of Hatred</span>
           </div>
         </li>
+
+        <!-- Guides Dropdown -->
         <li class="nav-item">
           <a href="#guides" class="nav-link">Guides <span class="nav-arrow">▾</span></a>
           <div class="nav-dropdown">
-            <a href="new-player.html" class="dropdown-item">New Player Guide</a>
-            <a href="dungeons.html" class="dropdown-item">Dungeons & Activities</a>
+              <a href="dungeons.html" class="dropdown-item">Dungeons &amp; Activities</a>
             <a href="timeline.html" class="dropdown-item">Season Timeline</a>
-            <a href="crafting.html" class="dropdown-item" style="color: var(--gold-light); font-weight: 700;">Crafting & Gear Guide</a>
+            <a href="crafting.html" class="dropdown-item">Crafting & Gear Guide</a>
+            <a href="creators.html" class="dropdown-item">Creator Directory</a>
             <div class="dropdown-divider"></div>
             <a href="https://www.icy-veins.com/d4/guides/capstone-dungeons-guide/" class="dropdown-item dropdown-external" target="_blank" rel="noopener">Capstone Dungeons</a>
             <a href="https://www.icy-veins.com/d4/guides/the-butchers-lair/" class="dropdown-item dropdown-external" target="_blank" rel="noopener">Butcher's Lair</a>
@@ -66,30 +76,39 @@
             <a href="https://news.blizzard.com/en-us/article/24140808/diablo-iv-patch-notes" class="dropdown-item dropdown-external" target="_blank" rel="noopener">Official Patch Notes</a>
           </div>
         </li>
+
         <li class="nav-item">
-          <a href="#tools" class="nav-link">Tools</a>
+          <a href="tools.html" class="nav-link">Tools</a>
         </li>
+
         <li class="nav-item">
-          <a href="#season" class="nav-link">Season Info</a>
+          <a href="season.html" class="nav-link">Season Info</a>
         </li>
+
         <li class="nav-item">
-          <a href="#news" class="nav-link">News</a>
+          <a href="news.html" class="nav-link">News</a>
         </li>
+
         <li class="nav-item">
-          <a href="#creators" class="nav-link">Creators</a>
+          <a href="creators.html" class="nav-link">Creators</a>
         </li>
+
         <li class="nav-item">
-          <a href="#communities" class="nav-link">Community</a>
+          <a href="communities.html" class="nav-link">Community</a>
         </li>
+
         <li class="nav-item">
           <a href="resources.html" class="nav-link">All Resources</a>
         </li>
       </ul>
+
+      <!-- Right: Season Badge -->
       <div class="navbar-right">
         <div class="season-badge">
           <span class="season-dot"></span>
           Season 12 LIVE
         </div>
+        <!-- Hamburger (mobile only) -->
         <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
           <span class="hamburger-line"></span>
           <span class="hamburger-line"></span>
@@ -105,10 +124,17 @@
       <a href="index.html" class="mobile-menu-logo">⚔️ D4 Resource Hub</a>
       <button class="mobile-close" id="mobile-close" aria-label="Close menu">✕</button>
     </div>
+
     <ul class="mobile-nav-links">
-      <li><a href="index.html" class="mobile-nav-link no-arrow" onclick="closeMobileMenu()">Home</a></li>
       <li>
-        <div class="mobile-nav-link" onclick="toggleMobileDropdown(this)" data-target="mobile-builds">Builds <span class="nav-arrow">▾</span></div>
+        <a href="index.html" class="mobile-nav-link no-arrow" onclick="closeMobileMenu()">Home</a>
+      </li>
+
+      <!-- Builds Accordion -->
+      <li>
+        <div class="mobile-nav-link" onclick="toggleMobileDropdown(this)" data-target="mobile-builds">
+          Builds <span class="nav-arrow">▾</span>
+        </div>
         <div class="mobile-dropdown" id="mobile-builds">
           <a href="#builds" class="mobile-dropdown-item" onclick="closeMobileMenu()">All Build Sites</a>
           <a href="https://www.icy-veins.com/d4/guides/endgame-tier-list" class="mobile-dropdown-item" target="_blank" rel="noopener">Endgame Builds</a>
@@ -117,9 +143,16 @@
           <a href="https://www.icy-veins.com/d4/guides/boss-killer-tier-list" class="mobile-dropdown-item" target="_blank" rel="noopener">Boss Killing</a>
         </div>
       </li>
-      <li><a href="#tierlists" class="mobile-nav-link no-arrow" onclick="closeMobileMenu()">Tier Lists</a></li>
+
       <li>
-        <div class="mobile-nav-link" onclick="toggleMobileDropdown(this)" data-target="mobile-classes">Classes <span class="nav-arrow">▾</span></div>
+        <a href="tierlists.html" class="mobile-nav-link no-arrow" onclick="closeMobileMenu()">Tier Lists</a>
+      </li>
+
+      <!-- Classes Accordion -->
+      <li>
+        <div class="mobile-nav-link" onclick="toggleMobileDropdown(this)" data-target="mobile-classes">
+          Classes <span class="nav-arrow">▾</span>
+        </div>
         <div class="mobile-dropdown" id="mobile-classes">
           <a href="https://www.icy-veins.com/d4/barbarian/builds/" class="mobile-dropdown-item" target="_blank" rel="noopener">Barbarian</a>
           <a href="https://www.icy-veins.com/d4/druid/builds/" class="mobile-dropdown-item" target="_blank" rel="noopener">Druid</a>
@@ -132,26 +165,44 @@
           <span class="mobile-dropdown-item disabled">Warlock — Coming in Lord of Hatred</span>
         </div>
       </li>
+
+      <!-- Guides Accordion -->
       <li>
-        <div class="mobile-nav-link" onclick="toggleMobileDropdown(this)" data-target="mobile-guides">Guides <span class="nav-arrow">▾</span></div>
+        <div class="mobile-nav-link" onclick="toggleMobileDropdown(this)" data-target="mobile-guides">
+          Guides <span class="nav-arrow">▾</span>
+        </div>
         <div class="mobile-dropdown" id="mobile-guides">
-          <a href="new-player.html" class="mobile-dropdown-item" onclick="closeMobileMenu()">New Player Guide</a>
-          <a href="dungeons.html" class="mobile-dropdown-item" onclick="closeMobileMenu()">Dungeons & Activities</a>
+          <a href="dungeons.html" class="mobile-dropdown-item" onclick="closeMobileMenu()">Dungeons &amp; Activities</a>
           <a href="timeline.html" class="mobile-dropdown-item" onclick="closeMobileMenu()">Season Timeline</a>
-          <a href="crafting.html" class="mobile-dropdown-item" style="color: var(--gold-light); font-weight: 700;" onclick="closeMobileMenu()">Crafting & Gear Guide</a>
+            <a href="crafting.html" class="mobile-dropdown-item" onclick="closeMobileMenu()">Crafting & Gear Guide</a>
+          <a href="creators.html" class="mobile-dropdown-item" onclick="closeMobileMenu()">Creator Directory</a>
           <a href="https://www.icy-veins.com/d4/guides/capstone-dungeons-guide/" class="mobile-dropdown-item" target="_blank" rel="noopener">Capstone Dungeons</a>
           <a href="https://www.icy-veins.com/d4/guides/the-butchers-lair/" class="mobile-dropdown-item" target="_blank" rel="noopener">Butcher's Lair</a>
           <a href="https://www.icy-veins.com/d4/guides/vessel-of-hatred-overview/" class="mobile-dropdown-item" target="_blank" rel="noopener">Vessel of Hatred</a>
           <a href="https://news.blizzard.com/en-us/article/24140808/diablo-iv-patch-notes" class="mobile-dropdown-item" target="_blank" rel="noopener">Official Patch Notes</a>
         </div>
       </li>
-      <li><a href="#tools" class="mobile-nav-link no-arrow" onclick="closeMobileMenu()">Tools</a></li>
-      <li><a href="#season" class="mobile-nav-link no-arrow" onclick="closeMobileMenu()">Season Info</a></li>
-      <li><a href="#news" class="mobile-nav-link no-arrow" onclick="closeMobileMenu()">News</a></li>
-      <li><a href="#creators" class="mobile-nav-link no-arrow" onclick="closeMobileMenu()">Creators</a></li>
-      <li><a href="#communities" class="mobile-nav-link no-arrow" onclick="closeMobileMenu()">Community</a></li>
-      <li><a href="resources.html" class="mobile-nav-link no-arrow" onclick="closeMobileMenu()">All Resources</a></li>
+
+      <li>
+        <a href="tools.html" class="mobile-nav-link no-arrow" onclick="closeMobileMenu()">Tools</a>
+      </li>
+      <li>
+        <a href="season.html" class="mobile-nav-link no-arrow" onclick="closeMobileMenu()">Season Info</a>
+      </li>
+      <li>
+        <a href="news.html" class="mobile-nav-link no-arrow" onclick="closeMobileMenu()">News</a>
+      </li>
+      <li>
+        <a href="creators.html" class="mobile-nav-link no-arrow" onclick="closeMobileMenu()">Creators</a>
+      </li>
+      <li>
+        <a href="communities.html" class="mobile-nav-link no-arrow" onclick="closeMobileMenu()">Community</a>
+      </li>
+      <li>
+        <a href="resources.html" class="mobile-nav-link no-arrow" onclick="closeMobileMenu()">All Resources</a>
+      </li>
     </ul>
+
     <div class="mobile-season-badge">
       <span class="season-dot"></span>
       Season 12: Season of Slaughter — LIVE

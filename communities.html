@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Communities — Diablo 4 Resource Hub</title>
+  <meta name="description" content="Join the Diablo 4 community — Discord servers, Reddit, YouTube channels, Twitch streams, forums, and the D4 Wiki.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔥</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ======= STICKY NAVBAR ======= -->
+  <nav class="navbar" id="main-nav">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-logo">⚔️ D4 Resource Hub</a>
+
+      <ul class="navbar-links">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link">Home</a>
+        </li>
+
+        <!-- Builds Dropdown -->
+        <li class="nav-item">
+          <a href="#builds" class="nav-link">Builds <span class="nav-arrow">▾</span></a>
+          <div class="nav-dropdown">
+            <a href="#builds" class="dropdown-item">All Build Sites</a>
+            <a href="https://www.icy-veins.com/d4/guides/endgame-tier-list" class="dropdown-item dropdown-external" target="_blank" rel="noopener">Endgame Builds</a>
+            <a href="https://d4builds.gg/leveling-guide" class="dropdown-item dropdown-external" target="_blank" rel="noopener">Leveling Builds</a>
+            <a href="https://www.icy-veins.com/d4/guides/speed-farming-tier-list" class="dropdown-item dropdown-external" target="_blank" rel="noopener">Speed Farming</a>
+            <a href="https://www.icy-veins.com/d4/guides/boss-killer-tier-list" class="dropdown-item dropdown-external" target="_blank" rel="noopener">Boss Killing</a>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <a href="tierlists.html" class="nav-link">Tier Lists</a>
+        </li>
+
+        <!-- Classes Dropdown -->
+        <li class="nav-item">
+          <a href="#classes" class="nav-link">Classes <span class="nav-arrow">▾</span></a>
+          <div class="nav-dropdown">
+            <a href="classes.html" class="dropdown-item">Class Comparison</a>
+            <div class="dropdown-divider"></div>
+            <a href="https://www.icy-veins.com/d4/barbarian/builds/" class="dropdown-item dropdown-external" target="_blank" rel="noopener">Barbarian</a>
+            <a href="https://www.icy-veins.com/d4/druid/builds/" class="dropdown-item dropdown-external" target="_blank" rel="noopener">Druid</a>
+            <a href="https://www.icy-veins.com/d4/necromancer/builds/" class="dropdown-item dropdown-external" target="_blank" rel="noopener">Necromancer</a>
+            <a href="https://www.icy-veins.com/d4/paladin/builds/" class="dropdown-item dropdown-external" target="_blank" rel="noopener">Paladin</a>
+            <a href="https://www.icy-veins.com/d4/rogue/builds/" class="dropdown-item dropdown-external" target="_blank" rel="noopener">Rogue</a>
+            <a href="https://www.icy-veins.com/d4/sorcerer/builds/" class="dropdown-item dropdown-external" target="_blank" rel="noopener">Sorcerer</a>
+            <a href="https://www.icy-veins.com/d4/spiritborn/builds/" class="dropdown-item dropdown-external" target="_blank" rel="noopener">Spiritborn</a>
+            <div class="dropdown-divider"></div>
+            <a href="classes.html" class="dropdown-item" style="color: var(--gold-light); font-weight: 700;">⚔️ Class Comparison</a>
+            <div class="dropdown-divider"></div>
+            <span class="dropdown-item disabled">Warlock — Coming in Lord of Hatred</span>
+          </div>
+        </li>
+
+        <!-- Guides Dropdown -->
+        <li class="nav-item">
+          <a href="#guides" class="nav-link">Guides <span class="nav-arrow">▾</span></a>
+          <div class="nav-dropdown">
+            <a href="dungeons.html" class="dropdown-item">Dungeons &amp; Activities</a>
+            <a href="timeline.html" class="dropdown-item">Season Timeline</a>
+            <a href="crafting.html" class="dropdown-item">Crafting &amp; Gear Guide</a>
+            <a href="creators.html" class="dropdown-item">Creator Directory</a>
+            <div class="dropdown-divider"></div>
+            <a href="https://www.icy-veins.com/d4/guides/capstone-dungeons-guide/" class="dropdown-item dropdown-external" target="_blank" rel="noopener">Capstone Dungeons</a>
+            <a href="https://www.icy-veins.com/d4/guides/the-butchers-lair/" class="dropdown-item dropdown-external" target="_blank" rel="noopener">Butcher's Lair</a>
+            <a href="https://www.icy-veins.com/d4/guides/vessel-of-hatred-overview/" class="dropdown-item dropdown-external" target="_blank" rel="noopener">Vessel of Hatred</a>
+            <a href="https://news.blizzard.com/en-us/article/24140808/diablo-iv-patch-notes" class="dropdown-item dropdown-external" target="_blank" rel="noopener">Official Patch Notes</a>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <a href="tools.html" class="nav-link">Tools</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="season.html" class="nav-link">Season Info</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="news.html" class="nav-link">News</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="creators.html" class="nav-link">Creators</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="communities.html" class="nav-link active">Community</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="resources.html" class="nav-link">All Resources</a>
+        </li>
+      </ul>
+
+      <div class="navbar-right">
+        <div class="season-badge">
+          <span class="season-dot"></span>
+          Season 12 LIVE
+        </div>
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ======= MOBILE OVERLAY MENU ======= -->
+  <div class="mobile-menu" id="mobile-menu" role="dialog" aria-label="Navigation menu">
+    <div class="mobile-menu-header">
+      <a href="index.html" class="mobile-menu-logo">⚔️ D4 Resource Hub</a>
+      <button class="mobile-close" id="mobile-close" aria-label="Close menu">✕</button>
+    </div>
+
+    <ul class="mobile-nav-links">
+      <li>
+        <a href="index.html" class="mobile-nav-link no-arrow" onclick="closeMobileMenu()">Home</a>
+      </li>
+
+      <!-- Builds Accordion -->
+      <li>
+        <div class="mobile-nav-link" onclick="toggleMobileDropdown(this)" data-target="mobile-builds">
+          Builds <span class="nav-arrow">▾</span>
+        </div>
+        <div class="mobile-dropdown" id="mobile-builds">
+          <a href="#builds" class="mobile-dropdown-item" onclick="closeMobileMenu()">All Build Sites</a>
+          <a href="https://www.icy-veins.com/d4/guides/endgame-tier-list" class="mobile-dropdown-item" target="_blank" rel="noopener">Endgame Builds</a>
+          <a href="https://d4builds.gg/leveling-guide" class="mobile-dropdown-item" target="_blank" rel="noopener">Leveling Builds</a>
+          <a href="https://www.icy-veins.com/d4/guides/speed-farming-tier-list" class="mobile-dropdown-item" target="_blank" rel="noopener">Speed Farming</a>
+          <a href="https://www.icy-veins.com/d4/guides/boss-killer-tier-list" class="mobile-dropdown-item" target="_blank" rel="noopener">Boss Killing</a>
+        </div>
+      </li>
+
+      <li>
+        <a href="tierlists.html" class="mobile-nav-link no-arrow" onclick="closeMobileMenu()">Tier Lists</a>
+      </li>
+
+      <!-- Classes Accordion -->
+      <li>
+        <div class="mobile-nav-link" onclick="toggleMobileDropdown(this)" data-target="mobile-classes">
+          Classes <span class="nav-arrow">▾</span>
+        </div>
+        <div class="mobile-dropdown" id="mobile-classes">
+          <a href="https://www.icy-veins.com/d4/barbarian/builds/" class="mobile-dropdown-item" target="_blank" rel="noopener">Barbarian</a>
+          <a href="https://www.icy-veins.com/d4/druid/builds/" class="mobile-dropdown-item" target="_blank" rel="noopener">Druid</a>
+          <a href="https://www.icy-veins.com/d4/necromancer/builds/" class="mobile-dropdown-item" target="_blank" rel="noopener">Necromancer</a>
+          <a href="https://www.icy-veins.com/d4/paladin/builds/" class="mobile-dropdown-item" target="_blank" rel="noopener">Paladin</a>
+          <a href="https://www.icy-veins.com/d4/rogue/builds/" class="mobile-dropdown-item" target="_blank" rel="noopener">Rogue</a>
+          <a href="https://www.icy-veins.com/d4/sorcerer/builds/" class="mobile-dropdown-item" target="_blank" rel="noopener">Sorcerer</a>
+          <a href="https://www.icy-veins.com/d4/spiritborn/builds/" class="mobile-dropdown-item" target="_blank" rel="noopener">Spiritborn</a>
+          <a href="classes.html" class="mobile-dropdown-item" style="color: var(--gold-light); font-weight: 700;" onclick="closeMobileMenu()">⚔️ Class Comparison</a>
+          <span class="mobile-dropdown-item disabled">Warlock — Coming in Lord of Hatred</span>
+        </div>
+      </li>
+
+      <!-- Guides Accordion -->
+      <li>
+        <div class="mobile-nav-link" onclick="toggleMobileDropdown(this)" data-target="mobile-guides">
+          Guides <span class="nav-arrow">▾</span>
+        </div>
+        <div class="mobile-dropdown" id="mobile-guides">
+          <a href="dungeons.html" class="mobile-dropdown-item" onclick="closeMobileMenu()">Dungeons &amp; Activities</a>
+          <a href="timeline.html" class="mobile-dropdown-item" onclick="closeMobileMenu()">Season Timeline</a>
+          <a href="crafting.html" class="mobile-dropdown-item" onclick="closeMobileMenu()">Crafting &amp; Gear Guide</a>
+          <a href="creators.html" class="mobile-dropdown-item" onclick="closeMobileMenu()">Creator Directory</a>
+          <a href="https://www.icy-veins.com/d4/guides/capstone-dungeons-guide/" class="mobile-dropdown-item" target="_blank" rel="noopener">Capstone Dungeons</a>
+          <a href="https://www.icy-veins.com/d4/guides/the-butchers-lair/" class="mobile-dropdown-item" target="_blank" rel="noopener">Butcher's Lair</a>
+          <a href="https://www.icy-veins.com/d4/guides/vessel-of-hatred-overview/" class="mobile-dropdown-item" target="_blank" rel="noopener">Vessel of Hatred</a>
+          <a href="https://news.blizzard.com/en-us/article/24140808/diablo-iv-patch-notes" class="mobile-dropdown-item" target="_blank" rel="noopener">Official Patch Notes</a>
+        </div>
+      </li>
+
+      <li>
+        <a href="tools.html" class="mobile-nav-link no-arrow" onclick="closeMobileMenu()">Tools</a>
+      </li>
+      <li>
+        <a href="season.html" class="mobile-nav-link no-arrow" onclick="closeMobileMenu()">Season Info</a>
+      </li>
+      <li>
+        <a href="news.html" class="mobile-nav-link no-arrow" onclick="closeMobileMenu()">News</a>
+      </li>
+      <li>
+        <a href="creators.html" class="mobile-nav-link no-arrow" onclick="closeMobileMenu()">Creators</a>
+      </li>
+      <li>
+        <a href="communities.html" class="mobile-nav-link no-arrow" onclick="closeMobileMenu()">Community</a>
+      </li>
+      <li>
+        <a href="resources.html" class="mobile-nav-link no-arrow" onclick="closeMobileMenu()">All Resources</a>
+      </li>
+    </ul>
+
+    <div class="mobile-season-badge">
+      <span class="season-dot"></span>
+      Season 12: Season of Slaughter — LIVE
+    </div>
+  </div>
+
+  <!-- ======= HERO ======= -->
+  <section class="hero" id="top">
+    <div class="hero-badge">
+      <span>💬</span> Community Hub
+    </div>
+    <h1 class="hero-title">Diablo 4 Communities</h1>
+    <p class="hero-subtitle">Join the D4 community — Discords, Reddit, YouTube, Twitch, and more.</p>
+
+    <div class="hero-season-facts">
+      <div class="hero-fact">
+        <span class="icon">💬</span> Discord Servers
+      </div>
+      <div class="hero-fact">
+        <span class="icon">📱</span> Subreddits
+      </div>
+      <div class="hero-fact">
+        <span class="icon">🎥</span> YouTube &amp; Twitch
+      </div>
+    </div>
+
+    <a href="#discord" class="hero-cta">
+      Find Your Community <span>↓</span>
+    </a>
+
+    <div class="hero-scroll-hint">
+      ↓ Scroll to explore
+    </div>
+  </section>
+
+  <!-- ======= DISCORD SERVERS ======= -->
+  <section id="discord">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">💬 Real-Time Chat</p>
+        <h2>Discord Servers</h2>
+        <p class="section-desc">The best Discord communities for D4 discussion, build help, meta analysis, and community runs.</p>
+      </div>
+
+      <div class="card-grid card-grid-2">
+        <!-- Official Diablo Discord -->
+        <a href="https://discord.gg/diablo" target="_blank" rel="noopener" class="card" style="text-decoration:none;">
+          <span class="card-tag">Official</span>
+          <div class="card-icon">🏢</div>
+          <div class="card-title">Official Diablo Discord</div>
+          <div class="card-desc">Official Blizzard-run Discord server. All Diablo titles share space here — dedicated D4 channels for news, game announcements, developer interactions, and community events.</div>
+          <div style="margin-top: 0.75rem; font-size: 0.78rem; color: var(--text-muted);">
+            <span style="color: var(--gold); font-weight: 600;">discord.gg/diablo</span> · ~2,078 members · 231 online
+          </div>
+          <div style="margin-top: 0.5rem; display: flex; flex-wrap: wrap; gap: 0.4rem;">
+            <span class="tier-cat">Official News</span>
+            <span class="tier-cat">Dev Interaction</span>
+            <span class="tier-cat">General D4 Discussion</span>
+          </div>
+          <span class="card-link">Join Server →</span>
+        </a>
+
+        <!-- D4Builds Discord -->
+        <a href="https://discord.gg/d4builds" target="_blank" rel="noopener" class="card" style="text-decoration:none;">
+          <span class="card-tag">Top Pick</span>
+          <div class="card-icon">🗡️</div>
+          <div class="card-title">D4Builds Discord</div>
+          <div class="card-desc">Associated with Rob2628's D4Builds. Build sharing, meta discussion, season coordination, loot tables, and D4Builds tool support. Great for getting help with any build.</div>
+          <div style="margin-top: 0.75rem; font-size: 0.78rem; color: var(--text-muted);">
+            <span style="color: var(--gold); font-weight: 600;">discord.gg/d4builds</span> · Rob2628 Community Hub
+          </div>
+          <div style="margin-top: 0.5rem; display: flex; flex-wrap: wrap; gap: 0.4rem;">
+            <span class="tier-cat">Build Help</span>
+            <span class="tier-cat">Loot Discussion</span>
+            <span class="tier-cat">Seasonal Tips</span>
+          </div>
+          <span class="card-link">Join Server →</span>
+        </a>
+
+        <!-- MacroBioBoi's Discord -->
+        <a href="https://www.twitch.tv/macrobioboi" target="_blank" rel="noopener" class="card" style="text-decoration:none;">
+          <div class="card-icon">⚙️</div>
+          <div class="card-title">MacroBioBoi's Discord</div>
+          <div class="card-desc">Community of mechanical D4 fans and D2/D4 comparison enthusiasts. Deep theorycrafting, itemization analysis, stat scaling math, and long-form build breakdowns.</div>
+          <div style="margin-top: 0.75rem; font-size: 0.78rem; color: var(--text-muted);">
+            <span style="color: var(--gold); font-weight: 600;">Linked via Twitch</span> · MacroBioBoi Community
+          </div>
+          <div style="margin-top: 0.5rem; display: flex; flex-wrap: wrap; gap: 0.4rem;">
+            <span class="tier-cat">Deep Theorycrafting</span>
+            <span class="tier-cat">D2 Comparisons</span>
+            <span class="tier-cat">Itemization Math</span>
+          </div>
+          <span class="card-link">Join via Twitch →</span>
+        </a>
+
+        <!-- Rob2628's Community -->
+        <a href="https://www.twitch.tv/rob2628" target="_blank" rel="noopener" class="card" style="text-decoration:none;">
+          <div class="card-icon">⚔️</div>
+          <div class="card-title">Rob2628's Community</div>
+          <div class="card-desc">Rob's Twitch community — real-time meta discussion, live build optimization, WW Barb / Holy Paladin / Spiritborn breakdowns. Great for keeping up with the seasonal meta as it shifts.</div>
+          <div style="margin-top: 0.75rem; font-size: 0.78rem; color: var(--text-muted);">
+            <span style="color: var(--gold); font-weight: 600;">twitch.tv/rob2628</span> · Live Meta Discussion
+          </div>
+          <div style="margin-top: 0.5rem; display: flex; flex-wrap: wrap; gap: 0.4rem;">
+            <span class="tier-cat">Real-Time Meta</span>
+            <span class="tier-cat">Build Optimization</span>
+            <span class="tier-cat">Seasonal Updates</span>
+          </div>
+          <span class="card-link">Join via Twitch →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- ======= REDDIT COMMUNITIES ======= -->
+  <section id="reddit">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">📱 Forum Discussions</p>
+        <h2>Reddit Communities</h2>
+        <p class="section-desc">The biggest D4 subreddits — news, discussions, memes, build questions, and community feedback.</p>
+      </div>
+
+      <div class="card-grid card-grid-2">
+        <a href="https://www.reddit.com/r/diablo4/" target="_blank" rel="noopener" class="card" style="text-decoration:none;">
+          <div class="card-icon">🔥</div>
+          <div class="card-title">r/diablo4</div>
+          <div class="card-desc">The main D4 subreddit. News, patch discussions, build questions, memes, bug reports, and community events. The pulse of casual and serious D4 players alike.</div>
+          <div style="margin-top: 0.75rem; font-size: 0.78rem; color: var(--text-muted);">
+            <span style="color: var(--gold); font-weight: 600;">reddit.com/r/diablo4</span> · Main D4 Hub
+          </div>
+          <div style="margin-top: 0.5rem; display: flex; flex-wrap: wrap; gap: 0.4rem;">
+            <span class="tier-cat">News</span>
+            <span class="tier-cat">Discussions</span>
+            <span class="tier-cat">Build Questions</span>
+            <span class="tier-cat">Memes</span>
+          </div>
+          <span class="card-link">Visit Subreddit →</span>
+        </a>
+
+        <a href="https://www.reddit.com/r/Diablo/" target="_blank" rel="noopener" class="card" style="text-decoration:none;">
+          <div class="card-icon">👹</div>
+          <div class="card-title">r/Diablo</div>
+          <div class="card-desc">The broader Diablo community covering D4, D3, D2, and D2R. Great for cross-game comparisons, lore discussions, and the wider Diablo franchise scene.</div>
+          <div style="margin-top: 0.75rem; font-size: 0.78rem; color: var(--text-muted);">
+            <span style="color: var(--gold); font-weight: 600;">reddit.com/r/Diablo</span> · All Diablo Titles
+          </div>
+          <div style="margin-top: 0.5rem; display: flex; flex-wrap: wrap; gap: 0.4rem;">
+            <span class="tier-cat">D4, D3, D2, D2R</span>
+            <span class="tier-cat">Lore</span>
+            <span class="tier-cat">Cross-Game Discussion</span>
+          </div>
+          <span class="card-link">Visit Subreddit →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- ======= YOUTUBE CHANNELS ======= -->
+  <section id="youtube">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">🎥 Watch &amp; Learn</p>
+        <h2>YouTube Channels</h2>
+        <p class="section-desc">The biggest D4 YouTube creators — tier lists, build guides, news, and deep mechanics analysis.</p>
+      </div>
+
+      <div class="card-grid card-grid-3">
+        <a href="https://www.youtube.com/@Rob2628" target="_blank" rel="noopener" class="card" style="text-decoration:none;">
+          <span class="card-tag">D4 Partner</span>
+          <div class="card-icon">⚔️</div>
+          <div class="card-title">Rob2628</div>
+          <div class="card-desc">Paladin &amp; Spiritborn specialist. The go-to for S12 tier lists, Cpt. America Paladin builds, and seasonal meta shifts. Community of endgame pushers.</div>
+          <div style="margin-top: 0.75rem; font-size: 0.78rem; color: var(--text-muted);">
+            <span style="color: var(--gold); font-weight: 600;">youtube.com/@Rob2628</span> · 247K subscribers
+          </div>
+          <div style="margin-top: 0.5rem; display: flex; flex-wrap: wrap; gap: 0.4rem;">
+            <span class="tier-cat">Paladin</span>
+            <span class="tier-cat">Spiritborn</span>
+            <span class="tier-cat">Seasonal Meta</span>
+          </div>
+          <span class="card-link">Watch Channel →</span>
+        </a>
+
+        <a href="https://www.youtube.com/@Rhykker" target="_blank" rel="noopener" class="card" style="text-decoration:none;">
+          <span class="card-tag">Largest D4 Channel</span>
+          <div class="card-icon">📊</div>
+          <div class="card-title">Rhykker</div>
+          <div class="card-desc">Largest D4 community on YouTube. Full coverage — builds, tier lists, news, mechanics deep dives, and season previews. Consistent and beginner-friendly.</div>
+          <div style="margin-top: 0.75rem; font-size: 0.78rem; color: var(--text-muted);">
+            <span style="color: var(--gold); font-weight: 600;">youtube.com/@Rhykker</span> · 706K subscribers
+          </div>
+          <div style="margin-top: 0.5rem; display: flex; flex-wrap: wrap; gap: 0.4rem;">
+            <span class="tier-cat">All Classes</span>
+            <span class="tier-cat">Tier Lists</span>
+            <span class="tier-cat">News</span>
+          </div>
+          <span class="card-link">Watch Channel →</span>
+        </a>
+
+        <a href="https://www.youtube.com/@MacroBioBoi" target="_blank" rel="noopener" class="card" style="text-decoration:none;">
+          <div class="card-icon">⚙️</div>
+          <div class="card-title">MacroBioBoi</div>
+          <div class="card-desc">Deep mechanics theorycrafting. D2 &amp; D4 comparisons, itemization breakpoints, stat scaling math, and long-form build breakdowns. Best for understanding why builds work.</div>
+          <div style="margin-top: 0.75rem; font-size: 0.78rem; color: var(--text-muted);">
+            <span style="color: var(--gold); font-weight: 600;">youtube.com/@MacroBioBoi</span> · 75.9K subscribers
+          </div>
+          <div style="margin-top: 0.5rem; display: flex; flex-wrap: wrap; gap: 0.4rem;">
+            <span class="tier-cat">Theorycrafting</span>
+            <span class="tier-cat">D2 Comparisons</span>
+            <span class="tier-cat">Mechanics Deep Dives</span>
+          </div>
+          <span class="card-link">Watch Channel →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- ======= TWITCH COMMUNITIES ======= -->
+  <section id="twitch">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">💜 Live Streams</p>
+        <h2>Twitch Communities</h2>
+        <p class="section-desc">D4 Partner streamers and specialist communities — live meta discussion, carry runs, and drops-enabled broadcasts.</p>
+      </div>
+
+      <div class="card-grid card-grid-2">
+        <!-- Rob2628 Twitch -->
+        <a href="https://www.twitch.tv/rob2628" target="_blank" rel="noopener" class="card" style="text-decoration:none;">
+          <span class="card-tag">D4 Partner · Drops Enabled</span>
+          <div class="card-icon">⚔️</div>
+          <div class="card-title">Rob2628</div>
+          <div class="card-desc">D4 Partner. WW Barb, Holy Paladin, and endgame bossing. Drops-enabled broadcasts — earn free in-game items while you watch. Community of endgame pushers.</div>
+          <div style="margin-top: 0.75rem; font-size: 0.78rem; color: var(--text-muted);">
+            <span style="color: var(--gold); font-weight: 600;">twitch.tv/rob2628</span> · ~835 live viewers
+          </div>
+          <div style="margin-top: 0.5rem; display: flex; flex-wrap: wrap; gap: 0.4rem;">
+            <span class="tier-cat">WW Barb</span>
+            <span class="tier-cat">Holy Paladin</span>
+            <span class="tier-cat">Endgame Pushing</span>
+            <span class="tier-cat">Drops Enabled</span>
+          </div>
+          <span class="card-link">Watch Stream →</span>
+        </a>
+
+        <!-- Snuggie Twitch -->
+        <a href="https://www.twitch.tv/snuggie" target="_blank" rel="noopener" class="card" style="text-decoration:none;">
+          <span class="card-tag">D4 Partner</span>
+          <div class="card-icon">🎮</div>
+          <div class="card-title">Snuggie</div>
+          <div class="card-desc">D4 Partner. Chat carry runs and the famous <code style="font-size:0.75rem;background:rgba(201,162,39,0.1);padding:1px 4px;border-radius:3px;">!advgg</code> command for real-time build advice. Great community vibe and consistent D4 content.</div>
+          <div style="margin-top: 0.75rem; font-size: 0.78rem; color: var(--text-muted);">
+            <span style="color: var(--gold); font-weight: 600;">twitch.tv/snuggie</span> · D4 Partner
+          </div>
+          <div style="margin-top: 0.5rem; display: flex; flex-wrap: wrap; gap: 0.4rem;">
+            <span class="tier-cat">Carry Runs</span>
+            <span class="tier-cat">Build Advice</span>
+            <span class="tier-cat">Community</span>
+          </div>
+          <span class="card-link">Watch Stream →</span>
+        </a>
+
+        <!-- bludfarts666_ Twitch -->
+        <a href="https://www.twitch.tv/bludfarts666_" target="_blank" rel="noopener" class="card" style="text-decoration:none;">
+          <div class="card-icon">💀</div>
+          <div class="card-title">bludfarts666_</div>
+          <div class="card-desc">Necromancer specialist streamer. Triple Golem, corpse-based builds, and the "NecroNation" community. The go-to live source for all things Necromancer in D4.</div>
+          <div style="margin-top: 0.75rem; font-size: 0.78rem; color: var(--text-muted);">
+            <span style="color: var(--gold); font-weight: 600;">twitch.tv/bludfarts666_</span> · Necromancer Specialist
+          </div>
+          <div style="margin-top: 0.5rem; display: flex; flex-wrap: wrap; gap: 0.4rem;">
+            <span class="tier-cat">Necromancer</span>
+            <span class="tier-cat">NecroNation</span>
+            <span class="tier-cat">Triple Golem</span>
+          </div>
+          <span class="card-link">Watch Stream →</span>
+        </a>
+
+        <!-- MacroBioBoi Twitch -->
+        <a href="https://www.twitch.tv/macrobioboi" target="_blank" rel="noopener" class="card" style="text-decoration:none;">
+          <div class="card-icon">⚙️</div>
+          <div class="card-title">MacroBioBoi</div>
+          <div class="card-desc">Live theorycrafting community. Deep D4 &amp; D2R discussion with the community, itemization breakdowns, and mechanical deep dives in real time.</div>
+          <div style="margin-top: 0.75rem; font-size: 0.78rem; color: var(--text-muted);">
+            <span style="color: var(--gold); font-weight: 600;">twitch.tv/macrobioboi</span> · Live Theorycrafting
+          </div>
+          <div style="margin-top: 0.5rem; display: flex; flex-wrap: wrap; gap: 0.4rem;">
+            <span class="tier-cat">Theorycrafting</span>
+            <span class="tier-cat">D2R Discussion</span>
+            <span class="tier-cat">Mechanics</span>
+          </div>
+          <span class="card-link">Watch Stream →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- ======= OTHER COMMUNITIES ======= -->
+  <section id="other">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">🌐 Beyond Social Media</p>
+        <h2>Other Communities</h2>
+        <p class="section-desc">Official Blizzard channels, community wikis, and long-form resources for Diablo 4.</p>
+      </div>
+
+      <div class="card-grid card-grid-2">
+        <!-- Blizzard Forums -->
+        <a href="https://us.forums.blizzard.com/en/diablo4/" target="_blank" rel="noopener" class="card" style="text-decoration:none;">
+          <span class="card-tag">Official</span>
+          <div class="card-icon">🏢</div>
+          <div class="card-title">Blizzard Forums</div>
