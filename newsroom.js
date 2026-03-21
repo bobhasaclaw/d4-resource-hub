@@ -24,6 +24,9 @@
   }
 
   function renderCard(article, featured = false) {
+    const imageStyle = article.imagePosition
+      ? ` style="object-position: ${escapeHtml(article.imagePosition)};"`
+      : "";
     const footer = featured
       ? `
         <div class="story-card-footer">
@@ -36,7 +39,7 @@
     return `
       <a href="${escapeHtml(article.slug)}" class="story-card${featured ? " featured" : ""}">
         <div class="story-card-media">
-          <img src="${escapeHtml(article.image)}" alt="${escapeHtml(article.alt)}" loading="lazy" decoding="async">
+          <img src="${escapeHtml(article.image)}" alt="${escapeHtml(article.alt)}" loading="lazy" decoding="async"${imageStyle}>
         </div>
         <div class="story-card-body">
           <div class="story-card-topline">
@@ -95,6 +98,19 @@
     const root = document.querySelector("[data-news-picks]");
     if (!root) return;
 
+    const explicitPicks = articles.filter((article) => article.editorPick);
+    if (explicitPicks.length) {
+      root.innerHTML = `
+        <div class="news-picks-grid">
+          ${explicitPicks
+            .slice(0, 4)
+            .map((article) => renderCard(article))
+            .join("")}
+        </div>
+      `;
+      return;
+    }
+
     const seenCategories = new Set();
     const picks = [];
 
@@ -106,11 +122,20 @@
       if (picks.length === 4) break;
     }
 
-    root.innerHTML = `
-      <div class="news-picks-grid">
-        ${picks.map((article) => renderCard(article)).join("")}
-      </div>
-    `;
+    root.innerHTML = picks.length
+      ? `
+        <div class="news-picks-grid">
+          ${picks.map((article) => renderCard(article)).join("")}
+        </div>
+      `
+      : `
+        <div class="news-picks-grid">
+          ${articles
+            .slice(0, 4)
+            .map((article) => renderCard(article))
+            .join("")}
+        </div>
+      `;
   }
 
   function installNewsArchive() {
