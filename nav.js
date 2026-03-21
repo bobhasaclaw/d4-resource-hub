@@ -9,6 +9,15 @@
       keywords: "home launchpad start latest sanctuary",
     },
     {
+      title: "Sanctuary Guide",
+      href: "wizard.html",
+      category: "Hub Tool",
+      summary:
+        "Guided wizard for class choice, next-step routing, and best resource matching.",
+      keywords:
+        "wizard sanctuary guide quiz next step class choice resource finder tool finder",
+    },
+    {
       title: "All Resources",
       href: "resources.html",
       category: "Directory",
@@ -719,12 +728,13 @@
 
           <div class="footer-feature-card">
             <span class="footer-feature-kicker">Need A Fast Answer?</span>
-            <h3>Start with class choice, then move into builds and the newsroom.</h3>
+            <h3>Start with Sanctuary Guide, then move into builds and the newsroom.</h3>
             <p>
-              The shortest path through the site is class comparison first,
-              builds second, and current news third when the meta feels unclear.
+              The shortest path through the site is the guided wizard first,
+              then deeper class, build, and newsroom pages when you want more detail.
             </p>
             <div class="footer-feature-links">
+              <a href="wizard.html">Open Sanctuary Guide</a>
               <a href="classes.html">Compare Classes</a>
               <a href="endgame-builds.html">Open Builds</a>
               <a href="news.html">Read Newsroom</a>
@@ -736,6 +746,7 @@
           <div class="footer-column">
             <h3>Start Here</h3>
             <a href="index.html">Home</a>
+            <a href="wizard.html">Sanctuary Guide</a>
             <a href="new-player.html">New Player Guide</a>
             <a href="classes.html">Class Comparison</a>
             <a href="resources.html">All Resources</a>
@@ -853,6 +864,7 @@
 
   function getPrimaryNavHref(pathname) {
     if (pathname === "index.html" || pathname === "") return "index.html";
+    if (pathname === "wizard.html") return "index.html";
     if (pathname.startsWith("news")) return "news.html";
     if (
       [
