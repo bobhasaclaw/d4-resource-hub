@@ -265,6 +265,10 @@
       scores.creators,
       path.defaults.creators,
     );
+    const topTool =
+      tools[0] && tools[0].score > 0
+        ? getLinkedEntity("tools", tools[0].id)
+        : null;
 
     return {
       kicker: "Best Resource Match",
@@ -277,8 +281,8 @@
         pages[0]
           ? `${pages[0].entity.label} is the strongest internal page to pair with it.`
           : "The resource matrix is the best internal follow-up.",
-        tools[0]
-          ? `${tools[0].entity.label} is the best supporting tool for this problem.`
+        topTool
+          ? `${topTool.label} is the best supporting tool for this problem.`
           : "A specialist tool is optional for this answer.",
       ],
       cards: [
@@ -296,7 +300,7 @@
         },
         {
           label: "Best supporting tool",
-          item: tools[0] ? getLinkedEntity("tools", tools[0].id) : null,
+          item: topTool,
         },
         {
           label: "Optional creator follow-up",
@@ -308,7 +312,7 @@
       nextClicks: [
         getLinkedEntity("sources", sources[0].id),
         pages[0] ? getLinkedEntity("pages", pages[0].id) : null,
-        tools[0] ? getLinkedEntity("tools", tools[0].id) : null,
+        topTool,
       ].filter(Boolean),
     };
   }
