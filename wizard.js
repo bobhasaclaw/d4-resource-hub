@@ -46,6 +46,97 @@
     },
   };
 
+  const QUESTION_HELP = {
+    stage:
+      "Choose the stage that is closest to where your character is right now.",
+    problem:
+      "Pick the main thing slowing you down. The wizard will build around that problem first.",
+    "help-style":
+      "Choose the kind of answer you want, not the source you think you need.",
+    "play-style":
+      "This helps the wizard bias solo-safe, group-friendly, or flexible recommendations.",
+    experience:
+      "Think about your comfort level with Diablo 4 right now, not your long-term skill ceiling.",
+    grouping:
+      "Pick the way you play most often. It helps the wizard avoid recommending the wrong class fit.",
+    role: "Choose the combat fantasy that sounds most fun. The wizard will match that to the strongest class fit.",
+    goal: "Pick the activity you care about most. This is the biggest driver behind the final class recommendation.",
+    complexity:
+      "This helps the wizard separate easy, low-stress picks from higher-execution choices.",
+    need: "Choose the exact kind of help you want first.",
+    format:
+      "Pick how you want to receive the answer so the wizard can send you to the right type of source.",
+    specialization:
+      "Use this to narrow broad help, niche tools, and specialist sources.",
+  };
+
+  const OPTION_ICONS = {
+    "brand-new": "🌱",
+    leveling: "⬆️",
+    "returning-break": "🔁",
+    "alt-character": "🧪",
+    "fresh-60": "⚡",
+    "early-endgame": "🏹",
+    farming: "💰",
+    bossing: "👹",
+    "dont-know-first": "🧭",
+    "feel-weak": "🛡️",
+    "better-build": "🧱",
+    "better-gear": "🎯",
+    "faster-xp": "🏃",
+    "simple-checklist": "📝",
+    "seasonal-clarity": "📣",
+    "fast-answer": "⚡",
+    "detailed-guide": "📖",
+    "tool-tracker": "🗺️",
+    checklist: "✅",
+    "video-help": "▶️",
+    "community-help": "💬",
+    new: "🌱",
+    returning: "🔁",
+    experienced: "🧠",
+    alt: "🧪",
+    solo: "🧍",
+    group: "👥",
+    flexible: "🌀",
+    melee: "⚔️",
+    ranged: "🏹",
+    caster: "✨",
+    summons: "💀",
+    holy: "☀️",
+    agile: "🗡️",
+    tanky: "🛡️",
+    hybrid: "🔄",
+    endgame: "🏁",
+    boss: "👺",
+    speed: "💨",
+    allround: "🧩",
+    chill: "🌙",
+    easy: "🙂",
+    medium: "🎯",
+    "high-skill": "🔥",
+    "low-apm": "🪶",
+    "build-guide": "🧱",
+    "tier-list": "📊",
+    "class-comparison": "⚖️",
+    "leveling-route": "🪜",
+    tracker: "🕒",
+    "planner-tool": "🛠️",
+    "loot-lookup": "💎",
+    "season-patch": "📰",
+    "trade-stash": "📦",
+    "community-help": "🎥",
+    "detailed-writeup": "📚",
+    video: "🎬",
+    official: "🏛️",
+    "visual-comparison": "🖼️",
+    general: "🧭",
+    "class-specific": "🧬",
+    "activity-specific": "🎮",
+    "season-start": "🚩",
+    "lore-reference": "📜",
+  };
+
   function getPath(pathId = state.pathId) {
     return data.paths[pathId] || null;
   }
@@ -64,6 +155,10 @@
     const path = getPath();
     const question = path?.questions.find((item) => item.id === questionId);
     return question?.options.find((item) => item.id === optionId) || null;
+  }
+
+  function getOptionIcon(optionId) {
+    return OPTION_ICONS[optionId] || "✦";
   }
 
   function getAnswerLabel(questionId) {
@@ -396,14 +491,21 @@
     elements.progress.textContent = `Step ${state.stepIndex + 1} of ${path.questions.length}`;
     elements.questionTitle.textContent = question.title;
     elements.questionHelp.textContent =
+      QUESTION_HELP[question.id] ||
       "Pick the answer that feels closest. You do not need a perfect match, and you can go back at any time.";
 
     elements.optionGrid.innerHTML = question.options
       .map(
         (option) => `
           <button type="button" class="wizard-option-card" data-option-select="${option.id}">
-            <strong>${option.label}</strong>
-            <span>${option.description}</span>
+            <div class="wizard-option-head">
+              <span class="wizard-option-icon" aria-hidden="true">${getOptionIcon(option.id)}</span>
+              <div class="wizard-option-copy">
+                <strong>${option.label}</strong>
+                <span>${option.description}</span>
+              </div>
+              <span class="wizard-option-action">Choose</span>
+            </div>
           </button>
         `,
       )
