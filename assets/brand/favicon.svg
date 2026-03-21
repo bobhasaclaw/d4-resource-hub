@@ -1,0 +1,21 @@
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gold" x1="24" y1="18" x2="102" y2="111" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F2D27F"/>
+      <stop offset="0.45" stop-color="#C69A41"/>
+      <stop offset="1" stop-color="#744A19"/>
+    </linearGradient>
+    <linearGradient id="fire" x1="64" y1="36" x2="64" y2="101" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFB66F"/>
+      <stop offset="0.5" stop-color="#E1492A"/>
+      <stop offset="1" stop-color="#761515"/>
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="28" fill="#0D0B10"/>
+  <path d="M34 21L48 13L57 28L53 36L34 21Z" fill="url(#gold)"/>
+  <path d="M94 21L80 13L71 28L75 36L94 21Z" fill="url(#gold)"/>
+  <path d="M64 18L99 33V66C99 88 85 107 64 116C43 107 29 88 29 66V33L64 18Z" fill="#121018" stroke="url(#gold)" stroke-width="4"/>
+  <path d="M64 34L81 68L64 102L47 68L64 34Z" fill="url(#fire)"/>
+  <path d="M59 54H69V98H59V54Z" fill="#F1DCAB"/>
+  <path d="M48 89L64 101L80 89L75 82L64 90L53 82L48 89Z" fill="#C52A1F"/>
+</svg>

@@ -1,324 +1,397 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Diablo 4 News — D4 Resource Hub</title>
-  <meta name="description" content="Stay up to date with the latest Diablo 4 news, patch notes, season announcements, and community updates for Season 12: Season of Slaughter.">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔥</text></svg>">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&display=swap" rel="stylesheet">
-</head>
-<body>
-
-  <!-- ======= STICKY NAVBAR ======= -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diablo 4 Newsroom — D4 Resource Hub</title>
+    <meta
+      name="description"
+      content="Blog-style Diablo 4 news coverage with featured stories, thumbnails, patch updates, expansion news, and curated official-source reporting."
+    />
+    <meta property="og:title" content="Diablo 4 Newsroom — D4 Resource Hub" />
+    <meta
+      property="og:description"
+      content="Blog-style Diablo 4 news coverage with featured stories, thumbnails, patch updates, expansion news, and curated official-source reporting."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="D4 Resource Hub" />
+    <meta
+      property="og:image"
+      content="https://bobhasaclaw.github.io/d4-resource-hub/assets/og/og-news.png"
+    />
+    <meta
+      property="og:url"
+      content="https://bobhasaclaw.github.io/d4-resource-hub/news.html"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Diablo 4 Newsroom — D4 Resource Hub" />
+    <meta
+      name="twitter:description"
+      content="Blog-style Diablo 4 news coverage with featured stories, thumbnails, patch updates, expansion news, and curated official-source reporting."
+    />
+    <meta
+      name="twitter:image"
+      content="https://bobhasaclaw.github.io/d4-resource-hub/assets/og/og-news.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="canonical"
+      href="https://bobhasaclaw.github.io/d4-resource-hub/news.html"
+    />
+    <link rel="icon" href="assets/brand/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&amp;display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <nav class="navbar" id="main-nav">
-    <div class="navbar-inner"></div>
-  </nav>
+      <div class="navbar-inner"></div>
+    </nav>
 
-  <div class="mobile-menu" id="mobile-menu"></div>
+    <div class="mobile-menu" id="mobile-menu"></div>
 
-  <section class="hero">
-    <div class="hero-badge">
-      <span>📰</span> Stay Informed
-    </div>
-
-    <h1 class="hero-title">Diablo 4 News</h1>
-    <p class="hero-subtitle">Stay up to date with the latest D4 news, patch notes, and season announcements.</p>
-
-    <div class="hero-season-facts">
-      <div class="hero-fact">
-        <span class="icon">📋</span> Patch Notes
-      </div>
-      <div class="hero-fact">
-        <span class="icon">🔥</span> Season 12
-      </div>
-      <div class="hero-fact">
-        <span class="icon">🌐</span> Official Sources
-      </div>
-    </div>
-  </section>
-
-  <section class="page-overview">
-    <div class="container">
-      <div class="page-overview-grid">
-        <div class="page-overview-card featured">
-          <div class="page-overview-kicker">Start Here</div>
-          <h3>Use official sources first</h3>
-          <p>When news breaks, Blizzard and reputable community outlets give you the most reliable read on what actually changed.</p>
-          <div class="page-overview-actions">
-            <span class="overview-pill">Official</span>
-            <span class="overview-pill">Patch Notes</span>
+    <section class="hero hero-newsroom">
+      <div class="container newsroom-hero-shell">
+        <div class="newsroom-hero-copy">
+          <div class="hero-badge"><span>📰</span> Latest in Sanctuary</div>
+          <div class="newsroom-brand-ribbon">
+            <span
+              class="brand-mark-wrap newsroom-brand-mark"
+              aria-hidden="true"
+            >
+              <img src="assets/brand/d4rh-mark.svg" alt="" class="brand-mark" />
+            </span>
+            <div class="newsroom-brand-copy">
+              <span class="newsroom-brand-kicker">Editorial Desk</span>
+              <strong>D4 Resource Hub Newsroom</strong>
+              <span
+                >Official signal first, practical reads second, and fast links
+                into builds, guides, and season context.</span
+              >
+            </div>
+          </div>
+          <h1 class="hero-title">Diablo 4 Newsroom</h1>
+          <p class="hero-subtitle">
+            A sharper editorial home for Diablo 4 updates. Featured stories,
+            topic desks, and thumbnail-driven coverage that tells players what
+            changed and what to do next.
+          </p>
+          <div class="hero-season-facts">
+            <div class="hero-fact"><span class="icon">🔥</span> Season 12</div>
+            <div class="hero-fact">
+              <span class="icon">📜</span> Patch Notes
+            </div>
+            <div class="hero-fact"><span class="icon">🌑</span> Expansion</div>
+            <div class="hero-fact">
+              <span class="icon">🩸</span> Meta Shifts
+            </div>
+          </div>
+          <div class="newsroom-hero-actions">
+            <a href="#featured-story" class="hero-cta">Read Featured Story ↓</a>
+            <a href="#latest-stories" class="hero-secondary-link"
+              >Browse the archive</a
+            >
           </div>
         </div>
-        <div class="page-overview-card">
-          <div class="page-overview-kicker">What To Watch</div>
-          <h3>Track the season-defining stories</h3>
-          <ul class="page-overview-list">
-            <li>Season 12 mechanics and balancing</li>
-            <li>Warlock and Lord of Hatred coverage</li>
-            <li>Patch note summaries and meta shifts</li>
-          </ul>
-        </div>
-        <div class="page-overview-card">
-          <div class="page-overview-kicker">Best Use</div>
-          <h3>Move from updates to action</h3>
-          <p>Use the news section to stay current, then jump to builds, resources, or the season page when you want to play on the latest info.</p>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- ======= SECTION 1: OFFICIAL NEWS SOURCES ======= -->
-  <section id="official-sources">
-    <div class="container">
-      <div class="section-header">
-        <p class="section-label">Start Here</p>
-        <h2>Official News Sources</h2>
-        <p class="section-desc">The most reliable places to get D4 news directly from Blizzard or trusted community outlets.</p>
-      </div>
+        <aside class="newsroom-hero-side">
+          <div class="newsroom-brief-card">
+            <div class="hero-spotlight-kicker">Editorial Focus</div>
+            <h2>Official signal first, player context second</h2>
+            <p>
+              The newsroom is built to help players skim the official signal,
+              understand why it matters, then move directly into guides, season
+              pages, builds, or videos.
+            </p>
+            <div class="hero-spotlight-stats">
+              <div class="hero-spotlight-stat">
+                <strong>3</strong>
+                <span>topic desks</span>
+              </div>
+              <div class="hero-spotlight-stat">
+                <strong>12</strong>
+                <span>archived stories</span>
+              </div>
+              <div class="hero-spotlight-stat">
+                <strong>1</strong>
+                <span>shared dataset</span>
+              </div>
+            </div>
+          </div>
 
-      <div class="card-grid card-grid-3">
-        <a href="https://diablo.blizzard.com/en-us/" target="_blank" rel="noopener" class="card" style="text-decoration:none;">
-          <div class="card-icon">🏰</div>
-          <div class="card-title">Blizzard Official</div>
-          <div class="card-desc">The official Diablo site — game news, expansion announcements, developer updates, and media directly from Blizzard Entertainment.</div>
-          <span class="card-link">diablo.blizzard.com/en-us</span>
-        </a>
-
-        <a href="https://news.blizzard.com/en-us/article/24140808/diablo-iv-patch-notes" target="_blank" rel="noopener" class="card" style="text-decoration:none;">
-          <div class="card-icon">📜</div>
-          <div class="card-title">Blizzard Patch Notes</div>
-          <div class="card-desc">Full patch notes for every D4 update — balance changes, bug fixes, new content, and season details straight from Blizzard.</div>
-          <span class="card-link">news.blizzard.com — Patch Notes</span>
-        </a>
-
-        <a href="https://www.icy-veins.com/d4/news/" target="_blank" rel="noopener" class="card" style="text-decoration:none;">
-          <div class="card-icon">❄️</div>
-          <div class="card-title">Icy Veins D4 News</div>
-          <div class="card-desc">Daily D4 news coverage — season announcements, community updates, expansion reveals, and everything happening in Sanctuary.</div>
-          <span class="card-link">icy-veins.com/d4/news</span>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <hr class="section-divider">
-
-  <!-- ======= SECTION 2: SEASON 12 NEWS HIGHLIGHTS ======= -->
-  <section id="s12-highlights">
-    <div class="container">
-      <div class="section-header">
-        <p class="section-label">Season 12 Focus</p>
-        <h2>Season 12 News Highlights</h2>
-        <p class="section-desc">The biggest stories and coverage from the Season of Slaughter so far.</p>
+          <div class="newsroom-desk-grid">
+            <a href="news-season.html" class="newsroom-desk-card">
+              <span class="newsroom-desk-icon" aria-hidden="true">🔥</span>
+              <span>Season Desk</span>
+              <strong>Launches, events, and live-cycle changes</strong>
+            </a>
+            <a href="news-patch-notes.html" class="newsroom-desk-card">
+              <span class="newsroom-desk-icon" aria-hidden="true">📜</span>
+              <span>Patch Desk</span>
+              <strong
+                >Systems notes and balance changes without the noise</strong
+              >
+            </a>
+            <a href="news-expansion.html" class="newsroom-desk-card">
+              <span class="newsroom-desk-icon" aria-hidden="true">🌑</span>
+              <span>Expansion Desk</span>
+              <strong
+                >Lord of Hatred, Warlock, and the bigger roadmap arc</strong
+              >
+            </a>
+          </div>
+        </aside>
       </div>
 
-      <div class="info-card-grid">
-        <div class="info-card">
-          <div class="info-card-emoji">🌑</div>
-          <h3>Warlock Class Preview</h3>
-          <p>Coverage of the upcoming Warlock class — Diablo's iconic class returning in Lord of Hatred. Community speculation, datamines, and developer previews.</p>
-          <a href="https://www.icy-veins.com/d4/guides/vessel-of-hatred-overview/" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Icy Veins Coverage ↗</a>
-        </div>
+      <div class="hero-scroll-hint">↓ Scroll to explore</div>
+    </section>
 
-        <div class="info-card">
-          <div class="info-card-emoji">💀</div>
-          <h3>Killstreak System Details</h3>
-          <p>Everything about the new Killstreak mechanic — how to stack kills, the reward tier system (Killstreak → Carnage → Devastation → Bloodbath → Massacre), and bonus XP scaling.</p>
-          <a href="https://www.icy-veins.com/d4/guides/diablo-4-latest-season/" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Full Breakdown ↗</a>
-        </div>
-
-        <div class="info-card">
-          <div class="info-card-emoji">👹</div>
-          <h3>Butcher's Lair &amp; New Butcher Mechanics</h3>
-          <p>Butcher's Lair is now a permanent addition to the game. New Butcher Shrines in Helltides, new boss mechanics, and the ability to play AS The Butcher as a companion.</p>
-          <a href="https://www.icy-veins.com/d4/guides/the-butchers-lair/" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Butcher's Lair Guide ↗</a>
-        </div>
-
-        <div class="info-card">
-          <div class="info-card-emoji">🩸</div>
-          <h3>Bloodied Items Drop Mechanics</h3>
-          <p>How Bloodied Items work — world drop-only gear with Killstreak-powered affixes. Types: Rampage (armor), Feast (weapons), Hunger (jewelry). NOT craftable.</p>
-          <a href="https://www.icy-veins.com/d4/guides/diablo-4-latest-season/" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Mechanic Guide ↗</a>
-        </div>
-
-        <div class="info-card">
-          <div class="info-card-emoji">💎</div>
-          <h3>New Unique Items Added</h3>
-          <p>5 new unique items for Season 12 — The Butcher's Seals, Butcher's Chains, and The Butcher's Cleaver. Full drop locations, stats, and build implications.</p>
-          <a href="https://d4builds.gg/database/unique-loot-tables/" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Loot Tables ↗</a>
-        </div>
-
-        <div class="info-card">
-          <div class="info-card-emoji">☠️</div>
-          <h3>DOOM: The Dark Ages Collaboration</h3>
-          <p>Diablo 4 x DOOM: The Dark Ages crossover event. New cosmetics, themed content, and a limited-time Butcher PvP event in Fields of Hatred.</p>
-          <a href="https://www.icy-veins.com/d4/news/" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Full Coverage ↗</a>
+    <section class="page-overview">
+      <div class="container">
+        <div class="page-overview-grid">
+          <div class="page-overview-card featured">
+            <div class="page-overview-kicker">News Strategy</div>
+            <h3>Lead with official information, then explain what it means</h3>
+            <p>
+              This newsroom is built to be more useful than a raw feed. Each
+              story summarizes the important change, who it affects, and where
+              to click next.
+            </p>
+            <div class="page-overview-actions">
+              <span class="overview-pill">Official Sources</span>
+              <span class="overview-pill">Player Summary</span>
+              <span class="overview-pill">Next Steps</span>
+            </div>
+          </div>
+          <div class="page-overview-card">
+            <div class="page-overview-kicker">What You Will Find</div>
+            <h3>Fast answers instead of link dumps</h3>
+            <ul class="page-overview-list">
+              <li>Featured coverage for the most important current story</li>
+              <li>Thumbnail cards for recent updates and previews</li>
+              <li>Short write-ups connected to official Blizzard sources</li>
+            </ul>
+          </div>
+          <div class="page-overview-card">
+            <div class="page-overview-kicker">Best Use</div>
+            <h3>Catch up, then move into the right page</h3>
+            <p>
+              Read the story, then jump straight into builds, season info,
+              tools, or videos depending on what changed.
+            </p>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <hr class="section-divider">
-
-  <!-- ======= SECTION 3: WHAT TO WATCH ======= -->
-  <section id="what-to-watch">
-    <div class="container">
-      <div class="section-header">
-        <p class="section-label">Keep an Eye On</p>
-        <h2>What to Watch</h2>
-        <p class="section-desc">Key channels and resources to follow for the most current D4 news and updates.</p>
-      </div>
-
-      <div class="quickref-grid">
-        <div class="quickref-card">
-          <div class="quickref-card-emoji">🏰</div>
-          <h3>Blizzard's Official Channels</h3>
-          <p>Follow Blizzard's official Diablo channels for expansion announcements, major patch reveals, and the first look at new content. Check diablo.blizzard.com and the official @Diablo account.</p>
-        </div>
-
-        <div class="quickref-card">
-          <div class="quickref-card-emoji">❄️</div>
-          <h3>Icy Veins — Daily News</h3>
-          <p>A reliable community source for daily D4 coverage. Patch notes analysis, season previews, new item discoveries, and community meta shifts. Updated consistently throughout each season.</p>
-        </div>
-
-        <div class="quickref-card">
-          <div class="quickref-card-emoji">🗡️</div>
-          <h3>D4Builds — Seasonal Cheat Sheets</h3>
-          <p>D4Builds' cheat sheets are community-curated quick-reference guides for the current season. Updated regularly with the latest meta shifts and new mechanics.</p>
-        </div>
-
-        <div class="quickref-card">
-          <div class="quickref-card-emoji">🎙️</div>
-          <h3>Rob2628 — Community Updates</h3>
-          <p>Rob2628's YouTube and Twitch are the community's pulse on seasonal meta, build tier lists, and real-time testing of new mechanics. His S12 cheat sheet is the community benchmark.</p>
+    <section class="page-actions-section">
+      <div class="container">
+        <div class="page-actions-bar">
+          <a href="newsroom-desk.html" class="page-action-button"
+            >Meet the Desk</a
+          >
+          <button type="button" class="page-action-button" data-copy-page-link>
+            Copy News Link
+          </button>
+          <button
+            type="button"
+            class="page-action-button"
+            data-share-page
+            data-share-text="Diablo 4 Newsroom: featured stories, patch notes, expansion updates, and blog-style news summaries."
+          >
+            Share Page
+          </button>
+          <button
+            type="button"
+            class="page-action-button"
+            data-copy-summary
+            data-copy-summary="Diablo 4 Newsroom: featured stories, patch notes, expansion updates, and blog-style news summaries."
+          >
+            Copy Summary
+          </button>
+          <span class="page-action-note">Reviewed March 21, 2026</span>
+          <span class="page-action-feedback" aria-live="polite"></span>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ======= FOOTER ======= -->
-    <footer class="footer">
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-logo">
-          <span class="footer-logo-icon">🔥</span>
-          Diablo 4 Resource Hub
+    <section id="featured-story">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label">Featured Story</p>
+          <h2>What Matters Most Right Now</h2>
+          <p class="section-desc">
+            The lead story gets the biggest placement so players can see the
+            most relevant update before anything else.
+          </p>
         </div>
-
-        <div class="footer-links">
-          <a href="index.html">Home</a>
-          <a href="resources.html">Resources</a>
-          <a href="crafting.html">Crafting &amp; Gear Guide</a>
-          <a href="https://maxroll.gg/d4" target="_blank" rel="noopener">Maxroll</a>
-          <a href="https://www.icy-veins.com/d4/" target="_blank" rel="noopener">Icy Veins</a>
-          <a href="https://d4builds.gg/" target="_blank" rel="noopener">D4Builds</a>
-          <a href="https://mobalytics.gg/diablo-4/builds" target="_blank" rel="noopener">Mobalytics</a>
-        </div>
-
-        <p class="footer-disclaimer">
-          Not affiliated with Blizzard Entertainment. Diablo 4 and all related content are trademarks of Blizzard Entertainment, Inc. This site is a fan-made resource hub for educational purposes.
-        </p>
-
-        <p class="footer-updated">Last updated: March 20, 2026</p>
+        <div class="homepage-news-shell" data-news-featured></div>
       </div>
-    </div>
-  </footer>
+    </section>
 
+    <section id="editors-picks">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label">Editor's Picks</p>
+          <h2>Stories Worth Reading Even After The Headline Cycle</h2>
+          <p class="section-desc">
+            These are the pieces that explain the game clearly, not just the
+            ones that landed first.
+          </p>
+        </div>
+        <div class="homepage-news-shell news-picks-shell" data-news-picks></div>
+      </div>
+    </section>
 
-  <style>
-    /* Info card grid */
-    .info-card-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-      gap: 1.25rem;
-    }
+    <hr class="section-divider" />
 
-    .info-card {
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-lg);
-      padding: 1.5rem;
-      display: flex;
-      flex-direction: column;
-      gap: 0.75rem;
-      transition: all var(--transition);
-    }
+    <section id="categories">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label">Browse Faster</p>
+          <h2>News Categories</h2>
+          <p class="section-desc">
+            The archive below is now filterable, searchable, and ready for a
+            deeper article library without turning into a messy feed.
+          </p>
+        </div>
+        <div class="news-archive-toolbar">
+          <label class="news-search-wrap">
+            <span class="news-search-label">Search Stories</span>
+            <input
+              type="search"
+              class="news-search-input"
+              data-news-search
+              placeholder="Search by patch, season, Warlock, roadmap, events..."
+              autocomplete="off"
+            />
+          </label>
+          <div class="news-results-meta">
+            <span class="news-results-count" data-news-count
+              >0 stories shown</span
+            >
+            <a href="#official-sources" class="news-source-link"
+              >See source tracker ↓</a
+            >
+          </div>
+        </div>
+        <div class="news-filter-row" data-news-filters></div>
+        <div class="news-topic-grid">
+          <a href="news-season.html" class="news-topic-card">
+            <strong>Season Desk</strong>
+            <span
+              >Open stories focused on launch timing, seasonal mechanics, and
+              active events.</span
+            >
+          </a>
+          <a href="news-patch-notes.html" class="news-topic-card">
+            <strong>Patch Desk</strong>
+            <span
+              >Jump straight to patch-note summaries when you care about systems
+              and balance first.</span
+            >
+          </a>
+          <a href="news-expansion.html" class="news-topic-card">
+            <strong>Expansion Desk</strong>
+            <span
+              >Browse Lord of Hatred coverage, class reveals, and pre-purchase
+              context in one place.</span
+            >
+          </a>
+        </div>
+      </div>
+    </section>
 
-    .info-card:hover {
-      border-color: var(--border-gold);
-      transform: translateY(-3px);
-      box-shadow: var(--shadow), var(--shadow-gold);
-    }
+    <hr class="section-divider" />
 
-    .info-card-emoji {
-      font-size: 1.75rem;
-      line-height: 1;
-    }
+    <section id="latest-stories">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label">Recent Coverage</p>
+          <h2>Filterable Archive</h2>
+          <p class="section-desc">
+            The archive now covers live season news, patch notes, roadmap
+            context, events, and expansion prep, with a cleaner load-more flow
+            as the newsroom grows.
+          </p>
+        </div>
+        <div class="news-grid" data-news-archive></div>
+        <div class="news-archive-actions">
+          <button type="button" class="page-action-button" data-news-load-more>
+            Load More Stories
+          </button>
+        </div>
+      </div>
+    </section>
 
-    .info-card h3 {
-      font-size: 1rem;
-      color: var(--text-primary);
-      margin: 0;
-      font-family: 'Cinzel', serif;
-    }
+    <hr class="section-divider" />
 
-    .info-card p {
-      font-size: 0.875rem;
-      color: var(--text-secondary);
-      line-height: 1.55;
-      flex-grow: 1;
-      margin: 0;
-    }
+    <section id="official-sources">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label">Trust Layer</p>
+          <h2>Official Source Tracker</h2>
+          <p class="section-desc">
+            These are the primary places the newsroom should continue to pull
+            from as you grow the article library.
+          </p>
+        </div>
 
-    /* Quickref grid */
-    .quickref-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-      gap: 1.25rem;
-    }
+        <div class="card-grid card-grid-3">
+          <a
+            href="https://diablo4.blizzard.com/en-us/"
+            target="_blank"
+            rel="noopener"
+            class="card card-link-reset"
+          >
+            <div class="card-icon">🏰</div>
+            <div class="card-title">Official Diablo IV Site</div>
+            <div class="card-desc">
+              The main hub for expansion pages, feature marketing, and broad
+              official game messaging.
+            </div>
+            <span class="card-link">Open Official Site →</span>
+          </a>
+          <a
+            href="https://news.blizzard.com/en-us/article/24244466/diablo-iv-patch-notes-2-5"
+            target="_blank"
+            rel="noopener"
+            class="card card-link-reset"
+          >
+            <div class="card-icon">📜</div>
+            <div class="card-title">Blizzard Patch Notes</div>
+            <div class="card-desc">
+              The long-form technical record for live changes, fixes, and
+              version history.
+            </div>
+            <span class="card-link">Read Patch Notes →</span>
+          </a>
+          <a
+            href="https://www.icy-veins.com/d4/news/"
+            target="_blank"
+            rel="noopener"
+            class="card card-link-reset"
+          >
+            <div class="card-icon">❄️</div>
+            <div class="card-title">Icy Veins D4 News</div>
+            <div class="card-desc">
+              Useful for ongoing community coverage and a second read after
+              official posts land.
+            </div>
+            <span class="card-link">Browse Coverage →</span>
+          </a>
+        </div>
+      </div>
+    </section>
 
-    .quickref-card {
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-lg);
-      padding: 1.5rem;
-      transition: all var(--transition);
-      display: flex;
-      flex-direction: column;
-      gap: 0.6rem;
-    }
+    <hr class="section-divider" />
 
-    .quickref-card:hover {
-      border-color: var(--border-gold);
-      transform: translateY(-2px);
-      box-shadow: var(--shadow), var(--shadow-gold);
-    }
-
-    .quickref-card-emoji {
-      font-size: 1.5rem;
-      line-height: 1;
-    }
-
-    .quickref-card h3 {
-      font-size: 0.95rem;
-      color: var(--text-primary);
-      margin: 0;
-      font-family: 'Cinzel', serif;
-    }
-
-    .quickref-card p {
-      font-size: 0.85rem;
-      color: var(--text-secondary);
-      line-height: 1.5;
-      margin: 0;
-    }
-  </style>
-
-  <script src="nav.js"></script>
-</body>
+    <script src="nav.js"></script>
+    <script src="news-data.js"></script>
+    <script src="newsroom.js"></script>
+    <script src="site-tools.js"></script>
+  </body>
 </html>

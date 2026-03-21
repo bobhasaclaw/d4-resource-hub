@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Patch Notes News — D4 Resource Hub</title>
+    <meta
+      name="description"
+      content="Patch-note focused Diablo IV coverage with fast summaries of the updates that matter most for builds, progression, and seasonal systems."
+    />
+    <meta property="og:title" content="Patch Notes News — D4 Resource Hub" />
+    <meta
+      property="og:description"
+      content="Patch-note focused Diablo IV coverage with fast summaries of the updates that matter most for builds, progression, and seasonal systems."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="D4 Resource Hub" />
+    <meta
+      property="og:image"
+      content="https://bobhasaclaw.github.io/d4-resource-hub/assets/og/og-news-patch-notes.png"
+    />
+    <meta
+      property="og:url"
+      content="https://bobhasaclaw.github.io/d4-resource-hub/news-patch-notes.html"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Patch Notes News — D4 Resource Hub" />
+    <meta
+      name="twitter:description"
+      content="Patch-note focused Diablo IV coverage with fast summaries of the updates that matter most for builds, progression, and seasonal systems."
+    />
+    <meta
+      name="twitter:image"
+      content="https://bobhasaclaw.github.io/d4-resource-hub/assets/og/og-news-patch-notes.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="canonical"
+      href="https://bobhasaclaw.github.io/d4-resource-hub/news-patch-notes.html"
+    />
+    <link rel="icon" href="assets/brand/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&amp;display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body data-default-news-category="Patch Notes">
+    <nav class="navbar" id="main-nav">
+      <div class="navbar-inner"></div>
+    </nav>
+    <div class="mobile-menu" id="mobile-menu"></div>
+
+    <section class="hero hero-videos">
+      <div class="hero-badge"><span>📜</span> Patch Desk</div>
+      <h1 class="hero-title">Patch notes news</h1>
+      <p class="hero-subtitle">
+        Shorter, player-readable summaries of the patch pages that actually
+        change builds, bossing, rewards, and seasonal systems.
+      </p>
+      <div class="hero-season-facts">
+        <div class="hero-fact"><span class="icon">⚙️</span> Systems</div>
+        <div class="hero-fact"><span class="icon">🧩</span> Build Impact</div>
+        <div class="hero-fact"><span class="icon">📈</span> Progression</div>
+      </div>
+    </section>
+
+    <section class="page-actions-section">
+      <div class="container">
+        <div class="page-actions-bar">
+          <a href="news.html" class="page-action-button">Open Full Newsroom</a>
+          <button type="button" class="page-action-button" data-copy-page-link>
+            Copy Page Link
+          </button>
+          <button
+            type="button"
+            class="page-action-button"
+            data-share-page
+            data-share-text="Patch-note focused Diablo IV coverage with fast summaries of the updates that matter most for builds and progression."
+          >
+            Share Page
+          </button>
+          <span class="page-action-note">Reviewed March 21, 2026</span>
+          <span class="page-action-feedback" aria-live="polite"></span>
+        </div>
+      </div>
+    </section>
+
+    <section id="latest-stories">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label">Patch Archive</p>
+          <h2>Patch Stories</h2>
+          <p class="section-desc">
+            This page opens on patch-note coverage first, then lets users branch
+            out into the rest of the newsroom when they need broader context.
+          </p>
+        </div>
+        <div class="news-archive-toolbar">
+          <label class="news-search-wrap">
+            <span class="news-search-label">Search Stories</span>
+            <input
+              type="search"
+              class="news-search-input"
+              data-news-search
+              placeholder="Search patch, 2.6, 2.5, uniques, stagger..."
+              autocomplete="off"
+            />
+          </label>
+          <div class="news-results-meta">
+            <span class="news-results-count" data-news-count
+              >0 stories shown</span
+            >
+            <a href="news.html" class="news-source-link"
+              >Open full newsroom →</a
+            >
+          </div>
+        </div>
+        <div class="news-filter-row" data-news-filters></div>
+        <div class="news-grid" data-news-archive></div>
+        <div class="news-archive-actions">
+          <button type="button" class="page-action-button" data-news-load-more>
+            Load More Stories
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <script src="nav.js"></script>
+    <script src="news-data.js"></script>
+    <script src="newsroom.js"></script>
+    <script src="site-tools.js"></script>
+  </body>
+</html>

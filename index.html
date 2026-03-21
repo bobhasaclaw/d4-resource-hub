@@ -1,521 +1,1068 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Diablo 4 Resource Hub — Everything D4 Players Need in One Place</title>
-  <meta name="description" content="The ultimate Diablo 4 resource hub. Build guides, tier lists, tools, news, and community links for Season 12: Season of Slaughter.">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔥</text></svg>">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&display=swap" rel="stylesheet">
-</head>
-<body>
-
-  <!-- ======= STICKY NAVBAR ======= -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Diablo 4 Resource Hub — Everything D4 Players Need in One Place
+    </title>
+    <meta
+      name="description"
+      content="The ultimate Diablo 4 resource hub. Build guides, tier lists, tools, news, and community links for Season 12: Season of Slaughter."
+    />
+    <meta
+      property="og:title"
+      content="Diablo 4 Resource Hub — Everything D4 Players Need in One Place"
+    />
+    <meta
+      property="og:description"
+      content="The ultimate Diablo 4 resource hub. Build guides, tier lists, tools, news, and community links for Season 12: Season of Slaughter."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="D4 Resource Hub" />
+    <meta
+      property="og:image"
+      content="https://bobhasaclaw.github.io/d4-resource-hub/assets/og/og-home.png"
+    />
+    <meta
+      property="og:url"
+      content="https://bobhasaclaw.github.io/d4-resource-hub/"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Diablo 4 Resource Hub — Everything D4 Players Need in One Place"
+    />
+    <meta
+      name="twitter:description"
+      content="The ultimate Diablo 4 resource hub. Build guides, tier lists, tools, news, and community links for Season 12: Season of Slaughter."
+    />
+    <meta
+      name="twitter:image"
+      content="https://bobhasaclaw.github.io/d4-resource-hub/assets/og/og-home.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="canonical"
+      href="https://bobhasaclaw.github.io/d4-resource-hub/"
+    />
+    <link rel="icon" href="assets/brand/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&amp;display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- ======= STICKY NAVBAR ======= -->
     <nav class="navbar" id="main-nav">
-    <div class="navbar-inner"></div>
-  </nav>
+      <div class="navbar-inner"></div>
+    </nav>
 
-  <div class="mobile-menu" id="mobile-menu"></div>
+    <div class="mobile-menu" id="mobile-menu"></div>
 
-  <section class="hero" id="top">
-    <div class="hero-badge">
-      <span>⚔️</span> Season 12: Season of Slaughter is LIVE
-    </div>
-
-    <h1 class="hero-title">Diablo 4 Resource Hub</h1>
-    <p class="hero-subtitle">Everything D4 Players Need in One Place — Build guides, tier lists, tools, news, and community resources.</p>
-
-    <div class="hero-season-facts">
-      <div class="hero-fact">
-        <span class="icon">💀</span> Killstreak System
-      </div>
-      <div class="hero-fact">
-        <span class="icon">🩸</span> Bloodied Items
-      </div>
-      <div class="hero-fact">
-        <span class="icon">👹</span> Play as The Butcher
-      </div>
-    </div>
-
-    <a href="#start-here" class="hero-cta">
-      Start Here <span>↓</span>
-    </a>
-
-    <div class="hero-scroll-hint">
-      ↓ Scroll to explore
-    </div>
-  </section>
-
-  <section class="page-actions-section">
-    <div class="container">
-      <div class="page-actions-bar">
-        <a href="classes.html#class-finder" class="page-action-button">Compare Classes</a>
-        <a href="resources.html" class="page-action-button">Browse Resources</a>
-        <button type="button" class="page-action-button" data-copy-page-link>Copy Hub Link</button>
-        <button type="button" class="page-action-button" data-share-page data-share-text="Diablo 4 Resource Hub: build guides, tier lists, tools, creators, communities, and seasonal updates in one place.">Share Page</button>
-        <button type="button" class="page-action-button" data-copy-summary data-copy-summary="Diablo 4 Resource Hub: build guides, tier lists, tools, creators, communities, and seasonal updates in one place.">Copy Summary</button>
-        <span class="page-action-note">Reviewed March 20, 2026</span>
-        <span class="page-action-feedback" aria-live="polite"></span>
-      </div>
-    </div>
-  </section>
-
-  <!-- ======= START HERE ======= -->
-  <section class="home-launchpad" id="start-here">
-    <div class="container">
-      <div class="section-header">
-        <p class="section-label">Start Here</p>
-        <h2>Pick Your Next Move</h2>
-        <p class="section-desc">A cleaner entry point for new and returning players. Jump straight to the path that matches what you need right now.</p>
-      </div>
-
-      <div class="launchpad-grid">
-        <a href="new-player.html" class="launchpad-card">
-          <div class="card-eyebrow">New Players</div>
-          <h3>Learn the Basics</h3>
-          <p>Follow a structured path from class choice to gearing so you can get comfortable fast.</p>
-          <span class="card-link">Open the Beginner Guide →</span>
-        </a>
-        <a href="endgame-builds.html" class="launchpad-card">
-          <div class="card-eyebrow">Best Builds</div>
-          <h3>Find a Strong Build</h3>
-          <p>Browse the current endgame, leveling, speed farming, and bossing routes in one place.</p>
-          <span class="card-link">Compare Builds →</span>
-        </a>
-        <a href="resources.html" class="launchpad-card">
-          <div class="card-eyebrow">Resources</div>
-          <h3>Open the Directory</h3>
-          <p>Search build sites, tier lists, tools, creators, and guides from one curated hub.</p>
-          <span class="card-link">Browse Resources →</span>
-        </a>
-        <a href="tools.html" class="launchpad-card">
-          <div class="card-eyebrow">Utility Tools</div>
-          <h3>Plan Your Setup</h3>
-          <p>Use planners, maps, calculators, and support tools to tighten up your build path.</p>
-          <span class="card-link">Open Tools →</span>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ======= SEASON 12 STATUS ======= -->
-  <section id="season">
-    <div class="container">
-      <div class="season-status">
-        <div class="season-status-header">
-          <h2 class="season-status-title">⚔️ Season 12: Season of Slaughter</h2>
-          <span class="season-status-badge">Live Now</span>
-        </div>
-        <div class="season-status-body">
-          <div class="season-status-item">
-            <span class="label">Season Theme</span>
-            <span class="value">Killstreak System + Bloodied Items</span>
+    <section class="hero hero-home" id="top">
+      <div class="container hero-home-shell">
+        <div class="hero-home-copy">
+          <div class="hero-badge">
+            <span>⚔️</span> Season 12: Season of Slaughter is LIVE
           </div>
-          <div class="season-status-item">
-            <span class="label">Special Mechanic</span>
-            <span class="value">Stack kills for bonus rewards &amp; power</span>
-          </div>
-          <div class="season-status-item">
-            <span class="label">Featured Unlock</span>
-            <span class="value">Play as The Butcher as a companion</span>
-          </div>
-          <div class="season-status-item">
-            <span class="label">Season Type</span>
-            <span class="value">Standard Seasonal Journey</span>
-          </div>
-        </div>
-        <div class="season-status-highlight">
-          <div class="label">Why It Stands Out</div>
-          <p>The Season of Slaughter introduces a killstreak mechanic that rewards aggressive play — the more enemies you chain together, the more powerful your Bloodied Items become. Plus, The Butcher from D1 joins you as a fully playable mercenary companion.</p>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <hr class="section-divider">
+          <div class="hero-brand-lockup" aria-hidden="true">
+            <img
+              src="assets/brand/d4rh-lockup.svg"
+              alt=""
+              class="hero-brand-lockup-image"
+            />
+          </div>
+          <h1 class="hero-title hero-title-sr-only">Diablo 4 Resource Hub</h1>
+          <p class="hero-subtitle">
+            Everything D4 players need in one place. Builds, newsroom coverage,
+            tools, creators, and curated source links arranged like a real
+            command center instead of a loose collection of pages.
+          </p>
 
-  <!-- ======= CONTENT CREATORS ======= -->
-  <section id="creators">
-    <div class="container">
-      <div class="section-header">
-        <p class="section-label">Watch & Learn</p>
-        <h2>Content Creators</h2>
-        <p class="section-desc">The best D4 YouTubers and streamers. Watch the latest S12 videos or visit their channels directly.</p>
-      </div>
-
-      <!-- Featured Video Embeds -->
-      <div class="video-showcase">
-        <div class="video-showcase-label">🔥 Watch — Latest Season 12 Videos</div>
-        <div class="video-grid">
-          <div class="video-card">
-            <div class="video-wrapper">
-              <iframe
-                src="https://www.youtube.com/embed/8tQdmMXAkco"
-                title="NEW Season 12 Tier List with the BEST Builds for Diablo 4 — Rob2628"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-                loading="lazy">
-              </iframe>
+          <div class="hero-season-facts">
+            <div class="hero-fact">
+              <span class="icon">💀</span> Killstreak System
             </div>
-            <div class="video-info">
-              <div class="video-title">NEW Season 12 Tier List with the BEST Builds for Diablo 4</div>
-              <div class="video-meta">
-                <a href="https://www.youtube.com/@Rob2628" target="_blank" rel="noopener" class="video-channel-link">Rob2628</a>
-                <span>•</span>
-                <span>62K views</span>
-                <span>•</span>
-                <span>11 days ago</span>
+            <div class="hero-fact">
+              <span class="icon">🩸</span> Bloodied Items
+            </div>
+            <div class="hero-fact">
+              <span class="icon">👹</span> Play as The Butcher
+            </div>
+          </div>
+
+          <div class="hero-command-grid">
+            <a class="hero-command-card" href="classes.html#class-finder">
+              <span>Best First Click</span>
+              <strong>Find a Class Fast</strong>
+              <p>
+                Use the class finder to get a quick recommendation for solo,
+                group, farming, or bossing.
+              </p>
+            </a>
+            <a class="hero-command-card" href="news.html">
+              <span>What Changed</span>
+              <strong>Open the Newsroom</strong>
+              <p>
+                See the latest seasonal stories, patch coverage, and expansion
+                updates without hunting across sources.
+              </p>
+            </a>
+            <a class="hero-command-card" href="resources.html">
+              <span>All Sources</span>
+              <strong>Browse the Directory</strong>
+              <p>
+                Jump into build sites, tier lists, creators, tools, and
+                communities from one curated hub.
+              </p>
+            </a>
+          </div>
+
+          <div class="hero-home-actions">
+            <a href="#start-here" class="hero-cta">Start Here <span>↓</span></a>
+            <a href="news.html" class="hero-secondary-link"
+              >See what changed this week</a
+            >
+          </div>
+        </div>
+
+        <aside class="hero-home-aside">
+          <div class="hero-spotlight-card">
+            <div class="hero-spotlight-kicker">Right Now in Sanctuary</div>
+            <h2>Momentum is the theme of the season</h2>
+            <p>
+              Season 12 rewards fast clears, chained kills, and aggressive
+              routing. That makes build choice, patch awareness, and source
+              quality more valuable than ever.
+            </p>
+            <div class="hero-spotlight-stats">
+              <div class="hero-spotlight-stat">
+                <strong>12</strong>
+                <span>news stories</span>
+              </div>
+              <div class="hero-spotlight-stat">
+                <strong>20</strong>
+                <span>creator picks</span>
+              </div>
+              <div class="hero-spotlight-stat">
+                <strong>4</strong>
+                <span>major build sources</span>
+              </div>
+            </div>
+            <div class="hero-spotlight-links">
+              <a href="season.html">Open Season Info</a>
+              <a href="videos.html">Watch the Video Hub</a>
+            </div>
+          </div>
+
+          <div class="hero-mini-grid">
+            <a href="tierlists.html" class="hero-mini-card">
+              <span>Meta Snapshot</span>
+              <strong>Tier Lists</strong>
+              <p>
+                Compare what Maxroll, Icy Veins, D4Builds, and Mobalytics are
+                showing right now.
+              </p>
+            </a>
+            <a href="creators.html" class="hero-mini-card">
+              <span>Where to Learn</span>
+              <strong>Creators</strong>
+              <p>
+                Open visual YouTube and Twitch picks with better discovery than
+                a plain link list.
+              </p>
+            </a>
+          </div>
+        </aside>
+      </div>
+
+      <div class="hero-scroll-hint">↓ Scroll to explore</div>
+    </section>
+
+    <section class="page-actions-section">
+      <div class="container">
+        <div class="page-actions-bar">
+          <a href="classes.html#class-finder" class="page-action-button"
+            >Compare Classes</a
+          >
+          <a href="resources.html" class="page-action-button"
+            >Browse Resources</a
+          >
+          <button type="button" class="page-action-button" data-copy-page-link>
+            Copy Hub Link
+          </button>
+          <button
+            type="button"
+            class="page-action-button"
+            data-share-page
+            data-share-text="Diablo 4 Resource Hub: build guides, tier lists, tools, creators, communities, and seasonal updates in one place."
+          >
+            Share Page
+          </button>
+          <button
+            type="button"
+            class="page-action-button"
+            data-copy-summary
+            data-copy-summary="Diablo 4 Resource Hub: build guides, tier lists, tools, creators, communities, and seasonal updates in one place."
+          >
+            Copy Summary
+          </button>
+          <span class="page-action-note">Reviewed March 21, 2026</span>
+          <span class="page-action-feedback" aria-live="polite"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= START HERE ======= -->
+    <section class="home-launchpad" id="start-here">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label">Start Here</p>
+          <h2>Pick Your Next Move</h2>
+          <p class="section-desc">
+            A cleaner entry point for new and returning players. Jump straight
+            to the path that matches what you need right now.
+          </p>
+        </div>
+
+        <div class="launchpad-grid">
+          <a href="new-player.html" class="launchpad-card">
+            <div class="card-eyebrow">New Players</div>
+            <h3>Learn the Basics</h3>
+            <p>
+              Follow a structured path from class choice to gearing so you can
+              get comfortable fast.
+            </p>
+            <span class="card-link">Open the Beginner Guide →</span>
+          </a>
+          <a href="endgame-builds.html" class="launchpad-card">
+            <div class="card-eyebrow">Best Builds</div>
+            <h3>Find a Strong Build</h3>
+            <p>
+              Browse the current endgame, leveling, speed farming, and bossing
+              routes in one place.
+            </p>
+            <span class="card-link">Compare Builds →</span>
+          </a>
+          <a href="resources.html" class="launchpad-card">
+            <div class="card-eyebrow">Resources</div>
+            <h3>Open the Directory</h3>
+            <p>
+              Search build sites, tier lists, tools, creators, and guides from
+              one curated hub.
+            </p>
+            <span class="card-link">Browse Resources →</span>
+          </a>
+          <a href="tools.html" class="launchpad-card">
+            <div class="card-eyebrow">Utility Tools</div>
+            <h3>Plan Your Setup</h3>
+            <p>
+              Use planners, maps, calculators, and support tools to tighten up
+              your build path.
+            </p>
+            <span class="card-link">Open Tools →</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="featured-lanes">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label">Featured Lanes</p>
+          <h2>Use the Site Like a Dashboard</h2>
+          <p class="section-desc">
+            These are the four fastest ways to get value out of the hub without
+            bouncing between random pages.
+          </p>
+        </div>
+
+        <div class="featured-lanes-grid">
+          <a href="classes.html#class-finder" class="featured-lane-card">
+            <span class="featured-lane-kicker">Decision Lane</span>
+            <h3>Choose a Class First</h3>
+            <p>
+              Start here if you need one quick recommendation for solo play,
+              groups, speed farming, or bossing.
+            </p>
+            <div class="featured-lane-tags">
+              <span class="featured-lane-tag">Spiritborn</span>
+              <span class="featured-lane-tag">Paladin</span>
+              <span class="featured-lane-tag">Class Finder</span>
+            </div>
+          </a>
+
+          <a href="endgame-builds.html" class="featured-lane-card">
+            <span class="featured-lane-kicker">Power Lane</span>
+            <h3>Move Into Builds</h3>
+            <p>
+              Use the build pages when you already know the class and need the
+              cleanest route into leveling, endgame, bossing, or farming.
+            </p>
+            <div class="featured-lane-tags">
+              <span class="featured-lane-tag">Endgame</span>
+              <span class="featured-lane-tag">Bossing</span>
+              <span class="featured-lane-tag">Speed Farm</span>
+            </div>
+          </a>
+
+          <a href="news.html" class="featured-lane-card">
+            <span class="featured-lane-kicker">Freshness Lane</span>
+            <h3>Check What Changed</h3>
+            <p>
+              Go here when the meta feels uncertain and you need patch context,
+              season updates, or expansion news before committing to a build.
+            </p>
+            <div class="featured-lane-tags">
+              <span class="featured-lane-tag">Patch Notes</span>
+              <span class="featured-lane-tag">Season Updates</span>
+              <span class="featured-lane-tag">Expansion</span>
+            </div>
+          </a>
+
+          <a href="resources.html" class="featured-lane-card">
+            <span class="featured-lane-kicker">Source Lane</span>
+            <h3>Open the Full Resource Matrix</h3>
+            <p>
+              Best when you want planners, creators, source sites, communities,
+              or tools all organized by purpose instead of popularity.
+            </p>
+            <div class="featured-lane-tags">
+              <span class="featured-lane-tag">Maxroll</span>
+              <span class="featured-lane-tag">D4Builds</span>
+              <span class="featured-lane-tag">Tools</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= SEASON 12 STATUS ======= -->
+    <section id="season">
+      <div class="container">
+        <div class="season-status">
+          <div class="season-status-header">
+            <h2 class="season-status-title">
+              ⚔️ Season 12: Season of Slaughter
+            </h2>
+            <span class="season-status-badge">Live Now</span>
+          </div>
+          <div class="season-status-body">
+            <div class="season-status-item">
+              <span class="label">Season Theme</span>
+              <span class="value">Killstreak System + Bloodied Items</span>
+            </div>
+            <div class="season-status-item">
+              <span class="label">Special Mechanic</span>
+              <span class="value"
+                >Stack kills for bonus rewards &amp; power</span
+              >
+            </div>
+            <div class="season-status-item">
+              <span class="label">Featured Unlock</span>
+              <span class="value">Play as The Butcher as a companion</span>
+            </div>
+            <div class="season-status-item">
+              <span class="label">Season Type</span>
+              <span class="value">Standard Seasonal Journey</span>
+            </div>
+          </div>
+          <div class="season-status-highlight">
+            <div class="label">Why It Stands Out</div>
+            <p>
+              The Season of Slaughter introduces a killstreak mechanic that
+              rewards aggressive play — the more enemies you chain together, the
+              more powerful your Bloodied Items become. Plus, The Butcher from
+              D1 joins you as a fully playable mercenary companion.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider" />
+
+    <section id="latest-news">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label">Latest in Sanctuary</p>
+          <h2>Featured News & Articles</h2>
+          <p class="section-desc">
+            A newsroom-style snapshot of the biggest Diablo 4 stories, powered
+            by the same article archive as the full newsroom.
+          </p>
+        </div>
+        <div class="homepage-news-shell" data-homepage-news></div>
+      </div>
+    </section>
+
+    <hr class="section-divider" />
+
+    <!-- ======= CONTENT CREATORS ======= -->
+    <section id="creators">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label">Watch & Learn</p>
+          <h2>Content Creators</h2>
+          <p class="section-desc">
+            The best D4 YouTubers and streamers. Watch the latest S12 videos or
+            visit their channels directly.
+          </p>
+        </div>
+
+        <!-- Featured Video Embeds -->
+        <div class="video-showcase">
+          <div class="video-showcase-label">
+            🔥 Watch — Latest Season 12 Videos
+          </div>
+          <div class="video-grid">
+            <div class="video-card">
+              <div class="video-wrapper">
+                <iframe
+                  src="https://www.youtube.com/embed/8tQdmMXAkco"
+                  title="NEW Season 12 Tier List with the BEST Builds for Diablo 4 — Rob2628"
+                  allow="
+                    accelerometer;
+                    autoplay;
+                    clipboard-write;
+                    encrypted-media;
+                    gyroscope;
+                    picture-in-picture;
+                  "
+                  allowfullscreen
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="video-info">
+                <div class="video-title">
+                  NEW Season 12 Tier List with the BEST Builds for Diablo 4
+                </div>
+                <div class="video-meta">
+                  <a
+                    href="https://www.youtube.com/@Rob2628"
+                    target="_blank"
+                    rel="noopener"
+                    class="video-channel-link"
+                    >Rob2628</a
+                  >
+                  <span>•</span>
+                  <span>62K views</span>
+                  <span>•</span>
+                  <span>11 days ago</span>
+                </div>
+              </div>
+            </div>
+            <div class="video-card">
+              <div class="video-wrapper">
+                <iframe
+                  src="https://www.youtube.com/embed/WsmK5nl0wdE"
+                  title="Top 10 Best Builds for Diablo 4 Season 12 (All Classes) — Rhykker"
+                  allow="
+                    accelerometer;
+                    autoplay;
+                    clipboard-write;
+                    encrypted-media;
+                    gyroscope;
+                    picture-in-picture;
+                  "
+                  allowfullscreen
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="video-info">
+                <div class="video-title">
+                  Top 10 Best Builds for Diablo 4 Season 12 (All Classes)
+                </div>
+                <div class="video-meta">
+                  <a
+                    href="https://www.youtube.com/@Rhykker"
+                    target="_blank"
+                    rel="noopener"
+                    class="video-channel-link"
+                    >Rhykker</a
+                  >
+                  <span>•</span>
+                  <span>87K views</span>
+                  <span>•</span>
+                  <span>2 days ago</span>
+                </div>
               </div>
             </div>
           </div>
-          <div class="video-card">
-            <div class="video-wrapper">
-              <iframe
-                src="https://www.youtube.com/embed/WsmK5nl0wdE"
-                title="Top 10 Best Builds for Diablo 4 Season 12 (All Classes) — Rhykker"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-                loading="lazy">
-              </iframe>
-            </div>
-            <div class="video-info">
-              <div class="video-title">Top 10 Best Builds for Diablo 4 Season 12 (All Classes)</div>
-              <div class="video-meta">
-                <a href="https://www.youtube.com/@Rhykker" target="_blank" rel="noopener" class="video-channel-link">Rhykker</a>
-                <span>•</span>
-                <span>87K views</span>
-                <span>•</span>
-                <span>2 days ago</span>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
 
-      <!-- All Creators -->
-      <div class="creator-grid">
-        <a href="https://www.youtube.com/@Rob2628" target="_blank" rel="noopener" class="creator-card" style="text-decoration:none;">
-          <div class="creator-card-media creator-media-rob">
-            <img class="creator-card-shot" src="https://i.ytimg.com/vi/8tQdmMXAkco/hqdefault.jpg" alt="Rob2628 YouTube thumbnail: NEW Season 12 Tier List with the BEST Builds for Diablo 4" loading="lazy" decoding="async">
-            <span class="creator-media-badge">YouTube</span>
-          </div>
-          <div class="creator-card-body">
-            <div class="creator-name">Rob2628</div>
-            <div class="creator-platform">
-              <span>YouTube</span>
-              <span>Twitch</span>
-            </div>
-            <div class="creator-desc">Paladin &amp; Spiritborn meta specialist. A strong source for S12 tier lists, Cpt. America Paladin, and seasonal build optimization. 247K YouTube subs.</div>
-            <div class="creator-card-cta">→ YouTube Channel</div>
-          </div>
-        </a>
-
-        <a href="https://www.youtube.com/@Rhykker" target="_blank" rel="noopener" class="creator-card" style="text-decoration:none;">
-          <div class="creator-card-media creator-media-rhykker">
-            <img class="creator-card-shot" src="https://i.ytimg.com/vi/WsmK5nl0wdE/hqdefault.jpg" alt="Rhykker YouTube thumbnail: Top 10 Best Builds for Diablo 4 Season 12 (All Classes)" loading="lazy" decoding="async">
-            <span class="creator-media-badge">YouTube</span>
-          </div>
-          <div class="creator-card-body">
-            <div class="creator-name">Rhykker</div>
-            <div class="creator-platform">
-              <span>YouTube — 706K</span>
-            </div>
-            <div class="creator-desc">Full D4 coverage — builds, tier lists, news, and deep dives. Most subscribed D4 creator. Consistent, thorough, and beginner-friendly.</div>
-            <div class="creator-card-cta">→ YouTube Channel</div>
-          </div>
-        </a>
-
-        <a href="https://www.youtube.com/@MacroBioBoi" target="_blank" rel="noopener" class="creator-card" style="text-decoration:none;">
-          <div class="creator-card-media creator-media-macro">
-            <img class="creator-card-shot" src="https://i.ytimg.com/vi/w1Q4nT-sLHE/hqdefault.jpg" alt="MacroBioBoi YouTube thumbnail: How I Make Builds in Diablo 4" loading="lazy" decoding="async">
-            <span class="creator-media-badge">YouTube</span>
-          </div>
-          <div class="creator-card-body">
-            <div class="creator-name">MacroBioBoi</div>
-            <div class="creator-platform">
-              <span>YouTube — 75.9K</span>
-            </div>
-            <div class="creator-desc">Deep mechanics theorycrafting. D2 &amp; D4 comparisons, itemization analysis, and long-form build breakdowns. Best for understanding WHY builds work.</div>
-            <div class="creator-card-cta">→ YouTube Channel</div>
-          </div>
-        </a>
-
-        <a href="https://www.youtube.com/results?search_query=Patriarch+diablo+4" target="_blank" rel="noopener" class="creator-card" style="text-decoration:none;">
-          <div class="creator-card-media creator-media-patriarch">
-            <img class="creator-card-shot" src="https://i.ytimg.com/vi/eB2wKmhQx2o/hqdefault.jpg" alt="Patriarch YouTube thumbnail: Diablo 4 pure crit rogue, most fun build" loading="lazy" decoding="async">
-            <span class="creator-media-badge">YouTube</span>
-          </div>
-          <div class="creator-card-body">
-            <div class="creator-name">Patriarch</div>
-            <div class="creator-platform">
-              <span>YouTube</span>
-            </div>
-            <div class="creator-desc">D4 builds and tier lists with clear, concise content. Great for quick build overviews and meta updates. Solid all-around D4 coverage.</div>
-            <div class="creator-card-cta">→ Find on YouTube</div>
-          </div>
-        </a>
-
-        <a href="https://www.youtube.com/channel/UCLHAhGkEEv24hFuWuKX_XFg" target="_blank" rel="noopener" class="creator-card" style="text-decoration:none;">
-          <div class="creator-card-media creator-media-sliver">
-            <img class="creator-card-shot" src="https://i.ytimg.com/vi/q7eaxqFMedQ/hqdefault.jpg" alt="Sliver of Time YouTube thumbnail: Crazy Infinite Mob Spawn &amp; Experience Bug" loading="lazy" decoding="async">
-            <span class="creator-media-badge">YouTube</span>
-          </div>
-          <div class="creator-card-body">
-            <div class="creator-name">Sliver of Time</div>
-            <div class="creator-platform">
-              <span>YouTube</span>
-              <span>Hidden Gem</span>
-            </div>
-            <div class="creator-desc">An underrated creator for finding loopholes, useful discoveries, and small tricks that make the game easier and more fun to play.</div>
-            <div class="creator-card-cta">→ Hidden Gem Channel</div>
-          </div>
-        </a>
-      </div>
-
-      <!-- Twitch Streamers -->
-      <div style="margin-top: 1.5rem;">
-        <p class="section-label" style="margin-bottom: 1rem;">💜 Also Worth Watching — Twitch</p>
-        <div class="creator-grid" style="grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));">
-          <a href="https://www.twitch.tv/rob2628" target="_blank" rel="noopener" class="creator-card" style="text-decoration:none;">
+        <!-- All Creators -->
+        <div class="creator-grid">
+          <a
+            href="https://www.youtube.com/@Rob2628"
+            target="_blank"
+            rel="noopener"
+            class="creator-card card-link-reset"
+          >
             <div class="creator-card-media creator-media-rob">
-              <img class="creator-card-shot" src="https://static-cdn.jtvnw.net/jtv_user_pictures/d5f96899-40fe-4ec1-b566-e7cefea872c1-profile_image-300x300.png" alt="Rob2628 Twitch profile image" loading="lazy" decoding="async">
-              <span class="creator-media-badge">Twitch</span>
+              <img
+                class="creator-card-shot"
+                src="https://i.ytimg.com/vi/8tQdmMXAkco/hqdefault.jpg"
+                alt="Rob2628 YouTube thumbnail: NEW Season 12 Tier List with the BEST Builds for Diablo 4"
+                loading="lazy"
+                decoding="async"
+              />
+              <span class="creator-media-badge">YouTube</span>
             </div>
             <div class="creator-card-body">
               <div class="creator-name">Rob2628</div>
-              <div class="creator-platform"><span>Twitch — ~835 live viewers</span></div>
-              <div class="creator-desc">D4 Partner. Drops-enabled. WW Barb, Holy Paladin, and endgame bossing.</div>
-              <div class="creator-card-cta">→ Twitch Channel</div>
+              <div class="creator-platform">
+                <span>YouTube</span>
+                <span>Twitch</span>
+              </div>
+              <div class="creator-desc">
+                Paladin &amp; Spiritborn meta specialist. A strong source for
+                S12 tier lists, Cpt. America Paladin, and seasonal build
+                optimization. 247K YouTube subs.
+              </div>
+              <div class="creator-card-cta">→ YouTube Channel</div>
             </div>
           </a>
-          <a href="https://www.twitch.tv/snuggie" target="_blank" rel="noopener" class="creator-card" style="text-decoration:none;">
-            <div class="creator-card-media creator-media-snuggie">
-              <img class="creator-card-shot" src="https://static-cdn.jtvnw.net/jtv_user_pictures/1749d085-d992-4a3d-b43a-3cc46a3ed15c-profile_image-300x300.png" alt="Snuggie Twitch profile image" loading="lazy" decoding="async">
-              <span class="creator-media-badge">Twitch</span>
+
+          <a
+            href="https://www.youtube.com/@Rhykker"
+            target="_blank"
+            rel="noopener"
+            class="creator-card card-link-reset"
+          >
+            <div class="creator-card-media creator-media-rhykker">
+              <img
+                class="creator-card-shot"
+                src="https://i.ytimg.com/vi/WsmK5nl0wdE/hqdefault.jpg"
+                alt="Rhykker YouTube thumbnail: Top 10 Best Builds for Diablo 4 Season 12 (All Classes)"
+                loading="lazy"
+                decoding="async"
+              />
+              <span class="creator-media-badge">YouTube</span>
             </div>
             <div class="creator-card-body">
-              <div class="creator-name">Snuggie</div>
-              <div class="creator-platform"><span>Twitch</span></div>
-              <div class="creator-desc">D4 Partner. Chat carry runs. Use <code style="font-size:0.75rem;background:rgba(201,162,39,0.1);padding:1px 4px;border-radius:3px;">!advgg</code> for build advice.</div>
-              <div class="creator-card-cta">→ Twitch Channel</div>
+              <div class="creator-name">Rhykker</div>
+              <div class="creator-platform">
+                <span>YouTube — 706K</span>
+              </div>
+              <div class="creator-desc">
+                Full D4 coverage — builds, tier lists, news, and deep dives.
+                Most subscribed D4 creator. Consistent, thorough, and
+                beginner-friendly.
+              </div>
+              <div class="creator-card-cta">→ YouTube Channel</div>
             </div>
           </a>
-          <a href="https://www.twitch.tv/bludfarts666_" target="_blank" rel="noopener" class="creator-card" style="text-decoration:none;">
-            <div class="creator-card-media creator-media-blud">
-              <img class="creator-card-shot" src="https://static-cdn.jtvnw.net/jtv_user_pictures/7ee85034-2120-45d8-80af-2d6084da5fba-profile_image-300x300.jpeg" alt="bludfarts666_ Twitch profile image" loading="lazy" decoding="async">
-              <span class="creator-media-badge">Twitch</span>
-            </div>
-            <div class="creator-card-body">
-              <div class="creator-name">bludfarts666_</div>
-              <div class="creator-platform"><span>Twitch</span></div>
-              <div class="creator-desc">Necromancer specialist. Triple Golem, corpse-based builds. "NecroNation" community.</div>
-              <div class="creator-card-cta">→ Twitch Channel</div>
-            </div>
-          </a>
-          <a href="https://www.twitch.tv/macrobioboi" target="_blank" rel="noopener" class="creator-card" style="text-decoration:none;">
+
+          <a
+            href="https://www.youtube.com/@MacroBioBoi"
+            target="_blank"
+            rel="noopener"
+            class="creator-card card-link-reset"
+          >
             <div class="creator-card-media creator-media-macro">
-              <img class="creator-card-shot" src="https://static-cdn.jtvnw.net/jtv_user_pictures/0296df4a-5a8c-406e-bafe-b8f81efe1205-profile_image-300x300.png" alt="MacroBioBoi Twitch profile image" loading="lazy" decoding="async">
-              <span class="creator-media-badge">Twitch</span>
+              <img
+                class="creator-card-shot"
+                src="https://i.ytimg.com/vi/w1Q4nT-sLHE/hqdefault.jpg"
+                alt="MacroBioBoi YouTube thumbnail: How I Make Builds in Diablo 4"
+                loading="lazy"
+                decoding="async"
+              />
+              <span class="creator-media-badge">YouTube</span>
             </div>
             <div class="creator-card-body">
               <div class="creator-name">MacroBioBoi</div>
-              <div class="creator-platform"><span>Twitch</span></div>
-              <div class="creator-desc">Mechanical theorycrafting live. Deep D4 &amp; D2R discussion with the community.</div>
-              <div class="creator-card-cta">→ Twitch Channel</div>
+              <div class="creator-platform">
+                <span>YouTube — 75.9K</span>
+              </div>
+              <div class="creator-desc">
+                Deep mechanics theorycrafting. D2 &amp; D4 comparisons,
+                itemization analysis, and long-form build breakdowns. Best for
+                understanding WHY builds work.
+              </div>
+              <div class="creator-card-cta">→ YouTube Channel</div>
             </div>
           </a>
-          <a href="https://www.twitch.tv/raxxanterax" target="_blank" rel="noopener" class="creator-card" style="text-decoration:none;">
-            <div class="creator-card-media creator-media-blizz">
-              <img class="creator-card-shot" src="https://static-cdn.jtvnw.net/jtv_user_pictures/4e2e8391-8ba0-48cf-b1a8-310425507d55-profile_image-300x300.png" alt="Raxxanterax Twitch profile image" loading="lazy" decoding="async">
-              <span class="creator-media-badge">Twitch</span>
-            </div>
-            <div class="creator-card-body">
-              <div class="creator-name">Raxxanterax</div>
-              <div class="creator-platform"><span>Twitch</span></div>
-              <div class="creator-desc">Season prep, meta talk, build discussions, and patch reactions.</div>
-              <div class="creator-card-cta">→ Twitch Channel</div>
-            </div>
-          </a>
-          <a href="https://www.twitch.tv/wudijo" target="_blank" rel="noopener" class="creator-card" style="text-decoration:none;">
-            <div class="creator-card-media creator-media-rhykker">
-              <img class="creator-card-shot" src="https://static-cdn.jtvnw.net/jtv_user_pictures/12dff549-033e-4571-92c3-043af0ccf4c3-profile_image-300x300.png" alt="wudijo Twitch profile image" loading="lazy" decoding="async">
-              <span class="creator-media-badge">Twitch</span>
-            </div>
-            <div class="creator-card-body">
-              <div class="creator-name">wudijo</div>
-              <div class="creator-platform"><span>Twitch</span></div>
-              <div class="creator-desc">High-end Hardcore play, class optimization, and endgame testing.</div>
-              <div class="creator-card-cta">→ Twitch Channel</div>
-            </div>
-          </a>
-          <a href="https://www.twitch.tv/datmodz" target="_blank" rel="noopener" class="creator-card" style="text-decoration:none;">
-            <div class="creator-card-media creator-media-blizz">
-              <img class="creator-card-shot" src="https://static-cdn.jtvnw.net/jtv_user_pictures/4eba575d-40ce-44bb-aaad-a7706d2cba78-profile_image-300x300.png" alt="DatModz Twitch profile image" loading="lazy" decoding="async">
-              <span class="creator-media-badge">Twitch</span>
-            </div>
-            <div class="creator-card-body">
-              <div class="creator-name">DatModz</div>
-              <div class="creator-platform"><span>Twitch</span></div>
-              <div class="creator-desc">Season prep, patch breakdowns, and community Q&amp;A.</div>
-              <div class="creator-card-cta">→ Twitch Channel</div>
-            </div>
-          </a>
-          <a href="https://www.twitch.tv/p4wnyhof" target="_blank" rel="noopener" class="creator-card" style="text-decoration:none;">
+
+          <a
+            href="https://www.youtube.com/results?search_query=Patriarch+diablo+4"
+            target="_blank"
+            rel="noopener"
+            class="creator-card card-link-reset"
+          >
             <div class="creator-card-media creator-media-patriarch">
-              <img class="creator-card-shot" src="https://static-cdn.jtvnw.net/jtv_user_pictures/81fccfbe-fd95-4576-bdd0-e4ad4fb467db-profile_image-300x300.png" alt="P4wnyhof Twitch profile image" loading="lazy" decoding="async">
-              <span class="creator-media-badge">Twitch</span>
+              <img
+                class="creator-card-shot"
+                src="https://i.ytimg.com/vi/eB2wKmhQx2o/hqdefault.jpg"
+                alt="Patriarch YouTube thumbnail: Diablo 4 pure crit rogue, most fun build"
+                loading="lazy"
+                decoding="async"
+              />
+              <span class="creator-media-badge">YouTube</span>
             </div>
             <div class="creator-card-body">
-              <div class="creator-name">P4wnyhof</div>
-              <div class="creator-platform"><span>Twitch</span></div>
-              <div class="creator-desc">Paladin-focused live play and class discussion.</div>
-              <div class="creator-card-cta">→ Twitch Channel</div>
+              <div class="creator-name">Patriarch</div>
+              <div class="creator-platform">
+                <span>YouTube</span>
+              </div>
+              <div class="creator-desc">
+                D4 builds and tier lists with clear, concise content. Great for
+                quick build overviews and meta updates. Solid all-around D4
+                coverage.
+              </div>
+              <div class="creator-card-cta">→ Find on YouTube</div>
+            </div>
+          </a>
+
+          <a
+            href="https://www.youtube.com/channel/UCLHAhGkEEv24hFuWuKX_XFg"
+            target="_blank"
+            rel="noopener"
+            class="creator-card card-link-reset"
+          >
+            <div class="creator-card-media creator-media-sliver">
+              <img
+                class="creator-card-shot"
+                src="https://i.ytimg.com/vi/q7eaxqFMedQ/hqdefault.jpg"
+                alt="Sliver of Time YouTube thumbnail: Crazy Infinite Mob Spawn &amp; Experience Bug"
+                loading="lazy"
+                decoding="async"
+              />
+              <span class="creator-media-badge">YouTube</span>
+            </div>
+            <div class="creator-card-body">
+              <div class="creator-name">Sliver of Time</div>
+              <div class="creator-platform">
+                <span>YouTube</span>
+                <span>Hidden Gem</span>
+              </div>
+              <div class="creator-desc">
+                An underrated creator for finding loopholes, useful discoveries,
+                and small tricks that make the game easier and more fun to play.
+              </div>
+              <div class="creator-card-cta">→ Hidden Gem Channel</div>
             </div>
           </a>
         </div>
-      </div>
 
-    </div>
-  </section>
-
-  <hr class="section-divider">
-
-
-  <!-- ======= QUICK LINKS ======= -->
-  <section id="quicklinks">
-    <div class="container">
-      <div class="section-header">
-        <p class="section-label">Explore More</p>
-        <h2>Full Resource Pages</h2>
-        <p class="section-desc">Deep dives into every D4 topic — each one a dedicated page.</p>
-      </div>
-      <div class="card-grid card-grid-4">
-        <a href="tierlists.html" class="card" style="text-decoration:none;">
-          <div class="card-icon">📊</div>
-          <div class="card-title">Tier Lists</div>
-          <div class="card-desc">All S12 tier lists — endgame, speed farm, boss kill, leveling. Sources: Maxroll, Icy Veins, D4Builds, Mobalytics.</div>
-          <span class="card-link">View Tier Lists →</span>
-        </a>
-        <a href="classes.html" class="card" style="text-decoration:none;">
-          <div class="card-icon">⚔️</div>
-          <div class="card-title">Class Comparison</div>
-          <div class="card-desc">Every class ranked S12. Difficulty, best builds, weapons, and role suitability.</div>
-          <span class="card-link">Compare Classes →</span>
-        </a>
-        <a href="dungeons.html" class="card" style="text-decoration:none;">
-          <div class="card-icon">🏰</div>
-          <div class="card-title">Dungeons & Activities</div>
-          <div class="card-desc">Nightmare Dungeons, Helltide, The Pit, World Bosses, S12 Killstreak system.</div>
-          <span class="card-link">Explore Dungeons →</span>
-        </a>
-        <a href="new-player.html" class="card" style="text-decoration:none;">
-          <div class="card-icon">🆕</div>
-          <div class="card-title">New Player Guide</div>
-          <div class="card-desc">From level 1 to endgame. Class picks, campaign path, first 10 hours, gear basics.</div>
-          <span class="card-link">New Player Guide →</span>
-        </a>
-        <a href="videos.html" class="card" style="text-decoration:none;">
-          <div class="card-icon">🎥</div>
-          <div class="card-title">Video Hub</div>
-          <div class="card-desc">Curated D4 embeds for build guides, season updates, deep dives, and hidden gem videos.</div>
-          <span class="card-link">Watch Videos →</span>
-        </a>
-        <a href="tools.html" class="card" style="text-decoration:none;">
-          <div class="card-icon">🛠️</div>
-          <div class="card-title">Tools & Utilities</div>
-          <div class="card-desc">Build planners, interactive map, loot databases, DPS calculators, gem calculators.</div>
-          <span class="card-link">View Tools →</span>
-        </a>
-        <a href="crafting.html" class="card" style="text-decoration:none;">
-          <div class="card-icon">⚒️</div>
-          <div class="card-title">Crafting & Gear</div>
-          <div class="card-desc">Tempering, masterworking, aspects, gems, S12 seasonal crafting. Gear progression path.</div>
-          <span class="card-link">Crafting Guide →</span>
-        </a>
-        <a href="news.html" class="card" style="text-decoration:none;">
-          <div class="card-icon">📰</div>
-          <div class="card-title">News</div>
-          <div class="card-desc">Latest D4 news, patch notes, season announcements, community updates.</div>
-          <span class="card-link">Read News →</span>
-        </a>
-        <a href="season.html" class="card" style="text-decoration:none;">
-          <div class="card-icon">🔥</div>
-          <div class="card-title">Season 12 Info</div>
-          <div class="card-desc">Season of Slaughter mechanics — Killstreak, Bloodied Items, Slaughterhouses, Fresh Meat.</div>
-          <span class="card-link">Season Info →</span>
-        </a>
-        <a href="communities.html" class="card" style="text-decoration:none;">
-          <div class="card-icon">💬</div>
-          <div class="card-title">Communities</div>
-          <div class="card-desc">Discords, Reddit, Twitch communities. Where to get help and talk D4.</div>
-          <span class="card-link">Join Communities →</span>
-        </a>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ======= EXPANSION TEASER ======= -->
-  <section id="expansion">
-    <div class="container">
-      <div class="expansion-teaser">
-        <p class="expansion-teaser-label">🔥 Coming Soon</p>
-        <h2>Lord of Hatred Expansion</h2>
-        <p>The next major Diablo 4 expansion. Confront Mephisto, the Lord of Hatred, across the ancient islands of Skovos. Two new classes and a dark new chapter in the Sanctuary saga.</p>
-
-        <div class="expansion-teaser-highlights">
-          <div class="expansion-highlight">
-            <span class="icon">🌑</span> New Classes: Warlock + 1 More (TBA)
-          </div>
-          <div class="expansion-highlight">
-            <span class="icon">🏝️</span> New Region: Skovos (Ancient Islands)
-          </div>
-          <div class="expansion-highlight">
-            <span class="icon">⚔️</span> Face Mephisto, Lord of Hatred
+        <!-- Twitch Streamers -->
+        <div class="stack-space-md">
+          <p class="section-label section-label-spaced">
+            💜 Also Worth Watching — Twitch
+          </p>
+          <div class="creator-grid creator-grid-compact">
+            <a
+              href="https://www.twitch.tv/rob2628"
+              target="_blank"
+              rel="noopener"
+              class="creator-card card-link-reset"
+            >
+              <div class="creator-card-media creator-media-rob">
+                <img
+                  class="creator-card-shot"
+                  src="https://static-cdn.jtvnw.net/jtv_user_pictures/d5f96899-40fe-4ec1-b566-e7cefea872c1-profile_image-300x300.png"
+                  alt="Rob2628 Twitch profile image"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <span class="creator-media-badge">Twitch</span>
+              </div>
+              <div class="creator-card-body">
+                <div class="creator-name">Rob2628</div>
+                <div class="creator-platform">
+                  <span>Twitch — ~835 live viewers</span>
+                </div>
+                <div class="creator-desc">
+                  D4 Partner. Drops-enabled. WW Barb, Holy Paladin, and endgame
+                  bossing.
+                </div>
+                <div class="creator-card-cta">→ Twitch Channel</div>
+              </div>
+            </a>
+            <a
+              href="https://www.twitch.tv/snuggie"
+              target="_blank"
+              rel="noopener"
+              class="creator-card card-link-reset"
+            >
+              <div class="creator-card-media creator-media-snuggie">
+                <img
+                  class="creator-card-shot"
+                  src="https://static-cdn.jtvnw.net/jtv_user_pictures/1749d085-d992-4a3d-b43a-3cc46a3ed15c-profile_image-300x300.png"
+                  alt="Snuggie Twitch profile image"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <span class="creator-media-badge">Twitch</span>
+              </div>
+              <div class="creator-card-body">
+                <div class="creator-name">Snuggie</div>
+                <div class="creator-platform"><span>Twitch</span></div>
+                <div class="creator-desc">
+                  D4 Partner. Chat carry runs. Use
+                  <code class="inline-code-soft">!advgg</code>
+                  for build advice.
+                </div>
+                <div class="creator-card-cta">→ Twitch Channel</div>
+              </div>
+            </a>
+            <a
+              href="https://www.twitch.tv/bludfarts666_"
+              target="_blank"
+              rel="noopener"
+              class="creator-card card-link-reset"
+            >
+              <div class="creator-card-media creator-media-blud">
+                <img
+                  class="creator-card-shot"
+                  src="https://static-cdn.jtvnw.net/jtv_user_pictures/7ee85034-2120-45d8-80af-2d6084da5fba-profile_image-300x300.jpeg"
+                  alt="bludfarts666_ Twitch profile image"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <span class="creator-media-badge">Twitch</span>
+              </div>
+              <div class="creator-card-body">
+                <div class="creator-name">bludfarts666_</div>
+                <div class="creator-platform"><span>Twitch</span></div>
+                <div class="creator-desc">
+                  Necromancer specialist. Triple Golem, corpse-based builds.
+                  "NecroNation" community.
+                </div>
+                <div class="creator-card-cta">→ Twitch Channel</div>
+              </div>
+            </a>
+            <a
+              href="https://www.twitch.tv/macrobioboi"
+              target="_blank"
+              rel="noopener"
+              class="creator-card card-link-reset"
+            >
+              <div class="creator-card-media creator-media-macro">
+                <img
+                  class="creator-card-shot"
+                  src="https://static-cdn.jtvnw.net/jtv_user_pictures/0296df4a-5a8c-406e-bafe-b8f81efe1205-profile_image-300x300.png"
+                  alt="MacroBioBoi Twitch profile image"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <span class="creator-media-badge">Twitch</span>
+              </div>
+              <div class="creator-card-body">
+                <div class="creator-name">MacroBioBoi</div>
+                <div class="creator-platform"><span>Twitch</span></div>
+                <div class="creator-desc">
+                  Mechanical theorycrafting live. Deep D4 &amp; D2R discussion
+                  with the community.
+                </div>
+                <div class="creator-card-cta">→ Twitch Channel</div>
+              </div>
+            </a>
+            <a
+              href="https://www.twitch.tv/raxxanterax"
+              target="_blank"
+              rel="noopener"
+              class="creator-card card-link-reset"
+            >
+              <div class="creator-card-media creator-media-blizz">
+                <img
+                  class="creator-card-shot"
+                  src="https://static-cdn.jtvnw.net/jtv_user_pictures/4e2e8391-8ba0-48cf-b1a8-310425507d55-profile_image-300x300.png"
+                  alt="Raxxanterax Twitch profile image"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <span class="creator-media-badge">Twitch</span>
+              </div>
+              <div class="creator-card-body">
+                <div class="creator-name">Raxxanterax</div>
+                <div class="creator-platform"><span>Twitch</span></div>
+                <div class="creator-desc">
+                  Season prep, meta talk, build discussions, and patch
+                  reactions.
+                </div>
+                <div class="creator-card-cta">→ Twitch Channel</div>
+              </div>
+            </a>
+            <a
+              href="https://www.twitch.tv/wudijo"
+              target="_blank"
+              rel="noopener"
+              class="creator-card card-link-reset"
+            >
+              <div class="creator-card-media creator-media-rhykker">
+                <img
+                  class="creator-card-shot"
+                  src="https://static-cdn.jtvnw.net/jtv_user_pictures/12dff549-033e-4571-92c3-043af0ccf4c3-profile_image-300x300.png"
+                  alt="wudijo Twitch profile image"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <span class="creator-media-badge">Twitch</span>
+              </div>
+              <div class="creator-card-body">
+                <div class="creator-name">wudijo</div>
+                <div class="creator-platform"><span>Twitch</span></div>
+                <div class="creator-desc">
+                  High-end Hardcore play, class optimization, and endgame
+                  testing.
+                </div>
+                <div class="creator-card-cta">→ Twitch Channel</div>
+              </div>
+            </a>
+            <a
+              href="https://www.twitch.tv/datmodz"
+              target="_blank"
+              rel="noopener"
+              class="creator-card card-link-reset"
+            >
+              <div class="creator-card-media creator-media-blizz">
+                <img
+                  class="creator-card-shot"
+                  src="https://static-cdn.jtvnw.net/jtv_user_pictures/4eba575d-40ce-44bb-aaad-a7706d2cba78-profile_image-300x300.png"
+                  alt="DatModz Twitch profile image"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <span class="creator-media-badge">Twitch</span>
+              </div>
+              <div class="creator-card-body">
+                <div class="creator-name">DatModz</div>
+                <div class="creator-platform"><span>Twitch</span></div>
+                <div class="creator-desc">
+                  Season prep, patch breakdowns, and community Q&amp;A.
+                </div>
+                <div class="creator-card-cta">→ Twitch Channel</div>
+              </div>
+            </a>
+            <a
+              href="https://www.twitch.tv/p4wnyhof"
+              target="_blank"
+              rel="noopener"
+              class="creator-card card-link-reset"
+            >
+              <div class="creator-card-media creator-media-patriarch">
+                <img
+                  class="creator-card-shot"
+                  src="https://static-cdn.jtvnw.net/jtv_user_pictures/81fccfbe-fd95-4576-bdd0-e4ad4fb467db-profile_image-300x300.png"
+                  alt="P4wnyhof Twitch profile image"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <span class="creator-media-badge">Twitch</span>
+              </div>
+              <div class="creator-card-body">
+                <div class="creator-name">P4wnyhof</div>
+                <div class="creator-platform"><span>Twitch</span></div>
+                <div class="creator-desc">
+                  Paladin-focused live play and class discussion.
+                </div>
+                <div class="creator-card-cta">→ Twitch Channel</div>
+              </div>
+            </a>
           </div>
         </div>
-
-        <a href="https://www.icy-veins.com/d4/guides/vessel-of-hatred-overview/" target="_blank" rel="noopener" class="btn btn-gold">
-          Learn About Vessel of Hatred (Current Expansion) →
-        </a>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <hr class="section-divider">
+    <hr class="section-divider" />
 
-  <!-- ======= FOOTER ======= -->
+    <!-- ======= QUICK LINKS ======= -->
+    <section id="quicklinks">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label">Explore More</p>
+          <h2>Full Resource Pages</h2>
+          <p class="section-desc">
+            Deep dives into every D4 topic — each one a dedicated page.
+          </p>
+        </div>
+        <div class="card-grid card-grid-4">
+          <a href="tierlists.html" class="card card-link-reset">
+            <div class="card-icon">📊</div>
+            <div class="card-title">Tier Lists</div>
+            <div class="card-desc">
+              All S12 tier lists — endgame, speed farm, boss kill, leveling.
+              Sources: Maxroll, Icy Veins, D4Builds, Mobalytics.
+            </div>
+            <span class="card-link">View Tier Lists →</span>
+          </a>
+          <a href="classes.html" class="card card-link-reset">
+            <div class="card-icon">⚔️</div>
+            <div class="card-title">Class Comparison</div>
+            <div class="card-desc">
+              Every class ranked S12. Difficulty, best builds, weapons, and role
+              suitability.
+            </div>
+            <span class="card-link">Compare Classes →</span>
+          </a>
+          <a href="dungeons.html" class="card card-link-reset">
+            <div class="card-icon">🏰</div>
+            <div class="card-title">Dungeons & Activities</div>
+            <div class="card-desc">
+              Nightmare Dungeons, Helltide, The Pit, World Bosses, S12
+              Killstreak system.
+            </div>
+            <span class="card-link">Explore Dungeons →</span>
+          </a>
+          <a href="new-player.html" class="card card-link-reset">
+            <div class="card-icon">🆕</div>
+            <div class="card-title">New Player Guide</div>
+            <div class="card-desc">
+              From level 1 to endgame. Class picks, campaign path, first 10
+              hours, gear basics.
+            </div>
+            <span class="card-link">New Player Guide →</span>
+          </a>
+          <a href="videos.html" class="card card-link-reset">
+            <div class="card-icon">🎥</div>
+            <div class="card-title">Video Hub</div>
+            <div class="card-desc">
+              Curated D4 embeds for build guides, season updates, deep dives,
+              and hidden gem videos.
+            </div>
+            <span class="card-link">Watch Videos →</span>
+          </a>
+          <a href="tools.html" class="card card-link-reset">
+            <div class="card-icon">🛠️</div>
+            <div class="card-title">Tools & Utilities</div>
+            <div class="card-desc">
+              Build planners, interactive map, loot databases, DPS calculators,
+              gem calculators.
+            </div>
+            <span class="card-link">View Tools →</span>
+          </a>
+          <a href="crafting.html" class="card card-link-reset">
+            <div class="card-icon">⚒️</div>
+            <div class="card-title">Crafting & Gear</div>
+            <div class="card-desc">
+              Tempering, masterworking, aspects, gems, S12 seasonal crafting.
+              Gear progression path.
+            </div>
+            <span class="card-link">Crafting Guide →</span>
+          </a>
+          <a href="news.html" class="card card-link-reset">
+            <div class="card-icon">📰</div>
+            <div class="card-title">News</div>
+            <div class="card-desc">
+              Latest D4 news, patch notes, season announcements, community
+              updates.
+            </div>
+            <span class="card-link">Read News →</span>
+          </a>
+          <a href="season.html" class="card card-link-reset">
+            <div class="card-icon">🔥</div>
+            <div class="card-title">Season 12 Info</div>
+            <div class="card-desc">
+              Season of Slaughter mechanics — Killstreak, Bloodied Items,
+              Slaughterhouses, Fresh Meat.
+            </div>
+            <span class="card-link">Season Info →</span>
+          </a>
+          <a href="communities.html" class="card card-link-reset">
+            <div class="card-icon">💬</div>
+            <div class="card-title">Communities</div>
+            <div class="card-desc">
+              Discords, Reddit, Twitch communities. Where to get help and talk
+              D4.
+            </div>
+            <span class="card-link">Join Communities →</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= EXPANSION TEASER ======= -->
+    <section id="expansion">
+      <div class="container">
+        <div class="expansion-teaser">
+          <p class="expansion-teaser-label">🔥 Coming Soon</p>
+          <h2>Lord of Hatred Expansion</h2>
+          <p>
+            The next major Diablo 4 expansion. Confront Mephisto, the Lord of
+            Hatred, across the ancient islands of Skovos. Two new classes and a
+            dark new chapter in the Sanctuary saga.
+          </p>
+
+          <div class="expansion-teaser-highlights">
+            <div class="expansion-highlight">
+              <span class="icon">🌑</span> New Classes: Warlock + 1 More (TBA)
+            </div>
+            <div class="expansion-highlight">
+              <span class="icon">🏝️</span> New Region: Skovos (Ancient Islands)
+            </div>
+            <div class="expansion-highlight">
+              <span class="icon">⚔️</span> Face Mephisto, Lord of Hatred
+            </div>
+          </div>
+
+          <a
+            href="https://www.icy-veins.com/d4/guides/vessel-of-hatred-overview/"
+            target="_blank"
+            rel="noopener"
+            class="btn btn-gold"
+          >
+            Learn About Vessel of Hatred (Current Expansion) →
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider" />
+
+    <!-- ======= FOOTER ======= -->
     <footer class="footer">
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-logo">
-          <span class="footer-logo-icon">🔥</span>
-          Diablo 4 Resource Hub
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <span class="footer-logo-icon">🔥</span>
+            Diablo 4 Resource Hub
+          </div>
+
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="resources.html">Resources</a>
+            <a href="crafting.html">Crafting &amp; Gear Guide</a>
+            <a href="https://maxroll.gg/d4" target="_blank" rel="noopener"
+              >Maxroll</a
+            >
+            <a
+              href="https://www.icy-veins.com/d4/"
+              target="_blank"
+              rel="noopener"
+              >Icy Veins</a
+            >
+            <a href="https://d4builds.gg/" target="_blank" rel="noopener"
+              >D4Builds</a
+            >
+            <a
+              href="https://mobalytics.gg/diablo-4/builds"
+              target="_blank"
+              rel="noopener"
+              >Mobalytics</a
+            >
+          </div>
+
+          <p class="footer-disclaimer">
+            Not affiliated with Blizzard Entertainment. Diablo 4 and all related
+            content are trademarks of Blizzard Entertainment, Inc. This site is
+            a fan-made resource hub for educational purposes.
+          </p>
+
+          <p class="footer-updated">Last updated: March 20, 2026</p>
         </div>
-
-        <div class="footer-links">
-          <a href="index.html">Home</a>
-          <a href="resources.html">Resources</a>
-          <a href="crafting.html">Crafting &amp; Gear Guide</a>
-          <a href="https://maxroll.gg/d4" target="_blank" rel="noopener">Maxroll</a>
-          <a href="https://www.icy-veins.com/d4/" target="_blank" rel="noopener">Icy Veins</a>
-          <a href="https://d4builds.gg/" target="_blank" rel="noopener">D4Builds</a>
-          <a href="https://mobalytics.gg/diablo-4/builds" target="_blank" rel="noopener">Mobalytics</a>
-        </div>
-
-        <p class="footer-disclaimer">
-          Not affiliated with Blizzard Entertainment. Diablo 4 and all related content are trademarks of Blizzard Entertainment, Inc. This site is a fan-made resource hub for educational purposes.
-        </p>
-
-        <p class="footer-updated">Last updated: March 20, 2026</p>
       </div>
-    </div>
-  </footer>
+    </footer>
 
-  <script src="nav.js"></script>
-  <script src="site-tools.js"></script>
-</body>
+    <script src="nav.js"></script>
+    <script src="news-data.js"></script>
+    <script src="newsroom.js"></script>
+    <script src="site-tools.js"></script>
+  </body>
 </html>

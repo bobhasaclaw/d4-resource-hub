@@ -1,310 +1,679 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Video Library — Season 12 | D4 Resource Hub</title>
-  <meta name="description" content="Curated Diablo 4 video embeds grouped by build guides, season updates, deep dives, and hidden gem picks.">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎥</text></svg>">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&display=swap" rel="stylesheet">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video Library — Season 12 | D4 Resource Hub</title>
+    <meta
+      name="description"
+      content="Curated Diablo 4 video embeds grouped by build guides, season updates, deep dives, and hidden gem picks."
+    />
+    <meta
+      property="og:title"
+      content="Video Library — Season 12 | D4 Resource Hub"
+    />
+    <meta
+      property="og:description"
+      content="Curated Diablo 4 video embeds grouped by build guides, season updates, deep dives, and hidden gem picks."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="D4 Resource Hub" />
+    <meta
+      property="og:image"
+      content="https://bobhasaclaw.github.io/d4-resource-hub/assets/og/og-videos.png"
+    />
+    <meta
+      property="og:image:alt"
+      content="Branded D4 Resource Hub share card for the Diablo 4 video hub."
+    />
+    <meta
+      property="og:url"
+      content="https://bobhasaclaw.github.io/d4-resource-hub/videos.html"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Video Library — Season 12 | D4 Resource Hub"
+    />
+    <meta
+      name="twitter:description"
+      content="Curated Diablo 4 video embeds grouped by build guides, season updates, deep dives, and hidden gem picks."
+    />
+    <meta
+      name="twitter:image"
+      content="https://bobhasaclaw.github.io/d4-resource-hub/assets/og/og-videos.png"
+    />
+    <meta
+      name="twitter:image:alt"
+      content="Branded D4 Resource Hub share card for the Diablo 4 video hub."
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="canonical"
+      href="https://bobhasaclaw.github.io/d4-resource-hub/videos.html"
+    />
+    <link rel="icon" href="assets/brand/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar" id="main-nav">
+      <div class="navbar-inner"></div>
+    </nav>
 
-  <nav class="navbar" id="main-nav">
-    <div class="navbar-inner"></div>
-  </nav>
+    <div class="mobile-menu" id="mobile-menu"></div>
 
-  <div class="mobile-menu" id="mobile-menu"></div>
+    <section class="hero hero-videos" id="top">
+      <div class="hero-badge"><span>🎥</span> Curated Video Library</div>
+      <div class="utility-brand-ribbon">
+        <span class="brand-mark-wrap utility-brand-mark" aria-hidden="true">
+          <img src="assets/brand/d4rh-mark.svg" alt="" class="brand-mark" />
+        </span>
+        <div class="utility-brand-copy">
+          <span class="utility-brand-kicker">Watch Desk</span>
+          <strong>D4 Resource Hub Video Library</strong>
+          <span
+            >Curated embeds grouped by intent, so players can jump into builds,
+            updates, and theorycrafting without hunting creator uploads.</span
+          >
+        </div>
+        <div class="utility-brand-links">
+          <a href="creators.html">Creator Directory</a>
+          <a href="news.html">Newsroom</a>
+        </div>
+      </div>
+      <h1 class="hero-title">Diablo 4 Video Hub</h1>
+      <p class="hero-subtitle">
+        Watch D4 content by category instead of hunting through random uploads.
+        Build guides, season updates, theorycrafting, and a few hidden-gem picks
+        all live in one place.
+      </p>
+      <div class="hero-season-facts">
+        <div class="hero-fact"><span class="icon">🗡️</span> Build Guides</div>
+        <div class="hero-fact"><span class="icon">🔥</span> Season Updates</div>
+        <div class="hero-fact"><span class="icon">🧠</span> Deep Dives</div>
+        <div class="hero-fact"><span class="icon">💜</span> Hidden Gems</div>
+      </div>
+      <a href="#build-guides" class="hero-cta">Browse Categories ↓</a>
+      <div class="hero-scroll-hint">↓ Scroll to explore</div>
+    </section>
 
-  <section class="hero hero-videos" id="top">
-    <div class="hero-badge">
-      <span>🎥</span> Curated Video Library
-    </div>
-    <h1 class="hero-title">Diablo 4 Video Hub</h1>
-    <p class="hero-subtitle">Watch D4 content by category instead of hunting through random uploads. Build guides, season updates, theorycrafting, and a few hidden-gem picks all live in one place.</p>
-    <div class="hero-season-facts">
-      <div class="hero-fact"><span class="icon">🗡️</span> Build Guides</div>
-      <div class="hero-fact"><span class="icon">🔥</span> Season Updates</div>
-      <div class="hero-fact"><span class="icon">🧠</span> Deep Dives</div>
-      <div class="hero-fact"><span class="icon">💜</span> Hidden Gems</div>
-    </div>
-    <a href="#build-guides" class="hero-cta">Browse Categories ↓</a>
-    <div class="hero-scroll-hint">↓ Scroll to explore</div>
-  </section>
-
-  <section class="page-overview">
-    <div class="container">
-      <div class="page-overview-grid">
-        <div class="page-overview-card featured">
-          <div class="page-overview-kicker">What This Page Does</div>
-          <h3>Gives you a faster way to watch</h3>
-          <p>Instead of browsing creator pages one by one, use this hub to jump straight into the type of Diablo 4 video you need.</p>
-          <div class="page-overview-actions">
-            <span class="overview-pill">Meta</span>
-            <span class="overview-pill">Season</span>
-            <span class="overview-pill">Theorycraft</span>
+    <section class="page-overview">
+      <div class="container">
+        <div class="page-overview-grid">
+          <div class="page-overview-card featured">
+            <div class="page-overview-kicker">What This Page Does</div>
+            <h3>Gives you a faster way to watch</h3>
+            <p>
+              Instead of browsing creator pages one by one, use this hub to jump
+              straight into the type of Diablo 4 video you need.
+            </p>
+            <div class="page-overview-actions">
+              <span class="overview-pill">Meta</span>
+              <span class="overview-pill">Season</span>
+              <span class="overview-pill">Theorycraft</span>
+            </div>
+          </div>
+          <div class="page-overview-card">
+            <div class="page-overview-kicker">Best Starting Points</div>
+            <h3>Start with these creators</h3>
+            <ul class="page-overview-list">
+              <li>Rob2628 and Rhykker for build guides</li>
+              <li>Raxxanterax and DatModz for season coverage</li>
+              <li>MacroBioBoi and wudijo for deeper analysis</li>
+              <li>Sliver of Time for practical discoveries</li>
+            </ul>
+          </div>
+          <div class="page-overview-card">
+            <div class="page-overview-kicker">How To Use It</div>
+            <h3>Pick a category, then open the creator page</h3>
+            <p>
+              Each embed is a direct watch point. If you like the style, jump to
+              the creators page or the channel link from the video card.
+            </p>
           </div>
         </div>
-        <div class="page-overview-card">
-          <div class="page-overview-kicker">Best Starting Points</div>
-          <h3>Start with these creators</h3>
-          <ul class="page-overview-list">
-            <li>Rob2628 and Rhykker for build guides</li>
-            <li>Raxxanterax and DatModz for season coverage</li>
-            <li>MacroBioBoi and wudijo for deeper analysis</li>
-            <li>Sliver of Time for practical discoveries</li>
-          </ul>
+      </div>
+    </section>
+
+    <section class="page-actions-section">
+      <div class="container">
+        <div class="page-actions-bar">
+          <button type="button" class="page-action-button" data-copy-page-link>
+            Copy Videos Link
+          </button>
+          <button
+            type="button"
+            class="page-action-button"
+            data-share-page
+            data-share-text="Curated Diablo 4 video hub with build guides, season updates, theorycrafting, and hidden gems."
+          >
+            Share Page
+          </button>
+          <button
+            type="button"
+            class="page-action-button"
+            data-copy-summary
+            data-copy-summary="Curated Diablo 4 video hub with build guides, season updates, theorycrafting, and hidden gems."
+          >
+            Copy Summary
+          </button>
+          <span class="page-action-note">Reviewed March 21, 2026</span>
+          <span class="page-action-feedback" aria-live="polite"></span>
         </div>
-        <div class="page-overview-card">
-          <div class="page-overview-kicker">How To Use It</div>
-          <h3>Pick a category, then open the creator page</h3>
-          <p>Each embed is a direct watch point. If you like the style, jump to the creators page or the channel link from the video card.</p>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="video-page-links" aria-label="Video categories">
+        <a href="#build-guides" class="video-page-link">Build Guides</a>
+        <a href="#season-updates" class="video-page-link">Season Updates</a>
+        <a href="#deep-dives" class="video-page-link">Deep Dives</a>
+        <a href="#hidden-gems" class="video-page-link">Hidden Gems</a>
+      </div>
+    </section>
+
+    <section class="video-category" id="build-guides">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label">Build Guides</p>
+          <h2>Meta Videos &amp; Build Breakdowns</h2>
+          <p class="section-desc">
+            Great starting points when you want the strongest picks, class
+            rankings, or an in-depth build explanation.
+          </p>
+        </div>
+        <div class="video-grid">
+          <article class="video-card">
+            <div class="video-wrapper">
+              <iframe
+                src="https://www.youtube.com/embed/8tQdmMXAkco"
+                title="NEW Season 12 Tier List with the BEST Builds for Diablo 4 — Rob2628"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                "
+                allowfullscreen
+                loading="lazy"
+              ></iframe>
+            </div>
+            <div class="video-info">
+              <div class="video-title">
+                NEW Season 12 Tier List with the BEST Builds for Diablo 4
+              </div>
+              <div class="video-meta">
+                <a
+                  href="https://www.youtube.com/@Rob2628"
+                  target="_blank"
+                  rel="noopener"
+                  class="video-channel-link"
+                  >Rob2628</a
+                >
+                <span>•</span>
+                <span>Build Guide</span>
+              </div>
+            </div>
+          </article>
+          <article class="video-card">
+            <div class="video-wrapper">
+              <iframe
+                src="https://www.youtube.com/embed/WsmK5nl0wdE"
+                title="Top 10 Best Builds for Diablo 4 Season 12 (All Classes) — Rhykker"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                "
+                allowfullscreen
+                loading="lazy"
+              ></iframe>
+            </div>
+            <div class="video-info">
+              <div class="video-title">
+                Top 10 Best Builds for Diablo 4 Season 12 (All Classes)
+              </div>
+              <div class="video-meta">
+                <a
+                  href="https://www.youtube.com/@Rhykker"
+                  target="_blank"
+                  rel="noopener"
+                  class="video-channel-link"
+                  >Rhykker</a
+                >
+                <span>•</span>
+                <span>Build Guide</span>
+              </div>
+            </div>
+          </article>
+          <article class="video-card">
+            <div class="video-wrapper">
+              <iframe
+                src="https://www.youtube.com/embed/RXWU3KQVFgs"
+                title="WARLOCK Full Skill Tree Breakdown! // Diablo 4 Warlock First Impressions — Moxsy"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                "
+                allowfullscreen
+                loading="lazy"
+              ></iframe>
+            </div>
+            <div class="video-info">
+              <div class="video-title">
+                WARLOCK Full Skill Tree Breakdown! // Diablo 4 Warlock First
+                Impressions
+              </div>
+              <div class="video-meta">
+                <a
+                  href="https://www.youtube.com/@Moxsy"
+                  target="_blank"
+                  rel="noopener"
+                  class="video-channel-link"
+                  >Moxsy</a
+                >
+                <span>•</span>
+                <span>Build Preview</span>
+              </div>
+            </div>
+          </article>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="page-actions-section">
-    <div class="container">
-      <div class="page-actions-bar">
-        <button type="button" class="page-action-button" data-copy-page-link>Copy Videos Link</button>
-        <button type="button" class="page-action-button" data-share-page data-share-text="Curated Diablo 4 video hub with build guides, season updates, theorycrafting, and hidden gems.">Share Page</button>
-        <button type="button" class="page-action-button" data-copy-summary data-copy-summary="Curated Diablo 4 video hub with build guides, season updates, theorycrafting, and hidden gems.">Copy Summary</button>
-        <span class="page-action-note">Reviewed March 20, 2026</span>
-        <span class="page-action-feedback" aria-live="polite"></span>
+    <section class="video-category" id="season-updates">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label">Season Updates</p>
+          <h2>Patch Talk, Interviews &amp; Launch Coverage</h2>
+          <p class="section-desc">
+            Use these when you want the fastest way to catch up on changes,
+            announcements, and season-start context.
+          </p>
+        </div>
+        <div class="video-grid">
+          <article class="video-card">
+            <div class="video-wrapper">
+              <iframe
+                src="https://www.youtube.com/embed/KUEJSzp8-ng"
+                title="Diablo 4 Developer Interview With Colin &amp; Zaven — Raxxanterax"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                "
+                allowfullscreen
+                loading="lazy"
+              ></iframe>
+            </div>
+            <div class="video-info">
+              <div class="video-title">
+                Diablo 4 Developer Interview With Colin &amp; Zaven
+              </div>
+              <div class="video-meta">
+                <a
+                  href="https://www.youtube.com/@Raxxanterax"
+                  target="_blank"
+                  rel="noopener"
+                  class="video-channel-link"
+                  >Raxxanterax</a
+                >
+                <span>•</span>
+                <span>Season Update</span>
+              </div>
+            </div>
+          </article>
+          <article class="video-card">
+            <div class="video-wrapper">
+              <iframe
+                src="https://www.youtube.com/embed/23f_nZWLPqc"
+                title="Diablo 4 Season 1: EVERYTHING You Need to Know! — DatModz"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                "
+                allowfullscreen
+                loading="lazy"
+              ></iframe>
+            </div>
+            <div class="video-info">
+              <div class="video-title">
+                Diablo 4 Season 1: EVERYTHING You Need to Know!
+              </div>
+              <div class="video-meta">
+                <a
+                  href="https://www.youtube.com/@DatModz"
+                  target="_blank"
+                  rel="noopener"
+                  class="video-channel-link"
+                  >DatModz</a
+                >
+                <span>•</span>
+                <span>Patch Breakdown</span>
+              </div>
+            </div>
+          </article>
+          <article class="video-card">
+            <div class="video-wrapper">
+              <iframe
+                src="https://www.youtube.com/embed/SW2Ur3bDeKo"
+                title="Blizzard gave me EARLY ACCESS to DIABLO IV... And I can TALK ABOUT EVERYTHING !!! Full Game Review — Dbrunski125"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                "
+                allowfullscreen
+                loading="lazy"
+              ></iframe>
+            </div>
+            <div class="video-info">
+              <div class="video-title">
+                Blizzard gave me EARLY ACCESS to DIABLO IV... And I can TALK
+                ABOUT EVERYTHING !!! Full Game Review
+              </div>
+              <div class="video-meta">
+                <a
+                  href="https://www.youtube.com/@Dbrunski125"
+                  target="_blank"
+                  rel="noopener"
+                  class="video-channel-link"
+                  >Dbrunski125</a
+                >
+                <span>•</span>
+                <span>Launch Coverage</span>
+              </div>
+            </div>
+          </article>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="container">
-    <div class="video-page-links" aria-label="Video categories">
-      <a href="#build-guides" class="video-page-link">Build Guides</a>
-      <a href="#season-updates" class="video-page-link">Season Updates</a>
-      <a href="#deep-dives" class="video-page-link">Deep Dives</a>
-      <a href="#hidden-gems" class="video-page-link">Hidden Gems</a>
-    </div>
-  </section>
+    <section class="video-category" id="deep-dives">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label">Deep Dives</p>
+          <h2>Theorycrafting, Mechanics, and High-End Play</h2>
+          <p class="section-desc">
+            For players who want to understand why builds work, not just which
+            build to copy.
+          </p>
+        </div>
+        <div class="video-grid">
+          <article class="video-card">
+            <div class="video-wrapper">
+              <iframe
+                src="https://www.youtube.com/embed/w1Q4nT-sLHE"
+                title="How I Make Builds in Diablo 4 — MacroBioBoi"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                "
+                allowfullscreen
+                loading="lazy"
+              ></iframe>
+            </div>
+            <div class="video-info">
+              <div class="video-title">How I Make Builds in Diablo 4</div>
+              <div class="video-meta">
+                <a
+                  href="https://www.youtube.com/@MacroBioBoi"
+                  target="_blank"
+                  rel="noopener"
+                  class="video-channel-link"
+                  >MacroBioBoi</a
+                >
+                <span>•</span>
+                <span>Theorycraft</span>
+              </div>
+            </div>
+          </article>
+          <article class="video-card">
+            <div class="video-wrapper">
+              <iframe
+                src="https://www.youtube.com/embed/6R83AgeXyUE"
+                title="Diablo 4 - The Strongest Build Just Got EVEN BETTER — wudijo"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                "
+                allowfullscreen
+                loading="lazy"
+              ></iframe>
+            </div>
+            <div class="video-info">
+              <div class="video-title">
+                Diablo 4 - The Strongest Build Just Got EVEN BETTER
+              </div>
+              <div class="video-meta">
+                <a
+                  href="https://www.youtube.com/@wudijo"
+                  target="_blank"
+                  rel="noopener"
+                  class="video-channel-link"
+                  >wudijo</a
+                >
+                <span>•</span>
+                <span>Optimization</span>
+              </div>
+            </div>
+          </article>
+          <article class="video-card">
+            <div class="video-wrapper">
+              <iframe
+                src="https://www.youtube.com/embed/4-l91GoAjkM"
+                title="HOW GOOD IS DIABLO 4? - KRIPP TALKS! — Kripparrian"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                "
+                allowfullscreen
+                loading="lazy"
+              ></iframe>
+            </div>
+            <div class="video-info">
+              <div class="video-title">
+                HOW GOOD IS DIABLO 4? - KRIPP TALKS!
+              </div>
+              <div class="video-meta">
+                <a
+                  href="https://www.youtube.com/@Kripparrian"
+                  target="_blank"
+                  rel="noopener"
+                  class="video-channel-link"
+                  >Kripparrian</a
+                >
+                <span>•</span>
+                <span>Game Analysis</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
 
-  <section class="video-category" id="build-guides">
-    <div class="container">
-      <div class="section-header">
-        <p class="section-label">Build Guides</p>
-        <h2>Meta Videos &amp; Build Breakdowns</h2>
-        <p class="section-desc">Great starting points when you want the strongest picks, class rankings, or an in-depth build explanation.</p>
+    <section class="video-category" id="hidden-gems">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label">Hidden Gems</p>
+          <h2>Practical Finds &amp; Fun Community Watches</h2>
+          <p class="section-desc">
+            Underrated channels, experimental clips, and the kind of videos that
+            make the game feel a little more interesting.
+          </p>
+        </div>
+        <div class="video-grid">
+          <article class="video-card">
+            <div class="video-wrapper">
+              <iframe
+                src="https://www.youtube.com/embed/q7eaxqFMedQ"
+                title="Crazy Infinite Mob Spawn &amp; Experience Bug — Sliver of Time"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                "
+                allowfullscreen
+                loading="lazy"
+              ></iframe>
+            </div>
+            <div class="video-info">
+              <div class="video-title">
+                Crazy Infinite Mob Spawn &amp; Experience Bug
+              </div>
+              <div class="video-meta">
+                <a
+                  href="https://www.youtube.com/channel/UCLHAhGkEEv24hFuWuKX_XFg"
+                  target="_blank"
+                  rel="noopener"
+                  class="video-channel-link"
+                  >Sliver of Time</a
+                >
+                <span>•</span>
+                <span>Hidden Gem</span>
+              </div>
+            </div>
+          </article>
+          <article class="video-card">
+            <div class="video-wrapper">
+              <iframe
+                src="https://www.youtube.com/embed/0XivEenha_o"
+                title="Diablo 4 Paladin Deep Dive - Season 11 — P4wnyhof"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                "
+                allowfullscreen
+                loading="lazy"
+              ></iframe>
+            </div>
+            <div class="video-info">
+              <div class="video-title">
+                Diablo 4 Paladin Deep Dive - Season 11
+              </div>
+              <div class="video-meta">
+                <a
+                  href="https://www.youtube.com/@P4wnyhof"
+                  target="_blank"
+                  rel="noopener"
+                  class="video-channel-link"
+                  >P4wnyhof</a
+                >
+                <span>•</span>
+                <span>Class Focus</span>
+              </div>
+            </div>
+          </article>
+          <article class="video-card">
+            <div class="video-wrapper">
+              <iframe
+                src="https://www.youtube.com/embed/PNcQAemLjXw"
+                title="Diablo 4 - New Best OP 50 TRILLION DAMAGE Paladin Build — RageGamingVideos"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                "
+                allowfullscreen
+                loading="lazy"
+              ></iframe>
+            </div>
+            <div class="video-info">
+              <div class="video-title">
+                Diablo 4 - New Best OP 50 TRILLION DAMAGE Paladin Build
+              </div>
+              <div class="video-meta">
+                <a
+                  href="https://www.youtube.com/@RageGamingVideos"
+                  target="_blank"
+                  rel="noopener"
+                  class="video-channel-link"
+                  >RageGamingVideos</a
+                >
+                <span>•</span>
+                <span>Season Build</span>
+              </div>
+            </div>
+          </article>
+        </div>
       </div>
-      <div class="video-grid">
-        <article class="video-card">
-          <div class="video-wrapper">
-            <iframe src="https://www.youtube.com/embed/8tQdmMXAkco" title="NEW Season 12 Tier List with the BEST Builds for Diablo 4 — Rob2628" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
-          </div>
-          <div class="video-info">
-            <div class="video-title">NEW Season 12 Tier List with the BEST Builds for Diablo 4</div>
-            <div class="video-meta">
-              <a href="https://www.youtube.com/@Rob2628" target="_blank" rel="noopener" class="video-channel-link">Rob2628</a>
-              <span>•</span>
-              <span>Build Guide</span>
-            </div>
-          </div>
-        </article>
-        <article class="video-card">
-          <div class="video-wrapper">
-            <iframe src="https://www.youtube.com/embed/WsmK5nl0wdE" title="Top 10 Best Builds for Diablo 4 Season 12 (All Classes) — Rhykker" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
-          </div>
-          <div class="video-info">
-            <div class="video-title">Top 10 Best Builds for Diablo 4 Season 12 (All Classes)</div>
-            <div class="video-meta">
-              <a href="https://www.youtube.com/@Rhykker" target="_blank" rel="noopener" class="video-channel-link">Rhykker</a>
-              <span>•</span>
-              <span>Build Guide</span>
-            </div>
-          </div>
-        </article>
-        <article class="video-card">
-          <div class="video-wrapper">
-            <iframe src="https://www.youtube.com/embed/RXWU3KQVFgs" title="WARLOCK Full Skill Tree Breakdown! // Diablo 4 Warlock First Impressions — Moxsy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
-          </div>
-          <div class="video-info">
-            <div class="video-title">WARLOCK Full Skill Tree Breakdown! // Diablo 4 Warlock First Impressions</div>
-            <div class="video-meta">
-              <a href="https://www.youtube.com/@Moxsy" target="_blank" rel="noopener" class="video-channel-link">Moxsy</a>
-              <span>•</span>
-              <span>Build Preview</span>
-            </div>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="video-category" id="season-updates">
-    <div class="container">
-      <div class="section-header">
-        <p class="section-label">Season Updates</p>
-        <h2>Patch Talk, Interviews &amp; Launch Coverage</h2>
-        <p class="section-desc">Use these when you want the fastest way to catch up on changes, announcements, and season-start context.</p>
+    <section class="page-actions-section">
+      <div class="container">
+        <div class="page-actions-bar">
+          <button type="button" class="page-action-button" data-copy-page-link>
+            Copy Videos Link
+          </button>
+          <button
+            type="button"
+            class="page-action-button"
+            data-share-page
+            data-share-text="Curated Diablo 4 video hub with build guides, season updates, theorycrafting, and hidden gems."
+          >
+            Share Page
+          </button>
+          <button
+            type="button"
+            class="page-action-button"
+            data-copy-summary
+            data-copy-summary="Curated Diablo 4 video hub with build guides, season updates, theorycrafting, and hidden gems."
+          >
+            Copy Summary
+          </button>
+          <span class="page-action-note">Reviewed March 21, 2026</span>
+          <span class="page-action-feedback" aria-live="polite"></span>
+        </div>
       </div>
-      <div class="video-grid">
-        <article class="video-card">
-          <div class="video-wrapper">
-            <iframe src="https://www.youtube.com/embed/KUEJSzp8-ng" title="Diablo 4 Developer Interview With Colin &amp; Zaven — Raxxanterax" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
-          </div>
-          <div class="video-info">
-            <div class="video-title">Diablo 4 Developer Interview With Colin &amp; Zaven</div>
-            <div class="video-meta">
-              <a href="https://www.youtube.com/@Raxxanterax" target="_blank" rel="noopener" class="video-channel-link">Raxxanterax</a>
-              <span>•</span>
-              <span>Season Update</span>
-            </div>
-          </div>
-        </article>
-        <article class="video-card">
-          <div class="video-wrapper">
-            <iframe src="https://www.youtube.com/embed/23f_nZWLPqc" title="Diablo 4 Season 1: EVERYTHING You Need to Know! — DatModz" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
-          </div>
-          <div class="video-info">
-            <div class="video-title">Diablo 4 Season 1: EVERYTHING You Need to Know!</div>
-            <div class="video-meta">
-              <a href="https://www.youtube.com/@DatModz" target="_blank" rel="noopener" class="video-channel-link">DatModz</a>
-              <span>•</span>
-              <span>Patch Breakdown</span>
-            </div>
-          </div>
-        </article>
-        <article class="video-card">
-          <div class="video-wrapper">
-            <iframe src="https://www.youtube.com/embed/SW2Ur3bDeKo" title="Blizzard gave me EARLY ACCESS to DIABLO IV... And I can TALK ABOUT EVERYTHING !!! Full Game Review — Dbrunski125" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
-          </div>
-          <div class="video-info">
-            <div class="video-title">Blizzard gave me EARLY ACCESS to DIABLO IV... And I can TALK ABOUT EVERYTHING !!! Full Game Review</div>
-            <div class="video-meta">
-              <a href="https://www.youtube.com/@Dbrunski125" target="_blank" rel="noopener" class="video-channel-link">Dbrunski125</a>
-              <span>•</span>
-              <span>Launch Coverage</span>
-            </div>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="video-category" id="deep-dives">
-    <div class="container">
-      <div class="section-header">
-        <p class="section-label">Deep Dives</p>
-        <h2>Theorycrafting, Mechanics, and High-End Play</h2>
-        <p class="section-desc">For players who want to understand why builds work, not just which build to copy.</p>
-      </div>
-      <div class="video-grid">
-        <article class="video-card">
-          <div class="video-wrapper">
-            <iframe src="https://www.youtube.com/embed/w1Q4nT-sLHE" title="How I Make Builds in Diablo 4 — MacroBioBoi" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
-          </div>
-          <div class="video-info">
-            <div class="video-title">How I Make Builds in Diablo 4</div>
-            <div class="video-meta">
-              <a href="https://www.youtube.com/@MacroBioBoi" target="_blank" rel="noopener" class="video-channel-link">MacroBioBoi</a>
-              <span>•</span>
-              <span>Theorycraft</span>
-            </div>
-          </div>
-        </article>
-        <article class="video-card">
-          <div class="video-wrapper">
-            <iframe src="https://www.youtube.com/embed/6R83AgeXyUE" title="Diablo 4 - The Strongest Build Just Got EVEN BETTER — wudijo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
-          </div>
-          <div class="video-info">
-            <div class="video-title">Diablo 4 - The Strongest Build Just Got EVEN BETTER</div>
-            <div class="video-meta">
-              <a href="https://www.youtube.com/@wudijo" target="_blank" rel="noopener" class="video-channel-link">wudijo</a>
-              <span>•</span>
-              <span>Optimization</span>
-            </div>
-          </div>
-        </article>
-        <article class="video-card">
-          <div class="video-wrapper">
-            <iframe src="https://www.youtube.com/embed/4-l91GoAjkM" title="HOW GOOD IS DIABLO 4? - KRIPP TALKS! — Kripparrian" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
-          </div>
-          <div class="video-info">
-            <div class="video-title">HOW GOOD IS DIABLO 4? - KRIPP TALKS!</div>
-            <div class="video-meta">
-              <a href="https://www.youtube.com/@Kripparrian" target="_blank" rel="noopener" class="video-channel-link">Kripparrian</a>
-              <span>•</span>
-              <span>Game Analysis</span>
-            </div>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section class="video-category" id="hidden-gems">
-    <div class="container">
-      <div class="section-header">
-        <p class="section-label">Hidden Gems</p>
-        <h2>Practical Finds &amp; Fun Community Watches</h2>
-        <p class="section-desc">Underrated channels, experimental clips, and the kind of videos that make the game feel a little more interesting.</p>
-      </div>
-      <div class="video-grid">
-        <article class="video-card">
-          <div class="video-wrapper">
-            <iframe src="https://www.youtube.com/embed/q7eaxqFMedQ" title="Crazy Infinite Mob Spawn &amp; Experience Bug — Sliver of Time" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
-          </div>
-          <div class="video-info">
-            <div class="video-title">Crazy Infinite Mob Spawn &amp; Experience Bug</div>
-            <div class="video-meta">
-              <a href="https://www.youtube.com/channel/UCLHAhGkEEv24hFuWuKX_XFg" target="_blank" rel="noopener" class="video-channel-link">Sliver of Time</a>
-              <span>•</span>
-              <span>Hidden Gem</span>
-            </div>
-          </div>
-        </article>
-        <article class="video-card">
-          <div class="video-wrapper">
-            <iframe src="https://www.youtube.com/embed/0XivEenha_o" title="Diablo 4 Paladin Deep Dive - Season 11 — P4wnyhof" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
-          </div>
-          <div class="video-info">
-            <div class="video-title">Diablo 4 Paladin Deep Dive - Season 11</div>
-            <div class="video-meta">
-              <a href="https://www.youtube.com/@P4wnyhof" target="_blank" rel="noopener" class="video-channel-link">P4wnyhof</a>
-              <span>•</span>
-              <span>Class Focus</span>
-            </div>
-          </div>
-        </article>
-        <article class="video-card">
-          <div class="video-wrapper">
-            <iframe src="https://www.youtube.com/embed/PNcQAemLjXw" title="Diablo 4 - New Best OP 50 TRILLION DAMAGE Paladin Build — RageGamingVideos" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
-          </div>
-          <div class="video-info">
-            <div class="video-title">Diablo 4 - New Best OP 50 TRILLION DAMAGE Paladin Build</div>
-            <div class="video-meta">
-              <a href="https://www.youtube.com/@RageGamingVideos" target="_blank" rel="noopener" class="video-channel-link">RageGamingVideos</a>
-              <span>•</span>
-              <span>Season Build</span>
-            </div>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section class="page-actions-section">
-    <div class="container">
-      <div class="page-actions-bar">
-        <button type="button" class="page-action-button" data-copy-page-link>Copy Videos Link</button>
-        <button type="button" class="page-action-button" data-share-page data-share-text="Curated Diablo 4 video hub with build guides, season updates, theorycrafting, and hidden gems.">Share Page</button>
-        <button type="button" class="page-action-button" data-copy-summary data-copy-summary="Curated Diablo 4 video hub with build guides, season updates, theorycrafting, and hidden gems.">Copy Summary</button>
-        <span class="page-action-note">Reviewed March 20, 2026</span>
-        <span class="page-action-feedback" aria-live="polite"></span>
-      </div>
-    </div>
-  </section>
-
-  <script src="nav.js"></script>
-  <script src="site-tools.js"></script>
-</body>
+    <script src="nav.js"></script>
+    <script src="site-tools.js"></script>
+  </body>
 </html>

@@ -1,0 +1,27 @@
+<svg width="920" height="220" viewBox="0 0 920 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gold" x1="35" y1="20" x2="160" y2="170" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F2D27F"/>
+      <stop offset="0.45" stop-color="#C69A41"/>
+      <stop offset="1" stop-color="#744A19"/>
+    </linearGradient>
+    <linearGradient id="fire" x1="96" y1="49" x2="96" y2="156" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFB66F"/>
+      <stop offset="0.5" stop-color="#E1492A"/>
+      <stop offset="1" stop-color="#761515"/>
+    </linearGradient>
+  </defs>
+  <rect width="920" height="220" rx="28" fill="transparent"/>
+  <g>
+    <path d="M52 34L73 22L85 45L79 57L52 34Z" fill="url(#gold)"/>
+    <path d="M140 34L119 22L107 45L113 57L140 34Z" fill="url(#gold)"/>
+    <path d="M96 28L149 50V101C149 135 128 164 96 178C64 164 43 135 43 101V50L96 28Z" fill="#121018" stroke="url(#gold)" stroke-width="6"/>
+    <path d="M96 54L120 104L96 154L72 104L96 54Z" fill="url(#fire)"/>
+    <path d="M89 81H103V148H89V81Z" fill="#F1DCAB"/>
+    <path d="M72 135L96 153L120 135L112 125L96 137L80 125L72 135Z" fill="#C52A1F"/>
+  </g>
+  <g fill="#F3E8C6">
+    <text x="190" y="105" font-family="Cinzel, Georgia, serif" font-size="64" font-weight="800" letter-spacing="2">D4 RESOURCE HUB</text>
+    <text x="193" y="145" font-family="Manrope, Arial, sans-serif" font-size="24" font-weight="600" letter-spacing="6" fill="#C8A24D">BUILD GUIDES • NEWSROOM • META TOOLS</text>
+  </g>
+</svg>

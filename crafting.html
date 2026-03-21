@@ -1,766 +1,1197 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Crafting & Gear Guide — Diablo 4 Resource Hub</title>
-  <meta name="description" content="Complete Diablo 4 crafting guide covering all crafting systems, tempering, masterworking, gear progression, and Season 12 materials.">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔥</text></svg>">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&display=swap" rel="stylesheet">
-</head>
-<body>
-
-  <!-- ======= STICKY NAVBAR ======= -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crafting & Gear Guide — Diablo 4 Resource Hub</title>
+    <meta
+      name="description"
+      content="Complete Diablo 4 crafting guide covering all crafting systems, tempering, masterworking, gear progression, and Season 12 materials."
+    />
+    <meta
+      property="og:title"
+      content="Crafting & Gear Guide — Diablo 4 Resource Hub"
+    />
+    <meta
+      property="og:description"
+      content="Complete Diablo 4 crafting guide covering all crafting systems, tempering, masterworking, gear progression, and Season 12 materials."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="D4 Resource Hub" />
+    <meta
+      property="og:image"
+      content="https://bobhasaclaw.github.io/d4-resource-hub/assets/og/og-crafting.png"
+    />
+    <meta
+      property="og:image:alt"
+      content="Branded D4 Resource Hub share card for the Crafting and Gear Guide."
+    />
+    <meta
+      property="og:url"
+      content="https://bobhasaclaw.github.io/d4-resource-hub/crafting.html"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Crafting & Gear Guide — Diablo 4 Resource Hub"
+    />
+    <meta
+      name="twitter:description"
+      content="Complete Diablo 4 crafting guide covering all crafting systems, tempering, masterworking, gear progression, and Season 12 materials."
+    />
+    <meta
+      name="twitter:image"
+      content="https://bobhasaclaw.github.io/d4-resource-hub/assets/og/og-crafting.png"
+    />
+    <meta
+      name="twitter:image:alt"
+      content="Branded D4 Resource Hub share card for the Crafting and Gear Guide."
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="canonical"
+      href="https://bobhasaclaw.github.io/d4-resource-hub/crafting.html"
+    />
+    <link rel="icon" href="assets/brand/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- ======= STICKY NAVBAR ======= -->
     <nav class="navbar" id="main-nav">
-    <div class="navbar-inner"></div>
-  </nav>
+      <div class="navbar-inner"></div>
+    </nav>
 
-  <div class="mobile-menu" id="mobile-menu"></div>
+    <div class="mobile-menu" id="mobile-menu"></div>
 
-  <section class="hero crafting-hero" id="top">
-    <div class="hero-badge">
-      <span>⚒️</span> Season 12 Crafting Guide
-    </div>
-    <h1 class="hero-title">Diablo 4 Crafting & Gear Guide</h1>
-    <p class="hero-subtitle">Everything you need to know about crafting, tempering, masterworking, and gearing up in Season 12.</p>
-    <div class="hero-season-facts">
-      <div class="hero-fact"><span class="icon">🔨</span> 5 Crafting Systems</div>
-      <div class="hero-fact"><span class="icon">⚡</span> Tempering & Masterworking</div>
-      <div class="hero-fact"><span class="icon">🩸</span> Bloodied Items</div>
-    </div>
-    <a href="#crafting-systems" class="hero-cta">
-      Explore Crafting <span>↓</span>
-    </a>
-    <div class="hero-scroll-hint">↓ Scroll to explore</div>
-  </section>
-
-  <section class="page-overview">
-    <div class="container">
-      <div class="page-overview-grid">
-        <div class="page-overview-card featured">
-          <div class="page-overview-kicker">Crafting Flow</div>
-          <h3>Upgrade in the right order</h3>
-          <p>Use this guide to learn what each NPC does, which upgrades matter early, and when to start spending the expensive materials.</p>
-          <div class="page-overview-actions">
-            <span class="overview-pill">Occultist</span>
-            <span class="overview-pill">Blacksmith</span>
-            <span class="overview-pill">Jeweler</span>
-          </div>
+    <section class="hero crafting-hero" id="top">
+      <div class="hero-badge"><span>⚒️</span> Season 12 Crafting Guide</div>
+      <div class="utility-brand-ribbon">
+        <span class="brand-mark-wrap utility-brand-mark" aria-hidden="true">
+          <img src="assets/brand/d4rh-mark.svg" alt="" class="brand-mark" />
+        </span>
+        <div class="utility-brand-copy">
+          <span class="utility-brand-kicker">Gear Upgrade Desk</span>
+          <strong>D4 Resource Hub Crafting Board</strong>
+          <span
+            >Tempering, masterworking, and upgrade order explained in a way that
+            helps you avoid burning gold and rare materials too early.</span
+          >
         </div>
-        <div class="page-overview-card">
-          <div class="page-overview-kicker">Best For</div>
-          <h3>Players moving into endgame</h3>
-          <ul class="page-overview-list">
-            <li>Learn tempering before spending rare materials</li>
-            <li>Save masterworking for properly rolled items</li>
-            <li>Use the early path to avoid wasting gold</li>
-          </ul>
-        </div>
-        <div class="page-overview-card">
-          <div class="page-overview-kicker">Season 12</div>
-          <h3>Bloodied Items fit into the same gearing loop</h3>
-          <p>The guide now calls out seasonal gear alongside the base crafting systems so you can understand where it slots into the overall upgrade path.</p>
-        </div>
-        <div class="page-overview-card">
-          <div class="page-overview-kicker">Best Advice</div>
-          <h3>Spend materials when they matter</h3>
-          <ul class="page-overview-list">
-            <li>Extract and imprint before salvaging good aspects</li>
-            <li>Tempering comes before masterworking</li>
-            <li>Use gold and rare mats only on gear worth keeping</li>
-          </ul>
+        <div class="utility-brand-links">
+          <a href="endgame-builds.html">Endgame Builds</a>
+          <a href="tools.html">Useful Tools</a>
         </div>
       </div>
-    </div>
-  </section>
-
-  <style>
-    .crafting-hero {
-      min-height: 70vh;
-      background:
-        radial-gradient(ellipse at 50% 0%, rgba(201, 162, 39, 0.1) 0%, transparent 55%),
-        radial-gradient(ellipse at 30% 70%, rgba(230, 57, 70, 0.06) 0%, transparent 40%),
-        var(--bg-primary);
-    }
-  </style>
-
-  <hr class="section-divider">
-
-  <!-- ======= SECTION 1: THE 5 CRAFTING SYSTEMS ======= -->
-  <section id="crafting-systems">
-    <div class="container">
-      <div class="section-header">
-        <p class="section-label">Crafting Basics</p>
-        <h2>The 5 Crafting Systems</h2>
-        <p class="section-desc">Every crafting activity in Diablo 4 runs through one of these five systems. Know your NPC.</p>
+      <h1 class="hero-title">Diablo 4 Crafting & Gear Guide</h1>
+      <p class="hero-subtitle">
+        Everything you need to know about crafting, tempering, masterworking,
+        and gearing up in Season 12.
+      </p>
+      <div class="hero-season-facts">
+        <div class="hero-fact">
+          <span class="icon">🔨</span> 5 Crafting Systems
+        </div>
+        <div class="hero-fact">
+          <span class="icon">⚡</span> Tempering & Masterworking
+        </div>
+        <div class="hero-fact"><span class="icon">🩸</span> Bloodied Items</div>
       </div>
+      <a href="#crafting-systems" class="hero-cta">
+        Explore Crafting <span>↓</span>
+      </a>
+      <div class="hero-scroll-hint">↓ Scroll to explore</div>
+    </section>
 
-      <div class="crafting-cards-grid">
-        <!-- Occultist -->
-        <div class="crafting-card">
-          <div class="crafting-card-icon">🧙</div>
-          <div class="crafting-card-title">The Occultist</div>
-          <div class="crafting-card-subtitle">Enchanting &amp; Aspects</div>
-          <ul class="crafting-card-list">
-            <li><strong>Enchanting</strong> — Reroll one affix on any item</li>
-            <li><strong>Socketing</strong> — Add sockets to jewelry</li>
-            <li><strong>Extracting Aspects</strong> — Pull legendary powers into your Codex of Power</li>
-            <li><strong>Imprinting</strong> — Apply Codex aspects to other gear</li>
-          </ul>
-          <div class="crafting-card-note">Your main crafting NPC. Always extract useful aspects before salvaging!</div>
-        </div>
-
-        <!-- Blacksmith -->
-        <div class="crafting-card">
-          <div class="crafting-card-icon">⚒️</div>
-          <div class="crafting-card-title">The Blacksmith</div>
-          <div class="crafting-card-subtitle">Tempering &amp; Upgrading</div>
-          <ul class="crafting-card-list">
-            <li><strong>Tempering</strong> — Add or upgrade secondary affixes</li>
-            <li><strong>Masterworking</strong> — Fully upgrade tempered affixes (+4 to +20)</li>
-            <li><strong>Upgrading</strong> — Upgrade item power (Normal → Exceptional → Elite)</li>
-            <li><strong>Repairing</strong> — Fix durability on gear</li>
-          </ul>
-          <div class="crafting-card-note">The heart of endgame gear optimization.</div>
-        </div>
-
-        <!-- Jeweler -->
-        <div class="crafting-card">
-          <div class="crafting-card-icon">💎</div>
-          <div class="crafting-card-title">The Jeweler</div>
-          <div class="crafting-card-subtitle">Gems &amp; Sockets</div>
-          <ul class="crafting-card-list">
-            <li><strong>Socketing gems</strong> — Add gems to jewelry sockets</li>
-            <li><strong>Upgrading gems</strong> — Improve gem tiers using Dust</li>
-            <li><strong>Removing gems</strong> — Extract gems without destroying them</li>
-          </ul>
-          <div class="crafting-card-note">Gem upgrades cost gold — save this for when you have spare gold in endgame.</div>
-        </div>
-
-        <!-- Alchemist -->
-        <div class="crafting-card">
-          <div class="crafting-card-icon">⚗️</div>
-          <div class="crafting-card-title">The Alchemist</div>
-          <div class="crafting-card-subtitle">Potions &amp; Elixirs</div>
-          <ul class="crafting-card-list">
-            <li><strong>Potion upgrades</strong> — Increase healing power and capacity</li>
-            <li><strong>Elixir crafting</strong> — Temporary stat buffs (XP, Gold, Resources)</li>
-          </ul>
-          <div class="crafting-card-note">Don't overlook elixirs — XP and Gold elixirs stack with incense for fast Paragon farming.</div>
-        </div>
-
-        <!-- Masterworking (standalone callout) -->
-        <div class="crafting-card crafting-card-masterwork">
-          <div class="crafting-card-icon">🔥</div>
-          <div class="crafting-card-title">Masterworking</div>
-          <div class="crafting-card-subtitle">Endgame Upgrade Path</div>
-          <ul class="crafting-card-list">
-            <li>Use at the <strong>Blacksmith</strong> after tempering</li>
-            <li>Requires <strong>Iron</strong> (common) + <strong>Crystal</strong> (rare)</li>
-            <li>Upgrade tiers: <strong>+4 → +8 → +12 → +16 → +20</strong></li>
-            <li>Each tier adds <strong>20%</strong> to your temper affix values</li>
-          </ul>
-          <div class="crafting-card-note">Only touch this once your gear has the right temper rolls — masterworking is expensive!</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <hr class="section-divider">
-
-  <!-- ======= SECTION 2: GEAR PROGRESSION PATH ======= -->
-  <section id="progression">
-    <div class="container">
-      <div class="section-header">
-        <p class="section-label">Gear Roadmap</p>
-        <h2>Gear Progression Path</h2>
-        <p class="section-desc">Follow this path to efficiently gear your character from campaign to endgame.</p>
-      </div>
-
-      <div class="progression-timeline">
-        <div class="timeline-item">
-          <div class="timeline-number">1</div>
-          <div class="timeline-content">
-            <h3>Campaign Gear — Levels 1–50</h3>
-            <p>Use whatever drops. Don't invest materials or gold — you'll replace everything quickly. Focus on completing the story and unlocking mount.</p>
-            <span class="timeline-meta">Priority: Story Progress</span>
-          </div>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-number">2</div>
-          <div class="timeline-content">
-            <h3>World Tier I–II — Levels 25–45</h3>
-            <p>Start looking for items with good stats and build-defining legendary aspects. Don't worry about min-maxing yet — your item power is still too low to matter.</p>
-            <span class="timeline-meta">Priority: Finding Build Items</span>
-          </div>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-number">3</div>
-          <div class="timeline-content">
-            <h3>World Tier III (Nightmare) — Level 45+</h3>
-            <p>Start hunting for <strong>Sacred items</strong> (purple tag) with the right stats for your build. Item Power 625. This is where your build actually starts to come online.</p>
-            <span class="timeline-meta">Priority: Build-Defining Gear</span>
-          </div>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-number">4</div>
-          <div class="timeline-content">
-            <h3>World Tier IV (Torment) — Level 60+</h3>
-            <p>Ancestral items only (green tag). Start tempering your best pieces. Extract any useful aspects from new legendaries before salvaging.</p>
-            <span class="timeline-meta">Priority: Tempering Begins</span>
-          </div>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-number">5</div>
-          <div class="timeline-content">
-            <h3>Endgame — Paragon 100+</h3>
-            <p>Full optimization loop: <strong>Temper → Masterwork → Aspect Extraction → Repeat</strong>. Keep grinding for better base rolls on your key items. This is where the real min-maxing happens.</p>
-            <span class="timeline-meta">Priority: Min-Max Your Build</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <hr class="section-divider">
-
-  <!-- ======= SECTION 3: ITEM QUALITY LEVELS ======= -->
-  <section id="item-quality">
-    <div class="container">
-      <div class="section-header">
-        <p class="section-label">Item Tiers</p>
-        <h2>Item Quality Levels</h2>
-        <p class="section-desc">Understand what to keep, salvage, and sell at every quality tier.</p>
-      </div>
-
-      <div class="quick-table-wrap">
-        <table class="quick-table">
-          <thead>
-            <tr>
-              <th>Type</th>
-              <th>Quality</th>
-              <th>World Tier</th>
-              <th>What to Look For</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Normal</td>
-              <td style="color: #a0a0a0; font-weight: 600;">⬜ White</td>
-              <td>WT1–4</td>
-              <td>Sell to vendor or ignore. No useful properties worth keeping.</td>
-            </tr>
-            <tr>
-              <td>Magic</td>
-              <td style="color: #5b8dd9; font-weight: 600;">🔵 Blue</td>
-              <td>WT1–4</td>
-              <td>Salvage for materials (Coiling Wards for enchanting). Sell extras.</td>
-            </tr>
-            <tr>
-              <td>Rare</td>
-              <td style="color: #f0c040; font-weight: 600;">🟡 Yellow</td>
-              <td>WT1–4</td>
-              <td>Check for good stats before salvaging. Extract useful aspects.</td>
-            </tr>
-            <tr>
-              <td>Legendary</td>
-              <td style="color: #e07820; font-weight: 600;">🟠 Orange</td>
-              <td>WT1–4</td>
-              <td>Keep if aspect is useful for your build. Always extract aspects before salvaging.</td>
-            </tr>
-            <tr>
-              <td>Sacred</td>
-              <td style="color: #c060e0; font-weight: 600;">🟣 Purple Tag</td>
-              <td>WT3+</td>
-              <td>Good stats for WT3 content. Decent pre-endgame bases. Check rolls.</td>
-            </tr>
-            <tr>
-              <td>Ancestral</td>
-              <td style="color: #50c878; font-weight: 600;">🟢 Green Tag</td>
-              <td>WT4+</td>
-              <td>Best base for endgame builds. Higher stat ranges than Sacred. Always check for great rolls.</td>
-            </tr>
-            <tr>
-              <td>Unique</td>
-              <td style="color: #e63946; font-weight: 600;">🔴 Named</td>
-              <td>WT4+</td>
-              <td>Keep for your build if it fits. Trade if you get duplicates (one trade only per Unique).</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-  </section>
-
-  <hr class="section-divider">
-
-  <!-- ======= SECTION 4: TEMPERING GUIDE ======= -->
-  <section id="tempering">
-    <div class="container">
-      <div class="section-header">
-        <p class="section-label">Endgame Crafting</p>
-        <h2>Tempering Guide</h2>
-        <p class="section-desc">Tempering is your first major power spike in endgame. Here's how it works.</p>
-      </div>
-
-      <div class="guide-two-col">
-        <div class="guide-two-col-main">
-          <div class="guide-block">
-            <h3>📋 How to Temper</h3>
-            <ol class="guide-steps">
-              <li>Unlock tempering at the <strong>Blacksmith</strong> after completing your first Nightmare Dungeon</li>
-              <li>Select the gear piece you want to temper</li>
-              <li>Choose a <strong>temper manual</strong> appropriate for your class (offensive or defensive)</li>
-              <li>Each manual has multiple possible affixes — the result is <strong>random</strong></li>
-              <li>If you don't like the result, you can <strong>retemper</strong> (but you keep the item)</li>
-            </ol>
-          </div>
-
-          <div class="guide-block">
-            <h3>🧱 Temper Slots</h3>
-            <p>Each item has a limited number of temper slots. Different item types have different amounts:</p>
-            <div class="temper-slot-table">
-              <div class="temper-slot-row">
-                <span class="temper-slot-type">Weapons</span>
-                <span class="temper-slot-count">1 temper slot</span>
-              </div>
-              <div class="temper-slot-row">
-                <span class="temper-slot-type">Helm, Chest, Legs</span>
-                <span class="temper-slot-count">2 temper slots</span>
-              </div>
-              <div class="temper-slot-row">
-                <span class="temper-slot-type">Gloves, Boots, Off-hand</span>
-                <span class="temper-slot-count">2 temper slots</span>
-              </div>
-              <div class="temper-slot-row">
-                <span class="temper-slot-type">Amulet</span>
-                <span class="temper-slot-count">2 temper slots</span>
-              </div>
-              <div class="temper-slot-row">
-                <span class="temper-slot-type">Rings</span>
-                <span class="temper-slot-count">1 temper slot</span>
-              </div>
+    <section class="page-overview">
+      <div class="container">
+        <div class="page-overview-grid">
+          <div class="page-overview-card featured">
+            <div class="page-overview-kicker">Crafting Flow</div>
+            <h3>Upgrade in the right order</h3>
+            <p>
+              Use this guide to learn what each NPC does, which upgrades matter
+              early, and when to start spending the expensive materials.
+            </p>
+            <div class="page-overview-actions">
+              <span class="overview-pill">Occultist</span>
+              <span class="overview-pill">Blacksmith</span>
+              <span class="overview-pill">Jeweler</span>
             </div>
           </div>
-        </div>
-
-        <div class="guide-two-col-side">
-          <div class="crafting-sidebar-card">
-            <h4>🔑 Requirements</h4>
-            <ul class="crafting-req-list">
-              <li><strong>Obducite</strong> — S12 material. Farm in Nightmare Dungeons and WT4+ activities.</li>
-              <li><strong>Class crafting materials</strong> — e.g., Verdant (Druid), Abstruse (Rogue)</li>
-              <li><strong>Gold</strong></li>
+          <div class="page-overview-card">
+            <div class="page-overview-kicker">Best For</div>
+            <h3>Players moving into endgame</h3>
+            <ul class="page-overview-list">
+              <li>Learn tempering before spending rare materials</li>
+              <li>Save masterworking for properly rolled items</li>
+              <li>Use the early path to avoid wasting gold</li>
             </ul>
           </div>
-
-          <div class="crafting-sidebar-card crafting-sidebar-tip">
-            <h4>💡 Tips</h4>
-            <ul class="crafting-tip-list">
-              <li>Temper your <strong>best base items</strong> first — Ancestral items with good rolls.</li>
-              <li>You can retemper unlimited times, but each attempt costs Obducite.</li>
-              <li>Save your Obducite for your <strong>endgame build pieces</strong>, not transitional gear.</li>
-              <li>Some temper affixes are build-defining — know your build's key affixes.</li>
+          <div class="page-overview-card">
+            <div class="page-overview-kicker">Season 12</div>
+            <h3>Bloodied Items fit into the same gearing loop</h3>
+            <p>
+              The guide now calls out seasonal gear alongside the base crafting
+              systems so you can understand where it slots into the overall
+              upgrade path.
+            </p>
+          </div>
+          <div class="page-overview-card">
+            <div class="page-overview-kicker">Best Advice</div>
+            <h3>Spend materials when they matter</h3>
+            <ul class="page-overview-list">
+              <li>Extract and imprint before salvaging good aspects</li>
+              <li>Tempering comes before masterworking</li>
+              <li>Use gold and rare mats only on gear worth keeping</li>
             </ul>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <hr class="section-divider">
-
-  <!-- ======= SECTION 5: MASTERWORKING GUIDE ======= -->
-  <section id="masterworking">
-    <div class="container">
-      <div class="section-header">
-        <p class="section-label">Endgame Upgrade</p>
-        <h2>Masterworking Guide</h2>
-        <p class="section-desc">Masterworking is the final upgrade step — it amplifies your tempered affixes significantly.</p>
+    <section class="page-actions-section">
+      <div class="container">
+        <div class="page-actions-bar">
+          <button type="button" class="page-action-button" data-copy-page-link>
+            Copy Crafting Guide
+          </button>
+          <button
+            type="button"
+            class="page-action-button"
+            data-share-page
+            data-share-text="Diablo 4 crafting and gear guide with tempering, masterworking, gem priorities, and Season 12 material tips."
+          >
+            Share Page
+          </button>
+          <button
+            type="button"
+            class="page-action-button"
+            data-copy-summary
+            data-copy-summary="Diablo 4 crafting and gear guide with tempering, masterworking, gem priorities, and Season 12 material tips."
+          >
+            Copy Summary
+          </button>
+          <span class="page-action-note">Reviewed March 21, 2026</span>
+          <span class="page-action-feedback" aria-live="polite"></span>
+        </div>
       </div>
+    </section>
 
-      <div class="guide-two-col">
-        <div class="guide-two-col-main">
-          <div class="guide-block">
-            <h3>⚒️ How Masterworking Works</h3>
-            <p>Masterworking is applied at the <strong>Blacksmith</strong> after you've tempered your gear. It upgrades all tempered affixes simultaneously in tiers:</p>
-            <div class="mw-tiers">
-              <div class="mw-tier">
-                <span class="mw-tier-num">+4</span>
-                <span class="mw-tier-desc">First major milestone — adds 20% to each tempered affix</span>
-              </div>
-              <div class="mw-tier">
-                <span class="mw-tier-num">+8</span>
-                <span class="mw-tier-desc">Second tier — another +20% on top of +4</span>
-              </div>
-              <div class="mw-tier">
-                <span class="mw-tier-num">+12</span>
-                <span class="mw-tier-desc">Third tier — significant power boost</span>
-              </div>
-              <div class="mw-tier">
-                <span class="mw-tier-num">+16</span>
-                <span class="mw-tier-desc">Fourth tier — near-max power</span>
-              </div>
-              <div class="mw-tier mw-tier-max">
-                <span class="mw-tier-num">+20</span>
-                <span class="mw-tier-desc">Maximum — fully upgraded tempered gear</span>
-              </div>
+    <hr class="section-divider" />
+
+    <!-- ======= SECTION 1: THE 5 CRAFTING SYSTEMS ======= -->
+    <section id="crafting-systems">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label">Crafting Basics</p>
+          <h2>The 5 Crafting Systems</h2>
+          <p class="section-desc">
+            Every crafting activity in Diablo 4 runs through one of these five
+            systems. Know your NPC.
+          </p>
+        </div>
+
+        <div class="crafting-cards-grid">
+          <!-- Occultist -->
+          <div class="crafting-card">
+            <div class="crafting-card-icon">🧙</div>
+            <div class="crafting-card-title">The Occultist</div>
+            <div class="crafting-card-subtitle">Enchanting &amp; Aspects</div>
+            <ul class="crafting-card-list">
+              <li>
+                <strong>Enchanting</strong> — Reroll one affix on any item
+              </li>
+              <li><strong>Socketing</strong> — Add sockets to jewelry</li>
+              <li>
+                <strong>Extracting Aspects</strong> — Pull legendary powers into
+                your Codex of Power
+              </li>
+              <li>
+                <strong>Imprinting</strong> — Apply Codex aspects to other gear
+              </li>
+            </ul>
+            <div class="crafting-card-note">
+              Your main crafting NPC. Always extract useful aspects before
+              salvaging!
             </div>
           </div>
 
-          <div class="guide-block">
-            <h3>📦 Materials</h3>
-            <div class="crafting-mat-grid">
-              <div class="crafting-mat-card">
-                <div class="crafting-mat-icon">铁</div>
-                <div class="crafting-mat-name">Iron</div>
-                <div class="crafting-mat-type">Common</div>
-                <div class="crafting-mat-source">Drops from monsters, salvage</div>
-              </div>
-              <div class="crafting-mat-card">
-                <div class="crafting-mat-icon">💠</div>
-                <div class="crafting-mat-name">Crystal</div>
-                <div class="crafting-mat-type">Rare</div>
-                <div class="crafting-mat-source">Nightmare Dungeons, WT4+</div>
-              </div>
+          <!-- Blacksmith -->
+          <div class="crafting-card">
+            <div class="crafting-card-icon">⚒️</div>
+            <div class="crafting-card-title">The Blacksmith</div>
+            <div class="crafting-card-subtitle">Tempering &amp; Upgrading</div>
+            <ul class="crafting-card-list">
+              <li>
+                <strong>Tempering</strong> — Add or upgrade secondary affixes
+              </li>
+              <li>
+                <strong>Masterworking</strong> — Fully upgrade tempered affixes
+                (+4 to +20)
+              </li>
+              <li>
+                <strong>Upgrading</strong> — Upgrade item power (Normal →
+                Exceptional → Elite)
+              </li>
+              <li><strong>Repairing</strong> — Fix durability on gear</li>
+            </ul>
+            <div class="crafting-card-note">
+              The heart of endgame gear optimization.
+            </div>
+          </div>
+
+          <!-- Jeweler -->
+          <div class="crafting-card">
+            <div class="crafting-card-icon">💎</div>
+            <div class="crafting-card-title">The Jeweler</div>
+            <div class="crafting-card-subtitle">Gems &amp; Sockets</div>
+            <ul class="crafting-card-list">
+              <li>
+                <strong>Socketing gems</strong> — Add gems to jewelry sockets
+              </li>
+              <li>
+                <strong>Upgrading gems</strong> — Improve gem tiers using Dust
+              </li>
+              <li>
+                <strong>Removing gems</strong> — Extract gems without destroying
+                them
+              </li>
+            </ul>
+            <div class="crafting-card-note">
+              Gem upgrades cost gold — save this for when you have spare gold in
+              endgame.
+            </div>
+          </div>
+
+          <!-- Alchemist -->
+          <div class="crafting-card">
+            <div class="crafting-card-icon">⚗️</div>
+            <div class="crafting-card-title">The Alchemist</div>
+            <div class="crafting-card-subtitle">Potions &amp; Elixirs</div>
+            <ul class="crafting-card-list">
+              <li>
+                <strong>Potion upgrades</strong> — Increase healing power and
+                capacity
+              </li>
+              <li>
+                <strong>Elixir crafting</strong> — Temporary stat buffs (XP,
+                Gold, Resources)
+              </li>
+            </ul>
+            <div class="crafting-card-note">
+              Don't overlook elixirs — XP and Gold elixirs stack with incense
+              for fast Paragon farming.
+            </div>
+          </div>
+
+          <!-- Masterworking (standalone callout) -->
+          <div class="crafting-card crafting-card-masterwork">
+            <div class="crafting-card-icon">🔥</div>
+            <div class="crafting-card-title">Masterworking</div>
+            <div class="crafting-card-subtitle">Endgame Upgrade Path</div>
+            <ul class="crafting-card-list">
+              <li>Use at the <strong>Blacksmith</strong> after tempering</li>
+              <li>
+                Requires <strong>Iron</strong> (common) +
+                <strong>Crystal</strong> (rare)
+              </li>
+              <li>Upgrade tiers: <strong>+4 → +8 → +12 → +16 → +20</strong></li>
+              <li>
+                Each tier adds <strong>20%</strong> to your temper affix values
+              </li>
+            </ul>
+            <div class="crafting-card-note">
+              Only touch this once your gear has the right temper rolls —
+              masterworking is expensive!
             </div>
           </div>
         </div>
+      </div>
+    </section>
 
-        <div class="guide-two-col-side">
-          <div class="crafting-sidebar-card crafting-sidebar-warning">
-            <h4>⚠️ When to Masterwork</h4>
-            <p>Masterworking is <strong>expensive</strong>. Only apply it to:</p>
-            <ul class="crafting-req-list">
-              <li>Ancestral items with <strong>great base stat rolls</strong></li>
-              <li>Pieces that are <strong>tempered with the right affixes</strong></li>
-              <li>Your <strong>endgame build slots</strong> — not transitional gear</li>
+    <hr class="section-divider" />
+
+    <!-- ======= SECTION 2: GEAR PROGRESSION PATH ======= -->
+    <section id="progression">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label">Gear Roadmap</p>
+          <h2>Gear Progression Path</h2>
+          <p class="section-desc">
+            Follow this path to efficiently gear your character from campaign to
+            endgame.
+          </p>
+        </div>
+
+        <div class="progression-timeline">
+          <div class="timeline-item">
+            <div class="timeline-number">1</div>
+            <div class="timeline-content">
+              <h3>Campaign Gear — Levels 1–50</h3>
+              <p>
+                Use whatever drops. Don't invest materials or gold — you'll
+                replace everything quickly. Focus on completing the story and
+                unlocking mount.
+              </p>
+              <span class="timeline-meta">Priority: Story Progress</span>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-number">2</div>
+            <div class="timeline-content">
+              <h3>World Tier I–II — Levels 25–45</h3>
+              <p>
+                Start looking for items with good stats and build-defining
+                legendary aspects. Don't worry about min-maxing yet — your item
+                power is still too low to matter.
+              </p>
+              <span class="timeline-meta">Priority: Finding Build Items</span>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-number">3</div>
+            <div class="timeline-content">
+              <h3>World Tier III (Nightmare) — Level 45+</h3>
+              <p>
+                Start hunting for <strong>Sacred items</strong> (purple tag)
+                with the right stats for your build. Item Power 625. This is
+                where your build actually starts to come online.
+              </p>
+              <span class="timeline-meta">Priority: Build-Defining Gear</span>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-number">4</div>
+            <div class="timeline-content">
+              <h3>World Tier IV (Torment) — Level 60+</h3>
+              <p>
+                Ancestral items only (green tag). Start tempering your best
+                pieces. Extract any useful aspects from new legendaries before
+                salvaging.
+              </p>
+              <span class="timeline-meta">Priority: Tempering Begins</span>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-number">5</div>
+            <div class="timeline-content">
+              <h3>Endgame — Paragon 100+</h3>
+              <p>
+                Full optimization loop:
+                <strong>Temper → Masterwork → Aspect Extraction → Repeat</strong
+                >. Keep grinding for better base rolls on your key items. This
+                is where the real min-maxing happens.
+              </p>
+              <span class="timeline-meta">Priority: Min-Max Your Build</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider" />
+
+    <!-- ======= SECTION 3: ITEM QUALITY LEVELS ======= -->
+    <section id="item-quality">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label">Item Tiers</p>
+          <h2>Item Quality Levels</h2>
+          <p class="section-desc">
+            Understand what to keep, salvage, and sell at every quality tier.
+          </p>
+        </div>
+
+        <div class="quick-table-wrap">
+          <table class="quick-table">
+            <thead>
+              <tr>
+                <th>Type</th>
+                <th>Quality</th>
+                <th>World Tier</th>
+                <th>What to Look For</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Normal</td>
+                <td class="quality-normal">⬜ White</td>
+                <td>WT1–4</td>
+                <td>
+                  Sell to vendor or ignore. No useful properties worth keeping.
+                </td>
+              </tr>
+              <tr>
+                <td>Magic</td>
+                <td class="quality-magic">🔵 Blue</td>
+                <td>WT1–4</td>
+                <td>
+                  Salvage for materials (Coiling Wards for enchanting). Sell
+                  extras.
+                </td>
+              </tr>
+              <tr>
+                <td>Rare</td>
+                <td class="quality-rare">🟡 Yellow</td>
+                <td>WT1–4</td>
+                <td>
+                  Check for good stats before salvaging. Extract useful aspects.
+                </td>
+              </tr>
+              <tr>
+                <td>Legendary</td>
+                <td class="quality-legendary">🟠 Orange</td>
+                <td>WT1–4</td>
+                <td>
+                  Keep if aspect is useful for your build. Always extract
+                  aspects before salvaging.
+                </td>
+              </tr>
+              <tr>
+                <td>Sacred</td>
+                <td class="quality-sacred">🟣 Purple Tag</td>
+                <td>WT3+</td>
+                <td>
+                  Good stats for WT3 content. Decent pre-endgame bases. Check
+                  rolls.
+                </td>
+              </tr>
+              <tr>
+                <td>Ancestral</td>
+                <td class="quality-ancestral">🟢 Green Tag</td>
+                <td>WT4+</td>
+                <td>
+                  Best base for endgame builds. Higher stat ranges than Sacred.
+                  Always check for great rolls.
+                </td>
+              </tr>
+              <tr>
+                <td>Unique</td>
+                <td class="quality-unique">🔴 Named</td>
+                <td>WT4+</td>
+                <td>
+                  Keep for your build if it fits. Trade if you get duplicates
+                  (one trade only per Unique).
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider" />
+
+    <!-- ======= SECTION 4: TEMPERING GUIDE ======= -->
+    <section id="tempering">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label">Endgame Crafting</p>
+          <h2>Tempering Guide</h2>
+          <p class="section-desc">
+            Tempering is your first major power spike in endgame. Here's how it
+            works.
+          </p>
+        </div>
+
+        <div class="guide-two-col">
+          <div class="guide-two-col-main">
+            <div class="guide-block">
+              <h3>📋 How to Temper</h3>
+              <ol class="guide-steps">
+                <li>
+                  Unlock tempering at the <strong>Blacksmith</strong> after
+                  completing your first Nightmare Dungeon
+                </li>
+                <li>Select the gear piece you want to temper</li>
+                <li>
+                  Choose a <strong>temper manual</strong> appropriate for your
+                  class (offensive or defensive)
+                </li>
+                <li>
+                  Each manual has multiple possible affixes — the result is
+                  <strong>random</strong>
+                </li>
+                <li>
+                  If you don't like the result, you can
+                  <strong>retemper</strong> (but you keep the item)
+                </li>
+              </ol>
+            </div>
+
+            <div class="guide-block">
+              <h3>🧱 Temper Slots</h3>
+              <p>
+                Each item has a limited number of temper slots. Different item
+                types have different amounts:
+              </p>
+              <div class="temper-slot-table">
+                <div class="temper-slot-row">
+                  <span class="temper-slot-type">Weapons</span>
+                  <span class="temper-slot-count">1 temper slot</span>
+                </div>
+                <div class="temper-slot-row">
+                  <span class="temper-slot-type">Helm, Chest, Legs</span>
+                  <span class="temper-slot-count">2 temper slots</span>
+                </div>
+                <div class="temper-slot-row">
+                  <span class="temper-slot-type">Gloves, Boots, Off-hand</span>
+                  <span class="temper-slot-count">2 temper slots</span>
+                </div>
+                <div class="temper-slot-row">
+                  <span class="temper-slot-type">Amulet</span>
+                  <span class="temper-slot-count">2 temper slots</span>
+                </div>
+                <div class="temper-slot-row">
+                  <span class="temper-slot-type">Rings</span>
+                  <span class="temper-slot-count">1 temper slot</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="guide-two-col-side">
+            <div class="crafting-sidebar-card">
+              <h4>🔑 Requirements</h4>
+              <ul class="crafting-req-list">
+                <li>
+                  <strong>Obducite</strong> — S12 material. Farm in Nightmare
+                  Dungeons and WT4+ activities.
+                </li>
+                <li>
+                  <strong>Class crafting materials</strong> — e.g., Verdant
+                  (Druid), Abstruse (Rogue)
+                </li>
+                <li><strong>Gold</strong></li>
+              </ul>
+            </div>
+
+            <div class="crafting-sidebar-card crafting-sidebar-tip">
+              <h4>💡 Tips</h4>
+              <ul class="crafting-tip-list">
+                <li>
+                  Temper your <strong>best base items</strong> first — Ancestral
+                  items with good rolls.
+                </li>
+                <li>
+                  You can retemper unlimited times, but each attempt costs
+                  Obducite.
+                </li>
+                <li>
+                  Save your Obducite for your
+                  <strong>endgame build pieces</strong>, not transitional gear.
+                </li>
+                <li>
+                  Some temper affixes are build-defining — know your build's key
+                  affixes.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider" />
+
+    <!-- ======= SECTION 5: MASTERWORKING GUIDE ======= -->
+    <section id="masterworking">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label">Endgame Upgrade</p>
+          <h2>Masterworking Guide</h2>
+          <p class="section-desc">
+            Masterworking is the final upgrade step — it amplifies your tempered
+            affixes significantly.
+          </p>
+        </div>
+
+        <div class="guide-two-col">
+          <div class="guide-two-col-main">
+            <div class="guide-block">
+              <h3>⚒️ How Masterworking Works</h3>
+              <p>
+                Masterworking is applied at the
+                <strong>Blacksmith</strong> after you've tempered your gear. It
+                upgrades all tempered affixes simultaneously in tiers:
+              </p>
+              <div class="mw-tiers">
+                <div class="mw-tier">
+                  <span class="mw-tier-num">+4</span>
+                  <span class="mw-tier-desc"
+                    >First major milestone — adds 20% to each tempered
+                    affix</span
+                  >
+                </div>
+                <div class="mw-tier">
+                  <span class="mw-tier-num">+8</span>
+                  <span class="mw-tier-desc"
+                    >Second tier — another +20% on top of +4</span
+                  >
+                </div>
+                <div class="mw-tier">
+                  <span class="mw-tier-num">+12</span>
+                  <span class="mw-tier-desc"
+                    >Third tier — significant power boost</span
+                  >
+                </div>
+                <div class="mw-tier">
+                  <span class="mw-tier-num">+16</span>
+                  <span class="mw-tier-desc">Fourth tier — near-max power</span>
+                </div>
+                <div class="mw-tier mw-tier-max">
+                  <span class="mw-tier-num">+20</span>
+                  <span class="mw-tier-desc"
+                    >Maximum — fully upgraded tempered gear</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="guide-block">
+              <h3>📦 Materials</h3>
+              <div class="crafting-mat-grid">
+                <div class="crafting-mat-card">
+                  <div class="crafting-mat-icon">⛓️</div>
+                  <div class="crafting-mat-name">Iron</div>
+                  <div class="crafting-mat-type">Common</div>
+                  <div class="crafting-mat-source">
+                    Drops from monsters, salvage
+                  </div>
+                </div>
+                <div class="crafting-mat-card">
+                  <div class="crafting-mat-icon">💠</div>
+                  <div class="crafting-mat-name">Crystal</div>
+                  <div class="crafting-mat-type">Rare</div>
+                  <div class="crafting-mat-source">
+                    Nightmare Dungeons, WT4+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="guide-two-col-side">
+            <div class="crafting-sidebar-card crafting-sidebar-warning">
+              <h4>⚠️ When to Masterwork</h4>
+              <p>
+                Masterworking is <strong>expensive</strong>. Only apply it to:
+              </p>
+              <ul class="crafting-req-list">
+                <li>
+                  Ancestral items with <strong>great base stat rolls</strong>
+                </li>
+                <li>
+                  Pieces that are
+                  <strong>tempered with the right affixes</strong>
+                </li>
+                <li>
+                  Your <strong>endgame build slots</strong> — not transitional
+                  gear
+                </li>
+              </ul>
+            </div>
+
+            <div class="crafting-sidebar-card">
+              <h4>📈 Value Stacking</h4>
+              <p>
+                Each masterworking tier adds <strong>+20%</strong> to tempered
+                affix values. At +20, you've effectively
+                <strong>quintupled</strong> your temper bonus — this is where
+                the big power comes from in endgame.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider" />
+
+    <!-- ======= SECTION 6: LEGENDARY ASPECTS ======= -->
+    <section id="aspects">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label">Build Power</p>
+          <h2>Legendary Aspects</h2>
+          <p class="section-desc">
+            Aspects are the legendary powers that define your build. Manage them
+            wisely.
+          </p>
+        </div>
+
+        <div class="aspects-grid">
+          <div class="aspects-flow">
+            <div class="aspects-step">
+              <div class="aspects-step-num">1</div>
+              <div class="aspects-step-content">
+                <h4>Find a Legendary</h4>
+                <p>
+                  Legendary powers start on orange items. Some of them are
+                  build-defining, so always check them before you salvage
+                  anything valuable.
+                </p>
+              </div>
+            </div>
+            <div class="aspects-step">
+              <div class="aspects-step-num">2</div>
+              <div class="aspects-step-content">
+                <h4>Extract the Aspect</h4>
+                <p>
+                  Take useful items to the <strong>Occultist</strong> and
+                  extract the aspect. It saves to your
+                  <strong>Codex of Power</strong> permanently.
+                </p>
+              </div>
+            </div>
+            <div class="aspects-step">
+              <div class="aspects-step-num">3</div>
+              <div class="aspects-step-content">
+                <h4>Imprint on New Gear</h4>
+                <p>
+                  At the Occultist, imprint any Codex aspect onto a new piece of
+                  gear. Infinite uses mean your Codex keeps getting more useful
+                  as your collection grows.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="aspect-tip-box">
+            <h3 class="aspect-tip-title">💡 Aspect Tips</h3>
+            <ul class="aspect-tip-list">
+              <li class="aspect-tip-item">
+                <span class="aspect-tip-bullet">▸</span
+                ><strong>Always extract</strong> before salvaging, because once
+                the item is gone the original aspect is gone too.
+              </li>
+              <li class="aspect-tip-item">
+                <span class="aspect-tip-bullet">▸</span>Learn which aspects are
+                <strong>build-defining</strong> for your class before you start
+                clearing your stash.
+              </li>
+              <li class="aspect-tip-item">
+                <span class="aspect-tip-bullet">▸</span>Your Codex stores an
+                extracted power permanently, so you can keep reusing the best
+                effects on future upgrades.
+              </li>
+              <li class="aspect-tip-item">
+                <span class="aspect-tip-bullet">▸</span>Class-specific aspects
+                usually have higher long-term value than generic utility
+                effects, so prioritize them first.
+              </li>
             </ul>
           </div>
+        </div>
+      </div>
+    </section>
 
-          <div class="crafting-sidebar-card">
-            <h4>📈 Value Stacking</h4>
-            <p>Each masterworking tier adds <strong>+20%</strong> to tempered affix values. At +20, you've effectively <strong>quintupled</strong> your temper bonus — this is where the big power comes from in endgame.</p>
+    <hr class="section-divider" />
+
+    <!-- SECTION 7: GEM SYSTEM -->
+    <section id="gems" class="section-pad-md">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label">Socket Power</p>
+          <h2>Gem System</h2>
+          <p class="section-desc">
+            Gems provide stat bonuses when socketed into your gear. Use them for
+            role coverage first, then optimize them once the rest of your build
+            is stable.
+          </p>
+        </div>
+
+        <div class="quick-table-wrap">
+          <table class="quick-table">
+            <thead>
+              <tr>
+                <th>Gem</th>
+                <th>Stat Bonus</th>
+                <th>Best For</th>
+                <th>Where to Use</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="gem-ruby">🔴 Ruby</td>
+                <td class="text-strong">Strength</td>
+                <td>Barbarian, Paladin, Necromancer</td>
+                <td>Weapons, Armor</td>
+              </tr>
+              <tr>
+                <td class="gem-sapphire">🔵 Sapphire</td>
+                <td class="text-strong">Intelligence</td>
+                <td>Sorcerer, Spiritborn</td>
+                <td>Weapons, Armor</td>
+              </tr>
+              <tr>
+                <td class="gem-emerald">🟢 Emerald</td>
+                <td class="text-strong">Willpower</td>
+                <td>Druid, Necromancer</td>
+                <td>Weapons, Armor</td>
+              </tr>
+              <tr>
+                <td class="gem-topaz">🟡 Topaz</td>
+                <td class="text-strong">Dexterity</td>
+                <td>Rogue, Druid</td>
+                <td>Weapons, Armor</td>
+              </tr>
+              <tr>
+                <td class="gem-diamond">⚪ Diamond</td>
+                <td class="text-strong">Spirit</td>
+                <td>All classes for defensive stats</td>
+                <td>Weapons, Armor</td>
+              </tr>
+              <tr>
+                <td class="gem-amethyst">🟣 Amethyst</td>
+                <td class="text-strong">Vitality</td>
+                <td>All classes needing more HP</td>
+                <td>Weapons, Armor</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="card-grid card-grid-280">
+          <div class="soft-panel">
+            <h3 class="soft-panel-title">💠 Gem Tiers</h3>
+            <p class="soft-panel-copy">
+              Gems drop in tiers. Upgrade them at the Jeweler using Dust for
+              better stat bonuses:
+            </p>
+            <div class="soft-panel-stack">
+              <div class="muted-note">
+                Crude → Flawed → Standard → Flawless → Royal
+              </div>
+              <div class="note-small">
+                Each tier adds a much stronger stat bonus, so later upgrades
+                matter more than early ones.
+              </div>
+            </div>
+          </div>
+          <div class="soft-panel">
+            <h3 class="soft-panel-title">⚡ When to Upgrade</h3>
+            <p class="soft-panel-copy">
+              Gem upgrades cost gold, so do not overinvest too early. It usually
+              pays to wait until you have endgame pieces worth keeping.
+            </p>
+            <div class="note-small">
+              Treat gem upgrades as finishing work, not your first power spike.
+            </div>
+          </div>
+          <div class="soft-panel">
+            <h3 class="soft-panel-title">💎 Sockets in Jewelry</h3>
+            <p class="soft-panel-copy">
+              Rings and amulets can carry sockets for extra stat flexibility.
+              Match your gem choice to the role your build needs more of, not
+              just the color you have the most of.
+            </p>
+            <div class="note-small">
+              Sacred and Ancestral jewelry gives you the best long-term return
+              on better gems.
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <hr class="section-divider">
+    <hr class="section-divider" />
 
-  <!-- ======= SECTION 6: LEGENDARY ASPECTS ======= -->
-  <section id="aspects">
-    <div class="container">
-      <div class="section-header">
-        <p class="section-label">Build Power</p>
-        <h2>Legendary Aspects</h2>
-        <p class="section-desc">Aspects are the legendary powers that define your build. Manage them wisely.</p>
-      </div>
+    <!-- SECTION 8: S12 SEASONAL CRAFTING -->
+    <section id="s12-materials" class="section-pad-md">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label">Season 12</p>
+          <h2>S12 Seasonal Crafting</h2>
+          <p class="section-desc">
+            Season 12 introduces new materials tied to the killstreak system and
+            Bloodied Items.
+          </p>
+        </div>
 
-      <div class="aspects-grid">
-        <div class="aspects-flow">
-          <div class="aspects-step">
-            <div class="aspects-step-num">1</div>
-            <div class="aspects-step-content">
-              <h4>Find a Legendary</h4>
-              <p>Legendary aspects appear on orange (Legendary) and yellow (Rare) items. Some are build-defining.</p>
-          <div class="aspects-step-content">
-            <h4>Extract the Aspect</h4>
-            <p>Take useful items to the <strong>Occultist</strong> and extract the aspect. It saves to your <strong>Codex of Power</strong> permanently.</p>
+        <div class="s12-highlights-grid">
+          <div class="s12-highlight-card">
+            <div class="s12-hc-icon">💜</div>
+            <h4>Obducite</h4>
+            <p>
+              The primary S12 material. Use it for tempering armor and
+              masterworking gear. Farm it in Nightmare Dungeons, WT4+ open world
+              content, and Bloodied Sigils.
+            </p>
           </div>
-        </div>
-        <div class="aspects-step">
-          <div class="aspects-step-num">3</div>
-          <div class="aspects-step-content">
-            <h4>Imprint on New Gear</h4>
-            <p>At the Occultist, imprint any Codex aspect onto a new piece of gear. Infinite uses — your Codex grows with every extraction.</p>
+          <div class="s12-highlight-card">
+            <div class="s12-hc-icon">🥩</div>
+            <h4>Fresh Meat</h4>
+            <p>
+              Butcher currency earned by playing as The Butcher. Spend it at the
+              seasonal vendor for bonus rewards, Butcher Uniques, and cosmetics.
+            </p>
           </div>
-        </div>
-      </div>
-
-      <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-lg);padding:1.5rem;margin-top:1.5rem;">
-        <h3 style="font-family:'Cinzel',serif;font-size:1.1rem;color:var(--gold);margin-bottom:1rem;">💡 Aspect Tips</h3>
-        <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:0.6rem;">
-          <li style="font-size:0.9rem;color:var(--text-secondary);padding-left:1.25rem;position:relative;"><span style="position:absolute;left:0;color:var(--gold);">▸</span><strong style="color:var(--text-primary);">Always extract</strong> before salvaging — once an item is gone, so is the aspect</li>
-          <li style="font-size:0.9rem;color:var(--text-secondary);padding-left:1.25rem;position:relative;"><span style="position:absolute;left:0;color:var(--gold);">▸</span>Some aspects are <strong style="color:var(--text-primary);">build-defining</strong> — know which ones matter for your class</li>
-          <li style="font-size:0.9rem;color:var(--text-secondary);padding-left:1.25rem;position:relative;"><span style="position:absolute;left:0;color:var(--gold);">▸</span>The Codex stores one copy of each aspect you extract — imprint as many times as you want</li>
-          <li style="font-size:0.9rem;color:var(--text-secondary);padding-left:1.25rem;position:relative;"><span style="position:absolute;left:0;color:var(--gold);">▸</span>Class-specific aspects are more valuable than universal ones — prioritize those</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <hr class="section-divider">
-
-  <!-- SECTION 7: GEM SYSTEM -->
-  <section id="gems" style="padding:4rem 0;">
-    <div class="container">
-      <div class="section-header"><p class="section-label">Socket Power</p><h2>Gem System</h2><p class="section-desc">Gems provide stat bonuses when socketed into jewelry. Know which gem fits your build.</p></div>
-
-      <div class="quick-table-wrap">
-        <table class="quick-table">
-          <thead><tr><th>Gem</th><th>Stat Bonus</th><th>Best For</th><th>Where to Use</th></tr></thead>
-          <tbody>
-            <tr>
-              <td class="gem-ruby">🔴 Ruby</td>
-              <td class="text-strong">Strength</td>
-              <td>Barbarian, Paladin, Necromancer</td>
-              <td>Weapons, Armor</td>
-            </tr>
-            <tr>
-              <td class="gem-sapphire">🔵 Sapphire</td>
-              <td class="text-strong">Intelligence</td>
-              <td>Sorcerer, Spiritborn</td>
-              <td>Weapons, Armor</td>
-            </tr>
-            <tr>
-              <td class="gem-emerald">🟢 Emerald</td>
-              <td class="text-strong">Willpower</td>
-              <td>Druid, Necromancer</td>
-              <td>Weapons, Armor</td>
-            </tr>
-            <tr>
-              <td class="gem-topaz">🟡 Topaz</td>
-              <td class="text-strong">Dexterity</td>
-              <td>Rogue, Druid</td>
-              <td>Weapons, Armor</td>
-            </tr>
-            <tr>
-              <td class="gem-diamond">⚪ Diamond</td>
-              <td class="text-strong">Spirit</td>
-              <td>All classes for defensive stats</td>
-              <td>Weapons, Armor</td>
-            </tr>
-            <tr>
-              <td class="gem-amethyst">🟣 Amethyst</td>
-              <td class="text-strong">Vitality</td>
-              <td>All classes needing more HP</td>
-              <td>Weapons, Armor</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <div class="card-grid card-grid-280">
-        <div class="soft-panel">
-          <h3 style="font-family:'Cinzel',serif;font-size:1.05rem;color:var(--gold);margin-bottom:0.75rem;">💠 Gem Tiers</h3>
-          <p style="font-size:0.875rem;color:var(--text-secondary);line-height:1.6;margin-bottom:0.75rem;">Gems drop in tiers. Upgrade them at the Jeweler using Dust for better stat bonuses:</p>
-          <div style="display:flex;flex-direction:column;gap:0.4rem;">
-            <div class="muted-note">Crude → Flawed → Standard → Flawless → Royal</div>
-            <div class="note-small">Each tier = significantly higher stat values</div>
+          <div class="s12-highlight-card">
+            <div class="s12-hc-icon">🩸</div>
+            <h4>Bloodied Items</h4>
+            <p>
+              <strong>Not craftable.</strong> These are world drops from
+              Bloodied Sigils and seasonal activities. Keep or sell them if they
+              fit your build, but do not treat them like normal salvage fodder.
+            </p>
           </div>
-        </div>
-        <div class="soft-panel">
-          <h3 style="font-family:'Cinzel',serif;font-size:1.05rem;color:var(--gold);margin-bottom:0.75rem;">⚡ When to Upgrade</h3>
-          <p style="font-size:0.875rem;color:var(--text-secondary);line-height:1.6;margin-bottom:0.75rem;">Gem upgrades cost gold — don't gem out your gear until you're in endgame with spare gold. Early game: sell Flawless+ gems instead.</p>
-          <div class="note-small">Save Dust and gold for when gems actually move the needle on your build.</div>
-        </div>
-        <div class="soft-panel">
-          <h3 style="font-family:'Cinzel',serif;font-size:1.05rem;color:var(--gold);margin-bottom:0.75rem;">💎 Sockets in Jewelry</h3>
-          <p style="font-size:0.875rem;color:var(--text-secondary);line-height:1.6;margin-bottom:0.75rem;">Rings and Amulets can have sockets. Adding gems here gives you flexible stat bonuses. Some builds prioritize specific gem types — match gems to your build's needs.</p>
-          <div class="note-small">Sacred/Ancestral jewelry has a higher chance of spawning with sockets.</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <hr class="section-divider">
-
-  <!-- SECTION 8: S12 SEASONAL CRAFTING -->
-  <section id="s12-materials" style="padding:4rem 0;">
-    <div class="container">
-      <div class="section-header"><p class="section-label">Season 12</p><h2>S12 Seasonal Crafting</h2><p class="section-desc">Season 12 introduces new materials tied to the Killstreak system and Bloodied Items.</p></div>
-
-      <div class="s12-highlights-grid">
-        <div class="s12-highlight-card">
-          <div class="s12-hc-icon">💜</div>
-          <h4>Obducite</h4>
-          <p>The primary S12 material. Used for tempering armor and masterworking gear. Farm in Nightmare Dungeons, WT4+ open world, and Bloodied Sigils. Stockpile this — you'll need a lot.</p>
-        </div>
-        <div class="s12-highlight-card">
-          <div class="s12-hc-icon">🥩</div>
-          <h4>Fresh Meat</h4>
-          <p>Butcher currency earned by playing as The Butcher. Spent at the seasonal vendor for bonus rewards, Butcher Uniques, and cosmetics. Maximize streaks for more drops.</p>
-        </div>
-        <div class="s12-highlight-card">
-          <div class="s12-hc-icon">🩸</div>
-          <h4>Bloodied Items</h4>
-          <p><strong>NOT craftable.</strong> World drops only from Bloodied Sigils and seasonal activities. Come in three types: Rampage (Armor), Feast (Weapons), Hunger (Jewelry). Keep or sell — never salvage!</p>
-        </div>
-        <div class="s12-highlight-card">
-          <div class="s12-hc-icon">⚡</div>
-          <h4>New S12 Aspects</h4>
-          <p>Extract from S12 legendary drops — particularly Bloodied Items and seasonal legendaries. Some are build-defining. Always extract before salvaging any S12 legendary.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <hr class="section-divider">
-
-  <!-- SECTION 9: GOLD ECONOMY TIPS -->
-  <section id="gold" style="padding:4rem 0;">
-    <div class="container">
-      <div class="section-header"><p class="section-label">Smart Spending</p><h2>Gold Economy Tips</h2><p class="section-desc">Gold is finite early — spend it wisely. Here's when to save and when to spend.</p></div>
-
-      <div class="card-grid card-grid-tight">
-        <div class="hours-card hours-1-3">
-          <div class="hours-header">
-            <div class="hours-label">Early Game</div>
-            <div class="hours-title">Levels 1–40</div>
-          </div>
-          <ul class="hours-list">
-            <li>Mount and horse equipment</li>
-            <li>Town Portal scrolls</li>
-            <li>Basic repairs</li>
-            <li>First elixirs for XP</li>
-          </ul>
-          <div style="margin-top:0.75rem;padding:0.6rem;background:rgba(76,175,80,0.1);border:1px solid rgba(76,175,80,0.2);border-radius:6px;font-size:0.8rem;color:#81c784;">💰 Save most gold. Don't waste on rerolling or gem upgrades.</div>
-        </div>
-
-        <div class="hours-card hours-3-6">
-          <div class="hours-header">
-            <div class="hours-label">Mid Game</div>
-            <div class="hours-title">WT2–WT3</div>
-          </div>
-          <ul class="hours-list">
-            <li>Gambling at the Purveyor of Curiosities (spend Obols)</li>
-            <li>Elixirs and incense for XP boosts</li>
-            <li>Potion upgrades</li>
-            <li>Aspect extraction when needed</li>
-          </ul>
-          <div style="margin-top:0.75rem;padding:0.6rem;background:rgba(255,152,0,0.1);border:1px solid rgba(255,152,0,0.2);border-radius:6px;font-size:0.8rem;color:#ffb74d;">⚠️ Start stockpiling gold for endgame tempering.</div>
-        </div>
-
-        <div class="hours-card hours-8-10">
-          <div class="hours-header">
-            <div class="hours-label">Endgame</div>
-            <div class="hours-title">WT4 / Torment</div>
-          </div>
-          <ul class="hours-list">
-            <li>Tempering attempts (lots of them)</li>
-            <li>Masterworking Iron + Crystal costs</li>
-            <li>Enchanting rerolls at the Occultist</li>
-            <li>Gem upgrades at the Jeweler</li>
-          </ul>
-          <div style="margin-top:0.75rem;padding:0.6rem;background:rgba(201,162,39,0.1);border:1px solid rgba(201,162,39,0.2);border-radius:6px;font-size:0.8rem;color:var(--gold);">💰 Gold flows fast here. Farm Helltides for big gold income.</div>
-        </div>
-      </div>
-
-      <div class="hours-tip">
-        <div class="hours-tip-icon">🚫</div>
-        <p><strong style="color:var(--text-primary);">What NOT to spend gold on early:</strong> Gem upgrades before endgame, rerolling items you don't need, salvaging gear instead of extracting aspects, buying gold from third parties (bannable).</p>
-      </div>
-    </div>
-  </section>
-
-  <hr class="section-divider">
-
-  <!-- SECTION 10: QUICK REFERENCE -->
-  <section id="quick-ref" style="padding:4rem 0;">
-    <div class="container">
-      <div class="section-header"><p class="section-label">Cheat Sheet</p><h2>Quick Reference</h2><p class="section-desc">Keep these key facts in mind as you play.</p></div>
-
-      <div class="card-grid card-grid-280">
-        <div class="tip-card">
-          <div class="tip-icon">🟣 vs 🟢</div>
-          <div class="tip-content">
-            <h4>Sacred (WT3) vs Ancestral (WT4)</h4>
-            <p>Ancestral items drop in Torment I+ and have higher stat ranges than Sacred. Always prefer Ancestral for your endgame build pieces.</p>
-          </div>
-        </div>
-        <div class="tip-card">
-          <div class="tip-icon">⚡</div>
-          <div class="tip-content">
-            <h4>Tempering = First Power Spike</h4>
-            <p>Unlocked after your first Nightmare Dungeon. This is where your secondary stats get their big boost. Temper your best Ancestral gear first.</p>
-          </div>
-        </div>
-        <div class="tip-card">
-          <div class="tip-icon">🔥</div>
-          <div class="tip-content">
-            <h4>Masterworking = Final Upgrade Path</h4>
-            <p>After tempering, masterworking adds +20% per tier. At +20, your tempered affixes are quintupled. Expensive — only do it on perfect pieces.</p>
-          </div>
-        </div>
-        <div class="tip-card">
-          <div class="tip-icon">📜</div>
-          <div class="tip-content">
-            <h4>Extract Aspects Before Salvaging</h4>
-            <p>Always run useful legendaries through the Occultist first. Once an item is salvaged, its aspect is gone forever.</p>
-          </div>
-        </div>
-        <div class="tip-card">
-          <div class="tip-icon">♾️</div>
-          <div class="tip-content">
-            <h4>Codex Imprints = Infinite</h4>
-            <p>Once an aspect is in your Codex of Power, you can imprint it onto any compatible gear as many times as you want. The Codex grows with every extraction.</p>
-          </div>
-        </div>
-        <div class="tip-card">
-          <div class="tip-icon">🩸</div>
-          <div class="tip-content">
-            <h4>Bloodied Items = World Drops Only</h4>
-            <p>Bloodied Items cannot be crafted. They drop from Bloodied Sigils and seasonal activities. They have unique affix scaling — keep or sell, never salvage.</p>
+          <div class="s12-highlight-card">
+            <div class="s12-hc-icon">⚡</div>
+            <h4>New S12 Aspects</h4>
+            <p>
+              Extract them from seasonal legendary drops when you find something
+              valuable. A few are build-defining, so check your powers before
+              you clear your inventory.
+            </p>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <hr class="section-divider">
+    <hr class="section-divider" />
 
-  <!-- NEXT STEPS -->
-  <section style="padding:4rem 0;">
-    <div class="container" style="text-align:center;">
-      <div class="section-header" style="text-align:center;"><p class="section-label">Keep Learning</p><h2>Next Steps</h2></div>
-      <div style="display:flex;flex-wrap:wrap;gap:1rem;justify-content:center;margin-top:2rem;">
-        <a href="new-player.html" class="btn btn-outline">New Player Guide</a>
-        <a href="dungeons.html" class="btn btn-outline">Dungeons &amp; Activities</a>
-        <a href="timeline.html" class="btn btn-outline">Season Timeline</a>
-        <a href="classes.html" class="btn btn-outline">Class Comparison</a>
-        <a href="resources.html" class="btn btn-outline">All Resources</a>
+    <!-- SECTION 9: GOLD ECONOMY TIPS -->
+    <section id="gold" class="section-pad-md">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label">Smart Spending</p>
+          <h2>Gold Economy Tips</h2>
+          <p class="section-desc">
+            Gold feels abundant later, but early on it disappears fast. Spend
+            with intent so you still have room to temper and reroll when the
+            real gear starts dropping.
+          </p>
+        </div>
+
+        <div class="card-grid card-grid-tight">
+          <div class="hours-card hours-1-3">
+            <div class="hours-header">
+              <div class="hours-label">Early Game</div>
+              <div class="hours-title">Levels 1–40</div>
+            </div>
+            <ul class="hours-list">
+              <li>Mount and horse equipment</li>
+              <li>Town Portal scrolls</li>
+              <li>Basic repairs</li>
+              <li>First elixirs for XP</li>
+            </ul>
+            <div class="utility-note success">
+              💰 Save most of your gold here. Rerolls and gem upgrades can wait
+              until your gear matters.
+            </div>
+          </div>
+
+          <div class="hours-card hours-3-6">
+            <div class="hours-header">
+              <div class="hours-label">Mid Game</div>
+              <div class="hours-title">WT2–WT3</div>
+            </div>
+            <ul class="hours-list">
+              <li>
+                Gambling at the Purveyor of Curiosities (use Obols, not gold)
+              </li>
+              <li>Elixirs and incense for XP boosts</li>
+              <li>Potion upgrades</li>
+              <li>Aspect extraction when needed</li>
+            </ul>
+            <div class="utility-note warn">
+              ⚠️ This is where you start stockpiling for endgame tempering and
+              enchanting.
+            </div>
+          </div>
+
+          <div class="hours-card hours-8-10">
+            <div class="hours-header">
+              <div class="hours-label">Endgame</div>
+              <div class="hours-title">WT4 / Torment</div>
+            </div>
+            <ul class="hours-list">
+              <li>Tempering attempts</li>
+              <li>Masterworking Iron and Crystal costs</li>
+              <li>Enchanting rerolls at the Occultist</li>
+              <li>Gem upgrades at the Jeweler</li>
+            </ul>
+            <div class="utility-note gold">
+              💰 Gold flows much faster here, especially from Helltides and
+              high-density farming routes.
+            </div>
+          </div>
+        </div>
+
+        <div class="hours-tip">
+          <div class="hours-tip-icon">🚫</div>
+          <p>
+            <strong>What not to spend gold on early:</strong> Gem upgrades
+            before endgame, rerolling gear you are about to replace, or ignoring
+            aspect extraction on items with useful powers.
+          </p>
+        </div>
       </div>
-      <div style="margin-top:2rem;"><a href="index.html" class="btn btn-gold btn-lg">← Back to Home</a></div>
-    </div>
-  </section>
+    </section>
 
-  <!-- FOOTER -->
+    <hr class="section-divider" />
+
+    <!-- SECTION 10: QUICK REFERENCE -->
+    <section id="quick-ref" class="section-pad-md">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label">Cheat Sheet</p>
+          <h2>Quick Reference</h2>
+          <p class="section-desc">
+            These are the core crafting rules most players come back to once the
+            real loot chase begins.
+          </p>
+        </div>
+
+        <div class="card-grid card-grid-280">
+          <div class="tip-card">
+            <div class="tip-icon">🟣 vs 🟢</div>
+            <div class="tip-content">
+              <h4>Sacred (WT3) vs Ancestral (WT4)</h4>
+              <p>
+                Ancestral items drop in Torment I+ and have higher stat ranges
+                than Sacred. Use them as the foundation for your real endgame
+                build pieces.
+              </p>
+            </div>
+          </div>
+          <div class="tip-card">
+            <div class="tip-icon">⚡</div>
+            <div class="tip-content">
+              <h4>Tempering = First Power Spike</h4>
+              <p>
+                Tempering unlocks after your first Nightmare Dungeon. It is the
+                easiest way to make gear feel like it actually belongs to your
+                build.
+              </p>
+            </div>
+          </div>
+          <div class="tip-card">
+            <div class="tip-icon">🔥</div>
+            <div class="tip-content">
+              <h4>Masterworking = Final Upgrade Path</h4>
+              <p>
+                After tempering, masterworking amplifies the gear you are
+                already committed to. Save it for the pieces with the right
+                rolls.
+              </p>
+            </div>
+          </div>
+          <div class="tip-card">
+            <div class="tip-icon">📜</div>
+            <div class="tip-content">
+              <h4>Extract Aspects Before Salvaging</h4>
+              <p>
+                Run useful legendaries through the Occultist first. Once the
+                item is gone, the original power is gone with it.
+              </p>
+            </div>
+          </div>
+          <div class="tip-card">
+            <div class="tip-icon">♾️</div>
+            <div class="tip-content">
+              <h4>Codex Imprints = Repeatable Value</h4>
+              <p>
+                Once an aspect is in your Codex, you can keep using it on future
+                upgrades without needing to rediscover the same power every
+                time.
+              </p>
+            </div>
+          </div>
+          <div class="tip-card">
+            <div class="tip-icon">🩸</div>
+            <div class="tip-content">
+              <h4>Bloodied Items = World Drops Only</h4>
+              <p>
+                Bloodied Items come from seasonal drops, not the crafting bench.
+                Treat them like premium gear checks rather than craftable
+                milestones.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider" />
+
+    <!-- NEXT STEPS -->
+    <section class="section-pad-md">
+      <div class="container text-center">
+        <div class="section-header text-center">
+          <p class="section-label">Keep Learning</p>
+          <h2>Next Steps</h2>
+        </div>
+        <div class="centered-actions">
+          <a href="new-player.html" class="btn btn-outline">New Player Guide</a>
+          <a href="dungeons.html" class="btn btn-outline"
+            >Dungeons &amp; Activities</a
+          >
+          <a href="timeline.html" class="btn btn-outline">Season Timeline</a>
+          <a href="classes.html" class="btn btn-outline">Class Comparison</a>
+          <a href="resources.html" class="btn btn-outline">All Resources</a>
+        </div>
+        <div class="centered-actions">
+          <a href="index.html" class="btn btn-gold btn-lg">← Back to Home</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
     <footer class="footer">
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-logo">
-          <span class="footer-logo-icon">🔥</span>
-          Diablo 4 Resource Hub
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <span class="footer-logo-icon">🔥</span>
+            Diablo 4 Resource Hub
+          </div>
+
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="resources.html">Resources</a>
+            <a href="crafting.html">Crafting &amp; Gear Guide</a>
+            <a href="https://maxroll.gg/d4" target="_blank" rel="noopener"
+              >Maxroll</a
+            >
+            <a
+              href="https://www.icy-veins.com/d4/"
+              target="_blank"
+              rel="noopener"
+              >Icy Veins</a
+            >
+            <a href="https://d4builds.gg/" target="_blank" rel="noopener"
+              >D4Builds</a
+            >
+            <a
+              href="https://mobalytics.gg/diablo-4/builds"
+              target="_blank"
+              rel="noopener"
+              >Mobalytics</a
+            >
+          </div>
+
+          <p class="footer-disclaimer">
+            Not affiliated with Blizzard Entertainment. Diablo 4 and all related
+            content are trademarks of Blizzard Entertainment, Inc. This site is
+            a fan-made resource hub for educational purposes.
+          </p>
+
+          <p class="footer-updated">Last updated: March 21, 2026</p>
         </div>
-
-        <div class="footer-links">
-          <a href="index.html">Home</a>
-          <a href="resources.html">Resources</a>
-          <a href="crafting.html">Crafting &amp; Gear Guide</a>
-          <a href="https://maxroll.gg/d4" target="_blank" rel="noopener">Maxroll</a>
-          <a href="https://www.icy-veins.com/d4/" target="_blank" rel="noopener">Icy Veins</a>
-          <a href="https://d4builds.gg/" target="_blank" rel="noopener">D4Builds</a>
-          <a href="https://mobalytics.gg/diablo-4/builds" target="_blank" rel="noopener">Mobalytics</a>
-        </div>
-
-        <p class="footer-disclaimer">
-          Not affiliated with Blizzard Entertainment. Diablo 4 and all related content are trademarks of Blizzard Entertainment, Inc. This site is a fan-made resource hub for educational purposes.
-        </p>
-
-        <p class="footer-updated">Last updated: March 20, 2026</p>
       </div>
-    </div>
-  </footer>
+    </footer>
 
-  <script src="nav.js"></script>
-</body>
+    <script src="site-tools.js"></script>
+    <script src="nav.js"></script>
+  </body>
 </html>

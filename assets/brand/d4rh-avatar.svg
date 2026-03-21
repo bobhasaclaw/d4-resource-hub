@@ -1,0 +1,34 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bgGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(256 134) rotate(90) scale(274)">
+      <stop stop-color="#2A1622"/>
+      <stop offset="1" stop-color="#0A090D"/>
+    </radialGradient>
+    <linearGradient id="ring" x1="79" y1="59" x2="402" y2="449" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F4DA91"/>
+      <stop offset="0.42" stop-color="#C89D45"/>
+      <stop offset="1" stop-color="#74491A"/>
+    </linearGradient>
+    <linearGradient id="ember" x1="256" y1="158" x2="256" y2="374" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFC07A"/>
+      <stop offset="0.48" stop-color="#E1492A"/>
+      <stop offset="1" stop-color="#731414"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="116" fill="#08070C"/>
+  <circle cx="256" cy="256" r="206" fill="url(#bgGlow)" stroke="url(#ring)" stroke-width="12"/>
+  <circle cx="256" cy="256" r="176" fill="#100E15" stroke="rgba(255,255,255,0.05)" stroke-width="2"/>
+
+  <path d="M168 109L202 88L222 126L211 144L168 109Z" fill="url(#ring)"/>
+  <path d="M344 109L310 88L290 126L301 144L344 109Z" fill="url(#ring)"/>
+
+  <path d="M256 99L353 140V235C353 299 314 353 256 381C198 353 159 299 159 235V140L256 99Z" fill="#131018" stroke="url(#ring)" stroke-width="10"/>
+  <path d="M256 148L300 240L256 334L212 240L256 148Z" fill="url(#ember)"/>
+  <path d="M243 196H269V323H243V196Z" fill="#F2DEB0"/>
+  <path d="M212 299L256 332L300 299L286 281L256 303L226 281L212 299Z" fill="#C62B20"/>
+  <path d="M180 378C202 394 226 404 256 411C286 404 310 394 332 378" stroke="#7B4D1C" stroke-width="10" stroke-linecap="round"/>
+
+  <text x="256" y="450" text-anchor="middle" fill="#D8B45B" font-family="Cinzel, Georgia, serif" font-size="44" font-weight="800" letter-spacing="6">
+    D4RH
+  </text>
+</svg>

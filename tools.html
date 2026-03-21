@@ -1,360 +1,581 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Diablo 4 Tools & Utilities — D4 Resource Hub</title>
-  <meta name="description" content="Every tool D4 players use to plan builds, navigate the world, and track progress. Build planners, interactive maps, loot databases, and calculators.">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔥</text></svg>">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&display=swap" rel="stylesheet">
-</head>
-<body>
-
-  <!-- ======= STICKY NAVBAR ======= -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diablo 4 Tools & Utilities — D4 Resource Hub</title>
+    <meta
+      name="description"
+      content="Every tool D4 players use to plan builds, navigate the world, and track progress. Build planners, interactive maps, loot databases, and calculators."
+    />
+    <meta
+      property="og:title"
+      content="Diablo 4 Tools & Utilities — D4 Resource Hub"
+    />
+    <meta
+      property="og:description"
+      content="Every tool D4 players use to plan builds, navigate the world, and track progress. Build planners, interactive maps, loot databases, and calculators."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="D4 Resource Hub" />
+    <meta
+      property="og:image"
+      content="https://bobhasaclaw.github.io/d4-resource-hub/assets/og/og-tools.png"
+    />
+    <meta
+      property="og:url"
+      content="https://bobhasaclaw.github.io/d4-resource-hub/tools.html"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Diablo 4 Tools & Utilities — D4 Resource Hub"
+    />
+    <meta
+      name="twitter:description"
+      content="Every tool D4 players use to plan builds, navigate the world, and track progress. Build planners, interactive maps, loot databases, and calculators."
+    />
+    <meta
+      name="twitter:image"
+      content="https://bobhasaclaw.github.io/d4-resource-hub/assets/og/og-tools.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="canonical"
+      href="https://bobhasaclaw.github.io/d4-resource-hub/tools.html"
+    />
+    <link rel="icon" href="assets/brand/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- ======= STICKY NAVBAR ======= -->
     <nav class="navbar" id="main-nav">
-    <div class="navbar-inner"></div>
-  </nav>
+      <div class="navbar-inner"></div>
+    </nav>
 
-  <div class="mobile-menu" id="mobile-menu"></div>
+    <div class="mobile-menu" id="mobile-menu"></div>
 
-  <section class="hero" id="top">
-    <div class="hero-badge">
-      <span>🛠️</span> Tools & Utilities
-    </div>
-
-    <h1 class="hero-title">Diablo 4 Tools &amp; Utilities</h1>
-    <p class="hero-subtitle">Every tool D4 players use to plan builds, navigate the world, and track progress.</p>
-
-    <div class="hero-season-facts">
-      <div class="hero-fact">
-        <span class="icon">📋</span> Build Planners
-      </div>
-      <div class="hero-fact">
-        <span class="icon">🗺️</span> Interactive Maps
-      </div>
-      <div class="hero-fact">
-        <span class="icon">📊</span> Calculators
-      </div>
-    </div>
-
-    <a href="#build-planners" class="hero-cta">
-      Browse Tools <span>↓</span>
-    </a>
-
-    <div class="hero-scroll-hint">
-      ↓ Scroll to explore
-    </div>
-  </section>
-
-  <section class="page-overview">
-    <div class="container">
-      <div class="page-overview-grid">
-        <div class="page-overview-card featured">
-          <div class="page-overview-kicker">Top Picks</div>
-          <h3>The fastest way to get value from this page</h3>
-          <p>Start with the build planner and map, then use the databases and calculators when you’re optimizing a specific piece of your setup.</p>
-          <div class="page-overview-actions">
-            <span class="overview-pill">Planner</span>
-            <span class="overview-pill">Map</span>
-            <span class="overview-pill">Loot</span>
-          </div>
+    <section class="hero" id="top">
+      <div class="hero-badge"><span>🛠️</span> Tools & Utilities</div>
+      <div class="utility-brand-ribbon">
+        <span class="brand-mark-wrap utility-brand-mark" aria-hidden="true">
+          <img src="assets/brand/d4rh-mark.svg" alt="" class="brand-mark" />
+        </span>
+        <div class="utility-brand-copy">
+          <span class="utility-brand-kicker">Utility Desk</span>
+          <strong>D4 Resource Hub Toolset</strong>
+          <span
+            >Planning, mapping, and lookup tools organized around what players
+            actually need while they are building or farming.</span
+          >
         </div>
-        <div class="page-overview-card">
-          <div class="page-overview-kicker">Most Useful</div>
-          <h3>Essential everyday tools</h3>
-          <ul class="page-overview-list">
-            <li>D4Builds planner for builds and paragon</li>
-            <li>Interactive map for waypoints and events</li>
-            <li>Loot tables for unique farming targets</li>
-          </ul>
-        </div>
-        <div class="page-overview-card">
-          <div class="page-overview-kicker">Season 12</div>
-          <h3>Start with the current season tools</h3>
-          <p>The cheat sheet and season guide are the best shortcuts for players who want a current meta reference without reading the whole site.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ======= SECTION 1: BUILD PLANNERS ======= -->
-  <section id="build-planners">
-    <div class="container">
-      <div class="section-header">
-        <p class="section-label">Plan Your Build</p>
-        <h2>Build Planners</h2>
-        <p class="section-desc">Interactive tools to plan, optimize, and share your D4 builds across all 8 classes.</p>
-      </div>
-
-      <div class="card-grid card-grid-2">
-
-        <a href="https://d4builds.gg/build-planner/" target="_blank" rel="noopener" class="card" style="text-decoration:none;">
-          <span class="card-tag">Top Pick</span>
-          <div class="card-icon">🛠️</div>
-          <div class="card-title">D4Builds Build Planner</div>
-          <div class="card-desc">Full skill tree + paragon board + gear planner. Build shareable links for any class. All 8 classes covered — Warlock already added. The most comprehensive in-browser build planner for D4.</div>
-          <span class="card-link">d4builds.gg/build-planner/</span>
-        </a>
-
-        <a href="https://d4builds.gg/desktop-app/" target="_blank" rel="noopener" class="card" style="text-decoration:none;">
-          <div class="card-icon">💻</div>
-          <div class="card-title">D4Builds Desktop App</div>
-          <div class="card-desc">Windows companion app with in-game overlay. World Boss Timer, XP Per Hour Tracker, and Time to Level Calculator. Keeps your build info visible while you play.</div>
-          <span class="card-link">d4builds.gg/desktop-app/</span>
-        </a>
-
-      </div>
-    </div>
-  </section>
-
-  <hr class="section-divider">
-
-  <!-- ======= SECTION 2: INTERACTIVE MAPS ======= -->
-  <section id="interactive-maps">
-    <div class="container">
-      <div class="section-header">
-        <p class="section-label">Navigate Sanctuary</p>
-        <h2>Interactive Maps</h2>
-        <p class="section-desc">Explore the full D4 world with filters for every type of location and activity.</p>
-      </div>
-
-      <div class="card-grid card-grid-1">
-        <a href="https://d4builds.gg/map/" target="_blank" rel="noopener" class="card" style="text-decoration:none;">
-          <span class="card-tag">Season 12 Updated</span>
-          <div class="card-icon">🗺️</div>
-          <div class="card-title">D4Builds Interactive Map</div>
-          <div class="card-desc">Full world map with powerful filters: Altars of Lilith, Waypoints, Strongholds, Dungeons, and World Events. Season 12 map updates included. Essential for completionists and explorers alike.</div>
-          <span class="card-link">d4builds.gg/map/</span>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <hr class="section-divider">
-
-  <!-- ======= SECTION 3: ITEM & LOOT DATABASES ======= -->
-  <section id="loot-databases">
-    <div class="container">
-      <div class="section-header">
-        <p class="section-label">Know Your Loot</p>
-        <h2>Item &amp; Loot Databases</h2>
-        <p class="section-desc">Find exactly where every unique item drops and browse the complete D4 item registry.</p>
-      </div>
-
-      <div class="card-grid card-grid-2">
-
-        <a href="https://d4builds.gg/database/unique-loot-tables/" target="_blank" rel="noopener" class="card" style="text-decoration:none;">
-          <div class="card-icon">📦</div>
-          <div class="card-title">D4Builds Unique Loot Tables</div>
-          <div class="card-desc">Complete unique item database organized by boss and source. Filter by class to find exactly what your build needs. Updated each season with new drops.</div>
-          <span class="card-link">d4builds.gg/database/unique-loot-tables/</span>
-        </a>
-
-        <a href="https://diablo.blizzard.com/en-us/game/" target="_blank" rel="noopener" class="card" style="text-decoration:none;">
-          <div class="card-icon">📘</div>
-          <div class="card-title">In-Game Codex (Battle.net)</div>
-          <div class="card-desc">The official in-game item database. Aspect registry, seasonal mechanics, and full item reference built directly into the Battle.net client. Always accurate and up to date.</div>
-          <span class="card-link">diablo.blizzard.com — Battle.net Client</span>
-        </a>
-
-      </div>
-    </div>
-  </section>
-
-  <hr class="section-divider">
-
-  <!-- ======= SECTION 4: CALCULATORS ======= -->
-  <section id="calculators">
-    <div class="container">
-      <div class="section-header">
-        <p class="section-label">Crunch the Numbers</p>
-        <h2>Calculators</h2>
-        <p class="section-desc">Plan your resource investment with gem upgrade costs and tempering material requirements.</p>
-      </div>
-
-      <div class="card-grid card-grid-2">
-
-        <a href="https://www.icy-veins.com/d4" target="_blank" rel="noopener" class="card" style="text-decoration:none;">
-          <div class="card-icon">💎</div>
-          <div class="card-title">Icy Veins Gem Calculator</div>
-          <div class="card-desc">Calculate gem upgrade costs and material requirements for all京东 (gems). Know exactly how many reagents you need to max out your gem loadout at any gear score level.</div>
-          <span class="card-link">icy-veins.com/d4</span>
-        </a>
-
-        <a href="https://www.icy-veins.com/d4" target="_blank" rel="noopener" class="card" style="text-decoration:none;">
-          <div class="card-icon">🔨</div>
-          <div class="card-title">Icy Veins Tempering Guide</div>
-          <div class="card-desc">Season 12 Obducite crafting costs and tempering recipe breakdowns. Plan your endgame crafting by knowing exactly what materials are required for each tempering attempt.</div>
-          <span class="card-link">icy-veins.com/d4</span>
-        </a>
-
-      </div>
-    </div>
-  </section>
-
-  <hr class="section-divider">
-
-  <!-- ======= SECTION 5: SEASON 12 TOOLS ======= -->
-  <section id="season-12-tools">
-    <div class="container">
-      <div class="section-header">
-        <p class="section-label">Season 12</p>
-        <h2>Season 12 Tools</h2>
-        <p class="section-desc">Everything you need to optimize your Season of Slaughter run from day one.</p>
-      </div>
-
-      <div class="season-status" style="margin-bottom: 2rem;">
-        <div class="season-status-header">
-          <h3 class="season-status-title">⚔️ Season of Slaughter Quick Start</h3>
-          <span class="season-status-badge">Live Now</span>
-        </div>
-        <div class="season-status-body">
-          <div class="season-status-item">
-            <span class="label">Season Theme</span>
-            <span class="value">Killstreak System + Bloodied Items</span>
-          </div>
-          <div class="season-status-item">
-            <span class="label">Special Mechanic</span>
-            <span class="value">Stack kills for bonus rewards &amp; power</span>
-          </div>
-          <div class="season-status-item">
-            <span class="label">Featured Unlock</span>
-            <span class="value">Play as The Butcher as a companion</span>
-          </div>
+        <div class="utility-brand-links">
+          <a href="resources.html">All Resources</a>
+          <a href="crafting.html">Crafting Guide</a>
         </div>
       </div>
 
-      <div class="card-grid card-grid-2">
+      <h1 class="hero-title">Diablo 4 Tools &amp; Utilities</h1>
+      <p class="hero-subtitle">
+        Every tool D4 players use to plan builds, navigate the world, and track
+        progress.
+      </p>
 
-        <a href="https://d4builds.gg/cheat-sheet/" target="_blank" rel="noopener" class="card" style="text-decoration:none;">
-          <span class="card-tag">By Rob2628</span>
-          <div class="card-icon">📋</div>
-          <div class="card-title">D4Builds Cheat Sheet (S12)</div>
-          <div class="card-desc">Rob2628's Season 12 quick reference — meta builds, best items, seasonal tips, and priority checklists. A strong reference for competitive seasonal players.</div>
-          <span class="card-link">d4builds.gg/cheat-sheet/</span>
-        </a>
-
-        <a href="https://www.icy-veins.com/d4/guides/diablo-4-latest-season/" target="_blank" rel="noopener" class="card" style="text-decoration:none;">
-          <div class="card-icon">📖</div>
-          <div class="card-title">Season 12 Start Guide</div>
-          <div class="card-desc">Full season mechanics breakdown, activity priorities, new items, and recommended first steps. Everything a new or returning player needs to hit the ground running.</div>
-          <span class="card-link">icy-veins.com/d4/guides/diablo-4-latest-season/</span>
-        </a>
-
-      </div>
-    </div>
-  </section>
-
-  <hr class="section-divider">
-
-  <!-- ======= SECTION 6: ALL-IN-ONE RESOURCES ======= -->
-  <section id="all-in-one">
-    <div class="container">
-      <div class="section-header">
-        <p class="section-label">Everything in One Place</p>
-        <h2>All-in-One Resource Hubs</h2>
-        <p class="section-desc">Major D4 platforms that bundle tools, calculators, tier lists, and seasonal guides in one spot.</p>
+      <div class="hero-season-facts">
+        <div class="hero-fact"><span class="icon">📋</span> Build Planners</div>
+        <div class="hero-fact">
+          <span class="icon">🗺️</span> Interactive Maps
+        </div>
+        <div class="hero-fact"><span class="icon">📊</span> Calculators</div>
       </div>
 
-      <div class="card-grid card-grid-2">
+      <a href="#build-planners" class="hero-cta">
+        Browse Tools <span>↓</span>
+      </a>
 
-        <a href="https://maxroll.gg/d4" target="_blank" rel="noopener" class="card" style="text-decoration:none;">
-          <div class="card-icon">🌐</div>
-          <div class="card-title">Maxroll D4 Tools</div>
-          <div class="card-desc">Full suite of D4 tools — DPS calculators, tier lists, seasonal guides, build planners, and item databases. One of the most complete D4 resource platforms available.</div>
-          <span class="card-link">maxroll.gg/d4</span>
-        </a>
+      <div class="hero-scroll-hint">↓ Scroll to explore</div>
+    </section>
 
-        <a href="https://mobalytics.gg/diablo-4/" target="_blank" rel="noopener" class="card" style="text-decoration:none;">
-          <div class="card-icon">📊</div>
-          <div class="card-title">Mobalytics</div>
-          <div class="card-desc">Build scores, performance tracking, creator-verified builds, and detailed class tier lists. Great for comparing your build's output against community benchmarks.</div>
-          <span class="card-link">mobalytics.gg/diablo-4/</span>
-        </a>
-
-      </div>
-    </div>
-  </section>
-
-  <hr class="section-divider">
-
-  <!-- ======= QUICK LINKS FOOTER ======= -->
-  <section id="quick-links">
-    <div class="container">
-      <div class="section-header">
-        <p class="section-label">Jump To</p>
-        <h2>More Resources</h2>
-      </div>
-
-      <div class="communities-grid">
-        <a href="resources.html" class="community-card" style="text-decoration:none;">
-          <div class="community-icon">📚</div>
-          <div class="community-info">
-            <div class="community-name">All Resources</div>
-            <div class="community-type">Full link directory</div>
+    <section class="page-overview">
+      <div class="container">
+        <div class="page-overview-grid">
+          <div class="page-overview-card featured">
+            <div class="page-overview-kicker">Top Picks</div>
+            <h3>The fastest way to get value from this page</h3>
+            <p>
+              Start with the build planner and map, then use the databases and
+              calculators when you’re optimizing a specific piece of your setup.
+            </p>
+            <div class="page-overview-actions">
+              <span class="overview-pill">Planner</span>
+              <span class="overview-pill">Map</span>
+              <span class="overview-pill">Loot</span>
+            </div>
           </div>
-        </a>
-
-        <a href="classes.html" class="community-card" style="text-decoration:none;">
-          <div class="community-icon">⚔️</div>
-          <div class="community-info">
-            <div class="community-name">Class Comparison</div>
-            <div class="community-type">All 8 classes overview</div>
+          <div class="page-overview-card">
+            <div class="page-overview-kicker">Most Useful</div>
+            <h3>Essential everyday tools</h3>
+            <ul class="page-overview-list">
+              <li>D4Builds planner for builds and paragon</li>
+              <li>Interactive map for waypoints and events</li>
+              <li>Loot tables for unique farming targets</li>
+            </ul>
           </div>
-        </a>
-
-        <a href="dungeons.html" class="community-card" style="text-decoration:none;">
-          <div class="community-icon">🏰</div>
-          <div class="community-info">
-            <div class="community-name">Dungeons &amp; Activities</div>
-            <div class="community-type">All dungeon guides</div>
+          <div class="page-overview-card">
+            <div class="page-overview-kicker">Season 12</div>
+            <h3>Start with the current season tools</h3>
+            <p>
+              The cheat sheet and season guide are the best shortcuts for
+              players who want a current meta reference without reading the
+              whole site.
+            </p>
           </div>
-        </a>
-
-        <a href="timeline.html" class="community-card" style="text-decoration:none;">
-          <div class="community-icon">📅</div>
-          <div class="community-info">
-            <div class="community-name">Season Timeline</div>
-            <div class="community-type">Seasonal milestones</div>
-          </div>
-        </a>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <hr class="section-divider">
+    <section class="page-actions-section">
+      <div class="container">
+        <div class="page-actions-bar">
+          <button type="button" class="page-action-button" data-copy-page-link>
+            Copy Tools Link
+          </button>
+          <button
+            type="button"
+            class="page-action-button"
+            data-share-page
+            data-share-text="Diablo 4 tools and utilities for build planning, maps, loot lookup, and season prep."
+          >
+            Share Page
+          </button>
+          <button
+            type="button"
+            class="page-action-button"
+            data-copy-summary
+            data-copy-summary="Diablo 4 tools and utilities for build planning, maps, loot lookup, and season prep."
+          >
+            Copy Summary
+          </button>
+          <span class="page-action-note">Reviewed March 21, 2026</span>
+          <span class="page-action-feedback" aria-live="polite"></span>
+        </div>
+      </div>
+    </section>
 
-  <!-- ======= FOOTER ======= -->
+    <!-- ======= SECTION 1: BUILD PLANNERS ======= -->
+    <section id="build-planners">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label">Plan Your Build</p>
+          <h2>Build Planners</h2>
+          <p class="section-desc">
+            Interactive tools to plan, optimize, and share your D4 builds across
+            all 8 classes.
+          </p>
+        </div>
+
+        <div class="card-grid card-grid-2">
+          <a
+            href="https://d4builds.gg/build-planner/"
+            target="_blank"
+            rel="noopener"
+            class="card card-link-reset"
+          >
+            <span class="card-tag">Top Pick</span>
+            <div class="card-icon">🛠️</div>
+            <div class="card-title">D4Builds Build Planner</div>
+            <div class="card-desc">
+              Full skill tree + paragon board + gear planner. Build shareable
+              links for any class. All 8 classes covered — Warlock already
+              added. The most comprehensive in-browser build planner for D4.
+            </div>
+            <span class="card-link">d4builds.gg/build-planner/</span>
+          </a>
+
+          <a
+            href="https://d4builds.gg/desktop-app/"
+            target="_blank"
+            rel="noopener"
+            class="card card-link-reset"
+          >
+            <div class="card-icon">💻</div>
+            <div class="card-title">D4Builds Desktop App</div>
+            <div class="card-desc">
+              Windows companion app with in-game overlay. World Boss Timer, XP
+              Per Hour Tracker, and Time to Level Calculator. Keeps your build
+              info visible while you play.
+            </div>
+            <span class="card-link">d4builds.gg/desktop-app/</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider" />
+
+    <!-- ======= SECTION 2: INTERACTIVE MAPS ======= -->
+    <section id="interactive-maps">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label">Navigate Sanctuary</p>
+          <h2>Interactive Maps</h2>
+          <p class="section-desc">
+            Explore the full D4 world with filters for every type of location
+            and activity.
+          </p>
+        </div>
+
+        <div class="card-grid card-grid-1">
+          <a
+            href="https://d4builds.gg/map/"
+            target="_blank"
+            rel="noopener"
+            class="card card-link-reset"
+          >
+            <span class="card-tag">Season 12 Updated</span>
+            <div class="card-icon">🗺️</div>
+            <div class="card-title">D4Builds Interactive Map</div>
+            <div class="card-desc">
+              Full world map with powerful filters: Altars of Lilith, Waypoints,
+              Strongholds, Dungeons, and World Events. Season 12 map updates
+              included. Essential for completionists and explorers alike.
+            </div>
+            <span class="card-link">d4builds.gg/map/</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider" />
+
+    <!-- ======= SECTION 3: ITEM & LOOT DATABASES ======= -->
+    <section id="loot-databases">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label">Know Your Loot</p>
+          <h2>Item &amp; Loot Databases</h2>
+          <p class="section-desc">
+            Find exactly where every unique item drops and browse the complete
+            D4 item registry.
+          </p>
+        </div>
+
+        <div class="card-grid card-grid-2">
+          <a
+            href="https://d4builds.gg/database/unique-loot-tables/"
+            target="_blank"
+            rel="noopener"
+            class="card card-link-reset"
+          >
+            <div class="card-icon">📦</div>
+            <div class="card-title">D4Builds Unique Loot Tables</div>
+            <div class="card-desc">
+              Complete unique item database organized by boss and source. Filter
+              by class to find exactly what your build needs. Updated each
+              season with new drops.
+            </div>
+            <span class="card-link"
+              >d4builds.gg/database/unique-loot-tables/</span
+            >
+          </a>
+
+          <a
+            href="https://diablo.blizzard.com/en-us/game/"
+            target="_blank"
+            rel="noopener"
+            class="card card-link-reset"
+          >
+            <div class="card-icon">📘</div>
+            <div class="card-title">In-Game Codex (Battle.net)</div>
+            <div class="card-desc">
+              The official in-game item database. Aspect registry, seasonal
+              mechanics, and full item reference built directly into the
+              Battle.net client. Always accurate and up to date.
+            </div>
+            <span class="card-link"
+              >diablo.blizzard.com — Battle.net Client</span
+            >
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider" />
+
+    <!-- ======= SECTION 4: CALCULATORS ======= -->
+    <section id="calculators">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label">Crunch the Numbers</p>
+          <h2>Calculators</h2>
+          <p class="section-desc">
+            Plan your resource investment with gem upgrade costs and tempering
+            material requirements.
+          </p>
+        </div>
+
+        <div class="card-grid card-grid-2">
+          <a
+            href="https://www.icy-veins.com/d4"
+            target="_blank"
+            rel="noopener"
+            class="card card-link-reset"
+          >
+            <div class="card-icon">💎</div>
+            <div class="card-title">Icy Veins Gem Calculator</div>
+            <div class="card-desc">
+              Calculate gem upgrade costs and material requirements for every
+              gem tier. Use it to plan how many reagents you need before you
+              start sinking gold into late-game upgrades.
+            </div>
+            <span class="card-link">icy-veins.com/d4</span>
+          </a>
+
+          <a
+            href="https://www.icy-veins.com/d4"
+            target="_blank"
+            rel="noopener"
+            class="card card-link-reset"
+          >
+            <div class="card-icon">🔨</div>
+            <div class="card-title">Icy Veins Tempering Guide</div>
+            <div class="card-desc">
+              Season 12 Obducite crafting costs and tempering recipe breakdowns.
+              Plan your endgame crafting by knowing exactly what materials are
+              required for each tempering attempt.
+            </div>
+            <span class="card-link">icy-veins.com/d4</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider" />
+
+    <!-- ======= SECTION 5: SEASON 12 TOOLS ======= -->
+    <section id="season-12-tools">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label">Season 12</p>
+          <h2>Season 12 Tools</h2>
+          <p class="section-desc">
+            Everything you need to optimize your Season of Slaughter run from
+            day one.
+          </p>
+        </div>
+
+        <div class="season-status season-status-spaced">
+          <div class="season-status-header">
+            <h3 class="season-status-title">
+              ⚔️ Season of Slaughter Quick Start
+            </h3>
+            <span class="season-status-badge">Live Now</span>
+          </div>
+          <div class="season-status-body">
+            <div class="season-status-item">
+              <span class="label">Season Theme</span>
+              <span class="value">Killstreak System + Bloodied Items</span>
+            </div>
+            <div class="season-status-item">
+              <span class="label">Special Mechanic</span>
+              <span class="value"
+                >Stack kills for bonus rewards &amp; power</span
+              >
+            </div>
+            <div class="season-status-item">
+              <span class="label">Featured Unlock</span>
+              <span class="value">Play as The Butcher as a companion</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-grid card-grid-2">
+          <a
+            href="https://d4builds.gg/cheat-sheet/"
+            target="_blank"
+            rel="noopener"
+            class="card card-link-reset"
+          >
+            <span class="card-tag">By Rob2628</span>
+            <div class="card-icon">📋</div>
+            <div class="card-title">D4Builds Cheat Sheet (S12)</div>
+            <div class="card-desc">
+              Rob2628's Season 12 quick reference — meta builds, best items,
+              seasonal tips, and priority checklists. A strong reference for
+              competitive seasonal players.
+            </div>
+            <span class="card-link">d4builds.gg/cheat-sheet/</span>
+          </a>
+
+          <a
+            href="https://www.icy-veins.com/d4/guides/diablo-4-latest-season/"
+            target="_blank"
+            rel="noopener"
+            class="card card-link-reset"
+          >
+            <div class="card-icon">📖</div>
+            <div class="card-title">Season 12 Start Guide</div>
+            <div class="card-desc">
+              Full season mechanics breakdown, activity priorities, new items,
+              and recommended first steps. Everything a new or returning player
+              needs to hit the ground running.
+            </div>
+            <span class="card-link"
+              >icy-veins.com/d4/guides/diablo-4-latest-season/</span
+            >
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider" />
+
+    <!-- ======= SECTION 6: ALL-IN-ONE RESOURCES ======= -->
+    <section id="all-in-one">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label">Everything in One Place</p>
+          <h2>All-in-One Resource Hubs</h2>
+          <p class="section-desc">
+            Major D4 platforms that bundle tools, calculators, tier lists, and
+            seasonal guides in one spot.
+          </p>
+        </div>
+
+        <div class="card-grid card-grid-2">
+          <a
+            href="https://maxroll.gg/d4"
+            target="_blank"
+            rel="noopener"
+            class="card card-link-reset"
+          >
+            <div class="card-icon">🌐</div>
+            <div class="card-title">Maxroll D4 Tools</div>
+            <div class="card-desc">
+              Full suite of D4 tools — DPS calculators, tier lists, seasonal
+              guides, build planners, and item databases. One of the most
+              complete D4 resource platforms available.
+            </div>
+            <span class="card-link">maxroll.gg/d4</span>
+          </a>
+
+          <a
+            href="https://mobalytics.gg/diablo-4/"
+            target="_blank"
+            rel="noopener"
+            class="card card-link-reset"
+          >
+            <div class="card-icon">📊</div>
+            <div class="card-title">Mobalytics</div>
+            <div class="card-desc">
+              Build scores, performance tracking, creator-verified builds, and
+              detailed class tier lists. Great for comparing your build's output
+              against community benchmarks.
+            </div>
+            <span class="card-link">mobalytics.gg/diablo-4/</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider" />
+
+    <!-- ======= QUICK LINKS FOOTER ======= -->
+    <section id="quick-links">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label">Jump To</p>
+          <h2>More Resources</h2>
+        </div>
+
+        <div class="communities-grid">
+          <a href="resources.html" class="community-card card-link-reset">
+            <div class="community-icon">📚</div>
+            <div class="community-info">
+              <div class="community-name">All Resources</div>
+              <div class="community-type">Full link directory</div>
+            </div>
+          </a>
+
+          <a href="classes.html" class="community-card card-link-reset">
+            <div class="community-icon">⚔️</div>
+            <div class="community-info">
+              <div class="community-name">Class Comparison</div>
+              <div class="community-type">All 8 classes overview</div>
+            </div>
+          </a>
+
+          <a href="dungeons.html" class="community-card card-link-reset">
+            <div class="community-icon">🏰</div>
+            <div class="community-info">
+              <div class="community-name">Dungeons &amp; Activities</div>
+              <div class="community-type">All dungeon guides</div>
+            </div>
+          </a>
+
+          <a href="timeline.html" class="community-card card-link-reset">
+            <div class="community-icon">📅</div>
+            <div class="community-info">
+              <div class="community-name">Season Timeline</div>
+              <div class="community-type">Seasonal milestones</div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider" />
+
+    <!-- ======= FOOTER ======= -->
     <footer class="footer">
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-logo">
-          <span class="footer-logo-icon">🔥</span>
-          Diablo 4 Resource Hub
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <span class="footer-logo-icon">🔥</span>
+            Diablo 4 Resource Hub
+          </div>
+
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="resources.html">Resources</a>
+            <a href="crafting.html">Crafting &amp; Gear Guide</a>
+            <a href="https://maxroll.gg/d4" target="_blank" rel="noopener"
+              >Maxroll</a
+            >
+            <a
+              href="https://www.icy-veins.com/d4/"
+              target="_blank"
+              rel="noopener"
+              >Icy Veins</a
+            >
+            <a href="https://d4builds.gg/" target="_blank" rel="noopener"
+              >D4Builds</a
+            >
+            <a
+              href="https://mobalytics.gg/diablo-4/builds"
+              target="_blank"
+              rel="noopener"
+              >Mobalytics</a
+            >
+          </div>
+
+          <p class="footer-disclaimer">
+            Not affiliated with Blizzard Entertainment. Diablo 4 and all related
+            content are trademarks of Blizzard Entertainment, Inc. This site is
+            a fan-made resource hub for educational purposes.
+          </p>
+
+          <p class="footer-updated">Last updated: March 21, 2026</p>
         </div>
-
-        <div class="footer-links">
-          <a href="index.html">Home</a>
-          <a href="resources.html">Resources</a>
-          <a href="crafting.html">Crafting &amp; Gear Guide</a>
-          <a href="https://maxroll.gg/d4" target="_blank" rel="noopener">Maxroll</a>
-          <a href="https://www.icy-veins.com/d4/" target="_blank" rel="noopener">Icy Veins</a>
-          <a href="https://d4builds.gg/" target="_blank" rel="noopener">D4Builds</a>
-          <a href="https://mobalytics.gg/diablo-4/builds" target="_blank" rel="noopener">Mobalytics</a>
-        </div>
-
-        <p class="footer-disclaimer">
-          Not affiliated with Blizzard Entertainment. Diablo 4 and all related content are trademarks of Blizzard Entertainment, Inc. This site is a fan-made resource hub for educational purposes.
-        </p>
-
-        <p class="footer-updated">Last updated: March 20, 2026</p>
       </div>
-    </div>
-  </footer>
+    </footer>
 
-  <script src="nav.js"></script>
-</body>
+    <script src="site-tools.js"></script>
+    <script src="nav.js"></script>
+  </body>
 </html>

@@ -1,128 +1,1261 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Endgame Builds — Diablo 4 Resource Hub</title>
-  <meta name="description" content="The best endgame builds for Diablo 4 Season 12. S-tier builds for Nightmare Dungeons, Pit pushing, Helltide, World Bosses, and Infernal Hordes. All 8 classes covered.">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔥</text></svg>">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&display=swap" rel="stylesheet">
-  <style>
-    .build-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1rem;margin-top:1.25rem}
-    .build-card{background:rgba(18,18,26,0.9);border:1px solid #2a2a3e;border-radius:10px;padding:1.2rem;display:flex;flex-direction:column;gap:0.55rem;transition:border-color 0.2s}
-    .build-card:hover{border-color:rgba(201,162,39,0.4)}
-    .build-card-header{display:flex;align-items:center;gap:0.5rem;flex-wrap:wrap}
-    .build-name{font-weight:700;color:#e0c060;font-size:0.95rem}
-    .build-tag{font-size:0.65rem;font-weight:700;padding:0.1rem 0.4rem;border-radius:3px;white-space:nowrap}
-    .build-tag-st{background:rgba(201,162,39,0.22);color:#c9a227}
-    .build-tag-a{background:rgba(139,157,195,0.2);color:#8b9dc3}
-    .build-tag-tbd{background:rgba(80,80,100,0.2);color:#888}
-    .build-desc{margin:0;color:#a09890;font-size:0.83rem;line-height:1.65}
-    .build-meta{display:flex;gap:0.35rem;flex-wrap:wrap}
-    .build-meta span{background:rgba(201,162,39,0.08);color:#c9a227;font-size:0.71rem;padding:0.12rem 0.4rem;border-radius:4px}
-    .build-sources{margin-top:auto;padding-top:0.6rem;border-top:1px solid #2a2a3e;display:flex;gap:0.5rem;flex-wrap:wrap}
-    .build-source{color:#7ab8f5;font-size:0.79rem;text-decoration:none}
-    .build-source:hover{color:#a0c8ff;text-decoration:underline}
-    .class-section{margin-top:2.5rem}
-    .class-header{display:flex;align-items:center;gap:0.75rem;margin-bottom:1.25rem;padding-bottom:0.75rem;border-bottom:1px solid #2a2a3e}
-    .class-header h3{font-family:'Cinzel',serif;font-size:1.2rem;color:#c9a227;margin:0}
-    .class-badge{font-size:0.72rem;font-weight:700;padding:0.12rem 0.5rem;border-radius:4px;margin-left:0.5rem}
-    .badge-s{background:rgba(201,162,39,0.2);color:#c9a227}
-    .badge-a{background:rgba(139,157,195,0.15);color:#8b9dc3}
-    .badge-tbd{background:rgba(80,80,100,0.2);color:#888}
-    .activity-table{width:100%;border-collapse:collapse;margin-top:1.25rem;font-size:0.88rem}
-    .activity-table th{background:rgba(201,162,39,0.12);color:#c9a227;font-family:'Cinzel',serif;font-size:0.82rem;font-weight:700;padding:0.65rem 1rem;text-align:left;border-bottom:2px solid rgba(201,162,39,0.3)}
-    .activity-table td{padding:0.6rem 1rem;border-bottom:1px solid #1e1e2e;color:#b0a898;vertical-align:top}
-    .activity-table tr:hover td{background:rgba(201,162,39,0.04)}
-    .activity-name{color:#e0c060;font-weight:600}
-    .tier-badge{display:inline-block;font-size:0.68rem;font-weight:700;padding:0.1rem 0.4rem;border-radius:3px;margin-right:0.3rem}
-    .tier-s{background:rgba(201,162,39,0.2);color:#c9a227}
-    .tier-a{background:rgba(139,157,195,0.2);color:#8b9dc3}
-    .resource-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:0.85rem;margin-top:1.25rem}
-    .resource-card{background:rgba(18,18,26,0.9);border:1px solid #2a2a3e;border-radius:8px;padding:1rem 1.1rem;display:flex;flex-direction:column;gap:0.4rem;transition:border-color 0.2s;text-decoration:none}
-    .resource-card:hover{border-color:rgba(201,162,39,0.4)}
-    .resource-card-title{color:#e0c060;font-weight:700;font-size:0.9rem}
-    .resource-card-desc{color:#a09890;font-size:0.8rem;line-height:1.55;margin:0}
-    .resource-card-link{color:#7ab8f5;font-size:0.78rem;margin-top:auto}
-    .tips-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:1rem;margin-top:1.25rem}
-    .tip-card{background:rgba(18,18,26,0.9);border:1px solid #2a2a3e;border-radius:8px;padding:1rem 1.1rem;border-left:3px solid #c9a227}
-    .tip-title{color:#e0c060;font-weight:700;font-size:0.88rem;margin-bottom:0.4rem}
-    .tip-desc{color:#a09890;font-size:0.82rem;line-height:1.6;margin:0}
-    section[id]{scroll-margin-top:80px}
-  </style>
-</head>
-<body>
-  <nav class="navbar" id="main-nav">
-    <div class="navbar-inner"></div>
-  </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Endgame Builds — Diablo 4 Resource Hub</title>
+    <meta
+      name="description"
+      content="The best endgame builds for Diablo 4 Season 12. S-tier builds for Nightmare Dungeons, Pit pushing, Helltide, World Bosses, and Infernal Hordes. All 8 classes covered."
+    />
+    <meta
+      property="og:title"
+      content="Endgame Builds — Diablo 4 Resource Hub"
+    />
+    <meta
+      property="og:description"
+      content="The best endgame builds for Diablo 4 Season 12. S-tier builds for Nightmare Dungeons, Pit pushing, Helltide, World Bosses, and Infernal Hordes. All 8 classes covered."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="D4 Resource Hub" />
+    <meta
+      property="og:image"
+      content="https://bobhasaclaw.github.io/d4-resource-hub/assets/og/og-endgame.png"
+    />
+    <meta
+      property="og:url"
+      content="https://bobhasaclaw.github.io/d4-resource-hub/endgame-builds.html"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Endgame Builds — Diablo 4 Resource Hub"
+    />
+    <meta
+      name="twitter:description"
+      content="The best endgame builds for Diablo 4 Season 12. S-tier builds for Nightmare Dungeons, Pit pushing, Helltide, World Bosses, and Infernal Hordes. All 8 classes covered."
+    />
+    <meta
+      name="twitter:image"
+      content="https://bobhasaclaw.github.io/d4-resource-hub/assets/og/og-endgame.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="canonical"
+      href="https://bobhasaclaw.github.io/d4-resource-hub/endgame-builds.html"
+    />
+    <link rel="icon" href="assets/brand/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="page-endgame">
+    <nav class="navbar" id="main-nav">
+      <div class="navbar-inner"></div>
+    </nav>
 
-  <div class="mobile-menu" id="mobile-menu"></div>
+    <div class="mobile-menu" id="mobile-menu"></div>
 
-<section class="hero hero-endgame" id="top"><div class="hero-badge"><span>⚔️</span> Season 12: Season of Slaughter — Updated March 2026</div><h1 class="hero-title">Diablo 4 Endgame Builds — Season 12</h1><p class="hero-subtitle">The best builds for Nightmare Dungeons, Pit pushing, and high-level endgame content. S-tier meta builds for all 8 classes.</p><div class="hero-season-facts"><div class="hero-fact"><span class="icon">🏰</span> Nightmare Dungeons T50+</div><div class="hero-fact"><span class="icon">🕳️</span> The Pit (Tiers 1–150)</div><div class="hero-fact"><span class="icon">👹</span> Lair &amp; World Bosses</div><div class="hero-fact"><span class="icon">🔥</span> Infernal Hordes</div></div><a href="#what-are-endgame-builds" class="hero-cta">Explore Builds ↓</a></section><hr class="section-divider">
-
-<section class="page-actions-section">
-  <div class="container">
-    <div class="page-actions-bar">
-      <button type="button" class="page-action-button" data-copy-page-link>Copy Endgame Link</button>
-      <button type="button" class="page-action-button" data-share-page data-share-text="Diablo 4 endgame builds for Season 12. Browse the best setups for Nightmare Dungeons, the Pit, Helltides, and boss content.">Share Page</button>
-      <button type="button" class="page-action-button" data-copy-summary data-copy-summary="Diablo 4 endgame builds for Season 12. Browse the best setups for Nightmare Dungeons, the Pit, Helltides, and boss content.">Copy Summary</button>
-      <span class="page-action-note">Reviewed March 20, 2026</span>
-      <span class="page-action-feedback" aria-live="polite"></span>
-    </div>
-  </div>
-</section>
-
-<section id="what-are-endgame-builds"><div class="container"><div class="section-header"><p class="section-label">The Basics</p><h2>What Are Endgame Builds?</h2></div><div style="max-width:820px;margin:0 auto;"><p class="section-desc" style="font-size:1.05rem;line-height:1.85;color:#c8c0b0;">Endgame builds are character setups <strong style="color:var(--gold);">optimized for high-difficulty content after reaching level 60</strong>. Unlike leveling builds that prioritise rapid progression through the campaign, endgame builds are engineered for survival, damage output, and consistency in the most challenging activities Diablo 4 has to offer.</p><p class="section-desc" style="font-size:1.05rem;line-height:1.85;color:#c8c0b0;margin-top:1rem;">These activities include <strong style="color:var(--gold-light);">Nightmare Dungeons (T50+)</strong>, <strong style="color:var(--gold-light);">The Pit</strong> for Paragon XP and Glyph upgrades, <strong style="color:var(--gold-light);">high-level Helltides</strong>, <strong style="color:var(--gold-light);">Lair Bosses</strong>, <strong style="color:var(--gold-light);">World Bosses</strong>, and <strong style="color:var(--gold-light);">Infernal Hordes</strong>. A great endgame build balances four pillars: <em>damage, survival, mobility, and consistency</em>.</p><div style="margin-top:1.5rem;background:rgba(201,162,39,0.06);border:1px solid rgba(201,162,39,0.2);border-left:4px solid var(--gold);padding:1rem 1.25rem;border-radius:0 8px 8px 0;"><div style="color:var(--gold);font-weight:700;font-size:0.95rem;margin-bottom:0.4rem;">⚡ Key Difference from Leveling Builds</div><p style="margin:0;color:#a09890;font-size:0.9rem;line-height:1.7;">Endgame builds assume full access to the Paragon system, Tempering, Masterworking, and Codex Aspects. Gear quality matters enormously — a T50+ build requires well-rolled Ancestral Legendaries, correctly Tempered affixes, and an optimised Paragon board to function at peak efficiency.</p></div></div></div></section><hr class="section-divider">
-<section id="tier-list"><div class="container"><div class="section-header"><p class="section-label">Meta Snapshot</p><h2>Endgame Class Tier List — Season 12</h2><p class="section-desc">How each class performs in high-level endgame content (Torment I–IV). Aggregated from Maxroll, Icy Veins, D4Builds, and Mobalytics (March 2026).</p></div>
-<div style="margin-top:2rem;margin-bottom:2.5rem;"><div style="display:flex;align-items:center;gap:0.75rem;margin-bottom:1rem;"><span style="background:#c9a227;color:#0d0d14;font-family:'Cinzel',serif;font-weight:900;font-size:0.85rem;padding:0.2rem 0.7rem;border-radius:4px;">S-TIER</span><span style="color:#c9a227;font-weight:700;font-size:0.95rem;">Dominant — Best Endgame Classes</span></div><div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1rem;"><div style="border-left:4px solid #c9a227;background:rgba(201,162,39,0.07);padding:1rem 1.25rem;border-radius:0 8px 8px 0;"><div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:0.5rem;"><span style="font-size:1.3rem;">⚔️</span><strong style="color:var(--gold);font-size:1.05rem;font-family:'Cinzel',serif;">Paladin</strong><span style="background:rgba(201,162,39,0.2);color:#c9a227;font-size:0.7rem;font-weight:700;padding:0.1rem 0.4rem;border-radius:3px;margin-left:auto;">S-TIER</span></div><p style="margin:0;color:#a09890;font-size:0.88rem;line-height:1.65;">Auradin and Blessed Hammer dominate combined boss killing and speed farming. Best group support in the game. Multiple S-tier build slots across all major tier lists.</p></div><div style="border-left:4px solid #c9a227;background:rgba(201,162,39,0.07);padding:1rem 1.25rem;border-radius:0 8px 8px 0;"><div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:0.5rem;"><span style="font-size:1.3rem;">🦅</span><strong style="color:var(--gold);font-size:1.05rem;font-family:'Cinzel',serif;">Spiritborn</strong><span style="background:rgba(201,162,39,0.2);color:#c9a227;font-size:0.7rem;font-weight:700;padding:0.1rem 0.4rem;border-radius:3px;margin-left:auto;">S-TIER</span></div><p style="margin:0;color:#a09890;font-size:0.88rem;line-height:1.65;">Infinite Evade Eagle build trivialises speed farming and mob density. Crushing Hand for raw damage. Easiest class to pick up — spirit guardian sustain is very forgiving.</p></div></div></div>
-<div style="margin-bottom:2.5rem;"><div style="display:flex;align-items:center;gap:0.75rem;margin-bottom:1rem;"><span style="background:#8b9dc3;color:#0d0d14;font-family:'Cinzel',serif;font-weight:900;font-size:0.85rem;padding:0.2rem 0.7rem;border-radius:4px;">A-TIER</span><span style="color:#8b9dc3;font-weight:700;font-size:0.95rem;">Strong — Viable in All Endgame Content</span></div><div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:1rem;"><div style="border-left:4px solid #8b9dc3;background:rgba(139,157,195,0.06);padding:1rem 1.25rem;border-radius:0 8px 8px 0;"><div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:0.4rem;"><span style="font-size:1.1rem;">💀</span><strong style="color:#a0b4d0;font-size:0.95rem;font-family:'Cinzel',serif;">Necromancer</strong></div><p style="margin:0;color:#a09890;font-size:0.83rem;line-height:1.6;">Golem Summoner and Shadowblight DoT builds. Excellent solo survival via pet army. Strong group utility through corpse generation and curses.</p></div><div style="border-left:4px solid #8b9dc3;background:rgba(139,157,195,0.06);padding:1rem 1.25rem;border-radius:0 8px 8px 0;"><div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:0.4rem;"><span style="font-size:1.1rem;">🐺</span><strong style="color:#a0b4d0;font-size:0.95rem;font-family:'Cinzel',serif;">Druid</strong></div><p style="margin:0;color:#a09890;font-size:0.83rem;line-height:1.6;">Pulverize Werebear dominates solo and speed farm. Wolf Companion pet build also strong. Steeper gear requirement than S-tiers.</p></div><div style="border-left:4px solid #8b9dc3;background:rgba(139,157,195,0.06);padding:1rem 1.25rem;border-radius:0 8px 8px 0;"><div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:0.4rem;"><span style="font-size:1.1rem;">🗡️</span><strong style="color:#a0b4d0;font-size:0.95rem;font-family:'Cinzel',serif;">Rogue</strong></div><p style="margin:0;color:#a09890;font-size:0.83rem;line-height:1.6;">Premiere speed farmer — Death Trap is fastest T4 clearer. Flurry for burst melee. Squishy at extreme Pit tiers; requires excellent positioning.</p></div><div style="border-left:4px solid #8b9dc3;background:rgba(139,157,195,0.06);padding:1rem 1.25rem;border-radius:0 8px 8px 0;"><div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:0.4rem;"><span style="font-size:1.1rem;">⚔️</span><strong style="color:#a0b4d0;font-size:0.95rem;font-family:'Cinzel',serif;">Barbarian</strong></div><p style="margin:0;color:#a09890;font-size:0.83rem;line-height:1.6;">HotA and Lunging Strike are S-tier single-target and AoE builds. Tanky melee. Strong zDPS support option for group content.</p></div><div style="border-left:4px solid #8b9dc3;background:rgba(139,157,195,0.06);padding:1rem 1.25rem;border-radius:0 8px 8px 0;"><div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:0.4rem;"><span style="font-size:1.1rem;">🔥</span><strong style="color:#a0b4d0;font-size:0.95rem;font-family:'Cinzel',serif;">Sorcerer</strong></div><p style="margin:0;color:#a09890;font-size:0.83rem;line-height:1.6;">Crackling Energy and Hydra are S-tier speed farmers. Glass cannon — needs good gear for high-end Pit. Chain Lightning for excellent AoE clear.</p></div></div></div>
-<div><div style="display:flex;align-items:center;gap:0.75rem;margin-bottom:1rem;"><span style="background:#555;color:#999;font-family:'Cinzel',serif;font-weight:900;font-size:0.85rem;padding:0.2rem 0.7rem;border-radius:4px;">TBD</span><span style="color:#888;font-weight:700;font-size:0.95rem;">Coming Soon — Warlock (April 28, 2026)</span></div><div style="border-left:4px solid #555;background:rgba(100,100,120,0.06);padding:1rem 1.25rem;border-radius:0 8px 8px 0;max-width:520px;"><div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:0.4rem;"><span style="font-size:1.1rem;">🩸</span><strong style="color:#999;font-size:0.95rem;font-family:'Cinzel',serif;">Warlock</strong><span style="background:rgba(150,150,160,0.15);color:#999;font-size:0.7rem;font-weight:700;padding:0.1rem 0.4rem;border-radius:3px;margin-left:auto;">APR 28, 2026</span></div><p style="margin:0;color:#a09890;font-size:0.83rem;line-height:1.6;">4 archetypes: Legions (summoner), Vanguards (demonform), Masterminds (shadowcraft), Ritualists (blood magic). Requires Vessel of Hatred expansion. Full tier list placement available ~2 weeks post-launch.</p></div></div></div></section><hr class="section-divider">
-<section id="builds"><div class="container"><div class="section-header"><p class="section-label">Build Guides</p><h2>Top Endgame Builds by Class — S12</h2><p class="section-desc">The strongest S-tier and A-tier endgame builds for each class in Season 12. Every build links directly to its source guide.</p></div>
-<div class="class-section" id="barbarian"><div class="class-header"><span style="font-size:1.4rem;">⚔️</span><h3>Barbarian</h3><span class="class-badge badge-a">A-TIER ENDGAME</span></div><div class="build-grid"><div class="build-card"><div class="build-card-header"><span class="build-name">Hammer of the Ancients (HotA)</span><span class="build-tag build-tag-st">S-TIER</span></div><p class="build-desc">Massive single-target and AoE damage with Ground Stomp setup. Premier Barbarian build for both Pit pushing and Nightmare Dungeon clears. Strong scaling with Paragon investment.</p><div class="build-meta"><span>🏰 NMD T50+</span><span>🕳️ Pit</span><span>👹 Lair Bosses</span></div><div class="build-sources"><a href="https://d4builds.gg/" target="_blank" rel="noopener" class="build-source">D4Builds.gg ↗</a><a href="https://maxroll.gg/d4" target="_blank" rel="noopener" class="build-source">Maxroll.gg ↗</a></div></div><div class="build-card"><div class="build-card-header"><span class="build-name">Upheaval Barbarian</span><span class="build-tag build-tag-a">A-TIER</span></div><p class="build-desc">High-mobility melee builder/spender with excellent AoE clear. Whirlwind-free alternative that punches through dense mob packs quickly. Great single-target burst on bosses.</p><div class="build-meta"><span>🏰 NMD T40+</span><span>🕳️ Pit</span><span>🔥 Helltide</span></div><div class="build-sources"><a href="https://mobalytics.gg/diablo-4/builds" target="_blank" rel="noopener" class="build-source">Mobalytics.gg ↗</a><a href="https://maxroll.gg/d4" target="_blank" rel="noopener" class="build-source">Maxroll.gg ↗</a></div></div><div class="build-card"><div class="build-card-header"><span class="build-name">Lunging Strike Barbarian</span><span class="build-tag build-tag-st">S-TIER</span></div><p class="build-desc">High-mobility melee build using Lunging Strike as the primary damage dealer. Excellent for speed farming Nightmare Dungeons and maintaining killstreaks in S12. Very fluid gameplay.</p><div class="build-meta"><span>🏰 NMD Speed</span><span>💀 World Bosses</span><span>🔥 Helltide</span></div><div class="build-sources"><a href="https://www.icy-veins.com/d4/barbarian/builds/" target="_blank" rel="noopener" class="build-source">Icy Veins ↗</a><a href="https://maxroll.gg/d4" target="_blank" rel="noopener" class="build-source">Maxroll.gg ↗</a></div></div></div></div>
-<div class="class-section" id="druid"><div class="class-header"><span style="font-size:1.4rem;">🐺</span><h3>Druid</h3><span class="class-badge badge-a">A-TIER ENDGAME</span></div><div class="build-grid"><div class="build-card"><div class="build-card-header"><span class="build-name">Pulverize Druid</span><span class="build-tag build-tag-st">S-TIER</span></div><p class="build-desc">Werebear Earth-based build with massive AoE ground pound. Top solo and speed farmer. Excellent survivability with Fortify and healing mechanics.</p><div class="build-meta"><span>🏰 NMD T50+</span><span>🕳️ Pit</span><span>👹 Lair Bosses</span></div><div class="build-sources"><a href="https://d4builds.gg/" target="_blank" rel="noopener" class="build-source">D4Builds.gg ↗</a><a href="https://www.icy-veins.com/d4/druid/builds/" target="_blank" rel="noopener" class="build-source">Icy Veins ↗</a><a href="https://maxroll.gg/d4" target="_blank" rel="noopener" class="build-source">Maxroll.gg ↗</a></div></div><div class="build-card"><div class="build-card-header"><span class="build-name">Wolf Companion Druid</span><span class="build-tag build-tag-a">A-TIER</span></div><p class="build-desc">Pet-focused build with summoning wolves. Wolf pack deals substantial damage while you provide support. Strong solo option with good survivability.</p><div class="build-meta"><span>🏰 NMD T40+</span><span>🕳️ Pit</span><span>🔥 Helltide</span></div><div class="build-sources"><a href="https://www.icy-veins.com/d4/druid/builds/" target="_blank" rel="noopener" class="build-source">Icy Veins ↗</a><a href="https://maxroll.gg/d4" target="_blank" rel="noopener" class="build-source">Maxroll.gg ↗</a></div></div></div></div>
-<div class="class-section" id="necromancer"><div class="class-header"><span style="font-size:1.4rem;">💀</span><h3>Necromancer</h3><span class="class-badge badge-a">A-TIER ENDGAME</span></div><div class="build-grid"><div class="build-card"><div class="build-card-header"><span class="build-name">Bone Spirit Necromancer</span><span class="build-tag build-tag-st">S-TIER</span></div><p class="build-desc">Speed farming variant with burst damage. Bone Spirit explodes on target death, chaining to nearby enemies. Excellent for clearing Nightmare Dungeons quickly.</p><div class="build-meta"><span>🏰 NMD Speed</span><span>🕳️ Pit</span><span>👹 Lair Bosses</span></div><div class="build-sources"><a href="https://mobalytics.gg/diablo-4/builds" target="_blank" rel="noopener" class="build-source">Mobalytics (Kay) ↗</a><a href="https://maxroll.gg/d4" target="_blank" rel="noopener" class="build-source">Maxroll.gg ↗</a></div></div><div class="build-card"><div class="build-card-header"><span class="build-name">Golem Necromancer</span><span class="build-tag build-tag-st">S-TIER</span></div><p class="build-desc">Pure summoner build with massive minion army. Near-unkillable with golem scaling. Excellent solo progression with passive damage tank.</p><div class="build-meta"><span>🏰 NMD T50+</span><span>🕳️ Pit</span><span>🔥 Helltide</span></div><div class="build-sources"><a href="https://www.icy-veins.com/d4/necromancer/builds/" target="_blank" rel="noopener" class="build-source">Icy Veins ↗</a><a href="https://maxroll.gg/d4" target="_blank" rel="noopener" class="build-source">Maxroll.gg ↗</a></div></div></div></div>
-<div class="class-section" id="paladin"><div class="class-header"><span style="font-size:1.4rem;">⚔️</span><h3>Paladin</h3><span class="class-badge badge-s">S-TIER ENDGAME</span></div><div class="build-grid"><div class="build-card"><div class="build-card-header"><span class="build-name">Cpt. America Paladin</span><span class="build-tag build-tag-st">S-TIER</span></div><p class="build-desc">Shield throw build by Rob2628. Exceptional single-target burst on bosses while maintaining strong AoE clear through Blessed Hammer combo.</p><div class="build-meta"><span>🏰 NMD T60+</span><span>🕳️ Pit</span><span>👹 World Bosses</span></div><div class="build-sources"><a href="https://d4builds.gg/" target="_blank" rel="noopener" class="build-source">D4Builds (Rob2628) ↗</a><a href="https://maxroll.gg/d4" target="_blank" rel="noopener" class="build-source">Maxroll.gg ↗</a></div></div><div class="build-card"><div class="build-card-header"><span class="build-name">Auradin (Blessed Hammer)</span><span class="build-tag build-tag-st">S-TIER</span></div><p class="build-desc">Holy Light Aura with Blessed Hammer. Stacking holy auras provides passive damage and defense. Premier boss killer and speed farmer combined.</p><div class="build-meta"><span>🏰 NMD T50+</span><span>🕳️ Pit</span><span>🔥 Helltide</span></div><div class="build-sources"><a href="https://www.icy-veins.com/d4/paladin/builds/" target="_blank" rel="noopener" class="build-source">Icy Veins ↗</a><a href="https://maxroll.gg/d4" target="_blank" rel="noopener" class="build-source">Maxroll.gg ↗</a></div></div><div class="build-card"><div class="build-card-header"><span class="build-name">Support Paladin (zDPS)</span><span class="build-tag build-tag-a">A-TIER</span></div><p class="build-desc">Zero-DPS support build focused on buffs, auras, and crowd control for party. Essential for high-end group Pit pushing speedfarm.</p><div class="build-meta"><span>🕳️ Pit Group</span><span>🏰 NMD Group</span><span>👹 Lair Group</span></div><div class="build-sources"><a href="https://mobalytics.gg/diablo-4/paladin-builds/" target="_blank" rel="noopener" class="build-source">Mobalytics (Sanctum) ↗</a><a href="https://maxroll.gg/d4" target="_blank" rel="noopener" class="build-source">Maxroll.gg ↗</a></div></div></div></div>
-<div class="class-section" id="rogue"><div class="class-header"><span style="font-size:1.4rem;">🗡️</span><h3>Rogue</h3><span class="class-badge badge-a">A-TIER ENDGAME</span></div><div class="build-grid"><div class="build-card"><div class="build-card-header"><span class="build-name">Death Trap Rogue</span><span class="build-tag build-tag-st">S-TIER</span></div><p class="build-desc">Fastest speed farming build. Traps + combo point generation = huge burst explosions that clear dense packs instantly. T4 clear king.</p><div class="build-meta"><span>🏰 NMD Speed</span><span>🔥 Helltide</span><span>🕳️ Pit</span></div><div class="build-sources"><a href="https://www.icy-veins.com/d4/rogue/builds/" target="_blank" rel="noopener" class="build-source">Icy Veins ↗</a><a href="https://maxroll.gg/d4" target="_blank" rel="noopener" class="build-source">Maxroll.gg ↗</a></div></div><div class="build-card"><div class="build-card-header"><span class="build-name">Flurry Rogue</span><span class="build-tag build-tag-a">A-TIER</span></div><p class="build-desc">Rapid melee combo builder with high burst damage. Excellent single-target for bosses while maintaining respectable AoE clear.</p><div class="build-meta"><span>🏰 NMD T40+</span><span>👹 Lair Bosses</span><span>🕳️ Pit</span></div><div class="build-sources"><a href="https://mobalytics.gg/diablo-4/builds" target="_blank" rel="noopener" class="build-source">Mobalytics ↗</a><a href="https://maxroll.gg/d4" target="_blank" rel="noopener" class="build-source">Maxroll.gg ↗</a></div></div></div></div>
-<div class="class-section" id="sorcerer"><div class="class-header"><span style="font-size:1.4rem;">🔥</span><h3>Sorcerer</h3><span class="class-badge badge-a">A-TIER ENDGAME</span></div><div class="build-grid"><div class="build-card"><div class="build-card-header"><span class="build-name">Chain Lightning / Crackling Energy</span><span class="build-tag build-tag-st">S-TIER</span></div><p class="build-desc">Lightning-based build with chain lightning that bounces between enemies. Crackling Energy procs provide massive additional clear speed.</p><div class="build-meta"><span>🏰 NMD T50+</span><span>🕳️ Pit</span><span>🔥 Helltide</span></div><div class="build-sources"><a href="https://www.icy-veins.com/d4/sorcerer/builds/" target="_blank" rel="noopener" class="build-source">Icy Veins ↗</a><a href="https://maxroll.gg/d4" target="_blank" rel="noopener" class="build-source">Maxroll.gg ↗</a></div></div><div class="build-card"><div class="build-card-header"><span class="build-name">Fireball Sorcerer</span><span class="build-tag build-tag-a">A-TIER</span></div><p class="build-desc">Fire-based build with massive AoE fireball explosions. Solid single-target on bosses while excelling at clearing large mob packs.</p><div class="build-meta"><span>🏰 NMD T40+</span><span>🕳️ Pit</span><span>👹 Lair Bosses</span></div><div class="build-sources"><a href="https://www.icy-veins.com/d4/sorcerer/builds/" target="_blank" rel="noopener" class="build-source">Icy Veins ↗</a><a href="https://maxroll.gg/d4" target="_blank" rel="noopener" class="build-source">Maxroll.gg ↗</a></div></div></div></div>
-<div class="class-section" id="spiritborn"><div class="class-header"><span style="font-size:1.4rem;">🦅</span><h3>Spiritborn</h3><span class="class-badge badge-s">S-TIER ENDGAME</span></div><div class="build-grid"><div class="build-card"><div class="build-card-header"><span class="build-name">Infinite Evade Spiritborn</span><span class="build-tag build-tag-st">S-TIER</span></div><p class="build-desc">Eagle Spirit build with near-infinite evade capability. Unmatched speed farming through mob density. Trivializes high-level content.</p><div class="build-meta"><span>🏰 NMD T60+</span><span>🕳️ Pit</span><span>🔥 Helltide</span></div><div class="build-sources"><a href="https://d4builds.gg/" target="_blank" rel="noopener" class="build-source">D4Builds.gg ↗</a><a href="https://mobalytics.gg/diablo-4/builds" target="_blank" rel="noopener" class="build-source">Mobalytics ↗</a><a href="https://maxroll.gg/d4" target="_blank" rel="noopener" class="build-source">Maxroll.gg ↗</a></div></div><div class="build-card"><div class="build-card-header"><span class="build-name">Crushing Hand Spiritborn</span><span class="build-tag build-tag-st">S-TIER</span></div><p class="build-desc">Powerful melee spirit-based build. Crushing Hand spirits deal massive damage while providing excellent survivability through spirit guardian synergy.</p><div class="build-meta"><span>🏰 NMD T50+</span><span>🕳️ Pit</span><span>👹 Lair Bosses</span></div><div class="build-sources"><a href="https://mobalytics.gg/diablo-4/builds" target="_blank" rel="noopener" class="build-source">Mobalytics (MrRonit) ↗</a><a href="https://maxroll.gg/d4" target="_blank" rel="noopener" class="build-source">Maxroll.gg ↗</a></div></div></div></div>
-<div class="class-section" id="warlock"><div class="class-header"><span style="font-size:1.4rem;">🩸</span><h3>Warlock</h3><span class="class-badge badge-tbd">COMING APRIL 28, 2026</span></div><div style="background:rgba(80,80,100,0.06);border:1px solid #2a2a3e;border-radius:8px;padding:1.2rem 1.3rem;"><p style="margin:0;color:#a09890;font-size:0.9rem;line-height:1.7;">Warlock launches on April 28, 2026 as part of the Lord of Hatred expansion. Four archetypes: Legions (summoner), Vanguards (demonform), Masterminds (shadowcraft), Ritualists (blood magic). Requires Vessel of Hatred expansion. Full build tier list will be available approximately 2 weeks post-launch after community testing. Check back in late April 2026 for complete Warlock endgame build coverage.</p></div></div></div></section>
-<hr class="section-divider">
-<section id="activities"><div class="container"><div class="section-header"><p class="section-label">By Activity</p><h2>Endgame Activities & Best Builds</h2><p class="section-desc">Which class/builds excel in each major endgame activity in Season 12.</p></div><table class="activity-table"><thead><tr><th>Activity</th><th>Best Class/Build</th><th>Notes</th></tr></thead><tbody><tr><td><span class="activity-name">Nightmare Dungeons (T50+)</span></td><td><span class="tier-badge tier-s">S</span> Spiritborn Evade, Paladin</td><td>High mob density clears needed. Infinite Evade provides unmatched speed. Auradin excels at boss phases.</td></tr><tr><td><span class="activity-name">The Pit (Paragon XP)</span></td><td><span class="tier-badge tier-s">S</span> Necromancer Bone Spirit, Rogue</td><td>Fast clear is key. Bone Spirit chains through packs. Death Trap is premier Pit speed farmer.</td></tr><tr><td><span class="activity-name">Helltide (Legendary drops)</span></td><td><span class="tier-badge tier-a">A</span> Any strong S/A build</td><td>Bloodied Items system in S12 rewards killstreaks. Strong AoE builds thrive. Mystery Chests at 250 cinders.</td></tr><tr><td><span class="activity-name">World Bosses</span></td><td><span class="tier-badge tier-s">S</span> Barbarian, Paladin</td><td>Single-target burst needed. HotA and Paladin aura burst excel. Tankier classes handle mechanics better.</td></tr><tr><td><span class="activity-name">Lair Bosses</span></td><td><span class="tier-badge tier-s">S</span> Paladin, Barbarian</td><td>High burst damage to burn through boss phases. Paladins provide group utility for 4-player clears.</td></tr><tr><td><span class="activity-name">Infernal Hordes</span></td><td><span class="tier-badge tier-s">S</span> Spiritborn, Rogue</td><td>Wave clearing focus. High mobility and AoE burst required to progress through escalating difficultyoffers.</td></tr></tbody></table></div></section>
-<hr class="section-divider">
-<section id="resources"><div class="container"><div class="section-header"><p class="section-label">External Links</p><h2>Endgame Build Resources</h2><p class="section-desc">Primary sources for up-to-date endgame build guides, tier lists, and build planners.</p></div><div class="resource-grid"><a href="https://maxroll.gg/d4" target="_blank" rel="noopener" class="resource-card"><div class="resource-card-title">Maxroll Endgame Tier List</div><p class="resource-card-desc">Comprehensive Season 12 endgame tier list with class rankings and build recommendations. Updated regularly.</p><span class="resource-card-link">maxroll.gg/d4 ↗</span></a><a href="https://www.icy-veins.com/d4/guides/endgame-tier-list" target="_blank" rel="noopener" class="resource-card"><div class="resource-card-title">Icy Veins Endgame Tier List</div><p class="resource-card-desc">Detailed endgame tier list by class and build. Extensive build guides with skill trees, gear, and Paragon.</p><span class="resource-card-link">icy-veins.com ↗</span></a><a href="https://d4builds.gg/tierlist/" target="_blank" rel="noopener" class="resource-card"><div class="resource-card-title">D4Builds Tier List</div><p class="resource-card-desc">Rob2628's curated meta tier list directly in-game vetted. Build codes and loadouts available.</p><span class="resource-card-link">d4builds.gg/tierlist/ ↗</span></a><a href="https://mobalytics.gg/diablo-4/tier-list" target="_blank" rel="noopener" class="resource-card"><div class="resource-card-title">Mobalytics Tier List</div><p class="resource-card-desc">Verified creator builds with tier rankings. Includes build codes for easy import into the build planner.</p><span class="resource-card-link">mobalytics.gg ↗</span></a><a href="https://d4builds.gg/build-planner/" target="_blank" rel="noopener" class="resource-card"><div class="resource-card-title">D4Builds Build Planner</div><p class="resource-card-desc">Full-featured build planner with skill trees, Paragon boards, gear slots, and loadout codes.</p><span class="resource-card-link">d4builds.gg/build-planner/ ↗</span></a></div></div></section>
-<hr class="section-divider">
-<section id="progression"><div class="container"><div class="section-header"><p class="section-label">Pro Tips</p><h2>Endgame Progression Tips</h2><p class="section-desc">Core principles for efficiently advancing your character into the endgame and pushing high Torment tiers.</p></div><div class="tips-grid"><div class="tip-card"><div class="tip-title">Start with a Safe S-Tier Build</div><p class="tip-desc">Spiritborn or Paladin have the highest ceiling and are easiest to pilot. Pick a proven S-tier build from the tier list and commit.</p></div><div class="tip-card"><div class="tip-title">Paragon Points First</div><p class="tip-desc">Unlock and fill your Paragon nodes before heavy gear investment. Paragon provides the biggest stat gains early in endgame.</p></div><div class="tip-card"><div class="tip-title">Temper Before Masterworking</div><p class="tip-desc">Always affix Temper gear before investing Masterworking materials. Tempering provides targeted power that Masterworking amplifies.</p></div><div class="tip-card"><div class="tip-title">Focus on One Build</div><p class="tip-desc">Don't alternate between multiple builds. Pick one endgame build, gather all its required Aspects and Uniques, then optimize it to perfection.</p></div><div class="tip-card"><div class="tip-title">Codex Aspects Are Free Power</div><p class="tip-desc">Extract valuable Aspects from Legendaries and imprint them onto better bases. Codex powers scale indefinitely with your item level.</p></div><div class="tip-card"><div class="tip-title">Prioritize Greater Affixes</div><p class="tip-desc">Items with Greater Affixes (+25%） are vastly more powerful than standard rolls. Build around 3-4 Greater Affixes as core gear slots.</p></div></div></div></section>
-<hr class="section-divider">
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-logo">
-          <span class="footer-logo-icon">🔥</span>
-          Diablo 4 Resource Hub
+    <section class="hero hero-endgame" id="top">
+      <div class="container hero-page-shell">
+        <div class="hero-page-copy">
+          <div class="hero-badge">
+            <span>⚔️</span> Season 12: Season of Slaughter — Updated March 2026
+          </div>
+          <h1 class="hero-title">Diablo 4 Endgame Builds — Season 12</h1>
+          <p class="hero-subtitle">
+            The best builds for Nightmare Dungeons, Pit pushing, and high-level
+            endgame content. S-tier meta builds for all 8 classes.
+          </p>
+          <div class="hero-season-facts">
+            <div class="hero-fact">
+              <span class="icon">🏰</span> Nightmare Dungeons T50+
+            </div>
+            <div class="hero-fact">
+              <span class="icon">🕳️</span> The Pit (Tiers 1–150)
+            </div>
+            <div class="hero-fact">
+              <span class="icon">👹</span> Lair &amp; World Bosses
+            </div>
+            <div class="hero-fact">
+              <span class="icon">🔥</span> Infernal Hordes
+            </div>
+          </div>
+          <div class="hero-home-actions">
+            <a href="#what-are-endgame-builds" class="hero-cta"
+              >Explore Builds ↓</a
+            >
+            <a href="#tier-list" class="hero-secondary-link"
+              >Open the meta snapshot</a
+            >
+          </div>
         </div>
 
-        <div class="footer-links">
-          <a href="index.html">Home</a>
-          <a href="resources.html">Resources</a>
-          <a href="crafting.html">Crafting &amp; Gear Guide</a>
-          <a href="https://maxroll.gg/d4" target="_blank" rel="noopener">Maxroll</a>
-          <a href="https://www.icy-veins.com/d4/" target="_blank" rel="noopener">Icy Veins</a>
-          <a href="https://d4builds.gg/" target="_blank" rel="noopener">D4Builds</a>
-          <a href="https://mobalytics.gg/diablo-4/builds" target="_blank" rel="noopener">Mobalytics</a>
-        </div>
-
-        <p class="footer-disclaimer">
-          Not affiliated with Blizzard Entertainment. Diablo 4 and all related content are trademarks of Blizzard Entertainment, Inc. This site is a fan-made resource hub for educational purposes.
-        </p>
-
-        <p class="footer-updated">Last updated: March 20, 2026</p>
+        <aside class="hero-page-aside">
+          <div class="hero-side-card">
+            <div class="hero-side-kicker">Endgame Snapshot</div>
+            <h2>Paladin and Spiritborn define the cleanest path up top</h2>
+            <p>
+              The current endgame rewards builds that can survive, clear dense
+              content, and still pivot into bosses without falling apart.
+            </p>
+            <div class="hero-side-metrics">
+              <div class="hero-side-metric">
+                <strong>S-Tier</strong>
+                <span>Paladin</span>
+              </div>
+              <div class="hero-side-metric">
+                <strong>S-Tier</strong>
+                <span>Spiritborn</span>
+              </div>
+              <div class="hero-side-metric">
+                <strong>T50+</strong>
+                <span>Nightmare focus</span>
+              </div>
+            </div>
+            <div class="hero-side-links">
+              <a href="tierlists.html">See broader rankings</a>
+              <a href="boss-builds.html">Need boss damage instead?</a>
+            </div>
+          </div>
+        </aside>
       </div>
-    </div>
-  </footer>
-<script src="nav.js"></script>
-<script src="site-tools.js"></script>
-</body>
+    </section>
+    <hr class="section-divider" />
+
+    <section class="page-actions-section">
+      <div class="container">
+        <div class="page-actions-bar">
+          <button type="button" class="page-action-button" data-copy-page-link>
+            Copy Endgame Link
+          </button>
+          <button
+            type="button"
+            class="page-action-button"
+            data-share-page
+            data-share-text="Diablo 4 endgame builds for Season 12. Browse the best setups for Nightmare Dungeons, the Pit, Helltides, and boss content."
+          >
+            Share Page
+          </button>
+          <button
+            type="button"
+            class="page-action-button"
+            data-copy-summary
+            data-copy-summary="Diablo 4 endgame builds for Season 12. Browse the best setups for Nightmare Dungeons, the Pit, Helltides, and boss content."
+          >
+            Copy Summary
+          </button>
+          <span class="page-action-note">Reviewed March 21, 2026</span>
+          <span class="page-action-feedback" aria-live="polite"></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-overview">
+      <div class="container">
+        <div class="page-overview-grid">
+          <div class="page-overview-card featured">
+            <div class="page-overview-kicker">Best Entry Point</div>
+            <h3>Start with Paladin or Spiritborn</h3>
+            <p>
+              If you want the cleanest path into endgame, start with Paladin for
+              all-round power or Spiritborn for easier farming and movement.
+            </p>
+            <div class="page-overview-actions">
+              <span class="overview-pill">Paladin</span>
+              <span class="overview-pill">Spiritborn</span>
+              <span class="overview-pill">Bossing + Farm</span>
+            </div>
+          </div>
+          <div class="page-overview-card">
+            <div class="page-overview-kicker">How To Use This Page</div>
+            <h3>Read top-down, then jump by class</h3>
+            <ul class="page-overview-list">
+              <li>Use the tier snapshot to understand the current meta</li>
+              <li>Jump to your class for specific endgame builds</li>
+              <li>Finish with the activity table and progression tips</li>
+            </ul>
+          </div>
+          <div class="page-overview-card">
+            <div class="page-overview-kicker">What Matters Most</div>
+            <h3>Endgame rewards consistency</h3>
+            <p>
+              The best builds are not just high damage. They survive, move
+              cleanly, clear dense content well, and scale smoothly with
+              Paragon, Tempering, and Masterworking.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="what-are-endgame-builds">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label">The Basics</p>
+          <h2>What Are Endgame Builds?</h2>
+        </div>
+        <div class="prose-block">
+          <p class="lead-prose">
+            Endgame builds are character setups
+            <strong class="emphasis-gold"
+              >optimized for high-difficulty content after reaching level
+              60</strong
+            >. Unlike leveling builds that prioritise rapid progression through
+            the campaign, endgame builds are engineered for survival, damage
+            output, and consistency in the most demanding activities Diablo 4
+            offers.
+          </p>
+          <p class="lead-prose">
+            These activities include
+            <strong class="emphasis-light">Nightmare Dungeons (T50+)</strong>,
+            <strong class="emphasis-light">The Pit</strong> for Paragon XP and
+            Glyph upgrades,
+            <strong class="emphasis-light">high-level Helltides</strong>,
+            <strong class="emphasis-light">Lair Bosses</strong>,
+            <strong class="emphasis-light">World Bosses</strong>, and
+            <strong class="emphasis-light">Infernal Hordes</strong>. A strong
+            endgame build balances four pillars:
+            <em>damage, survival, mobility, and consistency</em>.
+          </p>
+          <div class="callout-card gold">
+            <h3>⚡ Key Difference from Leveling Builds</h3>
+            <p>
+              Endgame builds assume full access to the Paragon system,
+              Tempering, Masterworking, and Codex Aspects. Gear quality matters
+              enormously, so a T50+ build needs strong Ancestral bases, correct
+              Temper rolls, and an optimized Paragon board to truly perform.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr class="section-divider" />
+    <section id="tier-list">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label">Meta Snapshot</p>
+          <h2>Endgame Class Tier List — Season 12</h2>
+          <p class="section-desc">
+            How each class performs in high-level endgame content (Torment
+            I–IV). Aggregated from Maxroll, Icy Veins, D4Builds, and Mobalytics
+            (March 2026).
+          </p>
+        </div>
+        <div class="comparison-lens-grid">
+          <div class="comparison-lens-card">
+            <span class="comparison-lens-kicker">Best All-Rounder</span>
+            <h3>Paladin</h3>
+            <p>
+              Paladin remains the safest answer when you want one class that can
+              boss, farm, group, and push without major compromises.
+            </p>
+            <div class="comparison-lens-tags">
+              <span class="comparison-lens-tag">S-Tier</span>
+              <span class="comparison-lens-tag">All Content</span>
+            </div>
+          </div>
+          <div class="comparison-lens-card">
+            <span class="comparison-lens-kicker">Best Farmer</span>
+            <h3>Spiritborn</h3>
+            <p>
+              Spiritborn is the easiest high-performance option for repeated
+              seasonal grind, especially when speed and comfort matter most.
+            </p>
+            <div class="comparison-lens-tags">
+              <span class="comparison-lens-tag">S-Tier</span>
+              <span class="comparison-lens-tag">Fastest Farm</span>
+            </div>
+          </div>
+          <div class="comparison-lens-card">
+            <span class="comparison-lens-kicker">Best Safe Solo</span>
+            <h3>Necromancer</h3>
+            <p>
+              Necromancer is the cleanest A-tier recommendation for players who
+              want safer solo endgame progression with strong utility.
+            </p>
+            <div class="comparison-lens-tags">
+              <span class="comparison-lens-tag">A-Tier</span>
+              <span class="comparison-lens-tag">Solo Friendly</span>
+            </div>
+          </div>
+        </div>
+        <div class="tier-summary">
+          <div class="tier-summary-group">
+            <div class="tier-summary-head">
+              <span class="tier-summary-label s">S-Tier</span>
+              <span class="tier-summary-copy s"
+                >Dominant choices for the broadest endgame success</span
+              >
+            </div>
+            <div class="tier-summary-grid">
+              <div class="tier-summary-card s">
+                <div class="tier-summary-title">
+                  <span>⚔️</span>
+                  <strong>Paladin</strong>
+                  <span class="tag">S-Tier</span>
+                </div>
+                <p>
+                  Auradin and Blessed Hammer combine boss killing, speed
+                  farming, and group utility better than any other class in the
+                  current meta.
+                </p>
+              </div>
+              <div class="tier-summary-card s">
+                <div class="tier-summary-title">
+                  <span>🦅</span>
+                  <strong>Spiritborn</strong>
+                  <span class="tag">S-Tier</span>
+                </div>
+                <p>
+                  Infinite Evade and Crushing Hand make Spiritborn the easiest
+                  high-performance farmer to pilot, especially for repeated
+                  seasonal grind content.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="tier-summary-group">
+            <div class="tier-summary-head">
+              <span class="tier-summary-label a">A-Tier</span>
+              <span class="tier-summary-copy a"
+                >Strong classes that stay viable across all major
+                activities</span
+              >
+            </div>
+            <div class="tier-summary-grid compact">
+              <div class="tier-summary-card a">
+                <div class="tier-summary-title">
+                  <span>💀</span><strong>Necromancer</strong>
+                </div>
+                <p>
+                  Excellent solo survival, safe progression, and strong
+                  corpse-based utility for longer endgame sessions.
+                </p>
+              </div>
+              <div class="tier-summary-card a">
+                <div class="tier-summary-title">
+                  <span>🐺</span><strong>Druid</strong>
+                </div>
+                <p>
+                  Pulverize and companion setups stay powerful, but the class
+                  asks more from your gear before it feels effortless.
+                </p>
+              </div>
+              <div class="tier-summary-card a">
+                <div class="tier-summary-title">
+                  <span>🗡️</span><strong>Rogue</strong>
+                </div>
+                <p>
+                  Still one of the fastest farmers in the game, though it needs
+                  tighter positioning and cleaner execution at the top end.
+                </p>
+              </div>
+              <div class="tier-summary-card a">
+                <div class="tier-summary-title">
+                  <span>⚔️</span><strong>Barbarian</strong>
+                </div>
+                <p>
+                  Reliable melee damage, strong single-target pressure, and a
+                  sturdy feel that keeps it relevant in boss-focused content.
+                </p>
+              </div>
+              <div class="tier-summary-card a">
+                <div class="tier-summary-title">
+                  <span>🔥</span><strong>Sorcerer</strong>
+                </div>
+                <p>
+                  Speed farming remains excellent, but high-end pushes demand
+                  cleaner gear and better defensive decisions.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="tier-summary-group">
+            <div class="tier-summary-head">
+              <span class="tier-summary-label tbd">TBD</span>
+              <span class="tier-summary-copy tbd"
+                >Coming soon with the expansion launch</span
+              >
+            </div>
+            <div class="tier-summary-card tbd">
+              <div class="tier-summary-title">
+                <span>🩸</span>
+                <strong>Warlock</strong>
+                <span class="tag">Apr 28, 2026</span>
+              </div>
+              <p>
+                Warlock arrives with four archetypes: Legions, Vanguards,
+                Masterminds, and Ritualists. Final endgame placement should
+                stabilize a couple of weeks after launch once community testing
+                catches up.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr class="section-divider" />
+    <section id="builds">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label">Build Guides</p>
+          <h2>Top Endgame Builds by Class — S12</h2>
+          <p class="section-desc">
+            The strongest S-tier and A-tier endgame builds for each class in
+            Season 12. Every build links directly to its source guide.
+          </p>
+        </div>
+        <div class="class-section" id="barbarian">
+          <div class="class-header">
+            <span class="class-emoji-lg">⚔️</span>
+            <h3>Barbarian</h3>
+            <span class="class-badge badge-a">A-TIER ENDGAME</span>
+          </div>
+          <div class="build-grid">
+            <div class="build-card">
+              <div class="build-card-header">
+                <span class="build-name">Hammer of the Ancients (HotA)</span
+                ><span class="build-tag build-tag-st">S-TIER</span>
+              </div>
+              <p class="build-desc">
+                Massive single-target and AoE damage with Ground Stomp setup.
+                Premier Barbarian build for both Pit pushing and Nightmare
+                Dungeon clears. Strong scaling with Paragon investment.
+              </p>
+              <div class="build-meta">
+                <span>🏰 NMD T50+</span><span>🕳️ Pit</span
+                ><span>👹 Lair Bosses</span>
+              </div>
+              <div class="build-sources">
+                <a
+                  href="https://d4builds.gg/"
+                  target="_blank"
+                  rel="noopener"
+                  class="build-source"
+                  >D4Builds.gg ↗</a
+                ><a
+                  href="https://maxroll.gg/d4"
+                  target="_blank"
+                  rel="noopener"
+                  class="build-source"
+                  >Maxroll.gg ↗</a
+                >
+              </div>
+            </div>
+            <div class="build-card">
+              <div class="build-card-header">
+                <span class="build-name">Upheaval Barbarian</span
+                ><span class="build-tag build-tag-a">A-TIER</span>
+              </div>
+              <p class="build-desc">
+                High-mobility melee builder/spender with excellent AoE clear.
+                Whirlwind-free alternative that punches through dense mob packs
+                quickly. Great single-target burst on bosses.
+              </p>
+              <div class="build-meta">
+                <span>🏰 NMD T40+</span><span>🕳️ Pit</span
+                ><span>🔥 Helltide</span>
+              </div>
+              <div class="build-sources">
+                <a
+                  href="https://mobalytics.gg/diablo-4/builds"
+                  target="_blank"
+                  rel="noopener"
+                  class="build-source"
+                  >Mobalytics.gg ↗</a
+                ><a
+                  href="https://maxroll.gg/d4"
+                  target="_blank"
+                  rel="noopener"
+                  class="build-source"
+                  >Maxroll.gg ↗</a
+                >
+              </div>
+            </div>
+            <div class="build-card">
+              <div class="build-card-header">
+                <span class="build-name">Lunging Strike Barbarian</span
+                ><span class="build-tag build-tag-st">S-TIER</span>
+              </div>
+              <p class="build-desc">
+                High-mobility melee build using Lunging Strike as the primary
+                damage dealer. Excellent for speed farming Nightmare Dungeons
+                and maintaining killstreaks in S12. Very fluid gameplay.
+              </p>
+              <div class="build-meta">
+                <span>🏰 NMD Speed</span><span>💀 World Bosses</span
+                ><span>🔥 Helltide</span>
+              </div>
+              <div class="build-sources">
+                <a
+                  href="https://www.icy-veins.com/d4/barbarian/builds/"
+                  target="_blank"
+                  rel="noopener"
+                  class="build-source"
+                  >Icy Veins ↗</a
+                ><a
+                  href="https://maxroll.gg/d4"
+                  target="_blank"
+                  rel="noopener"
+                  class="build-source"
+                  >Maxroll.gg ↗</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="class-section" id="druid">
+          <div class="class-header">
+            <span class="class-emoji-lg">🐺</span>
+            <h3>Druid</h3>
+            <span class="class-badge badge-a">A-TIER ENDGAME</span>
+          </div>
+          <div class="build-grid">
+            <div class="build-card">
+              <div class="build-card-header">
+                <span class="build-name">Pulverize Druid</span
+                ><span class="build-tag build-tag-st">S-TIER</span>
+              </div>
+              <p class="build-desc">
+                Werebear Earth-based build with massive AoE ground pound. Top
+                solo and speed farmer. Excellent survivability with Fortify and
+                healing mechanics.
+              </p>
+              <div class="build-meta">
+                <span>🏰 NMD T50+</span><span>🕳️ Pit</span
+                ><span>👹 Lair Bosses</span>
+              </div>
+              <div class="build-sources">
+                <a
+                  href="https://d4builds.gg/"
+                  target="_blank"
+                  rel="noopener"
+                  class="build-source"
+                  >D4Builds.gg ↗</a
+                ><a
+                  href="https://www.icy-veins.com/d4/druid/builds/"
+                  target="_blank"
+                  rel="noopener"
+                  class="build-source"
+                  >Icy Veins ↗</a
+                ><a
+                  href="https://maxroll.gg/d4"
+                  target="_blank"
+                  rel="noopener"
+                  class="build-source"
+                  >Maxroll.gg ↗</a
+                >
+              </div>
+            </div>
+            <div class="build-card">
+              <div class="build-card-header">
+                <span class="build-name">Wolf Companion Druid</span
+                ><span class="build-tag build-tag-a">A-TIER</span>
+              </div>
+              <p class="build-desc">
+                Pet-focused build with summoning wolves. Wolf pack deals
+                substantial damage while you provide support. Strong solo option
+                with good survivability.
+              </p>
+              <div class="build-meta">
+                <span>🏰 NMD T40+</span><span>🕳️ Pit</span
+                ><span>🔥 Helltide</span>
+              </div>
+              <div class="build-sources">
+                <a
+                  href="https://www.icy-veins.com/d4/druid/builds/"
+                  target="_blank"
+                  rel="noopener"
+                  class="build-source"
+                  >Icy Veins ↗</a
+                ><a
+                  href="https://maxroll.gg/d4"
+                  target="_blank"
+                  rel="noopener"
+                  class="build-source"
+                  >Maxroll.gg ↗</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="class-section" id="necromancer">
+          <div class="class-header">
+            <span class="class-emoji-lg">💀</span>
+            <h3>Necromancer</h3>
+            <span class="class-badge badge-a">A-TIER ENDGAME</span>
+          </div>
+          <div class="build-grid">
+            <div class="build-card">
+              <div class="build-card-header">
+                <span class="build-name">Bone Spirit Necromancer</span
+                ><span class="build-tag build-tag-st">S-TIER</span>
+              </div>
+              <p class="build-desc">
+                Speed farming variant with burst damage. Bone Spirit explodes on
+                target death, chaining to nearby enemies. Excellent for clearing
+                Nightmare Dungeons quickly.
+              </p>
+              <div class="build-meta">
+                <span>🏰 NMD Speed</span><span>🕳️ Pit</span
+                ><span>👹 Lair Bosses</span>
+              </div>
+              <div class="build-sources">
+                <a
+                  href="https://mobalytics.gg/diablo-4/builds"
+                  target="_blank"
+                  rel="noopener"
+                  class="build-source"
+                  >Mobalytics (Kay) ↗</a
+                ><a
+                  href="https://maxroll.gg/d4"
+                  target="_blank"
+                  rel="noopener"
+                  class="build-source"
+                  >Maxroll.gg ↗</a
+                >
+              </div>
+            </div>
+            <div class="build-card">
+              <div class="build-card-header">
+                <span class="build-name">Golem Necromancer</span
+                ><span class="build-tag build-tag-st">S-TIER</span>
+              </div>
+              <p class="build-desc">
+                Pure summoner build with massive minion army. Near-unkillable
+                with golem scaling. Excellent solo progression with passive
+                damage tank.
+              </p>
+              <div class="build-meta">
+                <span>🏰 NMD T50+</span><span>🕳️ Pit</span
+                ><span>🔥 Helltide</span>
+              </div>
+              <div class="build-sources">
+                <a
+                  href="https://www.icy-veins.com/d4/necromancer/builds/"
+                  target="_blank"
+                  rel="noopener"
+                  class="build-source"
+                  >Icy Veins ↗</a
+                ><a
+                  href="https://maxroll.gg/d4"
+                  target="_blank"
+                  rel="noopener"
+                  class="build-source"
+                  >Maxroll.gg ↗</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="class-section" id="paladin">
+          <div class="class-header">
+            <span class="class-emoji-lg">⚔️</span>
+            <h3>Paladin</h3>
+            <span class="class-badge badge-s">S-TIER ENDGAME</span>
+          </div>
+          <div class="build-grid">
+            <div class="build-card">
+              <div class="build-card-header">
+                <span class="build-name">Cpt. America Paladin</span
+                ><span class="build-tag build-tag-st">S-TIER</span>
+              </div>
+              <p class="build-desc">
+                Shield throw build by Rob2628. Exceptional single-target burst
+                on bosses while maintaining strong AoE clear through Blessed
+                Hammer combo.
+              </p>
+              <div class="build-meta">
+                <span>🏰 NMD T60+</span><span>🕳️ Pit</span
+                ><span>👹 World Bosses</span>
+              </div>
+              <div class="build-sources">
+                <a
+                  href="https://d4builds.gg/"
+                  target="_blank"
+                  rel="noopener"
+                  class="build-source"
+                  >D4Builds (Rob2628) ↗</a
+                ><a
+                  href="https://maxroll.gg/d4"
+                  target="_blank"
+                  rel="noopener"
+                  class="build-source"
+                  >Maxroll.gg ↗</a
+                >
+              </div>
+            </div>
+            <div class="build-card">
+              <div class="build-card-header">
+                <span class="build-name">Auradin (Blessed Hammer)</span
+                ><span class="build-tag build-tag-st">S-TIER</span>
+              </div>
+              <p class="build-desc">
+                Holy Light Aura with Blessed Hammer. Stacking holy auras
+                provides passive damage and defense. Premier boss killer and
+                speed farmer combined.
+              </p>
+              <div class="build-meta">
+                <span>🏰 NMD T50+</span><span>🕳️ Pit</span
+                ><span>🔥 Helltide</span>
+              </div>
+              <div class="build-sources">
+                <a
+                  href="https://www.icy-veins.com/d4/paladin/builds/"
+                  target="_blank"
+                  rel="noopener"
+                  class="build-source"
+                  >Icy Veins ↗</a
+                ><a
+                  href="https://maxroll.gg/d4"
+                  target="_blank"
+                  rel="noopener"
+                  class="build-source"
+                  >Maxroll.gg ↗</a
+                >
+              </div>
+            </div>
+            <div class="build-card">
+              <div class="build-card-header">
+                <span class="build-name">Support Paladin (zDPS)</span
+                ><span class="build-tag build-tag-a">A-TIER</span>
+              </div>
+              <p class="build-desc">
+                Zero-DPS support build focused on buffs, auras, and crowd
+                control for party. Essential for high-end group Pit pushing
+                speedfarm.
+              </p>
+              <div class="build-meta">
+                <span>🕳️ Pit Group</span><span>🏰 NMD Group</span
+                ><span>👹 Lair Group</span>
+              </div>
+              <div class="build-sources">
+                <a
+                  href="https://mobalytics.gg/diablo-4/paladin-builds/"
+                  target="_blank"
+                  rel="noopener"
+                  class="build-source"
+                  >Mobalytics (Sanctum) ↗</a
+                ><a
+                  href="https://maxroll.gg/d4"
+                  target="_blank"
+                  rel="noopener"
+                  class="build-source"
+                  >Maxroll.gg ↗</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="class-section" id="rogue">
+          <div class="class-header">
+            <span class="class-emoji-lg">🗡️</span>
+            <h3>Rogue</h3>
+            <span class="class-badge badge-a">A-TIER ENDGAME</span>
+          </div>
+          <div class="build-grid">
+            <div class="build-card">
+              <div class="build-card-header">
+                <span class="build-name">Death Trap Rogue</span
+                ><span class="build-tag build-tag-st">S-TIER</span>
+              </div>
+              <p class="build-desc">
+                Fastest speed farming build. Traps + combo point generation =
+                huge burst explosions that clear dense packs instantly. T4 clear
+                king.
+              </p>
+              <div class="build-meta">
+                <span>🏰 NMD Speed</span><span>🔥 Helltide</span
+                ><span>🕳️ Pit</span>
+              </div>
+              <div class="build-sources">
+                <a
+                  href="https://www.icy-veins.com/d4/rogue/builds/"
+                  target="_blank"
+                  rel="noopener"
+                  class="build-source"
+                  >Icy Veins ↗</a
+                ><a
+                  href="https://maxroll.gg/d4"
+                  target="_blank"
+                  rel="noopener"
+                  class="build-source"
+                  >Maxroll.gg ↗</a
+                >
+              </div>
+            </div>
+            <div class="build-card">
+              <div class="build-card-header">
+                <span class="build-name">Flurry Rogue</span
+                ><span class="build-tag build-tag-a">A-TIER</span>
+              </div>
+              <p class="build-desc">
+                Rapid melee combo builder with high burst damage. Excellent
+                single-target for bosses while maintaining respectable AoE
+                clear.
+              </p>
+              <div class="build-meta">
+                <span>🏰 NMD T40+</span><span>👹 Lair Bosses</span
+                ><span>🕳️ Pit</span>
+              </div>
+              <div class="build-sources">
+                <a
+                  href="https://mobalytics.gg/diablo-4/builds"
+                  target="_blank"
+                  rel="noopener"
+                  class="build-source"
+                  >Mobalytics ↗</a
+                ><a
+                  href="https://maxroll.gg/d4"
+                  target="_blank"
+                  rel="noopener"
+                  class="build-source"
+                  >Maxroll.gg ↗</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="class-section" id="sorcerer">
+          <div class="class-header">
+            <span class="class-emoji-lg">🔥</span>
+            <h3>Sorcerer</h3>
+            <span class="class-badge badge-a">A-TIER ENDGAME</span>
+          </div>
+          <div class="build-grid">
+            <div class="build-card">
+              <div class="build-card-header">
+                <span class="build-name"
+                  >Chain Lightning / Crackling Energy</span
+                ><span class="build-tag build-tag-st">S-TIER</span>
+              </div>
+              <p class="build-desc">
+                Lightning-based build with chain lightning that bounces between
+                enemies. Crackling Energy procs provide massive additional clear
+                speed.
+              </p>
+              <div class="build-meta">
+                <span>🏰 NMD T50+</span><span>🕳️ Pit</span
+                ><span>🔥 Helltide</span>
+              </div>
+              <div class="build-sources">
+                <a
+                  href="https://www.icy-veins.com/d4/sorcerer/builds/"
+                  target="_blank"
+                  rel="noopener"
+                  class="build-source"
+                  >Icy Veins ↗</a
+                ><a
+                  href="https://maxroll.gg/d4"
+                  target="_blank"
+                  rel="noopener"
+                  class="build-source"
+                  >Maxroll.gg ↗</a
+                >
+              </div>
+            </div>
+            <div class="build-card">
+              <div class="build-card-header">
+                <span class="build-name">Fireball Sorcerer</span
+                ><span class="build-tag build-tag-a">A-TIER</span>
+              </div>
+              <p class="build-desc">
+                Fire-based build with massive AoE fireball explosions. Solid
+                single-target on bosses while excelling at clearing large mob
+                packs.
+              </p>
+              <div class="build-meta">
+                <span>🏰 NMD T40+</span><span>🕳️ Pit</span
+                ><span>👹 Lair Bosses</span>
+              </div>
+              <div class="build-sources">
+                <a
+                  href="https://www.icy-veins.com/d4/sorcerer/builds/"
+                  target="_blank"
+                  rel="noopener"
+                  class="build-source"
+                  >Icy Veins ↗</a
+                ><a
+                  href="https://maxroll.gg/d4"
+                  target="_blank"
+                  rel="noopener"
+                  class="build-source"
+                  >Maxroll.gg ↗</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="class-section" id="spiritborn">
+          <div class="class-header">
+            <span class="class-emoji-lg">🦅</span>
+            <h3>Spiritborn</h3>
+            <span class="class-badge badge-s">S-TIER ENDGAME</span>
+          </div>
+          <div class="build-grid">
+            <div class="build-card">
+              <div class="build-card-header">
+                <span class="build-name">Infinite Evade Spiritborn</span
+                ><span class="build-tag build-tag-st">S-TIER</span>
+              </div>
+              <p class="build-desc">
+                Eagle Spirit build with near-infinite evade capability.
+                Unmatched speed farming through mob density. Trivializes
+                high-level content.
+              </p>
+              <div class="build-meta">
+                <span>🏰 NMD T60+</span><span>🕳️ Pit</span
+                ><span>🔥 Helltide</span>
+              </div>
+              <div class="build-sources">
+                <a
+                  href="https://d4builds.gg/"
+                  target="_blank"
+                  rel="noopener"
+                  class="build-source"
+                  >D4Builds.gg ↗</a
+                ><a
+                  href="https://mobalytics.gg/diablo-4/builds"
+                  target="_blank"
+                  rel="noopener"
+                  class="build-source"
+                  >Mobalytics ↗</a
+                ><a
+                  href="https://maxroll.gg/d4"
+                  target="_blank"
+                  rel="noopener"
+                  class="build-source"
+                  >Maxroll.gg ↗</a
+                >
+              </div>
+            </div>
+            <div class="build-card">
+              <div class="build-card-header">
+                <span class="build-name">Crushing Hand Spiritborn</span
+                ><span class="build-tag build-tag-st">S-TIER</span>
+              </div>
+              <p class="build-desc">
+                Powerful melee spirit-based build. Crushing Hand spirits deal
+                massive damage while providing excellent survivability through
+                spirit guardian synergy.
+              </p>
+              <div class="build-meta">
+                <span>🏰 NMD T50+</span><span>🕳️ Pit</span
+                ><span>👹 Lair Bosses</span>
+              </div>
+              <div class="build-sources">
+                <a
+                  href="https://mobalytics.gg/diablo-4/builds"
+                  target="_blank"
+                  rel="noopener"
+                  class="build-source"
+                  >Mobalytics (MrRonit) ↗</a
+                ><a
+                  href="https://maxroll.gg/d4"
+                  target="_blank"
+                  rel="noopener"
+                  class="build-source"
+                  >Maxroll.gg ↗</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="class-section" id="warlock">
+          <div class="class-header">
+            <span class="class-emoji-lg">🩸</span>
+            <h3>Warlock</h3>
+            <span class="class-badge badge-tbd">COMING APRIL 28, 2026</span>
+          </div>
+          <div class="callout-panel-muted">
+            <p>
+              Warlock launches on April 28, 2026 as part of the Lord of Hatred
+              expansion. Four archetypes: Legions (summoner), Vanguards
+              (demonform), Masterminds (shadowcraft), Ritualists (blood magic).
+              Requires Vessel of Hatred expansion. Full build tier list will be
+              available approximately 2 weeks post-launch after community
+              testing. Check back in late April 2026 for complete Warlock
+              endgame build coverage.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr class="section-divider" />
+    <section id="activities">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label">By Activity</p>
+          <h2>Endgame Activities & Best Builds</h2>
+          <p class="section-desc">
+            Which class/builds excel in each major endgame activity in Season
+            12.
+          </p>
+        </div>
+        <div class="table-shell">
+          <table class="activity-table">
+            <thead>
+              <tr>
+                <th>Activity</th>
+                <th>Best Class/Build</th>
+                <th>Notes</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <span class="activity-name">Nightmare Dungeons (T50+)</span>
+                </td>
+                <td>
+                  <span class="tier-badge tier-s">S</span> Spiritborn Evade,
+                  Paladin
+                </td>
+                <td>
+                  High mob density clears needed. Infinite Evade provides
+                  unmatched speed. Auradin excels at boss phases.
+                </td>
+              </tr>
+              <tr>
+                <td><span class="activity-name">The Pit (Paragon XP)</span></td>
+                <td>
+                  <span class="tier-badge tier-s">S</span> Necromancer Bone
+                  Spirit, Rogue
+                </td>
+                <td>
+                  Fast clear is key. Bone Spirit chains through packs. Death
+                  Trap is premier Pit speed farmer.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="activity-name">Helltide (Legendary drops)</span>
+                </td>
+                <td>
+                  <span class="tier-badge tier-a">A</span> Any strong S/A build
+                </td>
+                <td>
+                  Bloodied Items system in S12 rewards killstreaks. Strong AoE
+                  builds thrive. Mystery Chests at 250 cinders.
+                </td>
+              </tr>
+              <tr>
+                <td><span class="activity-name">World Bosses</span></td>
+                <td>
+                  <span class="tier-badge tier-s">S</span> Barbarian, Paladin
+                </td>
+                <td>
+                  Single-target burst needed. HotA and Paladin aura burst excel.
+                  Tankier classes handle mechanics better.
+                </td>
+              </tr>
+              <tr>
+                <td><span class="activity-name">Lair Bosses</span></td>
+                <td>
+                  <span class="tier-badge tier-s">S</span> Paladin, Barbarian
+                </td>
+                <td>
+                  High burst damage to burn through boss phases. Paladins
+                  provide group utility for 4-player clears.
+                </td>
+              </tr>
+              <tr>
+                <td><span class="activity-name">Infernal Hordes</span></td>
+                <td>
+                  <span class="tier-badge tier-s">S</span> Spiritborn, Rogue
+                </td>
+                <td>
+                  Wave clearing focus. High mobility and AoE burst are required
+                  to progress through escalating difficulty offers.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+    <hr class="section-divider" />
+    <section id="resources">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label">External Links</p>
+          <h2>Endgame Build Resources</h2>
+          <p class="section-desc">
+            Primary sources for up-to-date endgame build guides, tier lists, and
+            build planners.
+          </p>
+        </div>
+        <div class="resource-grid">
+          <a
+            href="https://maxroll.gg/d4"
+            target="_blank"
+            rel="noopener"
+            class="resource-card"
+            ><div class="resource-card-title">Maxroll Endgame Tier List</div>
+            <p class="resource-card-desc">
+              Comprehensive Season 12 endgame tier list with class rankings and
+              build recommendations. Updated regularly.
+            </p>
+            <span class="resource-card-link">maxroll.gg/d4 ↗</span></a
+          ><a
+            href="https://www.icy-veins.com/d4/guides/endgame-tier-list"
+            target="_blank"
+            rel="noopener"
+            class="resource-card"
+            ><div class="resource-card-title">Icy Veins Endgame Tier List</div>
+            <p class="resource-card-desc">
+              Detailed endgame tier list by class and build. Extensive build
+              guides with skill trees, gear, and Paragon.
+            </p>
+            <span class="resource-card-link">icy-veins.com ↗</span></a
+          ><a
+            href="https://d4builds.gg/tierlist/"
+            target="_blank"
+            rel="noopener"
+            class="resource-card"
+            ><div class="resource-card-title">D4Builds Tier List</div>
+            <p class="resource-card-desc">
+              Rob2628's curated meta tier list directly in-game vetted. Build
+              codes and loadouts available.
+            </p>
+            <span class="resource-card-link">d4builds.gg/tierlist/ ↗</span></a
+          ><a
+            href="https://mobalytics.gg/diablo-4/tier-list"
+            target="_blank"
+            rel="noopener"
+            class="resource-card"
+            ><div class="resource-card-title">Mobalytics Tier List</div>
+            <p class="resource-card-desc">
+              Verified creator builds with tier rankings. Includes build codes
+              for easy import into the build planner.
+            </p>
+            <span class="resource-card-link">mobalytics.gg ↗</span></a
+          ><a
+            href="https://d4builds.gg/build-planner/"
+            target="_blank"
+            rel="noopener"
+            class="resource-card"
+            ><div class="resource-card-title">D4Builds Build Planner</div>
+            <p class="resource-card-desc">
+              Full-featured build planner with skill trees, Paragon boards, gear
+              slots, and loadout codes.
+            </p>
+            <span class="resource-card-link"
+              >d4builds.gg/build-planner/ ↗</span
+            ></a
+          >
+        </div>
+      </div>
+    </section>
+    <hr class="section-divider" />
+    <section id="progression">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label">Pro Tips</p>
+          <h2>Endgame Progression Tips</h2>
+          <p class="section-desc">
+            Core principles for efficiently advancing your character into the
+            endgame and pushing high Torment tiers.
+          </p>
+        </div>
+        <div class="tips-grid">
+          <div class="tip-card">
+            <div class="tip-title">Start with a Safe S-Tier Build</div>
+            <p class="tip-desc">
+              Spiritborn or Paladin have the highest ceiling and are easiest to
+              pilot. Pick a proven S-tier build from the tier list and commit.
+            </p>
+          </div>
+          <div class="tip-card">
+            <div class="tip-title">Paragon Points First</div>
+            <p class="tip-desc">
+              Unlock and fill your Paragon nodes before heavy gear investment.
+              Paragon provides the biggest stat gains early in endgame.
+            </p>
+          </div>
+          <div class="tip-card">
+            <div class="tip-title">Temper Before Masterworking</div>
+            <p class="tip-desc">
+              Always affix Temper gear before investing Masterworking materials.
+              Tempering provides targeted power that Masterworking amplifies.
+            </p>
+          </div>
+          <div class="tip-card">
+            <div class="tip-title">Focus on One Build</div>
+            <p class="tip-desc">
+              Don't alternate between multiple builds. Pick one endgame build,
+              gather all its required Aspects and Uniques, then optimize it to
+              perfection.
+            </p>
+          </div>
+          <div class="tip-card">
+            <div class="tip-title">Codex Aspects Are Free Power</div>
+            <p class="tip-desc">
+              Extract valuable Aspects from Legendaries and imprint them onto
+              better bases. Codex powers scale indefinitely with your item
+              level.
+            </p>
+          </div>
+          <div class="tip-card">
+            <div class="tip-title">Prioritize Greater Affixes</div>
+            <p class="tip-desc">
+              Items with Greater Affixes (+25%） are vastly more powerful than
+              standard rolls. Build around 3-4 Greater Affixes as core gear
+              slots.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr class="section-divider" />
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <span class="footer-logo-icon">🔥</span>
+            Diablo 4 Resource Hub
+          </div>
+
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="resources.html">Resources</a>
+            <a href="crafting.html">Crafting &amp; Gear Guide</a>
+            <a href="https://maxroll.gg/d4" target="_blank" rel="noopener"
+              >Maxroll</a
+            >
+            <a
+              href="https://www.icy-veins.com/d4/"
+              target="_blank"
+              rel="noopener"
+              >Icy Veins</a
+            >
+            <a href="https://d4builds.gg/" target="_blank" rel="noopener"
+              >D4Builds</a
+            >
+            <a
+              href="https://mobalytics.gg/diablo-4/builds"
+              target="_blank"
+              rel="noopener"
+              >Mobalytics</a
+            >
+          </div>
+
+          <p class="footer-disclaimer">
+            Not affiliated with Blizzard Entertainment. Diablo 4 and all related
+            content are trademarks of Blizzard Entertainment, Inc. This site is
+            a fan-made resource hub for educational purposes.
+          </p>
+
+          <p class="footer-updated">Last updated: March 20, 2026</p>
+        </div>
+      </div>
+    </footer>
+    <script src="nav.js"></script>
+    <script src="site-tools.js"></script>
+  </body>
 </html>

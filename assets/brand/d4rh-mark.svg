@@ -1,0 +1,51 @@
+<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgFade" x1="128" y1="20" x2="128" y2="236" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#181019"/>
+      <stop offset="1" stop-color="#0A090D"/>
+    </linearGradient>
+    <linearGradient id="goldEdge" x1="49" y1="29" x2="196" y2="214" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F3D98A"/>
+      <stop offset="0.42" stop-color="#C8A24D"/>
+      <stop offset="1" stop-color="#7E5622"/>
+    </linearGradient>
+    <linearGradient id="ember" x1="128" y1="79" x2="128" y2="203" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFB36B"/>
+      <stop offset="0.48" stop-color="#E04429"/>
+      <stop offset="1" stop-color="#701314"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(128 132) rotate(90) scale(92 74)">
+      <stop stop-color="#C0271B" stop-opacity="0.68"/>
+      <stop offset="1" stop-color="#C0271B" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow" x="8" y="6" width="240" height="244" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#000000" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#shadow)">
+    <path d="M60 42L92 24L108 53L97 70L60 42Z" fill="url(#goldEdge)"/>
+    <path d="M196 42L164 24L148 53L159 70L196 42Z" fill="url(#goldEdge)"/>
+    <path d="M65 44L93 30L108 56L99 69L65 44Z" fill="#2C1B12"/>
+    <path d="M191 44L163 30L148 56L157 69L191 44Z" fill="#2C1B12"/>
+
+    <path d="M128 30L198 58V127C198 173 170 211 128 226C86 211 58 173 58 127V58L128 30Z" fill="url(#bgFade)"/>
+    <path d="M128 38L191 63V126C191 168 165 201 128 215C91 201 65 168 65 126V63L128 38Z" stroke="url(#goldEdge)" stroke-width="8"/>
+    <path d="M128 54L175 74V124C175 157 156 184 128 197C100 184 81 157 81 124V74L128 54Z" fill="#100D14"/>
+
+    <ellipse cx="128" cy="132" rx="64" ry="72" fill="url(#glow)"/>
+
+    <path d="M93 98L121 88L116 117L95 126L93 98Z" fill="url(#goldEdge)"/>
+    <path d="M163 98L135 88L140 117L161 126L163 98Z" fill="url(#goldEdge)"/>
+    <path d="M98 103L117 96L113 115L99 121L98 103Z" fill="#2B150F"/>
+    <path d="M158 103L139 96L143 115L157 121L158 103Z" fill="#2B150F"/>
+
+    <path d="M128 82L153 132L128 188L103 132L128 82Z" fill="url(#ember)"/>
+    <path d="M128 99L142 132L128 166L114 132L128 99Z" fill="#120B12"/>
+    <path d="M128 72L162 142H145L128 108L111 142H94L128 72Z" fill="#C8A24D"/>
+    <path d="M122 116H134V187H122V116Z" fill="#EFD79D"/>
+    <path d="M104 164L128 184L152 164L145 154L128 168L111 154L104 164Z" fill="#C23322"/>
+
+    <path d="M83 178C94 188 108 195 128 201C148 195 162 188 173 178" stroke="#7E5622" stroke-width="5" stroke-linecap="round" opacity="0.9"/>
+  </g>
+</svg>

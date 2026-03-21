@@ -1,834 +1,2080 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Resources — Diablo 4 Resource Hub</title>
-  <meta name="description" content="Complete categorized directory of the best Diablo 4 resources — build guides, tier lists, tools, news, communities, and more.">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔥</text></svg>">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&display=swap" rel="stylesheet">
-</head>
-<body>
-
-  <!-- ======= STICKY NAVBAR ======= -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resources — Diablo 4 Resource Hub</title>
+    <meta
+      name="description"
+      content="Complete categorized directory of the best Diablo 4 resources — build guides, tier lists, tools, news, communities, and more."
+    />
+    <meta property="og:title" content="Resources — Diablo 4 Resource Hub" />
+    <meta
+      property="og:description"
+      content="Complete categorized directory of the best Diablo 4 resources — build guides, tier lists, tools, news, communities, and more."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="D4 Resource Hub" />
+    <meta
+      property="og:image"
+      content="https://bobhasaclaw.github.io/d4-resource-hub/assets/og/og-resources.png"
+    />
+    <meta
+      property="og:url"
+      content="https://bobhasaclaw.github.io/d4-resource-hub/resources.html"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Resources — Diablo 4 Resource Hub" />
+    <meta
+      name="twitter:description"
+      content="Complete categorized directory of the best Diablo 4 resources — build guides, tier lists, tools, news, communities, and more."
+    />
+    <meta
+      name="twitter:image"
+      content="https://bobhasaclaw.github.io/d4-resource-hub/assets/og/og-resources.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="canonical"
+      href="https://bobhasaclaw.github.io/d4-resource-hub/resources.html"
+    />
+    <link rel="icon" href="assets/brand/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- ======= STICKY NAVBAR ======= -->
     <nav class="navbar" id="main-nav">
-    <div class="navbar-inner"></div>
-  </nav>
+      <div class="navbar-inner"></div>
+    </nav>
 
-  <div class="mobile-menu" id="mobile-menu"></div>
+    <div class="mobile-menu" id="mobile-menu"></div>
 
-  <header class="page-header resources-hero">
-    <div class="container resources-hero-grid">
-      <div class="resources-hero-copy">
-        <p class="section-label">Curated Directory</p>
-        <h1>Diablo 4 Resources</h1>
-        <p>Build sites, tier lists, tools, creators, communities, and essential guides all in one searchable place.</p>
-        <div class="resources-stats">
-          <div class="resources-stat">
-            <strong>9</strong>
-            <span>Sections</span>
+    <header class="page-header resources-hero">
+      <div class="container resources-hero-grid">
+        <div class="resources-hero-copy">
+          <p class="section-label">Curated Directory</p>
+          <div class="utility-brand-ribbon">
+            <span class="brand-mark-wrap utility-brand-mark" aria-hidden="true">
+              <img src="assets/brand/d4rh-mark.svg" alt="" class="brand-mark" />
+            </span>
+            <div class="utility-brand-copy">
+              <span class="utility-brand-kicker">Resource Matrix</span>
+              <strong>D4 Resource Hub Directory</strong>
+              <span
+                >Searchable source lanes for builds, news, tools, creators, and
+                communities without tab-hopping across the web.</span
+              >
+            </div>
+            <div class="utility-brand-links">
+              <a href="news.html">Newsroom</a>
+              <a href="creators.html">Creators</a>
+            </div>
           </div>
-          <div class="resources-stat">
-            <strong>40+</strong>
-            <span>Curated Links</span>
-          </div>
-          <div class="resources-stat">
-            <strong>Live</strong>
-            <span>Season 12 Ready</span>
-          </div>
-        </div>
-      </div>
-      <div class="resources-hero-panel">
-        <div class="resource-search">
-          <label for="resource-search">Search resources</label>
-          <input id="resource-search" type="search" placeholder="Try build planner, Discord, tier list..." autocomplete="off">
-        </div>
-        <div class="resource-filter-group" role="tablist" aria-label="Filter resource categories">
-          <button type="button" class="resource-filter active" data-filter="all" aria-pressed="true">All</button>
-          <button type="button" class="resource-filter" data-filter="build-sites" aria-pressed="false">Build Sites</button>
-          <button type="button" class="resource-filter" data-filter="tier-lists" aria-pressed="false">Tier Lists</button>
-          <button type="button" class="resource-filter" data-filter="class-builds" aria-pressed="false">Class Builds</button>
-          <button type="button" class="resource-filter" data-filter="tools" aria-pressed="false">Tools</button>
-          <button type="button" class="resource-filter" data-filter="news" aria-pressed="false">News</button>
-          <button type="button" class="resource-filter" data-filter="creators" aria-pressed="false">Creators</button>
-          <button type="button" class="resource-filter" data-filter="communities" aria-pressed="false">Communities</button>
-          <button type="button" class="resource-filter" data-filter="guides" aria-pressed="false">Guides</button>
-          <button type="button" class="resource-filter" data-filter="expansion" aria-pressed="false">Expansion</button>
-        </div>
-        <p class="resources-hero-note" id="resource-results">Showing all sections.</p>
-      </div>
-    </div>
-  </header>
-
-  <section class="page-overview">
-    <div class="container">
-      <div class="page-overview-grid">
-        <div class="page-overview-card featured">
-          <div class="page-overview-kicker">Best Starting Point</div>
-          <h3>Search first, then narrow by category</h3>
-          <p>Use the search box when you know what you need, and the category filters when you want to browse a specific type of resource.</p>
-          <div class="page-overview-actions">
-            <span class="overview-pill">Search</span>
-            <span class="overview-pill">Filter</span>
-            <span class="overview-pill">Jump Links</span>
+          <h1>Diablo 4 Resources</h1>
+          <p>
+            Build sites, tier lists, tools, creators, communities, and essential
+            guides all in one searchable place.
+          </p>
+          <div class="resources-stats">
+            <div class="resources-stat">
+              <strong>9</strong>
+              <span>Sections</span>
+            </div>
+            <div class="resources-stat">
+              <strong>40+</strong>
+              <span>Curated Links</span>
+            </div>
+            <div class="resources-stat">
+              <strong>Live</strong>
+              <span>Season 12 Ready</span>
+            </div>
           </div>
         </div>
-        <div class="page-overview-card">
-          <div class="page-overview-kicker">Most Useful</div>
-          <h3>These categories cover the essentials</h3>
-          <ul class="page-overview-list">
-            <li>Build sites and tier lists for meta decisions</li>
-            <li>Tools for planning, maps, and loot tracking</li>
-            <li>Guides, creators, and communities for deeper learning</li>
-          </ul>
+        <div class="resources-hero-panel">
+          <div class="resource-search">
+            <label for="resource-search">Search resources</label>
+            <input
+              id="resource-search"
+              type="search"
+              placeholder="Try build planner, Discord, tier list..."
+              autocomplete="off"
+            />
+          </div>
+          <div
+            class="resource-filter-group"
+            role="tablist"
+            aria-label="Filter resource categories"
+          >
+            <button
+              type="button"
+              class="resource-filter active"
+              data-filter="all"
+              aria-pressed="true"
+            >
+              All
+            </button>
+            <button
+              type="button"
+              class="resource-filter"
+              data-filter="build-sites"
+              aria-pressed="false"
+            >
+              Build Sites
+            </button>
+            <button
+              type="button"
+              class="resource-filter"
+              data-filter="tier-lists"
+              aria-pressed="false"
+            >
+              Tier Lists
+            </button>
+            <button
+              type="button"
+              class="resource-filter"
+              data-filter="class-builds"
+              aria-pressed="false"
+            >
+              Class Builds
+            </button>
+            <button
+              type="button"
+              class="resource-filter"
+              data-filter="tools"
+              aria-pressed="false"
+            >
+              Tools
+            </button>
+            <button
+              type="button"
+              class="resource-filter"
+              data-filter="news"
+              aria-pressed="false"
+            >
+              News
+            </button>
+            <button
+              type="button"
+              class="resource-filter"
+              data-filter="creators"
+              aria-pressed="false"
+            >
+              Creators
+            </button>
+            <button
+              type="button"
+              class="resource-filter"
+              data-filter="communities"
+              aria-pressed="false"
+            >
+              Communities
+            </button>
+            <button
+              type="button"
+              class="resource-filter"
+              data-filter="guides"
+              aria-pressed="false"
+            >
+              Guides
+            </button>
+            <button
+              type="button"
+              class="resource-filter"
+              data-filter="expansion"
+              aria-pressed="false"
+            >
+              Expansion
+            </button>
+          </div>
+          <p class="resources-hero-note" id="resource-results">
+            Showing all sections.
+          </p>
+          <div class="resources-hero-spotlight">
+            <div class="hero-side-kicker">Best Workflow</div>
+            <h3>
+              Search when you know the tool, filter when you need the lane
+            </h3>
+            <p>
+              This page works best when you use search for specific tools and
+              filters for broader jobs like builds, news, communities, or
+              creator discovery.
+            </p>
+            <div class="hero-side-pillrow">
+              <span class="hero-side-pill">Maxroll</span>
+              <span class="hero-side-pill">D4Builds</span>
+              <span class="hero-side-pill">Icy Veins</span>
+              <span class="hero-side-pill">Mobalytics</span>
+            </div>
+          </div>
         </div>
-        <div class="page-overview-card">
-          <div class="page-overview-kicker">Pro Tip</div>
-          <h3>The page now behaves like a real directory</h3>
-          <p>Everything updates live, so you can filter down to exactly the rows you want without leaving the page.</p>
+      </div>
+    </header>
+
+    <section class="page-overview">
+      <div class="container">
+        <div class="page-overview-grid">
+          <div class="page-overview-card featured">
+            <div class="page-overview-kicker">Best Starting Point</div>
+            <h3>Search first, then narrow by category</h3>
+            <p>
+              Use the search box when you know what you need, and the category
+              filters when you want to browse a specific type of resource.
+            </p>
+            <div class="page-overview-actions">
+              <span class="overview-pill">Search</span>
+              <span class="overview-pill">Filter</span>
+              <span class="overview-pill">Jump Links</span>
+            </div>
+          </div>
+          <div class="page-overview-card">
+            <div class="page-overview-kicker">Most Useful</div>
+            <h3>These categories cover the essentials</h3>
+            <ul class="page-overview-list">
+              <li>Build sites and tier lists for meta decisions</li>
+              <li>Tools for planning, maps, and loot tracking</li>
+              <li>Guides, creators, and communities for deeper learning</li>
+            </ul>
+          </div>
+          <div class="page-overview-card">
+            <div class="page-overview-kicker">Pro Tip</div>
+            <h3>The page now behaves like a real directory</h3>
+            <p>
+              Everything updates live, so you can filter down to exactly the
+              rows you want without leaving the page.
+            </p>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="page-actions-section">
-    <div class="container">
-      <div class="page-actions-bar">
-        <button type="button" class="page-action-button" data-copy-page-link>Copy Directory Link</button>
-        <button type="button" class="page-action-button" data-share-page data-share-text="Diablo 4 Resource Hub directory: build sites, tier lists, class builds, tools, creators, communities, guides, and expansion resources.">Share Directory</button>
-        <button type="button" class="page-action-button" data-copy-summary data-copy-summary="Diablo 4 Resource Hub directory: build sites, tier lists, class builds, tools, creators, communities, guides, and expansion resources.">Copy Summary</button>
-        <span class="page-action-note">Reviewed March 20, 2026</span>
-        <span class="page-action-feedback" aria-live="polite"></span>
+    <section class="page-actions-section">
+      <div class="container">
+        <div class="page-actions-bar">
+          <button type="button" class="page-action-button" data-copy-page-link>
+            Copy Directory Link
+          </button>
+          <button
+            type="button"
+            class="page-action-button"
+            data-share-page
+            data-share-text="Diablo 4 Resource Hub directory: build sites, tier lists, class builds, tools, creators, communities, guides, and expansion resources."
+          >
+            Share Directory
+          </button>
+          <button
+            type="button"
+            class="page-action-button"
+            data-copy-summary
+            data-copy-summary="Diablo 4 Resource Hub directory: build sites, tier lists, class builds, tools, creators, communities, guides, and expansion resources."
+          >
+            Copy Summary
+          </button>
+          <span class="page-action-note">Reviewed March 21, 2026</span>
+          <span class="page-action-feedback" aria-live="polite"></span>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-<section class="resource-category" id="build-sites">
-    <div class="container">
-      <div class="category-header">
-        <span class="category-icon">🛠️</span>
-        <h2 class="category-title">Build Guide Sites</h2>
+    <section class="signal-section">
+      <div class="container">
+        <div class="signal-grid">
+          <a class="signal-card" href="#build-sites">
+            <span class="signal-kicker">Start Here</span>
+            <h2>Build Sites</h2>
+            <p>
+              Compare the core build hubs first when you need an answer fast.
+            </p>
+            <span class="signal-link">Jump to build sources</span>
+          </a>
+          <a class="signal-card" href="#tools">
+            <span class="signal-kicker">Utility</span>
+            <h2>Tools &amp; Planners</h2>
+            <p>
+              Open calculators, planners, and cheat sheets without digging
+              through every category.
+            </p>
+            <span class="signal-link">Open useful tools</span>
+          </a>
+          <a class="signal-card" href="#news">
+            <span class="signal-kicker">Freshness</span>
+            <h2>News &amp; Updates</h2>
+            <p>
+              Go straight to the sources that help you keep up with balance,
+              seasons, and expansion changes.
+            </p>
+            <span class="signal-link">See current coverage</span>
+          </a>
+          <a class="signal-card" href="#creators">
+            <span class="signal-kicker">People</span>
+            <h2>Creators &amp; Communities</h2>
+            <p>
+              Find the best voices to follow when you want live discussion,
+              hidden tech, or beginner help.
+            </p>
+            <span class="signal-link">Meet the best voices</span>
+          </a>
+        </div>
       </div>
+    </section>
 
-      <table class="resource-table">
-        <thead>
-          <tr>
-            <th>Site</th>
-            <th>Best For</th>
-            <th>Link</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="resource-name">Maxroll</td>
-            <td class="resource-desc">All-in-one Diablo 4 coverage: builds, tier lists, news, tools, and guides</td>
-            <td><a href="https://maxroll.gg/d4" target="_blank" rel="noopener" class="resource-link">maxroll.gg/d4 →</a></td>
-          </tr>
-          <tr>
-            <td class="resource-name">Icy Veins</td>
-            <td class="resource-desc">Written Diablo 4 guides: class breakdowns, mechanics analysis, and news</td>
-            <td><a href="https://www.icy-veins.com/d4/" target="_blank" rel="noopener" class="resource-link">icy-veins.com/d4 →</a></td>
-          </tr>
-          <tr>
-            <td class="resource-name">D4Builds</td>
-            <td class="resource-desc">Meta builds, planners, maps, and loot tables with Rob2628 coverage</td>
-            <td><a href="https://d4builds.gg/" target="_blank" rel="noopener" class="resource-link">d4builds.gg →</a></td>
-          </tr>
-          <tr>
-            <td class="resource-name">Mobalytics</td>
-            <td class="resource-desc">Creator builds with performance scores, ratings, and class tier lists</td>
-            <td><a href="https://mobalytics.gg/diablo-4/builds" target="_blank" rel="noopener" class="resource-link">mobalytics.gg/diablo-4/builds →</a></td>
-          </tr>
-        </tbody>
-      </table>
-
-      <div class="category-header" style="margin-top: 2rem;">
-        <span class="category-icon">💜</span>
-        <h2 class="category-title">Twitch Streamers</h2>
-      </div>
-      <p class="section-desc" style="margin-top: -0.35rem; margin-bottom: 1rem;">A smaller live-stream shortlist for players who want real-time discussion, build talk, and season launch coverage.</p>
-
-      <table class="resource-table">
-        <thead>
-          <tr>
-            <th>Preview</th>
-            <th>Streamer</th>
-            <th>Platform</th>
-            <th>Focus</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>
-              <div class="creator-preview creator-preview-photo creator-preview-rob">
-                <img class="creator-preview-image" src="https://static-cdn.jtvnw.net/jtv_user_pictures/d5f96899-40fe-4ec1-b566-e7cefea872c1-profile_image-300x300.png" alt="Rob2628 Twitch profile image" loading="lazy" decoding="async">
-                <span class="creator-preview-text">Twitch</span>
-              </div>
-            </td>
-            <td class="resource-name"><a href="https://www.twitch.tv/rob2628" target="_blank" rel="noopener" class="resource-link">Rob2628 →</a></td>
-            <td class="resource-desc">Twitch — D4 Partner</td>
-            <td class="resource-desc">Season meta, push gameplay, drops-enabled grinding, and build demos</td>
-          </tr>
-          <tr>
-            <td>
-              <div class="creator-preview creator-preview-photo creator-preview-snuggie">
-                <img class="creator-preview-image" src="https://static-cdn.jtvnw.net/jtv_user_pictures/1749d085-d992-4a3d-b43a-3cc46a3ed15c-profile_image-300x300.png" alt="Snuggie Twitch profile image" loading="lazy" decoding="async">
-                <span class="creator-preview-text">Twitch</span>
-              </div>
-            </td>
-            <td class="resource-name"><a href="https://www.twitch.tv/snuggie" target="_blank" rel="noopener" class="resource-link">Snuggie →</a></td>
-            <td class="resource-desc">Twitch — D4 Partner</td>
-            <td class="resource-desc">Chat carry runs, live build advice, and community-driven grind sessions</td>
-          </tr>
-          <tr>
-            <td>
-              <div class="creator-preview creator-preview-photo creator-preview-macro">
-                <img class="creator-preview-image" src="https://static-cdn.jtvnw.net/jtv_user_pictures/0296df4a-5a8c-406e-bafe-b8f81efe1205-profile_image-300x300.png" alt="MacroBioBoi Twitch profile image" loading="lazy" decoding="async">
-                <span class="creator-preview-text">Twitch</span>
-              </div>
-            </td>
-            <td class="resource-name"><a href="https://www.twitch.tv/macrobioboi" target="_blank" rel="noopener" class="resource-link">MacroBioBoi →</a></td>
-            <td class="resource-desc">Twitch</td>
-            <td class="resource-desc">Mechanical testing, build theory, and deep D4/D2R discussion</td>
-          </tr>
-          <tr>
-            <td>
-              <div class="creator-preview creator-preview-photo creator-preview-blizz">
-                <img class="creator-preview-image" src="https://static-cdn.jtvnw.net/jtv_user_pictures/4e2e8391-8ba0-48cf-b1a8-310425507d55-profile_image-300x300.png" alt="Raxxanterax Twitch profile image" loading="lazy" decoding="async">
-                <span class="creator-preview-text">Twitch</span>
-              </div>
-            </td>
-            <td class="resource-name"><a href="https://www.twitch.tv/raxxanterax" target="_blank" rel="noopener" class="resource-link">Raxxanterax →</a></td>
-            <td class="resource-desc">Twitch</td>
-            <td class="resource-desc">Season prep, patch reactions, and practical build planning</td>
-          </tr>
-          <tr>
-            <td>
-              <div class="creator-preview creator-preview-photo creator-preview-rhykker">
-                <img class="creator-preview-image" src="https://static-cdn.jtvnw.net/jtv_user_pictures/12dff549-033e-4571-92c3-043af0ccf4c3-profile_image-300x300.png" alt="wudijo Twitch profile image" loading="lazy" decoding="async">
-                <span class="creator-preview-text">Twitch</span>
-              </div>
-            </td>
-            <td class="resource-name"><a href="https://www.twitch.tv/wudijo" target="_blank" rel="noopener" class="resource-link">wudijo →</a></td>
-            <td class="resource-desc">Twitch</td>
-            <td class="resource-desc">High-end Hardcore gameplay, optimization, and endgame testing</td>
-          </tr>
-          <tr>
-            <td>
-              <div class="creator-preview creator-preview-photo creator-preview-blizz">
-                <img class="creator-preview-image" src="https://static-cdn.jtvnw.net/jtv_user_pictures/4eba575d-40ce-44bb-aaad-a7706d2cba78-profile_image-300x300.png" alt="DatModz Twitch profile image" loading="lazy" decoding="async">
-                <span class="creator-preview-text">Twitch</span>
-              </div>
-            </td>
-            <td class="resource-name"><a href="https://www.twitch.tv/datmodz" target="_blank" rel="noopener" class="resource-link">DatModz →</a></td>
-            <td class="resource-desc">Twitch</td>
-            <td class="resource-desc">Patch breakdowns, launch planning, and community Q&amp;A</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </section>
-
-  <!-- ======= TIER LISTS ======= -->
-  <section class="resource-category" id="tier-lists">
-    <div class="container">
-      <div class="category-header">
-        <span class="category-icon">📊</span>
-        <h2 class="category-title">Tier Lists</h2>
-      </div>
-
-      <table class="resource-table">
-        <thead>
-          <tr>
-            <th>Source</th>
-            <th>Categories Covered</th>
-            <th>Link</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="resource-name">Maxroll Tier Lists</td>
-            <td class="resource-desc">Covers endgame, speed farming, boss killing, and leveling with build recommendations</td>
-            <td><a href="https://maxroll.gg/d4/tierlists/" target="_blank" rel="noopener" class="resource-link">maxroll.gg/d4/tierlists →</a></td>
-          </tr>
-          <tr>
-            <td class="resource-name">Icy Veins Tier Lists</td>
-            <td class="resource-desc">Covers endgame, speed farming, boss killing, and leveling with per-class breakdowns</td>
-            <td><a href="https://www.icy-veins.com/d4/guides/tier-lists/" target="_blank" rel="noopener" class="resource-link">icy-veins.com/d4/guides/tier-lists →</a></td>
-          </tr>
-          <tr>
-            <td class="resource-name">D4Builds Tier List</td>
-            <td class="resource-desc">Ranks meta builds for endgame, speed farming, and boss killing</td>
-            <td><a href="https://d4builds.gg/tierlist/" target="_blank" rel="noopener" class="resource-link">d4builds.gg/tierlist →</a></td>
-          </tr>
-          <tr>
-            <td class="resource-name">Mobalytics Tier List</td>
-            <td class="resource-desc">Data-backed tier list with build scores for endgame, speed farming, and leveling</td>
-            <td><a href="https://mobalytics.gg/diablo-4/tier-list" target="_blank" rel="noopener" class="resource-link">mobalytics.gg/diablo-4/tier-list →</a></td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </section>
-
-  <!-- ======= CLASS BUILDS ======= -->
-  <section class="resource-category" id="class-builds">
-    <div class="container">
-      <div class="category-header">
-        <span class="category-icon">⚔️</span>
-        <h2 class="category-title">Class Builds</h2>
-      </div>
-
-      <table class="resource-table">
-        <thead>
-          <tr>
-            <th>Class</th>
-            <th>Maxroll</th>
-            <th>Icy Veins</th>
-            <th>D4Builds</th>
-            <th>Mobalytics</th>
-            <th>Featured Build</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="resource-name">🏋️ Barbarian</td>
-            <td><a href="https://maxroll.gg/d4" target="_blank" rel="noopener" class="resource-link">Guide →</a></td>
-            <td><a href="https://www.icy-veins.com/d4/barbarian-builds/" target="_blank" rel="noopener" class="resource-link">Guide →</a></td>
-            <td><a href="https://d4builds.gg/barbarian/builds/" target="_blank" rel="noopener" class="resource-link">Builds →</a></td>
-            <td><a href="https://mobalytics.gg/diablo-4/builds/barbarian" target="_blank" rel="noopener" class="resource-link">Builds →</a></td>
-            <td class="resource-desc">Featured builds: HotA Barbarian from D4Builds and Upheaval from Mobalytics</td>
-          </tr>
-          <tr>
-            <td class="resource-name">🐺 Druid</td>
-            <td><a href="https://maxroll.gg/d4" target="_blank" rel="noopener" class="resource-link">Guide →</a></td>
-            <td><a href="https://www.icy-veins.com/d4/druid-builds/" target="_blank" rel="noopener" class="resource-link">Guide →</a></td>
-            <td><a href="https://d4builds.gg/druid/builds/" target="_blank" rel="noopener" class="resource-link">Builds →</a></td>
-            <td><a href="https://mobalytics.gg/diablo-4/builds/druid" target="_blank" rel="noopener" class="resource-link">Builds →</a></td>
-            <td class="resource-desc">Featured build: Pulverize Druid from D4Builds</td>
-          </tr>
-          <tr>
-            <td class="resource-name">💀 Necromancer</td>
-            <td><a href="https://maxroll.gg/d4" target="_blank" rel="noopener" class="resource-link">Guide →</a></td>
-            <td><a href="https://www.icy-veins.com/d4/necromancer-builds/" target="_blank" rel="noopener" class="resource-link">Guide →</a></td>
-            <td><a href="https://d4builds.gg/necromancer/builds/" target="_blank" rel="noopener" class="resource-link">Builds →</a></td>
-            <td><a href="https://mobalytics.gg/diablo-4/builds/necromancer" target="_blank" rel="noopener" class="resource-link">Builds →</a></td>
-            <td class="resource-desc">Featured build: Speed Farm Bone Spirit from Mobalytics (Kay)</td>
-          </tr>
-          <tr>
-            <td class="resource-name">⚔️ Paladin</td>
-            <td><a href="https://maxroll.gg/d4" target="_blank" rel="noopener" class="resource-link">Guide →</a></td>
-            <td><a href="https://www.icy-veins.com/d4/paladin-builds/" target="_blank" rel="noopener" class="resource-link">Guide →</a></td>
-            <td><a href="https://d4builds.gg/paladin/builds/" target="_blank" rel="noopener" class="resource-link">Builds →</a></td>
-            <td><a href="https://mobalytics.gg/diablo-4/builds/paladin" target="_blank" rel="noopener" class="resource-link">Builds →</a></td>
-            <td class="resource-desc">Featured builds: Cpt. America from D4Builds and Zealspin from Mobalytics</td>
-          </tr>
-          <tr>
-            <td class="resource-name">🗡️ Rogue</td>
-            <td><a href="https://maxroll.gg/d4" target="_blank" rel="noopener" class="resource-link">Guide →</a></td>
-            <td><a href="https://www.icy-veins.com/d4/rogue-builds/" target="_blank" rel="noopener" class="resource-link">Guide →</a></td>
-            <td><a href="https://d4builds.gg/rogue/builds/" target="_blank" rel="noopener" class="resource-link">Builds →</a></td>
-            <td><a href="https://mobalytics.gg/diablo-4/builds/rogue" target="_blank" rel="noopener" class="resource-link">Builds →</a></td>
-            <td class="resource-desc">Featured build: Dance of Knives Leveling from Mobalytics (M1PY)</td>
-          </tr>
-          <tr>
-            <td class="resource-name">🔥 Sorcerer</td>
-            <td><a href="https://maxroll.gg/d4" target="_blank" rel="noopener" class="resource-link">Guide →</a></td>
-            <td><a href="https://www.icy-veins.com/d4/sorcerer-builds/" target="_blank" rel="noopener" class="resource-link">Guide →</a></td>
-            <td><a href="https://d4builds.gg/sorcerer/builds/" target="_blank" rel="noopener" class="resource-link">Builds →</a></td>
-            <td><a href="https://mobalytics.gg/diablo-4/builds/sorcerer" target="_blank" rel="noopener" class="resource-link">Builds →</a></td>
-            <td class="resource-desc">Featured builds: Fireball and Chain Lightning from Icy Veins</td>
-          </tr>
-          <tr>
-            <td class="resource-name">🦅 Spiritborn</td>
-            <td><a href="https://maxroll.gg/d4" target="_blank" rel="noopener" class="resource-link">Guide →</a></td>
-            <td><a href="https://www.icy-veins.com/d4/spiritborn-builds/" target="_blank" rel="noopener" class="resource-link">Guide →</a></td>
-            <td><a href="https://d4builds.gg/spiritborn/builds/" target="_blank" rel="noopener" class="resource-link">Builds →</a></td>
-            <td><a href="https://mobalytics.gg/diablo-4/builds/spiritborn" target="_blank" rel="noopener" class="resource-link">Builds →</a></td>
-            <td class="resource-desc">Featured build: Evade Storm from Mobalytics (MrRonit)</td>
-          </tr>
-          <tr>
-            <td class="resource-name">🌑 Warlock</td>
-            <td><span class="text-muted">April 28, 2026</span></td>
-            <td><span class="text-muted">—</span></td>
-            <td><span class="text-muted">—</span></td>
-            <td><span class="text-muted">—</span></td>
-            <td class="resource-desc">Dark magic class — one of two new classes in Lord of Hatred</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </section>
-
-  <!-- ======= TOOLS ======= -->
-  <section class="resource-category" id="tools">
-    <div class="container">
-      <div class="category-header">
-        <span class="category-icon">🔧</span>
-        <h2 class="category-title">Tools &amp; Utilities</h2>
-      </div>
-
-      <table class="resource-table">
-        <thead>
-          <tr>
-            <th>Tool</th>
-            <th>Description</th>
-            <th>Link</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="resource-name">D4Builds Build Planner</td>
-            <td class="resource-desc">Interactive build planner for skill trees, paragon boards, and build sharing</td>
-            <td><a href="https://d4builds.gg/build-planner/" target="_blank" rel="noopener" class="resource-link">d4builds.gg/build-planner →</a></td>
-          </tr>
-          <tr>
-            <td class="resource-name">D4Builds Desktop App</td>
-            <td class="resource-desc">Desktop companion app with an in-game overlay for live build reference</td>
-            <td><a href="https://d4builds.gg/desktop-app/" target="_blank" rel="noopener" class="resource-link">d4builds.gg/desktop-app →</a></td>
-          </tr>
-          <tr>
-            <td class="resource-name">D4Builds Interactive Map</td>
-            <td class="resource-desc">Interactive map of Sanctuary with events, resources, waypoints, and secrets</td>
-            <td><a href="https://d4builds.gg/map/" target="_blank" rel="noopener" class="resource-link">d4builds.gg/map →</a></td>
-          </tr>
-          <tr>
-            <td class="resource-name">D4Builds Loot Tables</td>
-            <td class="resource-desc">Unique item database with drop locations and loot table breakdowns</td>
-            <td><a href="https://d4builds.gg/database/unique-loot-tables/" target="_blank" rel="noopener" class="resource-link">d4builds.gg/database →</a></td>
-          </tr>
-          <tr>
-            <td class="resource-name">Icy Veins Gem Calculator</td>
-            <td class="resource-desc">Gem calculator for upgrade costs, socket values, and resource requirements</td>
-            <td><a href="https://www.icy-veins.com/d4" target="_blank" rel="noopener" class="resource-link">icy-veins.com/d4 →</a></td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </section>
-
-  <!-- ======= NEWS ======= -->
-  <section class="resource-category" id="news">
-    <div class="container">
-      <div class="category-header">
-        <span class="category-icon">📰</span>
-        <h2 class="category-title">News &amp; Season Info</h2>
-      </div>
-
-      <table class="resource-table">
-        <thead>
-          <tr>
-            <th>Source</th>
-            <th>Description</th>
-            <th>Link</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="resource-name">Icy Veins D4 News</td>
-            <td class="resource-desc">Latest Diablo 4 news, patch summaries, season announcements, and community updates</td>
-            <td><a href="https://www.icy-veins.com/d4/news/" target="_blank" rel="noopener" class="resource-link">icy-veins.com/d4/news →</a></td>
-          </tr>
-          <tr>
-            <td class="resource-name">Official Blizzard</td>
-            <td class="resource-desc">Official Diablo 4 home for news, media, game info, and Blizzard announcements</td>
-            <td><a href="https://diablo.blizzard.com/en-us/" target="_blank" rel="noopener" class="resource-link">diablo.blizzard.com →</a></td>
-          </tr>
-          <tr>
-            <td class="resource-name">Season 12 Hub — Icy Veins</td>
-            <td class="resource-desc">Season 12 guide covering mechanics, the season journey, the battle pass, and rewards</td>
-            <td><a href="https://www.icy-veins.com/d4/guides/diablo-4-latest-season/" target="_blank" rel="noopener" class="resource-link">icy-veins.com/d4/guides/latest-season →</a></td>
-          </tr>
-          <tr>
-            <td class="resource-name">Rob2628 Cheat Sheet S12</td>
-            <td class="resource-desc">Season 12 meta cheat sheet updated regularly by Rob2628</td>
-            <td><a href="https://d4builds.gg/cheat-sheet/" target="_blank" rel="noopener" class="resource-link">d4builds.gg/cheat-sheet →</a></td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </section>
-
-  <!-- ======= CONTENT CREATORS ======= -->
-  <section class="resource-category" id="creators">
-    <div class="container">
-      <div class="category-header">
-        <span class="category-icon">🎬</span>
-        <h2 class="category-title">Content Creators</h2>
-      </div>
-
-      <table class="resource-table">
-        <thead>
-          <tr>
-            <th>Preview</th>
-            <th>Creator</th>
-            <th>Platform</th>
-            <th>Focus</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>
-              <div class="creator-preview creator-preview-photo creator-preview-rob">
-                <img class="creator-preview-image" src="https://i.ytimg.com/vi/8tQdmMXAkco/hqdefault.jpg" alt="Rob2628 YouTube thumbnail: NEW Season 12 Tier List with the BEST Builds for Diablo 4" loading="lazy" decoding="async">
-                <span class="creator-preview-text">YouTube</span>
-              </div>
-            </td>
-            <td class="resource-name">Rob2628</td>
-            <td class="resource-desc">Twitch + YouTube</td>
-            <td class="resource-desc">Paladin and Spiritborn meta specialist; Rob2628 and D4Builds collaboration; season-launch meta authority</td>
-          </tr>
-          <tr>
-            <td>
-              <div class="creator-preview creator-preview-photo creator-preview-rhykker">
-                <img class="creator-preview-image" src="https://i.ytimg.com/vi/WsmK5nl0wdE/hqdefault.jpg" alt="Rhykker YouTube thumbnail: Top 10 Best Builds for Diablo 4 Season 12 (All Classes)" loading="lazy" decoding="async">
-                <span class="creator-preview-text">YouTube</span>
-              </div>
-            </td>
-            <td class="resource-name">Rhykker</td>
-            <td class="resource-desc">YouTube — 706K subscribers</td>
-            <td class="resource-desc">Full Diablo 4 coverage with builds, tier lists, news, and deep dives</td>
-          </tr>
-          <tr>
-            <td>
-              <div class="creator-preview creator-preview-photo creator-preview-macro">
-                <img class="creator-preview-image" src="https://i.ytimg.com/vi/w1Q4nT-sLHE/hqdefault.jpg" alt="MacroBioBoi YouTube thumbnail: How I Make Builds in Diablo 4" loading="lazy" decoding="async">
-                <span class="creator-preview-text">YouTube</span>
-              </div>
-            </td>
-            <td class="resource-name">MacroBioBoi</td>
-            <td class="resource-desc">YouTube</td>
-            <td class="resource-desc">Deep mechanics theorycrafting, D2 and D4 comparisons, itemization analysis, and long-form build breakdowns</td>
-          </tr>
-          <tr>
-            <td>
-              <div class="creator-preview creator-preview-photo creator-preview-sliver">
-                <img class="creator-preview-image" src="https://i.ytimg.com/vi/q7eaxqFMedQ/hqdefault.jpg" alt="Sliver of Time YouTube thumbnail: Crazy Infinite Mob Spawn &amp; Experience Bug" loading="lazy" decoding="async">
-                <span class="creator-preview-text">YouTube</span>
-              </div>
-            </td>
-            <td class="resource-name">Sliver of Time</td>
-            <td class="resource-desc">YouTube</td>
-            <td class="resource-desc">Underrated loophole hunter and practical tip creator; useful discoveries, quality-of-play tricks, and experimental D4 insights</td>
-          </tr>
-          <tr>
-            <td>
-              <div class="creator-preview creator-preview-photo creator-preview-patriarch">
-                <img class="creator-preview-image" src="https://i.ytimg.com/vi/eB2wKmhQx2o/hqdefault.jpg" alt="Patriarch YouTube thumbnail: Diablo 4 pure crit rogue, most fun build" loading="lazy" decoding="async">
-                <span class="creator-preview-text">YouTube</span>
-              </div>
-            </td>
-            <td class="resource-name">Patriarch</td>
-            <td class="resource-desc">YouTube</td>
-            <td class="resource-desc">Clear Diablo 4 build and tier-list content for quick overviews and meta updates</td>
-          </tr>
-          <tr>
-            <td>
-              <div class="creator-preview creator-preview-photo creator-preview-blizz">
-                <img class="creator-preview-image" src="https://i.ytimg.com/vi/KUEJSzp8-ng/maxresdefault.jpg" alt="Raxxanterax YouTube thumbnail: Diablo 4 Developer Interview With Colin &amp; Zaven" loading="lazy" decoding="async">
-                <span class="creator-preview-text">YouTube</span>
-              </div>
-            </td>
-            <td class="resource-name">Raxxanterax</td>
-            <td class="resource-desc">YouTube</td>
-            <td class="resource-desc">Seasonal meta coverage, patch reactions, and practical build advice</td>
-          </tr>
-          <tr>
-            <td>
-              <div class="creator-preview creator-preview-photo creator-preview-rhykker">
-                <img class="creator-preview-image" src="https://i.ytimg.com/vi/6R83AgeXyUE/maxresdefault.jpg" alt="wudijo YouTube thumbnail: Diablo 4 - The Strongest Build Just Got EVEN BETTER" loading="lazy" decoding="async">
-                <span class="creator-preview-text">YouTube</span>
-              </div>
-            </td>
-            <td class="resource-name">wudijo</td>
-            <td class="resource-desc">YouTube</td>
-            <td class="resource-desc">High-end builds, class optimization, and patch analysis</td>
-          </tr>
-          <tr>
-            <td>
-              <div class="creator-preview creator-preview-photo creator-preview-rhykker">
-                <img class="creator-preview-image" src="https://i.ytimg.com/vi/4-l91GoAjkM/maxresdefault.jpg" alt="Kripparrian YouTube thumbnail: HOW GOOD IS DIABLO 4? - KRIPP TALKS!" loading="lazy" decoding="async">
-                <span class="creator-preview-text">YouTube</span>
-              </div>
-            </td>
-            <td class="resource-name">Kripparrian</td>
-            <td class="resource-desc">YouTube</td>
-            <td class="resource-desc">Broad ARPG perspective, deep-dive reactions, and event coverage</td>
-          </tr>
-          <tr>
-            <td>
-              <div class="creator-preview creator-preview-photo creator-preview-blizz">
-                <img class="creator-preview-image" src="https://i.ytimg.com/vi/23f_nZWLPqc/maxresdefault.jpg" alt="DatModz YouTube thumbnail: Diablo 4 Season 1: EVERYTHING You Need to Know! | DatModz" loading="lazy" decoding="async">
-                <span class="creator-preview-text">YouTube</span>
-              </div>
-            </td>
-            <td class="resource-name">DatModz</td>
-            <td class="resource-desc">YouTube</td>
-            <td class="resource-desc">Season prep, patch breakdowns, and practical build planning</td>
-          </tr>
-          <tr>
-            <td>
-              <div class="creator-preview creator-preview-photo creator-preview-macro">
-                <img class="creator-preview-image" src="https://i.ytimg.com/vi/RXWU3KQVFgs/maxresdefault.jpg" alt="Moxsy YouTube thumbnail: WARLOCK Full Skill Tree Breakdown! // Diablo 4 Warlock First Impressions" loading="lazy" decoding="async">
-                <span class="creator-preview-text">YouTube</span>
-              </div>
-            </td>
-            <td class="resource-name">Moxsy</td>
-            <td class="resource-desc">YouTube</td>
-            <td class="resource-desc">Skill-tree breakdowns, build previews, and class theorycrafting</td>
-          </tr>
-          <tr>
-            <td>
-              <div class="creator-preview creator-preview-photo creator-preview-macro">
-                <img class="creator-preview-image" src="https://i.ytimg.com/vi/LJVwoiv50CE/maxresdefault.jpg" alt="Mekuna YouTube thumbnail: Best Paladin Auradin Build – In-Depth Guide | Diablo 4 S12" loading="lazy" decoding="async">
-                <span class="creator-preview-text">YouTube</span>
-              </div>
-            </td>
-            <td class="resource-name">Mekuna</td>
-            <td class="resource-desc">YouTube</td>
-            <td class="resource-desc">In-depth build guides and optimization for top-end play</td>
-          </tr>
-          <tr>
-            <td>
-              <div class="creator-preview creator-preview-photo creator-preview-patriarch">
-                <img class="creator-preview-image" src="https://i.ytimg.com/vi/PNcQAemLjXw/maxresdefault.jpg" alt="RageGamingVideos YouTube thumbnail: Diablo 4 - New Best OP 50 TRILLION DAMAGE Paladin Build" loading="lazy" decoding="async">
-                <span class="creator-preview-text">YouTube</span>
-              </div>
-            </td>
-            <td class="resource-name">RageGamingVideos</td>
-            <td class="resource-desc">YouTube</td>
-            <td class="resource-desc">High-energy build videos, patch meta, and seasonal updates</td>
-          </tr>
-          <tr>
-            <td>
-              <div class="creator-preview creator-preview-photo creator-preview-blizz">
-                <img class="creator-preview-image" src="https://i.ytimg.com/vi/SW2Ur3bDeKo/maxresdefault.jpg" alt="Dbrunski125 YouTube thumbnail: Blizzard gave me EARLY ACCESS to DIABLO IV... And I can TALK ABOUT EVERYTHING !!! Full Game Review" loading="lazy" decoding="async">
-                <span class="creator-preview-text">YouTube</span>
-              </div>
-            </td>
-            <td class="resource-name">Dbrunski125</td>
-            <td class="resource-desc">YouTube</td>
-            <td class="resource-desc">Diablo news, reviews, reactions, and broader community commentary</td>
-          </tr>
-          <tr>
-            <td>
-              <div class="creator-preview creator-preview-photo creator-preview-blizz">
-                <img class="creator-preview-image" src="https://i.ytimg.com/vi/BCM01VbLmwM/maxresdefault.jpg" alt="MrGM YouTube thumbnail: WoW x Diablo IV Crossover Event! Full Guide &amp; REWARDS" loading="lazy" decoding="async">
-                <span class="creator-preview-text">YouTube</span>
-              </div>
-            </td>
-            <td class="resource-name">MrGM</td>
-            <td class="resource-desc">YouTube</td>
-            <td class="resource-desc">Event coverage, reward breakdowns, and Blizzard crossover news</td>
-          </tr>
-          <tr>
-            <td>
-              <div class="creator-preview creator-preview-photo creator-preview-rhykker">
-                <img class="creator-preview-image" src="https://i.ytimg.com/vi/0JtnrRfwXI8/maxresdefault.jpg" alt="Zizaran YouTube thumbnail: Diablo IV Expansion: Worth $40?" loading="lazy" decoding="async">
-                <span class="creator-preview-text">YouTube</span>
-              </div>
-            </td>
-            <td class="resource-name">Zizaran</td>
-            <td class="resource-desc">YouTube</td>
-            <td class="resource-desc">ARPG theory, guide discussion, and expansion commentary</td>
-          </tr>
-          <tr>
-            <td>
-              <div class="creator-preview creator-preview-photo creator-preview-patriarch">
-                <img class="creator-preview-image" src="https://i.ytimg.com/vi/0XivEenha_o/maxresdefault.jpg" alt="P4wnyhof YouTube thumbnail: Diablo 4 Paladin Deep Dive - Season 11" loading="lazy" decoding="async">
-                <span class="creator-preview-text">YouTube</span>
-              </div>
-            </td>
-            <td class="resource-name">P4wnyhof</td>
-            <td class="resource-desc">YouTube</td>
-            <td class="resource-desc">Paladin-focused build deep dives and class-specific season guides</td>
-          </tr>
-          <tr>
-            <td>
-              <div class="creator-preview creator-preview-photo creator-preview-sliver">
-                <img class="creator-preview-image" src="https://i.ytimg.com/vi/S1n2Dai4yFY/maxresdefault.jpg" alt="Darth Microtransaction YouTube thumbnail: The &quot;best&quot; season of Diablo 4.." loading="lazy" decoding="async">
-                <span class="creator-preview-text">YouTube</span>
-              </div>
-            </td>
-            <td class="resource-name">Darth Microtransaction</td>
-            <td class="resource-desc">YouTube</td>
-            <td class="resource-desc">Entertainment-first Diablo commentary, reactions, and season takes</td>
-          </tr>
-          <tr>
-            <td>
-              <div class="creator-preview creator-preview-photo creator-preview-guide">
-                <img class="creator-preview-image" src="https://i.ytimg.com/vi/5GZLkOoIvDI/maxresdefault.jpg" alt="Fextralife YouTube thumbnail: Diablo 4 Ultimate Beginner Guide" loading="lazy" decoding="async">
-                <span class="creator-preview-text">YouTube</span>
-              </div>
-            </td>
-            <td class="resource-name">Fextralife</td>
-            <td class="resource-desc">YouTube</td>
-            <td class="resource-desc">Beginner-friendly guides, wiki style breakdowns, and ARPG coverage</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </section>
-
-  <!-- ======= COMMUNITIES ======= -->
-  <section class="resource-category" id="communities">
-    <div class="container">
-      <div class="category-header">
-        <span class="category-icon">👥</span>
-        <h2 class="category-title">Communities</h2>
-      </div>
-
-      <table class="resource-table">
-        <thead>
-          <tr>
-            <th>Community</th>
-            <th>Type</th>
-            <th>Link</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="resource-name">Official Diablo Discord</td>
-            <td class="resource-desc">Official Blizzard-run Discord for announcements, discussion, and community channels</td>
-            <td><a href="https://discord.gg/diablo" target="_blank" rel="noopener" class="resource-link">discord.gg/diablo →</a></td>
-          </tr>
-          <tr>
-            <td class="resource-name">D4Builds Discord</td>
-            <td class="resource-desc">D4Builds community Discord for build discussion, creator channels, and meta talk</td>
-            <td><a href="https://discord.gg/d4builds" target="_blank" rel="noopener" class="resource-link">discord.gg/d4builds →</a></td>
-          </tr>
-          <tr>
-            <td class="resource-name">r/diablo4 (Reddit)</td>
-            <td class="resource-desc">Main Diablo 4 Reddit community for news, clips, builds, and discussion</td>
-            <td><a href="https://www.reddit.com/r/diablo4/" target="_blank" rel="noopener" class="resource-link">reddit.com/r/diablo4 →</a></td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </section>
-
-  <!-- ======= GUIDES ======= -->
-  <section class="resource-category" id="guides">
-    <div class="container">
-      <div class="category-header">
-        <span class="category-icon">📖</span>
-        <h2 class="category-title">Essential Guides</h2>
-      </div>
-
-      <table class="resource-table">
-        <thead>
-          <tr>
-            <th>Guide</th>
-            <th>Description</th>
-            <th>Link</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="resource-name">Capstone Dungeons</td>
-            <td class="resource-desc">Guide for unlocking World Tiers 3 and 4 through capstone mechanics</td>
-            <td><a href="https://www.icy-veins.com/d4/guides/capstone-dungeons-guide/" target="_blank" rel="noopener" class="resource-link">icy-veins.com →</a></td>
-          </tr>
-          <tr>
-            <td class="resource-name">The Butcher's Lair</td>
-            <td class="resource-desc">Boss guide covering The Butcher's mechanics, strategy, phases, and rewards</td>
-            <td><a href="https://www.icy-veins.com/d4/guides/the-butchers-lair/" target="_blank" rel="noopener" class="resource-link">icy-veins.com →</a></td>
-          </tr>
-          <tr>
-            <td class="resource-name">Vessel of Hatred</td>
-            <td class="resource-desc">Vessel of Hatred overview covering story, new features, and content updates</td>
-            <td><a href="https://www.icy-veins.com/d4/guides/vessel-of-hatred-overview/" target="_blank" rel="noopener" class="resource-link">icy-veins.com →</a></td>
-          </tr>
-          <tr>
-            <td class="resource-name">Official Patch Notes</td>
-            <td class="resource-desc">Patch notes covering balance changes, bug fixes, new content, and seasonal updates</td>
-            <td><a href="https://news.blizzard.com/en-us/article/24140808/diablo-iv-patch-notes" target="_blank" rel="noopener" class="resource-link">news.blizzard.com →</a></td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </section>
-
-  <!-- ======= EXPANSION: LORD OF HATRED ======= -->
-  <section class="resource-category" id="expansion">
-    <div class="container">
-      <div class="category-header">
-        <span class="category-icon">🔥</span>
-        <h2 class="category-title">Lord of Hatred — April 28, 2026</h2>
-      </div>
-
-      <table class="resource-table">
-        <thead>
-          <tr>
-            <th>Topic</th>
-            <th>Details</th>
-            <th>Link</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="resource-name">🌑 Warlock Class</td>
-            <td class="resource-desc">New dark magic class coming in Lord of Hatred; full reveal TBA</td>
-            <td><span class="text-muted">TBA</span></td>
-          </tr>
-          <tr>
-            <td class="resource-name">⚔️ Second New Class</td>
-            <td class="resource-desc">Second new class coming in Lord of Hatred; identity not yet revealed</td>
-            <td><span class="text-muted">TBA</span></td>
-          </tr>
-          <tr>
-            <td class="resource-name">🏝️ Skovos Region</td>
-            <td class="resource-desc">Ancient island region with new dungeons, events, and story content</td>
-            <td><span class="text-muted">TBA</span></td>
-          </tr>
-          <tr>
-            <td class="resource-name">💀 Confront Mephisto</td>
-            <td class="resource-desc">Fight Mephisto, one of the three Prime Evils</td>
-            <td><span class="text-muted">TBA</span></td>
-          </tr>
-          <tr>
-            <td class="resource-name">🧪 Horadric Cube</td>
-            <td class="resource-desc">New endgame crafting system built around the Horadric Cube</td>
-            <td><span class="text-muted">TBA</span></td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </section>
-
-  <!-- ======= FOOTER ======= -->
-    <footer class="footer">
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-logo">
-          <span class="footer-logo-icon">🔥</span>
-          Diablo 4 Resource Hub
+    <section class="resource-category" id="build-sites">
+      <div class="container">
+        <div class="category-header">
+          <span class="category-icon">🛠️</span>
+          <h2 class="category-title">Build Guide Sites</h2>
         </div>
 
-        <div class="footer-links">
-          <a href="index.html">Home</a>
-          <a href="resources.html">Resources</a>
-          <a href="crafting.html">Crafting &amp; Gear Guide</a>
-          <a href="https://maxroll.gg/d4" target="_blank" rel="noopener">Maxroll</a>
-          <a href="https://www.icy-veins.com/d4/" target="_blank" rel="noopener">Icy Veins</a>
-          <a href="https://d4builds.gg/" target="_blank" rel="noopener">D4Builds</a>
-          <a href="https://mobalytics.gg/diablo-4/builds" target="_blank" rel="noopener">Mobalytics</a>
+        <div class="featured-source-grid">
+          <a
+            class="featured-source-card"
+            href="https://maxroll.gg/d4"
+            target="_blank"
+            rel="noopener"
+          >
+            <span class="featured-source-logo">MR</span>
+            <div class="featured-source-copy">
+              <h3>Maxroll</h3>
+              <p>Best all-round hub for builds, tier lists, tools, and news.</p>
+            </div>
+            <div class="featured-source-tags">
+              <span class="featured-source-tag">Tier Lists</span>
+              <span class="featured-source-tag">Guides</span>
+              <span class="featured-source-tag">Tools</span>
+            </div>
+          </a>
+          <a
+            class="featured-source-card"
+            href="https://www.icy-veins.com/d4/"
+            target="_blank"
+            rel="noopener"
+          >
+            <span class="featured-source-logo">IV</span>
+            <div class="featured-source-copy">
+              <h3>Icy Veins</h3>
+              <p>
+                Best for written guides, readable explanations, and class pages.
+              </p>
+            </div>
+            <div class="featured-source-tags">
+              <span class="featured-source-tag">Written Guides</span>
+              <span class="featured-source-tag">Class Pages</span>
+            </div>
+          </a>
+          <a
+            class="featured-source-card"
+            href="https://d4builds.gg/"
+            target="_blank"
+            rel="noopener"
+          >
+            <span class="featured-source-logo">D4</span>
+            <div class="featured-source-copy">
+              <h3>D4Builds</h3>
+              <p>
+                Best for planners, meta snapshots, and creator-linked builds.
+              </p>
+            </div>
+            <div class="featured-source-tags">
+              <span class="featured-source-tag">Planner</span>
+              <span class="featured-source-tag">Meta</span>
+              <span class="featured-source-tag">Maps</span>
+            </div>
+          </a>
+          <a
+            class="featured-source-card"
+            href="https://mobalytics.gg/diablo-4/builds"
+            target="_blank"
+            rel="noopener"
+          >
+            <span class="featured-source-logo">MO</span>
+            <div class="featured-source-copy">
+              <h3>Mobalytics</h3>
+              <p>
+                Best for creator builds, scoring, and fast visual comparisons.
+              </p>
+            </div>
+            <div class="featured-source-tags">
+              <span class="featured-source-tag">Creator Builds</span>
+              <span class="featured-source-tag">Scores</span>
+            </div>
+          </a>
         </div>
 
-        <p class="footer-disclaimer">
-          Not affiliated with Blizzard Entertainment. Diablo 4 and all related content are trademarks of Blizzard Entertainment, Inc. This site is a fan-made resource hub for educational purposes.
+        <div class="resource-table-shell">
+          <table class="resource-table">
+            <thead>
+              <tr>
+                <th>Site</th>
+                <th>Best For</th>
+                <th>Link</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="resource-name">Maxroll</td>
+                <td class="resource-desc">
+                  All-in-one Diablo 4 coverage: builds, tier lists, news, tools,
+                  and guides
+                </td>
+                <td>
+                  <a
+                    href="https://maxroll.gg/d4"
+                    target="_blank"
+                    rel="noopener"
+                    class="resource-link"
+                    >maxroll.gg/d4 →</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="resource-name">Icy Veins</td>
+                <td class="resource-desc">
+                  Written Diablo 4 guides: class breakdowns, mechanics analysis,
+                  and news
+                </td>
+                <td>
+                  <a
+                    href="https://www.icy-veins.com/d4/"
+                    target="_blank"
+                    rel="noopener"
+                    class="resource-link"
+                    >icy-veins.com/d4 →</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="resource-name">D4Builds</td>
+                <td class="resource-desc">
+                  Meta builds, planners, maps, and loot tables with Rob2628
+                  coverage
+                </td>
+                <td>
+                  <a
+                    href="https://d4builds.gg/"
+                    target="_blank"
+                    rel="noopener"
+                    class="resource-link"
+                    >d4builds.gg →</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="resource-name">Mobalytics</td>
+                <td class="resource-desc">
+                  Creator builds with performance scores, ratings, and class
+                  tier lists
+                </td>
+                <td>
+                  <a
+                    href="https://mobalytics.gg/diablo-4/builds"
+                    target="_blank"
+                    rel="noopener"
+                    class="resource-link"
+                    >mobalytics.gg/diablo-4/builds →</a
+                  >
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="category-header category-header-spaced">
+          <span class="category-icon">💜</span>
+          <h2 class="category-title">Twitch Streamers</h2>
+        </div>
+        <p class="section-desc section-desc-tight">
+          A smaller live-stream shortlist for players who want real-time
+          discussion, build talk, and season launch coverage.
         </p>
 
-        <p class="footer-updated">Last updated: March 20, 2026</p>
+        <div class="resource-table-shell">
+          <table class="resource-table">
+            <thead>
+              <tr>
+                <th>Preview</th>
+                <th>Streamer</th>
+                <th>Platform</th>
+                <th>Focus</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <div
+                    class="creator-preview creator-preview-photo creator-preview-rob"
+                  >
+                    <img
+                      class="creator-preview-image"
+                      src="https://static-cdn.jtvnw.net/jtv_user_pictures/d5f96899-40fe-4ec1-b566-e7cefea872c1-profile_image-300x300.png"
+                      alt="Rob2628 Twitch profile image"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <span class="creator-preview-text">Twitch</span>
+                  </div>
+                </td>
+                <td class="resource-name">
+                  <a
+                    href="https://www.twitch.tv/rob2628"
+                    target="_blank"
+                    rel="noopener"
+                    class="resource-link"
+                    >Rob2628 →</a
+                  >
+                </td>
+                <td class="resource-desc">Twitch — D4 Partner</td>
+                <td class="resource-desc">
+                  Season meta, push gameplay, drops-enabled grinding, and build
+                  demos
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div
+                    class="creator-preview creator-preview-photo creator-preview-snuggie"
+                  >
+                    <img
+                      class="creator-preview-image"
+                      src="https://static-cdn.jtvnw.net/jtv_user_pictures/1749d085-d992-4a3d-b43a-3cc46a3ed15c-profile_image-300x300.png"
+                      alt="Snuggie Twitch profile image"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <span class="creator-preview-text">Twitch</span>
+                  </div>
+                </td>
+                <td class="resource-name">
+                  <a
+                    href="https://www.twitch.tv/snuggie"
+                    target="_blank"
+                    rel="noopener"
+                    class="resource-link"
+                    >Snuggie →</a
+                  >
+                </td>
+                <td class="resource-desc">Twitch — D4 Partner</td>
+                <td class="resource-desc">
+                  Chat carry runs, live build advice, and community-driven grind
+                  sessions
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div
+                    class="creator-preview creator-preview-photo creator-preview-macro"
+                  >
+                    <img
+                      class="creator-preview-image"
+                      src="https://static-cdn.jtvnw.net/jtv_user_pictures/0296df4a-5a8c-406e-bafe-b8f81efe1205-profile_image-300x300.png"
+                      alt="MacroBioBoi Twitch profile image"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <span class="creator-preview-text">Twitch</span>
+                  </div>
+                </td>
+                <td class="resource-name">
+                  <a
+                    href="https://www.twitch.tv/macrobioboi"
+                    target="_blank"
+                    rel="noopener"
+                    class="resource-link"
+                    >MacroBioBoi →</a
+                  >
+                </td>
+                <td class="resource-desc">Twitch</td>
+                <td class="resource-desc">
+                  Mechanical testing, build theory, and deep D4/D2R discussion
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div
+                    class="creator-preview creator-preview-photo creator-preview-blizz"
+                  >
+                    <img
+                      class="creator-preview-image"
+                      src="https://static-cdn.jtvnw.net/jtv_user_pictures/4e2e8391-8ba0-48cf-b1a8-310425507d55-profile_image-300x300.png"
+                      alt="Raxxanterax Twitch profile image"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <span class="creator-preview-text">Twitch</span>
+                  </div>
+                </td>
+                <td class="resource-name">
+                  <a
+                    href="https://www.twitch.tv/raxxanterax"
+                    target="_blank"
+                    rel="noopener"
+                    class="resource-link"
+                    >Raxxanterax →</a
+                  >
+                </td>
+                <td class="resource-desc">Twitch</td>
+                <td class="resource-desc">
+                  Season prep, patch reactions, and practical build planning
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div
+                    class="creator-preview creator-preview-photo creator-preview-rhykker"
+                  >
+                    <img
+                      class="creator-preview-image"
+                      src="https://static-cdn.jtvnw.net/jtv_user_pictures/12dff549-033e-4571-92c3-043af0ccf4c3-profile_image-300x300.png"
+                      alt="wudijo Twitch profile image"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <span class="creator-preview-text">Twitch</span>
+                  </div>
+                </td>
+                <td class="resource-name">
+                  <a
+                    href="https://www.twitch.tv/wudijo"
+                    target="_blank"
+                    rel="noopener"
+                    class="resource-link"
+                    >wudijo →</a
+                  >
+                </td>
+                <td class="resource-desc">Twitch</td>
+                <td class="resource-desc">
+                  High-end Hardcore gameplay, optimization, and endgame testing
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div
+                    class="creator-preview creator-preview-photo creator-preview-blizz"
+                  >
+                    <img
+                      class="creator-preview-image"
+                      src="https://static-cdn.jtvnw.net/jtv_user_pictures/4eba575d-40ce-44bb-aaad-a7706d2cba78-profile_image-300x300.png"
+                      alt="DatModz Twitch profile image"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <span class="creator-preview-text">Twitch</span>
+                  </div>
+                </td>
+                <td class="resource-name">
+                  <a
+                    href="https://www.twitch.tv/datmodz"
+                    target="_blank"
+                    rel="noopener"
+                    class="resource-link"
+                    >DatModz →</a
+                  >
+                </td>
+                <td class="resource-desc">Twitch</td>
+                <td class="resource-desc">
+                  Patch breakdowns, launch planning, and community Q&amp;A
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
-    </div>
-  </footer>
+    </section>
 
-  <script src="nav.js"></script>
-  <script src="resources.js"></script>
-  <script src="site-tools.js"></script>
-</body>
+    <!-- ======= TIER LISTS ======= -->
+    <section class="resource-category" id="tier-lists">
+      <div class="container">
+        <div class="category-header">
+          <span class="category-icon">📊</span>
+          <h2 class="category-title">Tier Lists</h2>
+        </div>
+
+        <div class="featured-source-grid compact">
+          <a
+            class="featured-source-card"
+            href="https://maxroll.gg/d4/tierlists/"
+            target="_blank"
+            rel="noopener"
+          >
+            <span class="featured-source-logo">MR</span>
+            <div class="featured-source-copy">
+              <h3>Maxroll Tier Lists</h3>
+              <p>
+                Strong all-around ranking coverage with clear seasonal context.
+              </p>
+            </div>
+            <div class="featured-source-tags">
+              <span class="featured-source-tag">Leveling</span>
+              <span class="featured-source-tag">Endgame</span>
+              <span class="featured-source-tag">Bossing</span>
+            </div>
+          </a>
+          <a
+            class="featured-source-card"
+            href="https://www.icy-veins.com/d4/guides/tier-lists/"
+            target="_blank"
+            rel="noopener"
+          >
+            <span class="featured-source-logo">IV</span>
+            <div class="featured-source-copy">
+              <h3>Icy Veins Tier Lists</h3>
+              <p>
+                Best when you want written explanation alongside each ranking.
+              </p>
+            </div>
+            <div class="featured-source-tags">
+              <span class="featured-source-tag">Written</span>
+              <span class="featured-source-tag">Class Notes</span>
+            </div>
+          </a>
+          <a
+            class="featured-source-card"
+            href="https://d4builds.gg/tierlist/"
+            target="_blank"
+            rel="noopener"
+          >
+            <span class="featured-source-logo">D4</span>
+            <div class="featured-source-copy">
+              <h3>D4Builds Tier List</h3>
+              <p>
+                Useful when you want a quick meta read tied closely to planners.
+              </p>
+            </div>
+            <div class="featured-source-tags">
+              <span class="featured-source-tag">Meta Snapshot</span>
+              <span class="featured-source-tag">Fast Lookup</span>
+            </div>
+          </a>
+          <a
+            class="featured-source-card"
+            href="https://mobalytics.gg/diablo-4/tier-list"
+            target="_blank"
+            rel="noopener"
+          >
+            <span class="featured-source-logo">MO</span>
+            <div class="featured-source-copy">
+              <h3>Mobalytics Tier List</h3>
+              <p>
+                Great for visual scoring and creator-backed ranking context.
+              </p>
+            </div>
+            <div class="featured-source-tags">
+              <span class="featured-source-tag">Scores</span>
+              <span class="featured-source-tag">Creator Meta</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="resource-table-shell">
+          <table class="resource-table">
+            <thead>
+              <tr>
+                <th>Source</th>
+                <th>Categories Covered</th>
+                <th>Link</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="resource-name">Maxroll Tier Lists</td>
+                <td class="resource-desc">
+                  Covers endgame, speed farming, boss killing, and leveling with
+                  build recommendations
+                </td>
+                <td>
+                  <a
+                    href="https://maxroll.gg/d4/tierlists/"
+                    target="_blank"
+                    rel="noopener"
+                    class="resource-link"
+                    >maxroll.gg/d4/tierlists →</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="resource-name">Icy Veins Tier Lists</td>
+                <td class="resource-desc">
+                  Covers endgame, speed farming, boss killing, and leveling with
+                  per-class breakdowns
+                </td>
+                <td>
+                  <a
+                    href="https://www.icy-veins.com/d4/guides/tier-lists/"
+                    target="_blank"
+                    rel="noopener"
+                    class="resource-link"
+                    >icy-veins.com/d4/guides/tier-lists →</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="resource-name">D4Builds Tier List</td>
+                <td class="resource-desc">
+                  Ranks meta builds for endgame, speed farming, and boss killing
+                </td>
+                <td>
+                  <a
+                    href="https://d4builds.gg/tierlist/"
+                    target="_blank"
+                    rel="noopener"
+                    class="resource-link"
+                    >d4builds.gg/tierlist →</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="resource-name">Mobalytics Tier List</td>
+                <td class="resource-desc">
+                  Data-backed tier list with build scores for endgame, speed
+                  farming, and leveling
+                </td>
+                <td>
+                  <a
+                    href="https://mobalytics.gg/diablo-4/tier-list"
+                    target="_blank"
+                    rel="noopener"
+                    class="resource-link"
+                    >mobalytics.gg/diablo-4/tier-list →</a
+                  >
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= CLASS BUILDS ======= -->
+    <section class="resource-category" id="class-builds">
+      <div class="container">
+        <div class="category-header">
+          <span class="category-icon">⚔️</span>
+          <h2 class="category-title">Class Builds</h2>
+        </div>
+
+        <div class="source-matrix-note">
+          <div class="source-matrix-copy">
+            <span class="signal-kicker">Use This Matrix</span>
+            <h3>Compare the source style before you compare the class</h3>
+            <p>
+              Maxroll is the best starting point, Icy Veins is easiest to read,
+              D4Builds is strongest for planners, and Mobalytics is best for
+              creator-focused setups.
+            </p>
+          </div>
+          <div class="source-matrix-tags">
+            <span class="featured-source-tag">Best Overall: Maxroll</span>
+            <span class="featured-source-tag">Most Readable: Icy Veins</span>
+            <span class="featured-source-tag">Best Planner: D4Builds</span>
+            <span class="featured-source-tag"
+              >Best Creator Lens: Mobalytics</span
+            >
+          </div>
+        </div>
+
+        <div class="resource-table-shell">
+          <table class="resource-table">
+            <thead>
+              <tr>
+                <th>Class</th>
+                <th>Maxroll</th>
+                <th>Icy Veins</th>
+                <th>D4Builds</th>
+                <th>Mobalytics</th>
+                <th>Featured Build</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="resource-name">🏋️ Barbarian</td>
+                <td>
+                  <a
+                    href="https://maxroll.gg/d4"
+                    target="_blank"
+                    rel="noopener"
+                    class="resource-link"
+                    >Guide →</a
+                  >
+                </td>
+                <td>
+                  <a
+                    href="https://www.icy-veins.com/d4/barbarian-builds/"
+                    target="_blank"
+                    rel="noopener"
+                    class="resource-link"
+                    >Guide →</a
+                  >
+                </td>
+                <td>
+                  <a
+                    href="https://d4builds.gg/barbarian/builds/"
+                    target="_blank"
+                    rel="noopener"
+                    class="resource-link"
+                    >Builds →</a
+                  >
+                </td>
+                <td>
+                  <a
+                    href="https://mobalytics.gg/diablo-4/builds/barbarian"
+                    target="_blank"
+                    rel="noopener"
+                    class="resource-link"
+                    >Builds →</a
+                  >
+                </td>
+                <td class="resource-desc">
+                  Featured builds: HotA Barbarian from D4Builds and Upheaval
+                  from Mobalytics
+                </td>
+              </tr>
+              <tr>
+                <td class="resource-name">🐺 Druid</td>
+                <td>
+                  <a
+                    href="https://maxroll.gg/d4"
+                    target="_blank"
+                    rel="noopener"
+                    class="resource-link"
+                    >Guide →</a
+                  >
+                </td>
+                <td>
+                  <a
+                    href="https://www.icy-veins.com/d4/druid-builds/"
+                    target="_blank"
+                    rel="noopener"
+                    class="resource-link"
+                    >Guide →</a
+                  >
+                </td>
+                <td>
+                  <a
+                    href="https://d4builds.gg/druid/builds/"
+                    target="_blank"
+                    rel="noopener"
+                    class="resource-link"
+                    >Builds →</a
+                  >
+                </td>
+                <td>
+                  <a
+                    href="https://mobalytics.gg/diablo-4/builds/druid"
+                    target="_blank"
+                    rel="noopener"
+                    class="resource-link"
+                    >Builds →</a
+                  >
+                </td>
+                <td class="resource-desc">
+                  Featured build: Pulverize Druid from D4Builds
+                </td>
+              </tr>
+              <tr>
+                <td class="resource-name">💀 Necromancer</td>
+                <td>
+                  <a
+                    href="https://maxroll.gg/d4"
+                    target="_blank"
+                    rel="noopener"
+                    class="resource-link"
+                    >Guide →</a
+                  >
+                </td>
+                <td>
+                  <a
+                    href="https://www.icy-veins.com/d4/necromancer-builds/"
+                    target="_blank"
+                    rel="noopener"
+                    class="resource-link"
+                    >Guide →</a
+                  >
+                </td>
+                <td>
+                  <a
+                    href="https://d4builds.gg/necromancer/builds/"
+                    target="_blank"
+                    rel="noopener"
+                    class="resource-link"
+                    >Builds →</a
+                  >
+                </td>
+                <td>
+                  <a
+                    href="https://mobalytics.gg/diablo-4/builds/necromancer"
+                    target="_blank"
+                    rel="noopener"
+                    class="resource-link"
+                    >Builds →</a
+                  >
+                </td>
+                <td class="resource-desc">
+                  Featured build: Speed Farm Bone Spirit from Mobalytics (Kay)
+                </td>
+              </tr>
+              <tr>
+                <td class="resource-name">⚔️ Paladin</td>
+                <td>
+                  <a
+                    href="https://maxroll.gg/d4"
+                    target="_blank"
+                    rel="noopener"
+                    class="resource-link"
+                    >Guide →</a
+                  >
+                </td>
+                <td>
+                  <a
+                    href="https://www.icy-veins.com/d4/paladin-builds/"
+                    target="_blank"
+                    rel="noopener"
+                    class="resource-link"
+                    >Guide →</a
+                  >
+                </td>
+                <td>
+                  <a
+                    href="https://d4builds.gg/paladin/builds/"
+                    target="_blank"
+                    rel="noopener"
+                    class="resource-link"
+                    >Builds →</a
+                  >
+                </td>
+                <td>
+                  <a
+                    href="https://mobalytics.gg/diablo-4/builds/paladin"
+                    target="_blank"
+                    rel="noopener"
+                    class="resource-link"
+                    >Builds →</a
+                  >
+                </td>
+                <td class="resource-desc">
+                  Featured builds: Cpt. America from D4Builds and Zealspin from
+                  Mobalytics
+                </td>
+              </tr>
+              <tr>
+                <td class="resource-name">🗡️ Rogue</td>
+                <td>
+                  <a
+                    href="https://maxroll.gg/d4"
+                    target="_blank"
+                    rel="noopener"
+                    class="resource-link"
+                    >Guide →</a
+                  >
+                </td>
+                <td>
+                  <a
+                    href="https://www.icy-veins.com/d4/rogue-builds/"
+                    target="_blank"
+                    rel="noopener"
+                    class="resource-link"
+                    >Guide →</a
+                  >
+                </td>
+                <td>
+                  <a
+                    href="https://d4builds.gg/rogue/builds/"
+                    target="_blank"
+                    rel="noopener"
+                    class="resource-link"
+                    >Builds →</a
+                  >
+                </td>
+                <td>
+                  <a
+                    href="https://mobalytics.gg/diablo-4/builds/rogue"
+                    target="_blank"
+                    rel="noopener"
+                    class="resource-link"
+                    >Builds →</a
+                  >
+                </td>
+                <td class="resource-desc">
+                  Featured build: Dance of Knives Leveling from Mobalytics
+                  (M1PY)
+                </td>
+              </tr>
+              <tr>
+                <td class="resource-name">🔥 Sorcerer</td>
+                <td>
+                  <a
+                    href="https://maxroll.gg/d4"
+                    target="_blank"
+                    rel="noopener"
+                    class="resource-link"
+                    >Guide →</a
+                  >
+                </td>
+                <td>
+                  <a
+                    href="https://www.icy-veins.com/d4/sorcerer-builds/"
+                    target="_blank"
+                    rel="noopener"
+                    class="resource-link"
+                    >Guide →</a
+                  >
+                </td>
+                <td>
+                  <a
+                    href="https://d4builds.gg/sorcerer/builds/"
+                    target="_blank"
+                    rel="noopener"
+                    class="resource-link"
+                    >Builds →</a
+                  >
+                </td>
+                <td>
+                  <a
+                    href="https://mobalytics.gg/diablo-4/builds/sorcerer"
+                    target="_blank"
+                    rel="noopener"
+                    class="resource-link"
+                    >Builds →</a
+                  >
+                </td>
+                <td class="resource-desc">
+                  Featured builds: Fireball and Chain Lightning from Icy Veins
+                </td>
+              </tr>
+              <tr>
+                <td class="resource-name">🦅 Spiritborn</td>
+                <td>
+                  <a
+                    href="https://maxroll.gg/d4"
+                    target="_blank"
+                    rel="noopener"
+                    class="resource-link"
+                    >Guide →</a
+                  >
+                </td>
+                <td>
+                  <a
+                    href="https://www.icy-veins.com/d4/spiritborn-builds/"
+                    target="_blank"
+                    rel="noopener"
+                    class="resource-link"
+                    >Guide →</a
+                  >
+                </td>
+                <td>
+                  <a
+                    href="https://d4builds.gg/spiritborn/builds/"
+                    target="_blank"
+                    rel="noopener"
+                    class="resource-link"
+                    >Builds →</a
+                  >
+                </td>
+                <td>
+                  <a
+                    href="https://mobalytics.gg/diablo-4/builds/spiritborn"
+                    target="_blank"
+                    rel="noopener"
+                    class="resource-link"
+                    >Builds →</a
+                  >
+                </td>
+                <td class="resource-desc">
+                  Featured build: Evade Storm from Mobalytics (MrRonit)
+                </td>
+              </tr>
+              <tr>
+                <td class="resource-name">🌑 Warlock</td>
+                <td><span class="text-muted">April 28, 2026</span></td>
+                <td><span class="text-muted">—</span></td>
+                <td><span class="text-muted">—</span></td>
+                <td><span class="text-muted">—</span></td>
+                <td class="resource-desc">
+                  Dark magic class — one of two new classes in Lord of Hatred
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= TOOLS ======= -->
+    <section class="resource-category" id="tools">
+      <div class="container">
+        <div class="category-header">
+          <span class="category-icon">🔧</span>
+          <h2 class="category-title">Tools &amp; Utilities</h2>
+        </div>
+
+        <div class="resource-table-shell">
+          <table class="resource-table">
+            <thead>
+              <tr>
+                <th>Tool</th>
+                <th>Description</th>
+                <th>Link</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="resource-name">D4Builds Build Planner</td>
+                <td class="resource-desc">
+                  Interactive build planner for skill trees, paragon boards, and
+                  build sharing
+                </td>
+                <td>
+                  <a
+                    href="https://d4builds.gg/build-planner/"
+                    target="_blank"
+                    rel="noopener"
+                    class="resource-link"
+                    >d4builds.gg/build-planner →</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="resource-name">D4Builds Desktop App</td>
+                <td class="resource-desc">
+                  Desktop companion app with an in-game overlay for live build
+                  reference
+                </td>
+                <td>
+                  <a
+                    href="https://d4builds.gg/desktop-app/"
+                    target="_blank"
+                    rel="noopener"
+                    class="resource-link"
+                    >d4builds.gg/desktop-app →</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="resource-name">D4Builds Interactive Map</td>
+                <td class="resource-desc">
+                  Interactive map of Sanctuary with events, resources,
+                  waypoints, and secrets
+                </td>
+                <td>
+                  <a
+                    href="https://d4builds.gg/map/"
+                    target="_blank"
+                    rel="noopener"
+                    class="resource-link"
+                    >d4builds.gg/map →</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="resource-name">D4Builds Loot Tables</td>
+                <td class="resource-desc">
+                  Unique item database with drop locations and loot table
+                  breakdowns
+                </td>
+                <td>
+                  <a
+                    href="https://d4builds.gg/database/unique-loot-tables/"
+                    target="_blank"
+                    rel="noopener"
+                    class="resource-link"
+                    >d4builds.gg/database →</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="resource-name">Icy Veins Gem Calculator</td>
+                <td class="resource-desc">
+                  Gem calculator for upgrade costs, socket values, and resource
+                  requirements
+                </td>
+                <td>
+                  <a
+                    href="https://www.icy-veins.com/d4"
+                    target="_blank"
+                    rel="noopener"
+                    class="resource-link"
+                    >icy-veins.com/d4 →</a
+                  >
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= NEWS ======= -->
+    <section class="resource-category" id="news">
+      <div class="container">
+        <div class="category-header">
+          <span class="category-icon">📰</span>
+          <h2 class="category-title">News &amp; Season Info</h2>
+        </div>
+
+        <div class="resource-table-shell">
+          <table class="resource-table">
+            <thead>
+              <tr>
+                <th>Source</th>
+                <th>Description</th>
+                <th>Link</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="resource-name">Icy Veins D4 News</td>
+                <td class="resource-desc">
+                  Latest Diablo 4 news, patch summaries, season announcements,
+                  and community updates
+                </td>
+                <td>
+                  <a
+                    href="https://www.icy-veins.com/d4/news/"
+                    target="_blank"
+                    rel="noopener"
+                    class="resource-link"
+                    >icy-veins.com/d4/news →</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="resource-name">Official Blizzard</td>
+                <td class="resource-desc">
+                  Official Diablo 4 home for news, media, game info, and
+                  Blizzard announcements
+                </td>
+                <td>
+                  <a
+                    href="https://diablo.blizzard.com/en-us/"
+                    target="_blank"
+                    rel="noopener"
+                    class="resource-link"
+                    >diablo.blizzard.com →</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="resource-name">Season 12 Hub — Icy Veins</td>
+                <td class="resource-desc">
+                  Season 12 guide covering mechanics, the season journey, the
+                  battle pass, and rewards
+                </td>
+                <td>
+                  <a
+                    href="https://www.icy-veins.com/d4/guides/diablo-4-latest-season/"
+                    target="_blank"
+                    rel="noopener"
+                    class="resource-link"
+                    >icy-veins.com/d4/guides/latest-season →</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="resource-name">Rob2628 Cheat Sheet S12</td>
+                <td class="resource-desc">
+                  Season 12 meta cheat sheet updated regularly by Rob2628
+                </td>
+                <td>
+                  <a
+                    href="https://d4builds.gg/cheat-sheet/"
+                    target="_blank"
+                    rel="noopener"
+                    class="resource-link"
+                    >d4builds.gg/cheat-sheet →</a
+                  >
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= CONTENT CREATORS ======= -->
+    <section class="resource-category" id="creators">
+      <div class="container">
+        <div class="category-header">
+          <span class="category-icon">🎬</span>
+          <h2 class="category-title">Content Creators</h2>
+        </div>
+
+        <div class="resource-table-shell">
+          <table class="resource-table">
+            <thead>
+              <tr>
+                <th>Preview</th>
+                <th>Creator</th>
+                <th>Platform</th>
+                <th>Focus</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <div
+                    class="creator-preview creator-preview-photo creator-preview-rob"
+                  >
+                    <img
+                      class="creator-preview-image"
+                      src="https://i.ytimg.com/vi/8tQdmMXAkco/hqdefault.jpg"
+                      alt="Rob2628 YouTube thumbnail: NEW Season 12 Tier List with the BEST Builds for Diablo 4"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <span class="creator-preview-text">YouTube</span>
+                  </div>
+                </td>
+                <td class="resource-name">Rob2628</td>
+                <td class="resource-desc">Twitch + YouTube</td>
+                <td class="resource-desc">
+                  Paladin and Spiritborn meta specialist; Rob2628 and D4Builds
+                  collaboration; season-launch meta authority
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div
+                    class="creator-preview creator-preview-photo creator-preview-rhykker"
+                  >
+                    <img
+                      class="creator-preview-image"
+                      src="https://i.ytimg.com/vi/WsmK5nl0wdE/hqdefault.jpg"
+                      alt="Rhykker YouTube thumbnail: Top 10 Best Builds for Diablo 4 Season 12 (All Classes)"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <span class="creator-preview-text">YouTube</span>
+                  </div>
+                </td>
+                <td class="resource-name">Rhykker</td>
+                <td class="resource-desc">YouTube — 706K subscribers</td>
+                <td class="resource-desc">
+                  Full Diablo 4 coverage with builds, tier lists, news, and deep
+                  dives
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div
+                    class="creator-preview creator-preview-photo creator-preview-macro"
+                  >
+                    <img
+                      class="creator-preview-image"
+                      src="https://i.ytimg.com/vi/w1Q4nT-sLHE/hqdefault.jpg"
+                      alt="MacroBioBoi YouTube thumbnail: How I Make Builds in Diablo 4"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <span class="creator-preview-text">YouTube</span>
+                  </div>
+                </td>
+                <td class="resource-name">MacroBioBoi</td>
+                <td class="resource-desc">YouTube</td>
+                <td class="resource-desc">
+                  Deep mechanics theorycrafting, D2 and D4 comparisons,
+                  itemization analysis, and long-form build breakdowns
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div
+                    class="creator-preview creator-preview-photo creator-preview-sliver"
+                  >
+                    <img
+                      class="creator-preview-image"
+                      src="https://i.ytimg.com/vi/q7eaxqFMedQ/hqdefault.jpg"
+                      alt="Sliver of Time YouTube thumbnail: Crazy Infinite Mob Spawn &amp; Experience Bug"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <span class="creator-preview-text">YouTube</span>
+                  </div>
+                </td>
+                <td class="resource-name">Sliver of Time</td>
+                <td class="resource-desc">YouTube</td>
+                <td class="resource-desc">
+                  Underrated loophole hunter and practical tip creator; useful
+                  discoveries, quality-of-play tricks, and experimental D4
+                  insights
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div
+                    class="creator-preview creator-preview-photo creator-preview-patriarch"
+                  >
+                    <img
+                      class="creator-preview-image"
+                      src="https://i.ytimg.com/vi/eB2wKmhQx2o/hqdefault.jpg"
+                      alt="Patriarch YouTube thumbnail: Diablo 4 pure crit rogue, most fun build"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <span class="creator-preview-text">YouTube</span>
+                  </div>
+                </td>
+                <td class="resource-name">Patriarch</td>
+                <td class="resource-desc">YouTube</td>
+                <td class="resource-desc">
+                  Clear Diablo 4 build and tier-list content for quick overviews
+                  and meta updates
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div
+                    class="creator-preview creator-preview-photo creator-preview-blizz"
+                  >
+                    <img
+                      class="creator-preview-image"
+                      src="https://i.ytimg.com/vi/KUEJSzp8-ng/maxresdefault.jpg"
+                      alt="Raxxanterax YouTube thumbnail: Diablo 4 Developer Interview With Colin &amp; Zaven"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <span class="creator-preview-text">YouTube</span>
+                  </div>
+                </td>
+                <td class="resource-name">Raxxanterax</td>
+                <td class="resource-desc">YouTube</td>
+                <td class="resource-desc">
+                  Seasonal meta coverage, patch reactions, and practical build
+                  advice
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div
+                    class="creator-preview creator-preview-photo creator-preview-rhykker"
+                  >
+                    <img
+                      class="creator-preview-image"
+                      src="https://i.ytimg.com/vi/6R83AgeXyUE/maxresdefault.jpg"
+                      alt="wudijo YouTube thumbnail: Diablo 4 - The Strongest Build Just Got EVEN BETTER"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <span class="creator-preview-text">YouTube</span>
+                  </div>
+                </td>
+                <td class="resource-name">wudijo</td>
+                <td class="resource-desc">YouTube</td>
+                <td class="resource-desc">
+                  High-end builds, class optimization, and patch analysis
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div
+                    class="creator-preview creator-preview-photo creator-preview-rhykker"
+                  >
+                    <img
+                      class="creator-preview-image"
+                      src="https://i.ytimg.com/vi/4-l91GoAjkM/maxresdefault.jpg"
+                      alt="Kripparrian YouTube thumbnail: HOW GOOD IS DIABLO 4? - KRIPP TALKS!"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <span class="creator-preview-text">YouTube</span>
+                  </div>
+                </td>
+                <td class="resource-name">Kripparrian</td>
+                <td class="resource-desc">YouTube</td>
+                <td class="resource-desc">
+                  Broad ARPG perspective, deep-dive reactions, and event
+                  coverage
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div
+                    class="creator-preview creator-preview-photo creator-preview-blizz"
+                  >
+                    <img
+                      class="creator-preview-image"
+                      src="https://i.ytimg.com/vi/23f_nZWLPqc/maxresdefault.jpg"
+                      alt="DatModz YouTube thumbnail: Diablo 4 Season 1: EVERYTHING You Need to Know! | DatModz"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <span class="creator-preview-text">YouTube</span>
+                  </div>
+                </td>
+                <td class="resource-name">DatModz</td>
+                <td class="resource-desc">YouTube</td>
+                <td class="resource-desc">
+                  Season prep, patch breakdowns, and practical build planning
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div
+                    class="creator-preview creator-preview-photo creator-preview-macro"
+                  >
+                    <img
+                      class="creator-preview-image"
+                      src="https://i.ytimg.com/vi/RXWU3KQVFgs/maxresdefault.jpg"
+                      alt="Moxsy YouTube thumbnail: WARLOCK Full Skill Tree Breakdown! // Diablo 4 Warlock First Impressions"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <span class="creator-preview-text">YouTube</span>
+                  </div>
+                </td>
+                <td class="resource-name">Moxsy</td>
+                <td class="resource-desc">YouTube</td>
+                <td class="resource-desc">
+                  Skill-tree breakdowns, build previews, and class
+                  theorycrafting
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div
+                    class="creator-preview creator-preview-photo creator-preview-macro"
+                  >
+                    <img
+                      class="creator-preview-image"
+                      src="https://i.ytimg.com/vi/LJVwoiv50CE/maxresdefault.jpg"
+                      alt="Mekuna YouTube thumbnail: Best Paladin Auradin Build – In-Depth Guide | Diablo 4 S12"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <span class="creator-preview-text">YouTube</span>
+                  </div>
+                </td>
+                <td class="resource-name">Mekuna</td>
+                <td class="resource-desc">YouTube</td>
+                <td class="resource-desc">
+                  In-depth build guides and optimization for top-end play
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div
+                    class="creator-preview creator-preview-photo creator-preview-patriarch"
+                  >
+                    <img
+                      class="creator-preview-image"
+                      src="https://i.ytimg.com/vi/PNcQAemLjXw/maxresdefault.jpg"
+                      alt="RageGamingVideos YouTube thumbnail: Diablo 4 - New Best OP 50 TRILLION DAMAGE Paladin Build"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <span class="creator-preview-text">YouTube</span>
+                  </div>
+                </td>
+                <td class="resource-name">RageGamingVideos</td>
+                <td class="resource-desc">YouTube</td>
+                <td class="resource-desc">
+                  High-energy build videos, patch meta, and seasonal updates
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div
+                    class="creator-preview creator-preview-photo creator-preview-blizz"
+                  >
+                    <img
+                      class="creator-preview-image"
+                      src="https://i.ytimg.com/vi/SW2Ur3bDeKo/maxresdefault.jpg"
+                      alt="Dbrunski125 YouTube thumbnail: Blizzard gave me EARLY ACCESS to DIABLO IV... And I can TALK ABOUT EVERYTHING !!! Full Game Review"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <span class="creator-preview-text">YouTube</span>
+                  </div>
+                </td>
+                <td class="resource-name">Dbrunski125</td>
+                <td class="resource-desc">YouTube</td>
+                <td class="resource-desc">
+                  Diablo news, reviews, reactions, and broader community
+                  commentary
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div
+                    class="creator-preview creator-preview-photo creator-preview-blizz"
+                  >
+                    <img
+                      class="creator-preview-image"
+                      src="https://i.ytimg.com/vi/BCM01VbLmwM/maxresdefault.jpg"
+                      alt="MrGM YouTube thumbnail: WoW x Diablo IV Crossover Event! Full Guide &amp; REWARDS"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <span class="creator-preview-text">YouTube</span>
+                  </div>
+                </td>
+                <td class="resource-name">MrGM</td>
+                <td class="resource-desc">YouTube</td>
+                <td class="resource-desc">
+                  Event coverage, reward breakdowns, and Blizzard crossover news
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div
+                    class="creator-preview creator-preview-photo creator-preview-rhykker"
+                  >
+                    <img
+                      class="creator-preview-image"
+                      src="https://i.ytimg.com/vi/0JtnrRfwXI8/maxresdefault.jpg"
+                      alt="Zizaran YouTube thumbnail: Diablo IV Expansion: Worth $40?"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <span class="creator-preview-text">YouTube</span>
+                  </div>
+                </td>
+                <td class="resource-name">Zizaran</td>
+                <td class="resource-desc">YouTube</td>
+                <td class="resource-desc">
+                  ARPG theory, guide discussion, and expansion commentary
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div
+                    class="creator-preview creator-preview-photo creator-preview-patriarch"
+                  >
+                    <img
+                      class="creator-preview-image"
+                      src="https://i.ytimg.com/vi/0XivEenha_o/maxresdefault.jpg"
+                      alt="P4wnyhof YouTube thumbnail: Diablo 4 Paladin Deep Dive - Season 11"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <span class="creator-preview-text">YouTube</span>
+                  </div>
+                </td>
+                <td class="resource-name">P4wnyhof</td>
+                <td class="resource-desc">YouTube</td>
+                <td class="resource-desc">
+                  Paladin-focused build deep dives and class-specific season
+                  guides
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div
+                    class="creator-preview creator-preview-photo creator-preview-sliver"
+                  >
+                    <img
+                      class="creator-preview-image"
+                      src="https://i.ytimg.com/vi/S1n2Dai4yFY/maxresdefault.jpg"
+                      alt='Darth Microtransaction YouTube thumbnail: The "best" season of Diablo 4..'
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <span class="creator-preview-text">YouTube</span>
+                  </div>
+                </td>
+                <td class="resource-name">Darth Microtransaction</td>
+                <td class="resource-desc">YouTube</td>
+                <td class="resource-desc">
+                  Entertainment-first Diablo commentary, reactions, and season
+                  takes
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div
+                    class="creator-preview creator-preview-photo creator-preview-guide"
+                  >
+                    <img
+                      class="creator-preview-image"
+                      src="https://i.ytimg.com/vi/5GZLkOoIvDI/maxresdefault.jpg"
+                      alt="Fextralife YouTube thumbnail: Diablo 4 Ultimate Beginner Guide"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <span class="creator-preview-text">YouTube</span>
+                  </div>
+                </td>
+                <td class="resource-name">Fextralife</td>
+                <td class="resource-desc">YouTube</td>
+                <td class="resource-desc">
+                  Beginner-friendly guides, wiki style breakdowns, and ARPG
+                  coverage
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= COMMUNITIES ======= -->
+    <section class="resource-category" id="communities">
+      <div class="container">
+        <div class="category-header">
+          <span class="category-icon">👥</span>
+          <h2 class="category-title">Communities</h2>
+        </div>
+
+        <div class="resource-table-shell">
+          <table class="resource-table">
+            <thead>
+              <tr>
+                <th>Community</th>
+                <th>Type</th>
+                <th>Link</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="resource-name">Official Diablo Discord</td>
+                <td class="resource-desc">
+                  Official Blizzard-run Discord for announcements, discussion,
+                  and community channels
+                </td>
+                <td>
+                  <a
+                    href="https://discord.gg/diablo"
+                    target="_blank"
+                    rel="noopener"
+                    class="resource-link"
+                    >discord.gg/diablo →</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="resource-name">D4Builds Discord</td>
+                <td class="resource-desc">
+                  D4Builds community Discord for build discussion, creator
+                  channels, and meta talk
+                </td>
+                <td>
+                  <a
+                    href="https://discord.gg/d4builds"
+                    target="_blank"
+                    rel="noopener"
+                    class="resource-link"
+                    >discord.gg/d4builds →</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="resource-name">r/diablo4 (Reddit)</td>
+                <td class="resource-desc">
+                  Main Diablo 4 Reddit community for news, clips, builds, and
+                  discussion
+                </td>
+                <td>
+                  <a
+                    href="https://www.reddit.com/r/diablo4/"
+                    target="_blank"
+                    rel="noopener"
+                    class="resource-link"
+                    >reddit.com/r/diablo4 →</a
+                  >
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= GUIDES ======= -->
+    <section class="resource-category" id="guides">
+      <div class="container">
+        <div class="category-header">
+          <span class="category-icon">📖</span>
+          <h2 class="category-title">Essential Guides</h2>
+        </div>
+
+        <div class="resource-table-shell">
+          <table class="resource-table">
+            <thead>
+              <tr>
+                <th>Guide</th>
+                <th>Description</th>
+                <th>Link</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="resource-name">Capstone Dungeons</td>
+                <td class="resource-desc">
+                  Guide for unlocking World Tiers 3 and 4 through capstone
+                  mechanics
+                </td>
+                <td>
+                  <a
+                    href="https://www.icy-veins.com/d4/guides/capstone-dungeons-guide/"
+                    target="_blank"
+                    rel="noopener"
+                    class="resource-link"
+                    >icy-veins.com →</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="resource-name">The Butcher's Lair</td>
+                <td class="resource-desc">
+                  Boss guide covering The Butcher's mechanics, strategy, phases,
+                  and rewards
+                </td>
+                <td>
+                  <a
+                    href="https://www.icy-veins.com/d4/guides/the-butchers-lair/"
+                    target="_blank"
+                    rel="noopener"
+                    class="resource-link"
+                    >icy-veins.com →</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="resource-name">Vessel of Hatred</td>
+                <td class="resource-desc">
+                  Vessel of Hatred overview covering story, new features, and
+                  content updates
+                </td>
+                <td>
+                  <a
+                    href="https://www.icy-veins.com/d4/guides/vessel-of-hatred-overview/"
+                    target="_blank"
+                    rel="noopener"
+                    class="resource-link"
+                    >icy-veins.com →</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="resource-name">Official Patch Notes</td>
+                <td class="resource-desc">
+                  Patch notes covering balance changes, bug fixes, new content,
+                  and seasonal updates
+                </td>
+                <td>
+                  <a
+                    href="https://news.blizzard.com/en-us/article/24140808/diablo-iv-patch-notes"
+                    target="_blank"
+                    rel="noopener"
+                    class="resource-link"
+                    >news.blizzard.com →</a
+                  >
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= EXPANSION: LORD OF HATRED ======= -->
+    <section class="resource-category" id="expansion">
+      <div class="container">
+        <div class="category-header">
+          <span class="category-icon">🔥</span>
+          <h2 class="category-title">Lord of Hatred — April 28, 2026</h2>
+        </div>
+
+        <div class="resource-table-shell">
+          <table class="resource-table">
+            <thead>
+              <tr>
+                <th>Topic</th>
+                <th>Details</th>
+                <th>Link</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="resource-name">🌑 Warlock Class</td>
+                <td class="resource-desc">
+                  New dark magic class coming in Lord of Hatred; full reveal TBA
+                </td>
+                <td><span class="text-muted">TBA</span></td>
+              </tr>
+              <tr>
+                <td class="resource-name">⚔️ Second New Class</td>
+                <td class="resource-desc">
+                  Second new class coming in Lord of Hatred; identity not yet
+                  revealed
+                </td>
+                <td><span class="text-muted">TBA</span></td>
+              </tr>
+              <tr>
+                <td class="resource-name">🏝️ Skovos Region</td>
+                <td class="resource-desc">
+                  Ancient island region with new dungeons, events, and story
+                  content
+                </td>
+                <td><span class="text-muted">TBA</span></td>
+              </tr>
+              <tr>
+                <td class="resource-name">💀 Confront Mephisto</td>
+                <td class="resource-desc">
+                  Fight Mephisto, one of the three Prime Evils
+                </td>
+                <td><span class="text-muted">TBA</span></td>
+              </tr>
+              <tr>
+                <td class="resource-name">🧪 Horadric Cube</td>
+                <td class="resource-desc">
+                  New endgame crafting system built around the Horadric Cube
+                </td>
+                <td><span class="text-muted">TBA</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= FOOTER ======= -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <span class="footer-logo-icon">🔥</span>
+            Diablo 4 Resource Hub
+          </div>
+
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="resources.html">Resources</a>
+            <a href="crafting.html">Crafting &amp; Gear Guide</a>
+            <a href="https://maxroll.gg/d4" target="_blank" rel="noopener"
+              >Maxroll</a
+            >
+            <a
+              href="https://www.icy-veins.com/d4/"
+              target="_blank"
+              rel="noopener"
+              >Icy Veins</a
+            >
+            <a href="https://d4builds.gg/" target="_blank" rel="noopener"
+              >D4Builds</a
+            >
+            <a
+              href="https://mobalytics.gg/diablo-4/builds"
+              target="_blank"
+              rel="noopener"
+              >Mobalytics</a
+            >
+          </div>
+
+          <p class="footer-disclaimer">
+            Not affiliated with Blizzard Entertainment. Diablo 4 and all related
+            content are trademarks of Blizzard Entertainment, Inc. This site is
+            a fan-made resource hub for educational purposes.
+          </p>
+
+          <p class="footer-updated">Last updated: March 20, 2026</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="nav.js"></script>
+    <script src="resources.js"></script>
+    <script src="site-tools.js"></script>
+  </body>
 </html>
