@@ -172,6 +172,54 @@
       summary: "Maps, planners, databases, and utility tools for Diablo 4.",
       keywords: "tools planner map database calculator",
     },
+    {
+      title: "Helltides.com",
+      href: "https://helltides.com/",
+      category: "Specialist Source",
+      summary:
+        "Live event tracker for Helltides, world bosses, and Pit-focused utility.",
+      keywords: "helltides world boss tracker timers pit specialist source",
+    },
+    {
+      title: "Diablo4.life Trackers",
+      href: "https://diablo4.life/trackers/helltide",
+      category: "Specialist Source",
+      summary:
+        "Community tracker lane for Helltides, world bosses, and target-farming tools.",
+      keywords: "diablo4.life trackers helltide world boss target farming",
+    },
+    {
+      title: "D4Planner.io",
+      href: "https://d4planner.io/",
+      category: "Specialist Source",
+      summary:
+        "Backup planner, map, and database source for players who want another toolset.",
+      keywords: "d4planner planner map database backup source",
+    },
+    {
+      title: "Stash from Hell",
+      href: "https://stashfromhell.com/",
+      category: "Specialist Source",
+      summary:
+        "A niche but useful stash organizer for players who hoard gear and collections.",
+      keywords: "stash from hell stash organizer inventory source",
+    },
+    {
+      title: "Diablo.trade",
+      href: "https://diablo.trade/",
+      category: "Specialist Source",
+      summary:
+        "Trading marketplace for players who care about item listings and economy tools.",
+      keywords: "diablo.trade trading marketplace economy listings",
+    },
+    {
+      title: "PureDiablo",
+      href: "https://www.purediablo.com/",
+      category: "Specialist Source",
+      summary:
+        "Long-running Diablo community and editorial source for broader franchise context.",
+      keywords: "purediablo community editorial franchise guides",
+    },
   ];
 
   const NAV_HTML = `
@@ -319,7 +367,30 @@
           </div>
         </li>
         <li class="nav-item">
-          <a href="tools.html" class="nav-link">Tools</a>
+          <a href="tools.html" class="nav-link">Tools <span class="nav-arrow">▾</span></a>
+          <div class="nav-dropdown nav-dropdown-sources">
+            <a href="tools.html" class="dropdown-item">Tool Overview</a>
+            <div class="dropdown-divider"></div>
+            <div class="dropdown-source-group">
+              <a href="tools.html" class="dropdown-source-name">Tool Pages</a>
+              <div class="dropdown-source-links">
+                <a href="tools.html#build-planners" class="dropdown-source-link">Build Planners</a>
+                <a href="tools.html#interactive-maps" class="dropdown-source-link">Maps &amp; Trackers</a>
+                <a href="tools.html#specialist-utilities" class="dropdown-source-link">Specialist Utilities</a>
+                <a href="resources.html#tools" class="dropdown-source-link">All Tool Sources</a>
+              </div>
+            </div>
+            <div class="dropdown-source-group">
+              <a href="resources.html#tools" class="dropdown-source-name">Specialist Sources</a>
+              <div class="dropdown-source-links">
+                <a href="https://helltides.com/" class="dropdown-source-link" target="_blank" rel="noopener">Helltides.com</a>
+                <a href="https://diablo4.life/trackers/helltide" class="dropdown-source-link" target="_blank" rel="noopener">Diablo4.life</a>
+                <a href="https://d4planner.io/" class="dropdown-source-link" target="_blank" rel="noopener">D4Planner.io</a>
+                <a href="https://stashfromhell.com/" class="dropdown-source-link" target="_blank" rel="noopener">Stash from Hell</a>
+                <a href="https://diablo.trade/" class="dropdown-source-link" target="_blank" rel="noopener">Diablo.trade</a>
+              </div>
+            </div>
+          </div>
         </li>
         <li class="nav-item">
           <a href="season.html" class="nav-link">Season</a>
@@ -509,7 +580,31 @@
         </div>
       </li>
       <li>
-        <a href="tools.html" class="mobile-nav-link no-arrow" onclick="closeMobileMenu()">Tools</a>
+        <div class="mobile-nav-link" onclick="toggleMobileDropdown(this)" data-target="mobile-tools">
+          Tools <span class="nav-arrow">▾</span>
+        </div>
+        <div class="mobile-dropdown" id="mobile-tools">
+          <a href="tools.html" class="mobile-dropdown-item" onclick="closeMobileMenu()">Tool Overview</a>
+          <div class="mobile-source-group">
+            <span class="mobile-source-name">Tool Pages</span>
+            <div class="mobile-source-links">
+              <a href="tools.html#build-planners" class="mobile-source-link" onclick="closeMobileMenu()">Build Planners</a>
+              <a href="tools.html#interactive-maps" class="mobile-source-link" onclick="closeMobileMenu()">Maps &amp; Trackers</a>
+              <a href="tools.html#specialist-utilities" class="mobile-source-link" onclick="closeMobileMenu()">Specialist Utilities</a>
+              <a href="resources.html#tools" class="mobile-source-link" onclick="closeMobileMenu()">All Tool Sources</a>
+            </div>
+          </div>
+          <div class="mobile-source-group">
+            <a href="resources.html#tools" class="mobile-source-name" onclick="closeMobileMenu()">Specialist Sources</a>
+            <div class="mobile-source-links">
+              <a href="https://helltides.com/" class="mobile-source-link" target="_blank" rel="noopener" onclick="closeMobileMenu()">Helltides.com</a>
+              <a href="https://diablo4.life/trackers/helltide" class="mobile-source-link" target="_blank" rel="noopener" onclick="closeMobileMenu()">Diablo4.life</a>
+              <a href="https://d4planner.io/" class="mobile-source-link" target="_blank" rel="noopener" onclick="closeMobileMenu()">D4Planner.io</a>
+              <a href="https://stashfromhell.com/" class="mobile-source-link" target="_blank" rel="noopener" onclick="closeMobileMenu()">Stash from Hell</a>
+              <a href="https://diablo.trade/" class="mobile-source-link" target="_blank" rel="noopener" onclick="closeMobileMenu()">Diablo.trade</a>
+            </div>
+          </div>
+        </div>
       </li>
       <li>
         <a href="season.html" class="mobile-nav-link no-arrow" onclick="closeMobileMenu()">Season Info</a>
