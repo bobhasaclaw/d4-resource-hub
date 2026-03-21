@@ -25,6 +25,27 @@
     resultBody: root.querySelector("[data-wizard-result-body]"),
   };
 
+  const PATH_UI = {
+    nextStep: {
+      eyebrow: "Best place to start",
+      outcome: "Get one clear next page, source, and tool.",
+      bullets: ["New players", "Returning players", "Anyone feeling stuck"],
+      primaryLabel: "Start here first",
+    },
+    chooseClass: {
+      eyebrow: "Best if you are picking a character",
+      outcome: "Get a class recommendation with a backup option.",
+      bullets: ["Class fantasy", "Skill comfort", "Main activity"],
+      primaryLabel: "Use this first",
+    },
+    findResource: {
+      eyebrow: "Best if you already know the problem",
+      outcome: "Get the right source, tool, or page quickly.",
+      bullets: ["Fast answer", "Detailed guide", "Tool or tracker"],
+      primaryLabel: "Use this when you need a source",
+    },
+  };
+
   function getPath(pathId = state.pathId) {
     return data.paths[pathId] || null;
   }
@@ -336,9 +357,15 @@
       .map(
         ([id, path]) => `
           <button type="button" class="wizard-path-card" data-path-select="${id}">
-            <span class="wizard-path-kicker">Sanctuary Guide</span>
+            <span class="wizard-path-kicker">${PATH_UI[id]?.eyebrow || "Sanctuary Guide"}</span>
             <strong>${path.label}</strong>
             <span>${path.description}</span>
+            <div class="wizard-path-meta">${PATH_UI[id]?.outcome || ""}</div>
+            <div class="wizard-path-tags">
+              ${(PATH_UI[id]?.bullets || [])
+                .map((item) => `<span class="wizard-path-tag">${item}</span>`)
+                .join("")}
+            </div>
           </button>
         `,
       )
@@ -436,6 +463,21 @@
         `,
       )
       .join("");
+    const primaryClick = result.nextClicks[0] || null;
+    const followUps = result.nextClicks.slice(1);
+    const followUpMarkup = followUps
+      .map(
+        (item, index) => `
+          <a href="${item.href}" class="wizard-step-card"${item.href.startsWith("http") ? ' target="_blank" rel="noopener"' : ""}>
+            <span class="wizard-step-number">${index + 2}</span>
+            <div class="wizard-step-copy">
+              <strong>${item.label}</strong>
+              <span>${item.href.startsWith("http") ? "Open supporting source" : "Open supporting page"}</span>
+            </div>
+          </a>
+        `,
+      )
+      .join("");
 
     elements.resultBody.innerHTML = `
       <div class="class-finder-result wizard-result-summary">
@@ -449,13 +491,49 @@
         <p>${result.summary}</p>
         <div class="class-finder-result-meta">${becauseMarkup}</div>
         <ul class="class-finder-result-list">${whyMarkup}</ul>
-        <div class="class-finder-result-links">${nextClicksMarkup}</div>
+        ${
+          primaryClick
+            ? `
+          <div class="wizard-primary-actions">
+            <a href="${primaryClick.href}" class="hero-cta wizard-primary-cta"${primaryClick.href.startsWith("http") ? ' target="_blank" rel="noopener"' : ""}>
+              Start Here: ${primaryClick.label} <span>→</span>
+            </a>
+          </div>
+        `
+            : ""
+        }
       </div>
+      <div class="wizard-next-steps">
+        <div class="section-header wizard-result-section">
+          <p class="section-label">What To Do Next</p>
+          <h2>Follow These Steps In Order</h2>
+          <p class="section-desc">
+            Start with the main recommendation first, then use the supporting links if you want more depth or a second lane.
+          </p>
+        </div>
+        <div class="wizard-step-list">
+          ${
+            primaryClick
+              ? `
+            <a href="${primaryClick.href}" class="wizard-step-card wizard-step-card-primary"${primaryClick.href.startsWith("http") ? ' target="_blank" rel="noopener"' : ""}>
+              <span class="wizard-step-number">1</span>
+              <div class="wizard-step-copy">
+                <strong>${primaryClick.label}</strong>
+                <span>${primaryClick.href.startsWith("http") ? "Open the main source first" : "Open the main page first"}</span>
+              </div>
+            </a>
+          `
+              : ""
+          }
+          ${followUpMarkup}
+        </div>
+      </div>
+      <div class="class-finder-result-links">${nextClicksMarkup}</div>
       <div class="section-header wizard-result-section">
-        <p class="section-label">Recommended Path</p>
-        <h2>Your Best Next Clicks</h2>
+        <p class="section-label">Helpful Follow-Ups</p>
+        <h2>If You Want More Than One Source</h2>
         <p class="section-desc">
-          Use these links in order if you want the fastest route from your answers into the rest of the hub.
+          These are the strongest supporting pages, sources, and tools around the main recommendation.
         </p>
       </div>
       <div class="resource-grid wizard-result-grid">${cardsMarkup}</div>

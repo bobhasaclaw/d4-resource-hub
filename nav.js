@@ -292,6 +292,9 @@
           <a href="index.html" class="nav-link">Home</a>
         </li>
         <li class="nav-item">
+          <a href="wizard.html" class="nav-link">Guide</a>
+        </li>
+        <li class="nav-item">
           <a href="resources.html" class="nav-link">Builds <span class="nav-arrow">▾</span></a>
           <div class="nav-dropdown nav-dropdown-sources">
             <a href="resources.html" class="dropdown-item">All Build Resources</a>
@@ -512,6 +515,9 @@
     <ul class="mobile-nav-links">
       <li>
         <a href="index.html" class="mobile-nav-link no-arrow" onclick="closeMobileMenu()">Home</a>
+      </li>
+      <li>
+        <a href="wizard.html" class="mobile-nav-link no-arrow" onclick="closeMobileMenu()">Guide</a>
       </li>
       <li>
         <div class="mobile-nav-link" onclick="toggleMobileDropdown(this)" data-target="mobile-builds">
@@ -864,7 +870,7 @@
 
   function getPrimaryNavHref(pathname) {
     if (pathname === "index.html" || pathname === "") return "index.html";
-    if (pathname === "wizard.html") return "index.html";
+    if (pathname === "wizard.html") return "wizard.html";
     if (pathname.startsWith("news")) return "news.html";
     if (
       [
