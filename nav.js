@@ -220,6 +220,55 @@
         "Long-running Diablo community and editorial source for broader franchise context.",
       keywords: "purediablo community editorial franchise guides",
     },
+    {
+      title: "Wowhead Diablo 4",
+      href: "https://www.wowhead.com/diablo-4",
+      category: "Reference Source",
+      summary:
+        "Active Diablo 4 guide, news, and reference hub with searchable coverage.",
+      keywords: "wowhead diablo 4 guides news blue tracker reference",
+    },
+    {
+      title: "Diablo Wiki",
+      href: "https://diablo.fandom.com/wiki/Diablo_IV",
+      category: "Reference Source",
+      summary:
+        "Wiki-style source for lore, bosses, locations, classes, and broader franchise context.",
+      keywords: "diablo wiki fandom lore bosses classes franchise reference",
+    },
+    {
+      title: "diablo4.cc",
+      href: "https://diablo4.cc/us/",
+      category: "Reference Source",
+      summary:
+        "Database-style Diablo 4 lookup for items, affixes, powers, and systems.",
+      keywords: "diablo4.cc database items affixes powers reference",
+    },
+    {
+      title: "D4TRACKER",
+      href: "https://d4tracker.org/map/",
+      category: "Specialist Source",
+      summary:
+        "Interactive map and progression tracker for altars, dungeons, strongholds, and world events.",
+      keywords:
+        "d4tracker map progression tracker altars dungeons strongholds world events",
+    },
+    {
+      title: "D4 Events Time Tracker",
+      href: "https://d4events.sefir.dev/",
+      category: "Specialist Source",
+      summary:
+        "Community timer tool for world bosses and Helltides when you want a quick live-event check.",
+      keywords: "d4 events time tracker boss timer helltide map live events",
+    },
+    {
+      title: "Diablo Snaps",
+      href: "https://www.diablosnaps.com/",
+      category: "Specialist Source",
+      summary:
+        "Item screenshot and sharing utility for collectors and traders.",
+      keywords: "diablo snaps item screenshots sharing collectors traders",
+    },
   ];
 
   const NAV_HTML = `
@@ -376,6 +425,7 @@
               <div class="dropdown-source-links">
                 <a href="tools.html#build-planners" class="dropdown-source-link">Build Planners</a>
                 <a href="tools.html#interactive-maps" class="dropdown-source-link">Maps &amp; Trackers</a>
+                <a href="tools.html#reference-databases" class="dropdown-source-link">Reference DBs</a>
                 <a href="tools.html#specialist-utilities" class="dropdown-source-link">Specialist Utilities</a>
                 <a href="resources.html#tools" class="dropdown-source-link">All Tool Sources</a>
               </div>
@@ -388,6 +438,14 @@
                 <a href="https://d4planner.io/" class="dropdown-source-link" target="_blank" rel="noopener">D4Planner.io</a>
                 <a href="https://stashfromhell.com/" class="dropdown-source-link" target="_blank" rel="noopener">Stash from Hell</a>
                 <a href="https://diablo.trade/" class="dropdown-source-link" target="_blank" rel="noopener">Diablo.trade</a>
+              </div>
+            </div>
+            <div class="dropdown-source-group">
+              <a href="resources.html#reference" class="dropdown-source-name">Reference Sources</a>
+              <div class="dropdown-source-links">
+                <a href="https://www.wowhead.com/diablo-4" class="dropdown-source-link" target="_blank" rel="noopener">Wowhead</a>
+                <a href="https://diablo.fandom.com/wiki/Diablo_IV" class="dropdown-source-link" target="_blank" rel="noopener">Diablo Wiki</a>
+                <a href="https://diablo4.cc/us/" class="dropdown-source-link" target="_blank" rel="noopener">diablo4.cc</a>
               </div>
             </div>
           </div>
@@ -590,6 +648,7 @@
             <div class="mobile-source-links">
               <a href="tools.html#build-planners" class="mobile-source-link" onclick="closeMobileMenu()">Build Planners</a>
               <a href="tools.html#interactive-maps" class="mobile-source-link" onclick="closeMobileMenu()">Maps &amp; Trackers</a>
+              <a href="tools.html#reference-databases" class="mobile-source-link" onclick="closeMobileMenu()">Reference DBs</a>
               <a href="tools.html#specialist-utilities" class="mobile-source-link" onclick="closeMobileMenu()">Specialist Utilities</a>
               <a href="resources.html#tools" class="mobile-source-link" onclick="closeMobileMenu()">All Tool Sources</a>
             </div>
@@ -602,6 +661,14 @@
               <a href="https://d4planner.io/" class="mobile-source-link" target="_blank" rel="noopener" onclick="closeMobileMenu()">D4Planner.io</a>
               <a href="https://stashfromhell.com/" class="mobile-source-link" target="_blank" rel="noopener" onclick="closeMobileMenu()">Stash from Hell</a>
               <a href="https://diablo.trade/" class="mobile-source-link" target="_blank" rel="noopener" onclick="closeMobileMenu()">Diablo.trade</a>
+            </div>
+          </div>
+          <div class="mobile-source-group">
+            <a href="resources.html#reference" class="mobile-source-name" onclick="closeMobileMenu()">Reference Sources</a>
+            <div class="mobile-source-links">
+              <a href="https://www.wowhead.com/diablo-4" class="mobile-source-link" target="_blank" rel="noopener" onclick="closeMobileMenu()">Wowhead</a>
+              <a href="https://diablo.fandom.com/wiki/Diablo_IV" class="mobile-source-link" target="_blank" rel="noopener" onclick="closeMobileMenu()">Diablo Wiki</a>
+              <a href="https://diablo4.cc/us/" class="mobile-source-link" target="_blank" rel="noopener" onclick="closeMobileMenu()">diablo4.cc</a>
             </div>
           </div>
         </div>
