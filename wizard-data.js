@@ -544,6 +544,30 @@ window.WIZARD_DATA = {
               },
             },
             {
+              id: "returning-break",
+              label: "Returning after a break",
+              description:
+                "I know Diablo 4, but I need a clean re-entry path for the current site and season focus.",
+              weights: {
+                pages: { season: 4, news: 4, classes: 3, endgame: 2 },
+                sources: { officialBlizzard: 3, icyVeins: 2, maxroll: 2 },
+                creators: { rhykker: 2, raxxanterax: 2 },
+              },
+            },
+            {
+              id: "alt-character",
+              label: "Alt character",
+              description:
+                "I already know the game and want the fastest route for a second or third character.",
+              weights: {
+                pages: { leveling: 4, speed: 3, classes: 2 },
+                sources: { d4builds: 3, maxroll: 2 },
+                tools: { seasonTools: 3, planner: 1 },
+                creators: { rob2628: 2, wudijo: 1 },
+                classes: { spiritborn: 2, rogue: 2, barbarian: 1 },
+              },
+            },
+            {
               id: "fresh-60",
               label: "Fresh 60",
               description: "I just hit 60 and need the right pivot.",
@@ -657,6 +681,22 @@ window.WIZARD_DATA = {
               },
             },
             {
+              id: "simple-checklist",
+              label: "I want a simple checklist",
+              description:
+                "I need a short sequence to follow, not a deep explanation.",
+              weights: {
+                pages: {
+                  resources: 4,
+                  newPlayer: 3,
+                  tierlists: 2,
+                  leveling: 1,
+                },
+                sources: { d4builds: 4, maxroll: 2 },
+                creators: { rob2628: 1 },
+              },
+            },
+            {
               id: "seasonal-clarity",
               label: "I need seasonal clarity",
               description:
@@ -699,6 +739,17 @@ window.WIZARD_DATA = {
               weights: {
                 pages: { tools: 5 },
                 tools: { planner: 3, mapsTrackers: 3, lootDatabases: 2 },
+              },
+            },
+            {
+              id: "checklist",
+              label: "Checklist",
+              description:
+                "Give me the shortest practical route with clear next clicks.",
+              weights: {
+                sources: { d4builds: 4, maxroll: 2 },
+                pages: { resources: 3, newPlayer: 2, tierlists: 2 },
+                creators: { rob2628: 1 },
               },
             },
             {
@@ -810,6 +861,15 @@ window.WIZARD_DATA = {
                 classes: { rogue: 3, druid: 3, sorcerer: 3, barbarian: 1 },
               },
             },
+            {
+              id: "alt",
+              label: "Alt character",
+              description:
+                "I already know the game and want something efficient or fun for another character.",
+              weights: {
+                classes: { spiritborn: 4, rogue: 2, barbarian: 2, paladin: 1 },
+              },
+            },
           ],
         },
         {
@@ -900,6 +960,24 @@ window.WIZARD_DATA = {
                 classes: { rogue: 5, spiritborn: 3 },
               },
             },
+            {
+              id: "tanky",
+              label: "Tanky / bruiser",
+              description:
+                "I want to feel durable, hard to kill, and comfortable in longer fights.",
+              weights: {
+                classes: { paladin: 5, barbarian: 3, druid: 2 },
+              },
+            },
+            {
+              id: "hybrid",
+              label: "Hybrid / flexible",
+              description:
+                "I like a class that can pivot between offense, defense, and utility.",
+              weights: {
+                classes: { spiritborn: 4, paladin: 3, druid: 2 },
+              },
+            },
           ],
         },
         {
@@ -949,6 +1027,15 @@ window.WIZARD_DATA = {
                 classes: { paladin: 6, spiritborn: 5, barbarian: 2 },
               },
             },
+            {
+              id: "chill",
+              label: "Chill / low stress",
+              description:
+                "I want something comfortable to play for longer sessions without heavy execution.",
+              weights: {
+                classes: { paladin: 4, necromancer: 4, spiritborn: 2 },
+              },
+            },
           ],
         },
         {
@@ -989,6 +1076,14 @@ window.WIZARD_DATA = {
                 "I want more depth, even if the build asks more of me.",
               weights: {
                 classes: { rogue: 4, druid: 3, sorcerer: 2 },
+              },
+            },
+            {
+              id: "low-apm",
+              label: "Low APM",
+              description: "I want fewer frantic inputs and a smoother rhythm.",
+              weights: {
+                classes: { necromancer: 4, paladin: 3, spiritborn: 2 },
               },
             },
           ],
@@ -1069,6 +1164,17 @@ window.WIZARD_DATA = {
               },
             },
             {
+              id: "planner-tool",
+              label: "Build planner / tool",
+              description:
+                "I need a planner, calculator, or practical utility more than an article.",
+              weights: {
+                pages: { tools: 5, resources: 2 },
+                sources: { d4builds: 2, maxroll: 1 },
+                tools: { planner: 5, mapsTrackers: 1 },
+              },
+            },
+            {
               id: "loot-lookup",
               label: "Loot / item lookup",
               description: "I need item, aspect, or target-farming help.",
@@ -1094,6 +1200,17 @@ window.WIZARD_DATA = {
                 "I want people, videos, or discussion instead of a guide.",
               weights: {
                 pages: { creators: 5, communities: 5, videos: 3 },
+              },
+            },
+            {
+              id: "trade-stash",
+              label: "Trade / stash help",
+              description:
+                "I need trading, inventory, or item-sharing help rather than a normal guide.",
+              weights: {
+                pages: { tools: 4, resources: 2 },
+                sources: { diabloTrade: 4, stashFromHell: 4 },
+                tools: { specialistUtilities: 5 },
               },
             },
           ],
@@ -1127,6 +1244,26 @@ window.WIZARD_DATA = {
               weights: {
                 pages: { tools: 5 },
                 tools: { planner: 3, mapsTrackers: 3, lootDatabases: 2 },
+              },
+            },
+            {
+              id: "checklist",
+              label: "Short checklist",
+              description:
+                "I want a concise route with the least reading possible.",
+              weights: {
+                sources: { d4builds: 4, maxroll: 2 },
+                pages: { resources: 3, tierlists: 2, newPlayer: 1 },
+              },
+            },
+            {
+              id: "visual-comparison",
+              label: "Visual comparison",
+              description:
+                "I want cards, rankings, or side-by-side views more than long prose.",
+              weights: {
+                sources: { mobalytics: 2, maxroll: 2, d4builds: 2 },
+                pages: { tierlists: 3, resources: 2, classes: 1 },
               },
             },
             {
@@ -1189,6 +1326,17 @@ window.WIZARD_DATA = {
                 sources: { diabloTrade: 5, stashFromHell: 4 },
                 pages: { tools: 3 },
                 tools: { specialistUtilities: 4 },
+              },
+            },
+            {
+              id: "season-start",
+              label: "Season start / reset",
+              description:
+                "I need help that is specifically useful at the start of a season or fresh run.",
+              weights: {
+                pages: { season: 4, leveling: 2, news: 2 },
+                sources: { officialBlizzard: 2, d4builds: 2 },
+                tools: { seasonTools: 3 },
               },
             },
             {

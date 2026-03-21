@@ -3,15 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sanctuary Guide — D4 Resource Hub</title>
+    <title>Sanctuary Wizard — D4 Resource Hub</title>
     <meta
       name="description"
-      content="Use the Sanctuary Guide to choose a class, find your next step, or get matched to the best Diablo 4 resource for your problem."
+      content="Use the Sanctuary Wizard to choose a class, find your next step, or get matched to the best Diablo 4 resource for your problem."
     />
-    <meta property="og:title" content="Sanctuary Guide — D4 Resource Hub" />
+    <meta property="og:title" content="Sanctuary Wizard — D4 Resource Hub" />
     <meta
       property="og:description"
-      content="Use the Sanctuary Guide to choose a class, find your next step, or get matched to the best Diablo 4 resource for your problem."
+      content="Use the Sanctuary Wizard to choose a class, find your next step, or get matched to the best Diablo 4 resource for your problem."
     />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="D4 Resource Hub" />
@@ -21,17 +21,17 @@
     />
     <meta
       property="og:image:alt"
-      content="Branded D4 Resource Hub share card for the Sanctuary Guide."
+      content="Branded D4 Resource Hub share card for the Sanctuary Wizard."
     />
     <meta
       property="og:url"
       content="https://bobhasaclaw.github.io/d4-resource-hub/wizard.html"
     />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Sanctuary Guide — D4 Resource Hub" />
+    <meta name="twitter:title" content="Sanctuary Wizard — D4 Resource Hub" />
     <meta
       name="twitter:description"
-      content="Use the Sanctuary Guide to choose a class, find your next step, or get matched to the best Diablo 4 resource for your problem."
+      content="Use the Sanctuary Wizard to choose a class, find your next step, or get matched to the best Diablo 4 resource for your problem."
     />
     <meta
       name="twitter:image"
@@ -39,7 +39,7 @@
     />
     <meta
       name="twitter:image:alt"
-      content="Branded D4 Resource Hub share card for the Sanctuary Guide."
+      content="Branded D4 Resource Hub share card for the Sanctuary Wizard."
     />
     <link rel="stylesheet" href="styles.css" />
     <link
@@ -54,7 +54,7 @@
       rel="stylesheet"
     />
   </head>
-  <body>
+  <body class="page-wizard">
     <nav class="navbar" id="main-nav">
       <div class="navbar-inner"></div>
     </nav>
@@ -64,14 +64,14 @@
     <section class="hero hero-page" id="top">
       <div class="container hero-page-shell">
         <div class="hero-page-copy">
-          <div class="hero-badge"><span>🧭</span> Sanctuary Guide</div>
+          <div class="hero-badge"><span>🧭</span> Sanctuary Wizard</div>
           <div class="utility-brand-ribbon">
             <span class="brand-mark-wrap utility-brand-mark" aria-hidden="true">
               <img src="assets/brand/d4rh-mark.svg" alt="" class="brand-mark" />
             </span>
             <div class="utility-brand-copy">
               <span class="utility-brand-kicker">Decision Desk</span>
-              <strong>D4 Resource Hub Sanctuary Guide</strong>
+              <strong>D4 Resource Hub Sanctuary Wizard</strong>
               <span
                 >A guided path into classes, next steps, and source choices so
                 players can find the right answer in a few clicks.</span
@@ -181,13 +181,13 @@
       <div class="container">
         <div class="page-actions-bar">
           <button type="button" class="page-action-button" data-copy-page-link>
-            Copy Guide Link
+            Copy Wizard Link
           </button>
           <button
             type="button"
             class="page-action-button"
             data-share-page
-            data-share-text="Use the Sanctuary Guide on D4 Resource Hub to choose a class, find your next step, or match the right Diablo 4 resource."
+            data-share-text="Use the Sanctuary Wizard on D4 Resource Hub to choose a class, find your next step, or match the right Diablo 4 resource."
           >
             Share Page
           </button>
@@ -195,7 +195,7 @@
             type="button"
             class="page-action-button"
             data-copy-summary
-            data-copy-summary="Sanctuary Guide: choose a class, find your next step, or match the right Diablo 4 resource."
+            data-copy-summary="Sanctuary Wizard: choose a class, find your next step, or match the right Diablo 4 resource."
           >
             Copy Summary
           </button>
@@ -208,25 +208,60 @@
     <section class="class-finder guide-wizard" id="sanctuary-guide">
       <div class="container">
         <div class="section-header">
-          <p class="section-label">Interactive Guide</p>
-          <h2>Sanctuary Guide</h2>
+          <p class="section-label">Interactive Wizard</p>
+          <h2>Sanctuary Wizard</h2>
           <p class="section-desc">
-            Pick the thing you need help with most. The guide will give you one
-            clear recommendation first, then the best supporting links after
-            that.
+            Start by choosing the path that sounds closest to your problem. If
+            you are unsure, use <strong>Find My Next Step</strong> first. After
+            that, answer a few quick questions and follow the first
+            recommendation the wizard gives you.
           </p>
         </div>
 
         <div class="class-finder-shell guide-wizard-shell" data-sanctuary-guide>
           <div class="guide-wizard-intro" data-wizard-intro>
             <div class="guide-wizard-note">
-              <span class="guide-wizard-note-kicker">Current Site Focus</span>
+              <span class="guide-wizard-note-kicker">How The Wizard Works</span>
               <strong
-                >Recommendations follow the current hub configuration</strong
+                >Choose one path, answer a few taps, then open the first
+                recommendation.</strong
               >
+              <div class="guide-wizard-step-list">
+                <div class="guide-wizard-step-card">
+                  <span class="guide-wizard-step-number">1</span>
+                  <div class="guide-wizard-step-copy">
+                    <strong>Pick one path</strong>
+                    <p>
+                      Use <em>Find My Next Step</em> if you are not sure where
+                      to begin.
+                    </p>
+                  </div>
+                </div>
+                <div class="guide-wizard-step-card">
+                  <span class="guide-wizard-step-number">2</span>
+                  <div class="guide-wizard-step-copy">
+                    <strong>Answer what fits best</strong>
+                    <p>
+                      You do not need perfect answers. Choose the closest match
+                      and keep moving.
+                    </p>
+                  </div>
+                </div>
+                <div class="guide-wizard-step-card">
+                  <span class="guide-wizard-step-number">3</span>
+                  <div class="guide-wizard-step-copy">
+                    <strong>Start with the first result</strong>
+                    <p>
+                      The wizard sorts the strongest next click first, then
+                      gives you supporting follow-ups.
+                    </p>
+                  </div>
+                </div>
+              </div>
               <p>
-                This guide is data-driven so we can retune it when the site
-                updates its season focus or resource weighting.
+                The wizard follows the current hub configuration and can be
+                retuned when the site updates its season focus or resource
+                weighting.
               </p>
             </div>
             <div class="guide-wizard-path-grid" data-wizard-path-grid></div>
@@ -235,7 +270,7 @@
           <div class="guide-wizard-flow" data-wizard-flow hidden>
             <div class="guide-wizard-progress-row">
               <span class="class-finder-result-kicker" data-wizard-path-label
-                >Sanctuary Guide</span
+                >Sanctuary Wizard</span
               >
               <span class="guide-wizard-progress" data-wizard-progress
                 >Step 1 of 4</span

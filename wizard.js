@@ -357,7 +357,7 @@
       .map(
         ([id, path]) => `
           <button type="button" class="wizard-path-card" data-path-select="${id}">
-            <span class="wizard-path-kicker">${PATH_UI[id]?.eyebrow || "Sanctuary Guide"}</span>
+            <span class="wizard-path-kicker">${PATH_UI[id]?.eyebrow || "Sanctuary Wizard"}</span>
             <strong>${path.label}</strong>
             <span>${path.description}</span>
             <div class="wizard-path-meta">${PATH_UI[id]?.outcome || ""}</div>
@@ -396,7 +396,7 @@
     elements.progress.textContent = `Step ${state.stepIndex + 1} of ${path.questions.length}`;
     elements.questionTitle.textContent = question.title;
     elements.questionHelp.textContent =
-      "Pick the answer that feels closest. You can go back at any time.";
+      "Pick the answer that feels closest. You do not need a perfect match, and you can go back at any time.";
 
     elements.optionGrid.innerHTML = question.options
       .map(

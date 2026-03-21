@@ -9,7 +9,7 @@
       keywords: "home launchpad start latest sanctuary",
     },
     {
-      title: "Sanctuary Guide",
+      title: "Sanctuary Wizard",
       href: "wizard.html",
       category: "Hub Tool",
       summary:
@@ -292,7 +292,7 @@
           <a href="index.html" class="nav-link">Home</a>
         </li>
         <li class="nav-item">
-          <a href="wizard.html" class="nav-link">Guide</a>
+          <a href="wizard.html" class="nav-link">Wizard</a>
         </li>
         <li class="nav-item">
           <a href="resources.html" class="nav-link">Builds <span class="nav-arrow">▾</span></a>
@@ -517,7 +517,7 @@
         <a href="index.html" class="mobile-nav-link no-arrow" onclick="closeMobileMenu()">Home</a>
       </li>
       <li>
-        <a href="wizard.html" class="mobile-nav-link no-arrow" onclick="closeMobileMenu()">Guide</a>
+        <a href="wizard.html" class="mobile-nav-link no-arrow" onclick="closeMobileMenu()">Wizard</a>
       </li>
       <li>
         <div class="mobile-nav-link" onclick="toggleMobileDropdown(this)" data-target="mobile-builds">
@@ -734,13 +734,13 @@
 
           <div class="footer-feature-card">
             <span class="footer-feature-kicker">Need A Fast Answer?</span>
-            <h3>Start with Sanctuary Guide, then move into builds and the newsroom.</h3>
+            <h3>Start with Sanctuary Wizard, then move into builds and the newsroom.</h3>
             <p>
               The shortest path through the site is the guided wizard first,
               then deeper class, build, and newsroom pages when you want more detail.
             </p>
             <div class="footer-feature-links">
-              <a href="wizard.html">Open Sanctuary Guide</a>
+              <a href="wizard.html">Open Sanctuary Wizard</a>
               <a href="classes.html">Compare Classes</a>
               <a href="endgame-builds.html">Open Builds</a>
               <a href="news.html">Read Newsroom</a>
@@ -752,7 +752,7 @@
           <div class="footer-column">
             <h3>Start Here</h3>
             <a href="index.html">Home</a>
-            <a href="wizard.html">Sanctuary Guide</a>
+            <a href="wizard.html">Sanctuary Wizard</a>
             <a href="new-player.html">New Player Guide</a>
             <a href="classes.html">Class Comparison</a>
             <a href="resources.html">All Resources</a>
