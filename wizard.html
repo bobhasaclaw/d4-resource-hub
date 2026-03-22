@@ -141,70 +141,6 @@
       </div>
     </section>
 
-    <section class="page-overview">
-      <div class="container">
-        <div class="page-overview-grid">
-          <div class="page-overview-card featured">
-            <div class="page-overview-kicker">Best Use</div>
-            <h3>Most players should start with Find My Next Step</h3>
-            <p>
-              If you are unsure where to begin, use the next-step path first. It
-              is the quickest route into the right page, source, and tool.
-            </p>
-            <div class="page-overview-actions">
-              <span class="overview-pill">Start Here</span>
-              <span class="overview-pill">Fast Answer</span>
-              <span class="overview-pill">Clear Route</span>
-            </div>
-          </div>
-          <div class="page-overview-card">
-            <div class="page-overview-kicker">For Beginners</div>
-            <h3>Find a class and your first useful page</h3>
-            <p>
-              Best for new players who are not sure where to begin or what
-              source to trust.
-            </p>
-          </div>
-          <div class="page-overview-card">
-            <div class="page-overview-kicker">For Returning Players</div>
-            <h3>Get unstuck fast</h3>
-            <p>
-              Use the next-step path when you want the clearest route into the
-              current hub structure without reading everything.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="page-actions-section">
-      <div class="container">
-        <div class="page-actions-bar">
-          <button type="button" class="page-action-button" data-copy-page-link>
-            Copy Wizard Link
-          </button>
-          <button
-            type="button"
-            class="page-action-button"
-            data-share-page
-            data-share-text="Use the Sanctuary Wizard on D4 Resource Hub to choose a class, find your next step, or match the right Diablo 4 resource."
-          >
-            Share Page
-          </button>
-          <button
-            type="button"
-            class="page-action-button"
-            data-copy-summary
-            data-copy-summary="Sanctuary Wizard: choose a class, find your next step, or match the right Diablo 4 resource."
-          >
-            Copy Summary
-          </button>
-          <span class="page-action-note">Reviewed March 21, 2026</span>
-          <span class="page-action-feedback" aria-live="polite"></span>
-        </div>
-      </div>
-    </section>
-
     <section class="class-finder guide-wizard" id="sanctuary-guide">
       <div class="container">
         <div class="section-header">
@@ -220,51 +156,34 @@
 
         <div class="class-finder-shell guide-wizard-shell" data-sanctuary-guide>
           <div class="guide-wizard-intro" data-wizard-intro>
+            <div class="guide-wizard-path-grid" data-wizard-path-grid></div>
             <div class="guide-wizard-note">
               <span class="guide-wizard-note-kicker">How The Wizard Works</span>
-              <strong
-                >Choose one path, answer a few taps, then open the first
-                recommendation.</strong
-              >
+              <strong>Pick one path and the wizard will route you forward.</strong>
               <div class="guide-wizard-step-list">
                 <div class="guide-wizard-step-card">
                   <span class="guide-wizard-step-number">1</span>
                   <div class="guide-wizard-step-copy">
-                    <strong>Pick one path</strong>
-                    <p>
-                      Use <em>Find My Next Step</em> if you are not sure where
-                      to begin.
-                    </p>
+                    <strong>Pick a path</strong>
+                    <p>Use <em>Find My Next Step</em> if you are unsure.</p>
                   </div>
                 </div>
                 <div class="guide-wizard-step-card">
                   <span class="guide-wizard-step-number">2</span>
                   <div class="guide-wizard-step-copy">
-                    <strong>Answer what fits best</strong>
-                    <p>
-                      You do not need perfect answers. Choose the closest match
-                      and keep moving.
-                    </p>
+                    <strong>Choose the closest fit</strong>
+                    <p>You do not need perfect answers to get a good route.</p>
                   </div>
                 </div>
                 <div class="guide-wizard-step-card">
                   <span class="guide-wizard-step-number">3</span>
                   <div class="guide-wizard-step-copy">
-                    <strong>Start with the first result</strong>
-                    <p>
-                      The wizard sorts the strongest next click first, then
-                      gives you supporting follow-ups.
-                    </p>
+                    <strong>Open the first result</strong>
+                    <p>The top recommendation is the best next click to take.</p>
                   </div>
                 </div>
               </div>
-              <p>
-                The wizard follows the current hub configuration and can be
-                retuned when the site updates its season focus or resource
-                weighting.
-              </p>
             </div>
-            <div class="guide-wizard-path-grid" data-wizard-path-grid></div>
           </div>
 
           <div class="guide-wizard-flow" data-wizard-flow hidden>
@@ -313,6 +232,73 @@
               >
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-overview">
+      <div class="container">
+        <div class="page-overview-grid">
+          <div class="page-overview-card featured">
+            <div class="page-overview-kicker">Best Use</div>
+            <h3>Most players should start with Find My Next Step</h3>
+            <p>
+              If you are unsure where to begin, use the next-step path first. It
+              is the quickest route into the right page, source, and tool.
+            </p>
+            <div class="page-overview-actions">
+              <span class="overview-pill">Start Here</span>
+              <span class="overview-pill">Fast Answer</span>
+              <span class="overview-pill">Clear Route</span>
+            </div>
+          </div>
+          <div class="page-overview-card">
+            <div class="page-overview-kicker">For Beginners</div>
+            <h3>Find a class and your first useful page</h3>
+            <p>
+              Best for new players who are not sure where to begin or what
+              source to trust.
+            </p>
+          </div>
+          <div class="page-overview-card">
+            <div class="page-overview-kicker">For Returning Players</div>
+            <h3>Get unstuck fast</h3>
+            <p>
+              Use the next-step path when you want the clearest route into the
+              current hub structure without reading everything.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-actions-section">
+      <div class="container">
+        <div class="page-actions-bar">
+          <a href="feedback.html" class="page-action-button"
+            >Give Wizard Feedback</a
+          >
+          <button type="button" class="page-action-button" data-copy-page-link>
+            Copy Wizard Link
+          </button>
+          <button
+            type="button"
+            class="page-action-button"
+            data-share-page
+            data-share-text="Use the Sanctuary Wizard on D4 Resource Hub to choose a class, find your next step, or match the right Diablo 4 resource."
+          >
+            Share Page
+          </button>
+          <button
+            type="button"
+            class="page-action-button"
+            data-copy-summary
+            data-copy-summary="Sanctuary Wizard: choose a class, find your next step, or match the right Diablo 4 resource."
+          >
+            Copy Summary
+          </button>
+          <span class="page-action-note">Reviewed March 21, 2026</span>
+          <span class="page-action-feedback" aria-live="polite"></span>
         </div>
       </div>
     </section>

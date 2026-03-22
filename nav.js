@@ -175,6 +175,15 @@
       keywords: "discord reddit community help discussion",
     },
     {
+      title: "Feedback Desk",
+      href: "feedback.html",
+      category: "Community",
+      summary:
+        "Bug reports, feature ideas, content corrections, and the OpenClaw approval workflow.",
+      keywords:
+        "feedback bugs ideas corrections discord review queue openclaw approval",
+    },
+    {
       title: "Tools",
       href: "tools.html",
       category: "Tools",
@@ -478,6 +487,9 @@
           <a href="communities.html" class="nav-link">Community</a>
         </li>
         <li class="nav-item">
+          <a href="feedback.html" class="nav-link">Feedback</a>
+        </li>
+        <li class="nav-item">
           <a href="resources.html" class="nav-link">Resources</a>
         </li>
       </ul>
@@ -704,6 +716,9 @@
         <a href="communities.html" class="mobile-nav-link no-arrow" onclick="closeMobileMenu()">Community</a>
       </li>
       <li>
+        <a href="feedback.html" class="mobile-nav-link no-arrow" onclick="closeMobileMenu()">Feedback</a>
+      </li>
+      <li>
         <a href="resources.html" class="mobile-nav-link no-arrow" onclick="closeMobileMenu()">All Resources</a>
       </li>
     </ul>
@@ -744,6 +759,7 @@
               <a href="classes.html">Compare Classes</a>
               <a href="endgame-builds.html">Open Builds</a>
               <a href="news.html">Read Newsroom</a>
+              <a href="feedback.html">Open Feedback Desk</a>
             </div>
           </div>
         </div>
@@ -772,6 +788,7 @@
             <a href="videos.html">Videos</a>
             <a href="creators.html">Creators</a>
             <a href="communities.html">Community</a>
+            <a href="feedback.html">Feedback Desk</a>
           </div>
 
           <div class="footer-column">
@@ -895,6 +912,7 @@
     if (pathname === "creators.html") return "creators.html";
     if (pathname === "videos.html") return "videos.html";
     if (pathname === "communities.html") return "communities.html";
+    if (pathname === "feedback.html") return "feedback.html";
     return pathname;
   }
 
