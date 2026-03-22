@@ -175,6 +175,22 @@
       keywords: "discord reddit community help discussion",
     },
     {
+      title: "Meme & Fansites",
+      href: "meme-fansites.html",
+      category: "Community",
+      summary:
+        "Fan-made pages, meme-heavy Diablo 4 sites, and personality-driven community extras.",
+      keywords: "meme fansites fan site rob2628 funny community extras",
+    },
+    {
+      title: "Rob2628 Fan Site",
+      href: "https://bobhasaclaw.github.io/rob2628-fansite/",
+      category: "Fansite",
+      summary:
+        "A bold Diablo 4 meme fan site built around Rob2628's creator energy.",
+      keywords: "rob2628 fan site meme fansite youtube community",
+    },
+    {
       title: "Feedback Desk",
       href: "feedback.html",
       category: "Community",
@@ -484,7 +500,27 @@
           <a href="videos.html" class="nav-link">Videos</a>
         </li>
         <li class="nav-item">
-          <a href="communities.html" class="nav-link">Community</a>
+          <a href="communities.html" class="nav-link">Community <span class="nav-arrow">▾</span></a>
+          <div class="nav-dropdown nav-dropdown-sources">
+            <a href="communities.html" class="dropdown-item">Community Overview</a>
+            <div class="dropdown-divider"></div>
+            <div class="dropdown-source-group">
+              <span class="dropdown-source-name">Community Pages</span>
+              <div class="dropdown-source-links">
+                <a href="communities.html" class="dropdown-source-link">Discord &amp; Reddit</a>
+                <a href="meme-fansites.html" class="dropdown-source-link">Meme &amp; Fansites</a>
+                <a href="feedback.html" class="dropdown-source-link">Feedback Desk</a>
+              </div>
+            </div>
+            <div class="dropdown-source-group">
+              <span class="dropdown-source-name">Featured Community Links</span>
+              <div class="dropdown-source-links">
+                <a href="https://bobhasaclaw.github.io/rob2628-fansite/" class="dropdown-source-link" target="_blank" rel="noopener">Rob2628 Fan Site</a>
+                <a href="https://discord.gg/diablo" class="dropdown-source-link" target="_blank" rel="noopener">Official Diablo Discord</a>
+                <a href="https://discord.gg/d4builds" class="dropdown-source-link" target="_blank" rel="noopener">D4Builds Discord</a>
+              </div>
+            </div>
+          </div>
         </li>
         <li class="nav-item">
           <a href="feedback.html" class="nav-link">Feedback</a>
@@ -713,7 +749,28 @@
         <a href="videos.html" class="mobile-nav-link no-arrow" onclick="closeMobileMenu()">Videos</a>
       </li>
       <li>
-        <a href="communities.html" class="mobile-nav-link no-arrow" onclick="closeMobileMenu()">Community</a>
+        <div class="mobile-nav-link" onclick="toggleMobileDropdown(this)" data-target="mobile-community">
+          Community <span class="nav-arrow">▾</span>
+        </div>
+        <div class="mobile-dropdown" id="mobile-community">
+          <a href="communities.html" class="mobile-dropdown-item" onclick="closeMobileMenu()">Community Overview</a>
+          <div class="mobile-source-group">
+            <span class="mobile-source-name">Community Pages</span>
+            <div class="mobile-source-links">
+              <a href="communities.html" class="mobile-source-link" onclick="closeMobileMenu()">Discord &amp; Reddit</a>
+              <a href="meme-fansites.html" class="mobile-source-link" onclick="closeMobileMenu()">Meme &amp; Fansites</a>
+              <a href="feedback.html" class="mobile-source-link" onclick="closeMobileMenu()">Feedback Desk</a>
+            </div>
+          </div>
+          <div class="mobile-source-group">
+            <span class="mobile-source-name">Featured Links</span>
+            <div class="mobile-source-links">
+              <a href="https://bobhasaclaw.github.io/rob2628-fansite/" class="mobile-source-link" target="_blank" rel="noopener" onclick="closeMobileMenu()">Rob2628 Fan Site</a>
+              <a href="https://discord.gg/diablo" class="mobile-source-link" target="_blank" rel="noopener" onclick="closeMobileMenu()">Official Diablo Discord</a>
+              <a href="https://discord.gg/d4builds" class="mobile-source-link" target="_blank" rel="noopener" onclick="closeMobileMenu()">D4Builds Discord</a>
+            </div>
+          </div>
+        </div>
       </li>
       <li>
         <a href="feedback.html" class="mobile-nav-link no-arrow" onclick="closeMobileMenu()">Feedback</a>
@@ -788,6 +845,7 @@
             <a href="videos.html">Videos</a>
             <a href="creators.html">Creators</a>
             <a href="communities.html">Community</a>
+            <a href="meme-fansites.html">Meme &amp; Fansites</a>
             <a href="feedback.html">Feedback Desk</a>
           </div>
 
@@ -911,7 +969,9 @@
     if (pathname === "season.html") return "season.html";
     if (pathname === "creators.html") return "creators.html";
     if (pathname === "videos.html") return "videos.html";
-    if (pathname === "communities.html") return "communities.html";
+    if (["communities.html", "meme-fansites.html"].includes(pathname)) {
+      return "communities.html";
+    }
     if (pathname === "feedback.html") return "feedback.html";
     return pathname;
   }
@@ -944,6 +1004,7 @@
       ["resources.html", "mobile-builds"],
       ["classes.html", "mobile-classes"],
       ["dungeons.html", "mobile-guides"],
+      ["communities.html", "mobile-community"],
     ]);
 
     document
