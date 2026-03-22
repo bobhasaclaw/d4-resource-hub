@@ -191,6 +191,15 @@
       keywords: "rob2628 fan site meme fansite youtube community",
     },
     {
+      title: "Submit A Meme Or Fansite",
+      href: "https://discord.gg/3WhNFpFVgQ",
+      category: "Community Submission",
+      summary:
+        "Join the Discord server and use the submit-a-meme-or-fansite channel to suggest a page.",
+      keywords:
+        "submit meme fansite discord channel suggestion community submission",
+    },
+    {
       title: "Feedback Desk",
       href: "feedback.html",
       category: "Community",
@@ -516,6 +525,7 @@
               <span class="dropdown-source-name">Featured Community Links</span>
               <div class="dropdown-source-links">
                 <a href="https://bobhasaclaw.github.io/rob2628-fansite/" class="dropdown-source-link" target="_blank" rel="noopener">Rob2628 Fan Site</a>
+                <a href="https://discord.gg/3WhNFpFVgQ" class="dropdown-source-link" target="_blank" rel="noopener">Submit A Meme Or Fansite</a>
                 <a href="https://discord.gg/diablo" class="dropdown-source-link" target="_blank" rel="noopener">Official Diablo Discord</a>
                 <a href="https://discord.gg/d4builds" class="dropdown-source-link" target="_blank" rel="noopener">D4Builds Discord</a>
               </div>
@@ -766,6 +776,7 @@
             <span class="mobile-source-name">Featured Links</span>
             <div class="mobile-source-links">
               <a href="https://bobhasaclaw.github.io/rob2628-fansite/" class="mobile-source-link" target="_blank" rel="noopener" onclick="closeMobileMenu()">Rob2628 Fan Site</a>
+              <a href="https://discord.gg/3WhNFpFVgQ" class="mobile-source-link" target="_blank" rel="noopener" onclick="closeMobileMenu()">Submit A Meme Or Fansite</a>
               <a href="https://discord.gg/diablo" class="mobile-source-link" target="_blank" rel="noopener" onclick="closeMobileMenu()">Official Diablo Discord</a>
               <a href="https://discord.gg/d4builds" class="mobile-source-link" target="_blank" rel="noopener" onclick="closeMobileMenu()">D4Builds Discord</a>
             </div>
